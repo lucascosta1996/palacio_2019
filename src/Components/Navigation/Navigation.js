@@ -25,6 +25,15 @@ const NavigationWrapper = styled.section`
   .active {
     color: #81828F;
   }
+
+  .acervo {
+    position: fixed;
+    bottom: 50px;
+  }
+
+  .hidden {
+    display: none;
+  }
 `
 
 const Navigation = props => {
@@ -34,17 +43,38 @@ const Navigation = props => {
 
   return (
     <NavigationWrapper>
-      <h1>
-        { 'Palácio' }
+      <h1 onClick={ () => setActive( '' ) }>
+        <Link to="/">
+          { 'Palácio' }
+        </Link>
       </h1>
-      <Link to="/about" className={ isActive( 'about' ) ? 'active' : '' } onClick={ () => setActive( 'about' ) }>
+      <Link
+        to="/about"
+        className={ `${isActive( 'about' ) ? 'active' : ''}  ${ isActive( 'acervo' ) ? 'hidden' : '' }` }
+        onClick={ () => setActive( 'about' ) }
+      >
         { translate('about') }
       </Link>
-      <Link to="/artists" className={ isActive( 'artists' ) ? 'active' : '' } onClick={ () => setActive( 'artists' ) }>
+      <Link
+        to="/artists"
+        className={ `${ isActive( 'artists' ) ? 'active' : '' } ${ isActive( 'acervo' ) ? 'hidden' : '' }` }
+        onClick={ () => setActive( 'artists' ) }
+      >
         { translate('artists') }
       </Link>
-      <Link to="/exhibitions" className={ isActive( 'exhibitions' ) ? 'active' : '' } onClick={ () => setActive( 'exhibitions' ) }>
+      <Link
+        to="/exhibitions"
+        className={ `${ isActive( 'exhibitions' ) ? 'active' : '' } ${ isActive( 'acervo' ) ? 'hidden' : '' }` }
+        onClick={ () => setActive( 'exhibitions' ) }
+      >
         { translate('exhibitions') }
+      </Link>
+      <Link
+        to="/acervo"
+        className={ `acervo ${ isActive( 'acervo' ) ? 'active' : '' }` }
+        onClick={ () => setActive( 'acervo' ) }
+      >
+        { translate('collection') }
       </Link>
     </NavigationWrapper>
   )

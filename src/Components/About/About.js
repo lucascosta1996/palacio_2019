@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react"
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import { I18nContext } from "../../i18n"
+import Copyright from "../Copyright/Copyright";
 
 const AboutWrapper = styled.section`
   bottom: 0;
@@ -17,8 +18,8 @@ const AboutWrapper = styled.section`
   text-align: left;
   top: 0;
 
-  p,
-  a {
+  .address,
+  .email {
     font-weight: 500;
     font-size: 20px;
     line-height: 20px;
@@ -50,19 +51,20 @@ const About = props => {
       <p className="info">
         {translate('aboutInfo')}
       </p>
-      <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">
+      <a className="email" href="mailto:someone@example.com?Subject=Hello%20again" target="_top">
         info@palacio.xyz
       </a>
-      <p>
+      <p className="address">
         Rua Duque de Caxias, 1554 - Centro Histórico - Porto Alegre, RS
       </p>
-      <p>
+      <p className="address">
         {translate('phone')}
       </p>
       <p className="newsletter">
         {translate('newsletter')}
         <a href="#">{translate('click')}</a>
       </p>
+      <Copyright />
     </AboutWrapper>
   )
 }
