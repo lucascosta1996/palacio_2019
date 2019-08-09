@@ -6,9 +6,18 @@
   "phone": "+55 51 3246-8863",
   "newsletter": "Subscribe to our newsletter by clicking ",
   "click": "here",
-  "collection": "Collection",
+  "collection": "Acervo",
   "allrights": "All rights reserved",
   "palacio": "2019 Palácio",
   "termsofuse": "Terms of Use",
-  "privacypolicy": "Privacy policy"
+  "privacypolicy": "Privacy policy",
+  "fullCollection": "Gallery collection is available online.",
+  "password": "Password",
+  "signin": "Sign in",
+  "signUp": "Sign up",
+  "fullName": "Full name",
+  "becomeMember": "Become a member",
+  "alreadyMember": "Already a member? Login.",
+  "galleryContact": "Contact the gallery",
+  "workInfo": "Receive more info about this work"
 }

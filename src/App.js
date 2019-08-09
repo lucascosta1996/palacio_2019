@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useEffect ,useState } from 'react'
 import { BrowserRouter as Router, Route } from "react-router-dom"
 import { I18nContext } from './i18n'
 import LanguageOptions from './Components/Language/LanguageOptions'
@@ -6,22 +6,28 @@ import Navigation from './Components/Navigation/Navigation'
 import Artists from './Components/Artists/Artists'
 import About from './Components/About/About'
 import Copyright from './Components/Copyright/Copyright'
-import styled from 'styled-components'
-
-const PalacioWrapper = styled.div`
-  position: relative;
-`
+import Login from './Components/Login/Login'
+import firebase from './firebase'
+import Catalogue from './Components/Catalogue/Catalogue';
 
 function App() {
-  const { translate } = useContext(I18nContext)
+  const [firebaseInitialized, setFirebaseInitialized] = useState(false)
+
+	useEffect(() => {
+		firebase.isInitialized().then(val => {
+			setFirebaseInitialized(val)
+		})
+	})
 
   return (
     <Router>
       <Navigation />
       <LanguageOptions />
+      <Route exact path="/" component={ Copyright } />
       <Route path="/artists" component={ Artists } />
       <Route path="/about" component={ About } />
-      <Route exact path="/" component={ Copyright } />
+      <Route exact path="/acervo/login" component={ Login } />
+      <Route path="/acervo/catalogo" component={ Catalogue } />
     </Router>
   );
 }

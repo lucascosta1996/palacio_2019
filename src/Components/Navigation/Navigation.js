@@ -7,7 +7,7 @@ const NavigationWrapper = styled.section`
   display: flex;
   flex-direction: column;
   left: 65px;
-  position: absolute;
+  position: fixed;
   text-align: left;
   top: 40px;
   z-index: 2;
@@ -29,6 +29,11 @@ const NavigationWrapper = styled.section`
   .acervo {
     position: fixed;
     bottom: 50px;
+    left: 65px;
+  }
+
+  .login {
+    color: #95d930;
   }
 
   .hidden {
@@ -43,7 +48,7 @@ const Navigation = props => {
 
   return (
     <NavigationWrapper>
-      <h1 onClick={ () => setActive( '' ) }>
+      <h1 onClick={ () => setActive( '/' ) }>
         <Link to="/">
           { 'Palácio' }
         </Link>
@@ -70,7 +75,7 @@ const Navigation = props => {
         { translate('exhibitions') }
       </Link>
       <Link
-        to="/acervo"
+        to="/acervo/login"
         className={ `acervo ${ isActive( 'acervo' ) ? 'active' : '' }` }
         onClick={ () => setActive( 'acervo' ) }
       >

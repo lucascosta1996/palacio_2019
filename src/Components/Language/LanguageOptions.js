@@ -6,7 +6,7 @@ const OptionsWrapper = styled.section`
   bottom: 40px;
   display: flex;
   justify-content: space-between;
-  position: absolute;
+  position: fixed;
   right: 65px;
   width: 55px;
   z-index: 2;
