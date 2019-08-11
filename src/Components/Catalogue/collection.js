@@ -5,8 +5,8 @@ export const collection = [
     route: 'luzaguaterrapreta',
     coverImage: 'alface.jpg',
     price: '$ 155,000',
-    info1: 'HD vídeo, estéreo, 11 min',
-    info2: 'Edição de 4 + 1 PA',
+    info1: 'luzaguaterra1',
+    info2: 'luzaguaterra2',
     slides: [
       {
         img: 'alface.jpg',

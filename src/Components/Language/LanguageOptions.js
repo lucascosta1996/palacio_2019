@@ -21,7 +21,7 @@ const OptionsWrapper = styled.section`
     transition: all ease .3s;
 
     &:hover {
-      font-weight: bold;
+      font-style: italic;
     }
   }
 
@@ -39,7 +39,6 @@ const LanguageOptions = props => {
   
   const renderOption = code => (
     <span
-      className={ code === langCode ? `checked` : '' }
       onClick={ ( code ) => onLanguageSelect( code ) }
     >
       {code}
@@ -48,8 +47,8 @@ const LanguageOptions = props => {
 
   return (
     <OptionsWrapper>
-      {renderOption("pt")}
-      {renderOption("en")}
+      {langCode === 'en' && renderOption("pt")}
+      {langCode === 'pt' && renderOption("en")}
     </OptionsWrapper>
   )
 }

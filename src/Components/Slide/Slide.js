@@ -71,6 +71,7 @@ function Slide (props) {
           return (
             <span
               className={`index ${active.index === index ? `active` : ``}`}
+              key={ slide.img }
               onClick={ () => updateSlide( slide, previous, next ) }
             >
               { index + 1 }

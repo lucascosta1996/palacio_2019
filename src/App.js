@@ -9,6 +9,7 @@ import Copyright from './Components/Copyright/Copyright'
 import Login from './Components/Login/Login'
 import firebase from './firebase'
 import Catalogue from './Components/Catalogue/Catalogue';
+import Exhibitions from './Components/Exhibitions/Exhibitions';
 
 function App() {
   const [firebaseInitialized, setFirebaseInitialized] = useState(false)
@@ -28,6 +29,7 @@ function App() {
       <Route path="/about" component={ About } />
       <Route exact path="/acervo/login" component={ Login } />
       <Route path="/acervo/catalogo" component={ Catalogue } />
+      <Route path="/exhibitions" component={ Exhibitions } />
     </Router>
   );
 }
