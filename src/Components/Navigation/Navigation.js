@@ -26,6 +26,13 @@ const NavigationWrapper = styled.section`
     color: #81828F;
   }
 
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 35%;
+  }
+
   .acervo {
     position: fixed;
     bottom: 50px;
@@ -53,27 +60,29 @@ const Navigation = props => {
           { 'Palácio' }
         </Link>
       </h1>
-      <Link
-        to="/about"
-        className={ `${isActive( 'about' ) ? 'active' : ''}  ${ isActive( 'acervo' ) ? 'hidden' : '' }` }
-        onClick={ () => setActive( 'about' ) }
-      >
-        { translate('about') }
-      </Link>
-      <Link
-        to="/artists"
-        className={ `${ isActive( 'artists' ) ? 'active' : '' } ${ isActive( 'acervo' ) ? 'hidden' : '' }` }
-        onClick={ () => setActive( 'artists' ) }
-      >
-        { translate('artists') }
-      </Link>
-      <Link
-        to="/exhibitions"
-        className={ `${ isActive( 'exhibitions' ) ? 'active' : '' } ${ isActive( 'acervo' ) ? 'hidden' : '' }` }
-        onClick={ () => setActive( 'exhibitions' ) }
-      >
-        { translate('exhibitions') }
-      </Link>
+      <div className="navigation">
+        <Link
+          to="/about"
+          className={ `${isActive( 'about' ) ? 'active' : ''}  ${ isActive( 'acervo' ) ? 'hidden' : '' }` }
+          onClick={ () => setActive( 'about' ) }
+        >
+          { translate('about') }
+        </Link>
+        <Link
+          to="/artists"
+          className={ `${ isActive( 'artists' ) ? 'active' : '' } ${ isActive( 'acervo' ) ? 'hidden' : '' }` }
+          onClick={ () => setActive( 'artists' ) }
+        >
+          { translate('artists') }
+        </Link>
+        <Link
+          to="/exhibitions"
+          className={ `${ isActive( 'exhibitions' ) ? 'active' : '' } ${ isActive( 'acervo' ) ? 'hidden' : '' }` }
+          onClick={ () => setActive( 'exhibitions' ) }
+        >
+          { translate('exhibitions') }
+        </Link>
+      </div>
       <Link
         to="/acervo/login"
         className={ `acervo ${ isActive( 'acervo' ) ? 'active' : '' }` }

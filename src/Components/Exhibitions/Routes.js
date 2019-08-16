@@ -1,20 +1,20 @@
 import React, { Component } from 'react'
 import { Route, Switch } from 'react-router-dom'
-import Item from '../Catalogue/Item'
 import { exhibitions } from './exhibitionsJson'
-import Exhibitions from './Exhibitions'
+import ExhibitionsList from './ExhibitionsList'
+import Exhibition from './Exhibition'
 
 class ExhibitionsRoutes extends Component {
   render() {
     
     return (
       <Switch>
-        <Route exact path="/exhibitions" component={ Exhibitions }  />
+        <Route exact path="/exhibitions" component={ ExhibitionsList }  />
         {
-          exhibitions.map( item => (
+          exhibitions.map( show => (
             <Route
-              exact path={`/exhibitions/${item.route}`}
-              render={ props => <Item {...this.props} item={item} /> } 
+              exact path={`/exhibitions/${show.showRoute}`}
+              render={ props => <Exhibition {...this.props} show={show} /> } 
             /> 
           ) )
         }

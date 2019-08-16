@@ -17,6 +17,8 @@
   "password": "Senha",
   "signin": "Entrar",
   "signUp": "Enviar",
+  "send": "Enviar",
+  "name": "Nome",
   "fullName": "Nome completo",
   "becomeMember": "Torne-se um membro",
   "alreadyMember": "Já é um membro? Faça login.",
