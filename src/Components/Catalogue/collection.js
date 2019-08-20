@@ -9,15 +9,15 @@ export const collection = [
     info2: 'luzaguaterra2',
     slides: [
       {
-        img: 'alface.jpg',
+        img: 'catalogue/alface.jpg',
         index: 0
       },
       {
-        img: 'detritos.png',
+        img: 'catalogue/detritos.png',
         index: 1
       },
       {
-        img: 'luz_viva.png',
+        img: 'catalogue/luz_viva.png',
         index: 2
       }
     ]

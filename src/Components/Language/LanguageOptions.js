@@ -8,8 +8,13 @@ const OptionsWrapper = styled.section`
   justify-content: space-between;
   position: fixed;
   right: 65px;
-  width: 55px;
+  width: 20px;
   z-index: 2;
+
+  @media ( max-width: 520px ) {
+    right: 35px;
+    z-index: 5;
+  }
 
   span {
     color: #000;

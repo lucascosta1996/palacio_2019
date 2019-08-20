@@ -97,7 +97,6 @@ const Login = (props) => {
 
   return (
     <LoginWrapper>
-      <p>{firebase.getCurrentUsername()}</p>
       {
         !subscribe ? (
           <form className="formWrapper" onSubmit={e => e.preventDefault() && false }>

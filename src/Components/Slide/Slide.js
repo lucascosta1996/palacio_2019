@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
+import arrow from '../../assets/icons/arrow.png'
 
 const SlideWrapper = styled.div`
   bottom: 0;
@@ -7,6 +8,10 @@ const SlideWrapper = styled.div`
   position: relative;
   text-align: right;
   width: 100%;
+
+  .hidden {
+    display: none;
+  }
   
   img {
     max-width: ${ props => props.width }px;
@@ -42,6 +47,24 @@ const SlideWrapper = styled.div`
   .prev {
     left: 0;
   }
+
+  .leftArrow,
+  .rightArrow {
+    cursor: pointer;
+    height: 15px;
+    position: absolute;
+    top: 48%;
+    width: 15px;
+  }
+
+  .rightArrow {
+    right: -30px;
+  }
+
+  .leftArrow {
+    left: -30px;
+    transform: rotate(-180deg);
+  }
 `
 
 function Slide (props) {
@@ -62,8 +85,8 @@ function Slide (props) {
     <SlideWrapper
       width={props.width}
     >
-      <img src={ require( `../../assets/catalogue/${active.img}` ) } />
-      <section>
+      <img src={ require( `../../assets/${active.img}` ) } />
+      <section className={ props.exhibition && `hidden` }>
       {
         props.slides.map( ( slide, index ) => {
           const previous = index !== 0 ? index : 0
@@ -87,6 +110,16 @@ function Slide (props) {
       <div
         className="next"
         onClick={ () => updateSlide( nextDiv, nextDiv === props.slides.length - 1 ? props.slides.length - 1 : nextDiv + 1, nextDiv.index + 1 ) }
+      />
+      <img
+        className={ props.exhibition ? 'leftArrow' : 'hidden' }
+        onClick={ () => updateSlide( previousDiv, previousDiv.index === 0 ? 0 : previousDiv.index - 1, previousDiv.index + 1 ) }
+        src={ arrow }
+      />
+      <img
+        className={ props.exhibition ? 'rightArrow' : 'hidden' }
+        onClick={ () => updateSlide( nextDiv, nextDiv === props.slides.length - 1 ? props.slides.length - 1 : nextDiv + 1, nextDiv.index + 1 ) }
+        src={ arrow }
       />
     </SlideWrapper>
   )

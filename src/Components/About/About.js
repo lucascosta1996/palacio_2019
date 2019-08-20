@@ -1,6 +1,5 @@
 import React, { useContext, useState } from "react"
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
 import { I18nContext } from "../../i18n"
 import Copyright from "../Copyright/Copyright";
 
@@ -18,19 +17,33 @@ const AboutWrapper = styled.section`
   text-align: left;
   top: 0;
 
+  @media ( max-width: 520px ) {
+    max-width: 320px;
+  }
+
   .address,
   .email {
     color: #000;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 20px;
     margin: 4px 0;
     padding: 5px 0;
+
+    @media ( max-width: 520px ) {
+      max-width: 320px;
+      padding: 0;
+    }
   }
 
   .info {
     line-height: 25px;
     padding-bottom: 20px;
+
+    @media ( max-width: 520px ) {
+      line-height: 20px;
+      padding-bottom: 5px;
+    }
   }
 
   a {
@@ -40,6 +53,10 @@ const AboutWrapper = styled.section`
   .newsletter {
     font-size: 15px;
     padding-top: 40px;
+
+    @media ( max-width: 520px ) {
+      padding-top: 20px;
+    }
     
     label {
       display: block;
@@ -59,6 +76,10 @@ const AboutWrapper = styled.section`
         font-family: 'Roboto', sans-serif;
         font-weight: 500;
       }
+
+      @media ( max-width: 520px ) {
+        margin: 5px 0;
+      }
     }
 
     button {
@@ -68,6 +89,10 @@ const AboutWrapper = styled.section`
       font-family: 'Roboto', sans-serif;
       font-weight: 500;
       padding: 7px 18px;
+
+      @media ( max-width: 520px ) {
+        margin-left: 5px;
+      }
     }
   }
 `

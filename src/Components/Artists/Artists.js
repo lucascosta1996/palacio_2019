@@ -21,11 +21,16 @@ const ArtistsList = styled.section`
   a {
     color: #000;
     font-family: 'Roboto', sans-serif;
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 500;
     margin: 0;
     text-decoration: none;
+    transition: .3s all ease;
     width: auto;
+
+    &:hover {
+      color: #81828F;
+    }
   }
 
   .active {

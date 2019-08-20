@@ -16,6 +16,11 @@ const CopyrightWrapper = styled.section`
   width: 482px;
   z-index: 2;
 
+  @media ( max-width: 520px ) {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
   .rights,
   .terms {
     color: #000;
@@ -25,6 +30,12 @@ const CopyrightWrapper = styled.section`
     line-height: 12px!important;
     padding: 0 5px;
     text-decoration: none;
+  }
+
+  .rights {
+    @media ( max-width: 520px ) {
+      width: 100%;
+    }
   }
 `
 
