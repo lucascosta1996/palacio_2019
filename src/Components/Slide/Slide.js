@@ -9,6 +9,10 @@ const SlideWrapper = styled.div`
   text-align: right;
   width: 100%;
 
+  @media ( max-width: 321px ) {
+    
+  }
+
   .hidden {
     display: none;
   }
@@ -16,6 +20,10 @@ const SlideWrapper = styled.div`
   img {
     max-width: ${ props => props.width }px;
     width: 100%;
+
+    @media ( max-width: 321px ) {
+      max-width: ${props => props.exhibition ? `250px!important` : `300px!important`};
+    }
   }
 
   .index {

@@ -1,6 +1,5 @@
 import React, { useEffect ,useState } from 'react'
 import { BrowserRouter as Router, Route } from "react-router-dom"
-import { I18nContext } from './i18n'
 import LanguageOptions from './Components/Language/LanguageOptions'
 import Navigation from './Components/Navigation/Navigation'
 import Artists from './Components/Artists/Artists'

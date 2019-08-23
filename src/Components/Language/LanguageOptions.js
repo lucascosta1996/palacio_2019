@@ -12,6 +12,7 @@ const OptionsWrapper = styled.section`
   z-index: 2;
 
   @media ( max-width: 520px ) {
+    bottom: 45px;
     right: 35px;
     z-index: 5;
   }

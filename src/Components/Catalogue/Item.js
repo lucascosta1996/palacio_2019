@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import styled from 'styled-components'
 import Slide from '../Slide/Slide'
 import { I18nContext } from "../../i18n"
+import { isMobile } from '../../helpers/helpers'
 
 const ItemWrapper = styled.div`
   align-items: center;
@@ -14,8 +15,18 @@ const ItemWrapper = styled.div`
   position: absolute;
   top: 0;
 
+  @media ( max-width: 768px ) {
+    left: 0;
+    right: 0;
+    top: unset;
+  }
+
   .center {
     display: flex;
+
+    @media ( max-width: 1024px ) {
+      flex-direction: column;
+    }
   }
 
   .artist {
@@ -28,7 +39,11 @@ const ItemWrapper = styled.div`
     flex-direction: column;
     margin-left: 60px;
     padding-top: 40px;
-    width: 400px;
+    max-width: 400px;
+
+    @media ( max-width: 768px ) {
+      margin-left: 0;
+    }
   }
 
   .additionalInfo {
@@ -58,7 +73,7 @@ function Item (props) {
   return (
     <ItemWrapper>
       <div className="center">
-        <Slide slides={props.item.slides} width={700} />
+        <Slide slides={props.item.slides} width={isMobile() ? 300 : 700} />
         <div className="infos">
           <span className="artist">{ props.item.artist }</span>
           <i>{ props.item.name }</i>

@@ -1,7 +1,8 @@
 import React, { useContext, useState } from "react"
 import styled from 'styled-components'
 import { I18nContext } from "../../i18n"
-import Copyright from "../Copyright/Copyright";
+import Copyright from "../Copyright/Copyright"
+import firebase from "../../firebase"
 
 const AboutWrapper = styled.section`
   bottom: 0;
@@ -27,8 +28,7 @@ const AboutWrapper = styled.section`
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
-    margin: 4px 0;
-    padding: 5px 0;
+    margin: 9px 0;
 
     @media ( max-width: 520px ) {
       max-width: 320px;
@@ -48,6 +48,10 @@ const AboutWrapper = styled.section`
 
   a {
     text-decoration: none;
+
+    &:hover {
+      color:  #b3b4b5;
+    }
   }
 
   .newsletter {
@@ -101,9 +105,16 @@ const About = props => {
   const { translate } = useContext(I18nContext)
   const [ name, setName ] = useState('')
   const [ email, setEmail ] = useState('')
+  const [ sucesso, setSucesso ] = useState('')
 
   async function subscribe () {
-
+    try {
+			await firebase.newsletter(name, email).then( (response) => {
+        setSucesso( true )
+      } )
+		} catch(error) {
+      alert(error.message)
+		}
   }
 
   return (
@@ -123,12 +134,18 @@ const About = props => {
       <a className="email" href="mailto:someone@example.com?Subject=Hello%20again" target="_top">
         info@palacio.xyz
       </a>
-      <form className="newsletter">
-        <label>Newsletter</label>
-        <input id="name" name="name" type="text" value={ name } placeholder={translate("name")} onChange={e => setName(e.target.value)} />
-        <input id="email" name="email" type="email" value={ email } placeholder="Email" onChange={e => setEmail(e.target.value)} />
-        <button type="submit" onClick={subscribe}>{translate('send')}</button>
-      </form>
+        {
+          !sucesso ? (
+            <form className="newsletter">
+              <label>Newsletter</label>
+              <input id="name" name="name" type="text" value={ name } placeholder={translate("name")} onChange={e => setName(e.target.value)} />
+              <input id="email" name="email" type="email" value={ email } placeholder="Email" onChange={e => setEmail(e.target.value)} />
+              <button type="button" onClick={subscribe}>{translate('send')}</button>
+            </form>
+          ) : (
+            <span> {translate('thanksSubscriber')} </span>
+          )
+        }
       <Copyright />
     </AboutWrapper>
   )

@@ -26,30 +26,36 @@ class Firebase {
   logout() {
 		return this.auth.signOut()
   }
+
+  async newsletter(name, email) {
+    await this.db.doc(`newsletter/${email}`).set({
+      name: name,
+      email: email
+    }).then( (response) => { return response })
+  }
   
   async register(name, email, password) {
     await this.auth.createUserWithEmailAndPassword(email, password)
     .then( (response) => {
-      debugger
-      console.log(response)
+      return
     } )
     .catch( (error) => {
-      debugger
+      alert(error)
     } )
     await this.db.doc(`users/${email}`).set({
       name: name,
       email: email
     }).then( (response) => {
-      debugger
+      return
     } )
     .catch( (error) => {
-      debugger
+      alert( error )
     } )
 		return this.auth.currentUser.updateProfile({
 			displayName: name
     })
     .then( (response) => {
-      console.log(response)
+      return
     } )
   }
   

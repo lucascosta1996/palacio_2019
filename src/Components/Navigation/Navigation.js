@@ -3,6 +3,8 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import { I18nContext } from '../../i18n'
 import close from '../../assets/icons/close.png'
+import { isMobile } from '../../helpers/helpers'
+import firebase from '../../firebase'
 
 const NavigationWrapper = styled.section`
   ${props => props.isOpened && `background-color: #fff;`}
@@ -60,7 +62,7 @@ const NavigationWrapper = styled.section`
     bottom: 50px;
     left: 65px;
 
-    @media ( max-width: 520px ) {
+    @media ( max-width: 768px ) {
       display: none;
     }
   }
@@ -76,24 +78,19 @@ const NavigationWrapper = styled.section`
   .close {
     position: fixed;
     right: 35px;
-    top: 45px;
-    width: 18px;
+    top: 50px;
+    width: 14px;
   }
 `
 
 const VeganBurguerIcon = styled.div`
   cursor: pointer;
+  font-size: 18px;
   position: fixed;
-  right: 25px;
+  right: 35px;
   top: 45px;
 
-  div {
-    border: 1px solid #000;
-    margin: 3px 0;
-    width: 18px;
-  }
-
-  @media ( min-width: 520px ) {
+  @media ( min-width: 769px ) {
     display: none;
   }
 `
@@ -104,13 +101,18 @@ const Navigation = props => {
   const [ open, setOpen ] = useState( false )
   const isActive = ( path ) => window.location.href.indexOf( path ) > 1
 
+  async function logout() {
+		await firebase.logout()
+		window.location.replace("/");
+  }
+
   return (
     <NavigationWrapper
       isOpened={ open }
     >
       <h1 onClick={ () => setActive( '/' ) }>
         <Link to="/">
-          { 'Palácio' }
+          { 'Galeria Palácio' }
         </Link>
       </h1>
       <div className="navigation">
@@ -146,6 +148,13 @@ const Navigation = props => {
             </Link>
           )
         }
+        {
+          ( isMobile() && isActive( 'acervo' ) && firebase.getCurrentUsername() ) && (
+            <a onClick={ logout }>
+              Log out
+            </a>
+          )
+        }
       </div>
       <Link
         to="/acervo/login"
@@ -162,9 +171,7 @@ const Navigation = props => {
             <img className="close" src={ close } />
           ) : (
             <Fragment>
-              <div />
-              <div />
-              <div />
+              <div>&#9776;</div>
             </Fragment>
           )
         }

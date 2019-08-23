@@ -16,6 +16,10 @@ const ExhibitionWrapper = styled.div`
   right: 0;
   top: 0;
 
+  @media ( max-width: 520px ) {
+    padding: 0 30px;
+  }
+
   .slideWrapper {
     align-self: center;
   }

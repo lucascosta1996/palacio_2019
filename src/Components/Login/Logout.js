@@ -7,6 +7,10 @@ const LogoutWrapper = styled.div`
   right: 65px;
   top: 40px;
 
+  @media ( max-width: 768px ) {
+    display: none;
+  }
+
   span {
     color: #000;
     cursor: pointer;
