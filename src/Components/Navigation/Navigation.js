@@ -2,6 +2,7 @@ import React, { Fragment, useContext, useState } from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import { I18nContext } from '../../i18n'
+import LanguageOptions from '../Language/LanguageOptions'
 import close from '../../assets/icons/close.png'
 import { isMobile } from '../../helpers/helpers'
 import firebase from '../../firebase'
@@ -26,8 +27,7 @@ const NavigationWrapper = styled.section`
   a {
     color: #000;
     font-family: 'Roboto', sans-serif;
-    font-size: 30px;
-    font-weight: 500;
+    font-weight: 300;
     margin: 0;
     text-decoration: none;
     transition: .3s all ease;
@@ -41,17 +41,38 @@ const NavigationWrapper = styled.section`
     }
   }
 
+  a {
+    font-size: 18px;
+  }
+
+  h1 {
+    line-height: 1;
+    a {
+      font-size: 20px;
+    }
+  }
+
   .active {
     color: #81828F;
   }
 
   .navigation {
     display: flex;
-    flex-direction: column;
     position: fixed;
-    top: 35%;
+    right: 65px;
+    top: 40px;
+
+    a {
+      margin: 0 8px;
+
+      @media ( max-width: 768px ) {
+        margin: 0;
+      }
+    }
 
     @media ( max-width: 768px ) {
+      flex-direction: column;
+      right:unset;
       top: 80px;
       ${props => !props.isOpened && `display: none;`}
     }
@@ -80,6 +101,14 @@ const NavigationWrapper = styled.section`
     right: 35px;
     top: 50px;
     width: 14px;
+  }
+
+  .logoutLang {
+    padding-left: 35px;
+
+    @media ( max-width: 768px ) {
+      padding-left: 0;
+    }
   }
 `
 
@@ -112,57 +141,49 @@ const Navigation = props => {
     >
       <h1 onClick={ () => setActive( '/' ) }>
         <Link to="/">
-          { 'Galeria Palácio' }
+          { 'GALERIA PALÁCIO' }
         </Link>
       </h1>
       <div className="navigation">
         <Link
           to="/about"
-          className={ `${isActive( 'about' ) ? 'active' : ''}  ${ ( isActive( 'acervo' ) && !open ) ? 'hidden' : '' }` }
+          className={ `${isActive( 'about' ) ? 'active' : ''}` }
           onClick={ () => { setActive( 'about' ); setOpen( false ); } }
         >
           { translate('about') }
         </Link>
         <Link
           to="/artists"
-          className={ `${ isActive( 'artists' ) ? 'active' : '' } ${ ( isActive( 'acervo' ) && !open ) ? 'hidden' : '' }` }
+          className={ `${ isActive( 'artists' ) ? 'active' : '' }` }
           onClick={ () => setActive( 'artists' ) }
         >
           { translate('artists') }
         </Link>
         <Link
           to="/exhibitions"
-          className={ `${ isActive( 'exhibitions' ) ? 'active' : '' } ${ ( isActive( 'acervo' ) && !open ) ? 'hidden' : '' }` }
+          className={ `${ isActive( 'exhibitions' ) ? 'active' : '' }` }
           onClick={ () => { setActive( 'exhibitions' ); setOpen( false ); } }
         >
           { translate('exhibitions') }
         </Link>
-        {
-          open && (
-            <Link
-              to="/acervo/login"
-              className={ `${ isActive( 'acervo' ) ? 'active' : '' }` }
-              onClick={ () => { setActive( 'acervo' ); setOpen( false ); } }
-            >
-              { translate('collection') }
-            </Link>
-          )
-        }
-        {
-          ( isMobile() && isActive( 'acervo' ) && firebase.getCurrentUsername() ) && (
-            <a onClick={ logout }>
-              Log out
-            </a>
-          )
-        }
+        <Link
+          to="/acervo/login"
+          className={ `${ isActive( 'acervo' ) ? 'active' : '' }` }
+          onClick={ () => { setActive( 'acervo' ); setOpen( false ); } }
+        >
+          { translate('collection') }
+        </Link>
+        <aside className="logoutLang">
+          {
+            ( isMobile() && isActive( 'acervo' ) && firebase.getCurrentUsername() ) && (
+              <a onClick={ logout }>
+                Log out
+              </a>
+            )
+          }
+          <LanguageOptions />
+        </aside>
       </div>
-      <Link
-        to="/acervo/login"
-        className={ `acervo ${ isActive( 'acervo' ) ? 'active' : '' }` }
-        onClick={ () => setActive( 'acervo' ) }
-      >
-        { translate('collection') }
-      </Link>
       <VeganBurguerIcon
         onClick={ () => setOpen( !open ) }
       >

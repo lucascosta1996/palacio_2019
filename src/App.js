@@ -10,7 +10,7 @@ import firebase from './firebase'
 import Catalogue from './Components/Catalogue/Catalogue';
 import Exhibitions from './Components/Exhibitions/Exhibitions';
 
-function App() {
+function App( props ) {
   const [firebaseInitialized, setFirebaseInitialized] = useState(false)
 
 	useEffect(() => {
@@ -22,8 +22,7 @@ function App() {
   return (
     <Router>
       <Navigation />
-      <LanguageOptions />
-      <Route exact path="/" component={ Copyright } />
+      <Route exact path="/" render={ () => <Copyright position="absolute" /> } />
       <Route path="/artists" component={ Artists } />
       <Route path="/about" component={ About } />
       <Route exact path="/acervo/login" component={ Login } />

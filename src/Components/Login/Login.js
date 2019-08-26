@@ -13,7 +13,7 @@ const LoginWrapper = styled.section`
   justify-content: center;
   left: 0;
   margin: auto;
-  max-width: 600px;
+  max-width: 700px;
   position: absolute;
   right: 0;
   text-align: center;
@@ -46,21 +46,46 @@ const LoginWrapper = styled.section`
 
     button {
       background: #fff;
-      border: 1.1px solid #1d6cdb;
-      color: #1d6cdb;
+      border: none;
+      color: #000;
+      cursor: pointer;
       font-family: 'Roboto', sans-serif;
       font-weight: 500;
       padding: 6px 18px;
       margin: 7px 0 0 0;
+      
+      &:hover {
+        font-weight: bold;
+      }
+    }
+
+    .alreadyMember {
+      cursor: pointer;
+
+      &:hover {
+        font-weight: bold;
+      }
+    }
+
+    .padding-top {
+      padding-top: 20px;
+    }
+
+    .align-left {
+      align-self: start;
+      padding-top: 10px;
+      text-align: left;
     }
 
     .becomeMember {
       color: #000;
-      cursor: pointer;
       font-size: 14px;
       font-size: 500;
-      padding-top: 20px;
-      text-decoration: underline;
+
+      a {
+        color: #000;
+        text-decoration: underline;
+      }
     }
   }
 `
@@ -105,19 +130,37 @@ const Login = (props) => {
             </span>
             <input id="email" name="email" type="email" value={ email } placeholder="Email" onChange={e => setEmail(e.target.value)} />
             <input id="password" name="password" type="password" value={ password } placeholder={translate('password')} onChange={e => setPassword(e.target.value)} />
-            <button type="submit" onClick={login}>{translate('signin')}</button>
-            <span className="becomeMember" href="#" onClick={ () => setSubscribe(true) }>{translate('becomeMember')}</span>
+            <button type="submit" onClick={login}>Login</button>
+            <span className="becomeMember alreadyMember padding-top" href="#" onClick={ () => setSubscribe(true) }>{translate('becomeMember')}</span>
           </form>
         ) : (
           <form className="formWrapper" onSubmit={e => e.preventDefault() && false }>
             <input id="name" name="name" type="text" value={ fullName } placeholder={translate("fullName")} onChange={e => setFullName(e.target.value)} />
             <input id="email" name="email" type="email" value={ newEmail } placeholder="Email" onChange={e => setNewEmail(e.target.value)} />
             <button type="submit" onClick={onRegister}>{translate('signUp')}</button>
-            <span className="becomeMember" href="#" onClick={ () => setSubscribe(false) }>{translate('alreadyMember')}</span>
+            <span className="becomeMember padding-top align-left" onClick={ () => setSubscribe(false) }>
+              {translate('alreadyMember')}
+              <a href="#">
+                {"Login."}
+              </a>
+            </span>
+            <span className="becomeMember align-left">
+              {translate('sharing')}
+              <a href="#">
+                {translate('termsConditions')}
+              </a>
+              {translate('andOur')}
+              <a href="#">
+                {translate('privacypolicy')}
+              </a>
+              .
+            </span>
           </form>
         )
       }
-      <Copyright />
+      <Copyright
+        position="absolute"
+      />
     </LoginWrapper>
   )
 }
