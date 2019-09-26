@@ -2,10 +2,10 @@ import React, { useContext, useState } from "react"
 import styled from 'styled-components'
 import { Link, Route } from 'react-router-dom'
 import Artist from './Artist'
-import detritos from '../../assets/artists/detritos.png'
-import olhos from '../../assets/artists/olhos.png'
-import emerson from '../../assets/artists/emerson.jpg'
-import lucasalves from '../../assets/artists/lucasalves.png'
+import detritos from '../../assets/artists/Organismo-Digital-2018-2019-Andrés-Stephanou-Screenshot-(9)-All-Rights-Reserved.png'
+import olhos from '../../assets/artists/Contato-Visual-(1)-2018-2019-Chiaki-Mihara-Screenshot-(1)-All-Rights-Reserved.png'
+import emerson from '../../assets/artists/O-Regime-dos-Ventos-2018-Emerson-da-Silva-Screenshot-(6)-All-Rights-Reserved.jpg'
+import lucasalves from '../../assets/artists/Um-lugar-para-estar-2018-2019-Lucas-Alves-Costa-Screenshot-(3)-All-Rights-Reserved.png'
 
 const ArtistsList = styled.section`
   bottom: 0;
