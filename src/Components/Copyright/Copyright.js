@@ -10,7 +10,7 @@ const CopyrightWrapper = styled.section`
   justify-content: center;
   left: 0;
   margin: auto;
-  position: absolute;
+  position: ${props => props.position};
   right: 0;
   text-align: center;
   width: 482px;
@@ -43,7 +43,9 @@ const Copyright = props => {
   const { translate } = useContext(I18nContext)
 
   return (
-    <CopyrightWrapper>
+    <CopyrightWrapper
+      position={ props.position }
+    >
       <span className="rights">
         {translate('allrights')} &copy; {translate('palacio')}
       </span>

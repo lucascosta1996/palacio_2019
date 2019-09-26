@@ -3,11 +3,6 @@ import styled from 'styled-components'
 import { I18nContext } from "../../i18n";
 
 const OptionsWrapper = styled.section`
-  bottom: 40px;
-  display: flex;
-  justify-content: space-between;
-  position: fixed;
-  right: 65px;
   width: 20px;
   z-index: 2;
 

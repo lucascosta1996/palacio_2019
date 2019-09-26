@@ -28,7 +28,6 @@ function Catalogue( props ) {
 
   return (
     <CatalogueWrapper>
-      <Logout />
       <Routes />
     </CatalogueWrapper>
   )

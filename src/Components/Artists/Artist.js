@@ -12,7 +12,7 @@ const ArtistWrapper = styled.section`
   }
 
   img {
-    max-width: 600px;
+    max-width: 700px;
 
     @media ( max-width: 520px ) {
       max-width: 300px;
