@@ -37,7 +37,7 @@ const NavigationWrapper = styled.section`
     }
 
     @media ( max-width: 520px ) {
-      font-size: 24px!important;
+      font-size: 18px!important;
     }
   }
 
@@ -78,7 +78,7 @@ const NavigationWrapper = styled.section`
     }
   }
 
-  .acervo {
+  .viewing-room {
     position: fixed;
     bottom: 50px;
     left: 65px;
@@ -99,7 +99,7 @@ const NavigationWrapper = styled.section`
   .close {
     position: fixed;
     right: 35px;
-    top: 50px;
+    top: 40px;
     width: 14px;
   }
 
@@ -117,7 +117,7 @@ const VeganBurguerIcon = styled.div`
   font-size: 18px;
   position: fixed;
   right: 35px;
-  top: 45px;
+  top: 35px;
 
   @media ( min-width: 769px ) {
     display: none;
@@ -167,15 +167,15 @@ const Navigation = props => {
           { translate('exhibitions') }
         </Link>
         <Link
-          to="/acervo/login"
-          className={ `${ isActive( 'acervo' ) ? 'active' : '' }` }
-          onClick={ () => { setActive( 'acervo' ); setOpen( false ); } }
+          to="/viewing-room/login"
+          className={ `${ isActive( 'viewing-room' ) ? 'active' : '' }` }
+          onClick={ () => { setActive( 'viewing-room' ); setOpen( false ); } }
         >
           { translate('collection') }
         </Link>
         <aside className="logoutLang">
           {
-            ( isMobile() && isActive( 'acervo' ) && firebase.getCurrentUsername() ) && (
+            ( isMobile() && isActive( 'viewing-room' ) && firebase.getCurrentUsername() ) && (
               <a onClick={ logout }>
                 Log out
               </a>

@@ -22,7 +22,7 @@ function Catalogue( props ) {
   const { translate } = useContext(I18nContext)
   
   if (!firebase.getCurrentUsername()) {
-		props.history.replace('/acervo/login')
+		props.history.replace('/viewing-room/login')
 		return null
   }
 

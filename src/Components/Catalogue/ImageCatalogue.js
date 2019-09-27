@@ -49,7 +49,7 @@ function ImageCatalogue (props) {
     <ImageCatalogueWrapper>
       {
         collection.map( item => (
-          <Link to={`/acervo/catalogo/${item.route}`} className="item">
+          <Link to={`/viewing-room/catalogo/${item.route}`} className="item">
             <img src={ require( `../../assets/catalogue/${item.coverImage}` ) } />
             <span className="artistName">
               {item.artist}

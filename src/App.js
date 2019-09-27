@@ -7,8 +7,8 @@ import About from './Components/About/About'
 import Copyright from './Components/Copyright/Copyright'
 import Login from './Components/Login/Login'
 import firebase from './firebase'
-import Catalogue from './Components/Catalogue/Catalogue';
-import Exhibitions from './Components/Exhibitions/Exhibitions';
+import Catalogue from './Components/Catalogue/Catalogue'
+import Exhibitions from './Components/Exhibitions/Exhibitions'
 
 function App( props ) {
   const [firebaseInitialized, setFirebaseInitialized] = useState(false)
@@ -25,8 +25,8 @@ function App( props ) {
       <Route exact path="/" render={ () => <Copyright position="absolute" /> } />
       <Route path="/artists" component={ Artists } />
       <Route path="/about" component={ About } />
-      <Route exact path="/acervo/login" component={ Login } />
-      <Route path="/acervo/catalogo" component={ Catalogue } />
+      <Route exact path="/viewing-room/login" component={ Login } />
+      <Route path="/viewing-room/catalogo" component={ Catalogue } />
       <Route path="/exhibitions" component={ Exhibitions } />
     </Router>
   );

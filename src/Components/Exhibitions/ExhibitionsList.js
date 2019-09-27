@@ -16,6 +16,10 @@ const ExhibitionsListWrapper = styled.div`
   right: 0;
   text-align: center;
 
+  @media (max-width: 520px) {
+    padding: 100px 20px 0;
+  }
+
   a {
     margin-bottom: 40px;
     text-decoration: none;
@@ -25,6 +29,12 @@ const ExhibitionsListWrapper = styled.div`
       display: block;
       padding: 10px;
       text-align: left;
+    }
+
+    &:hover {
+      span {
+        color: #81828F;
+      }
     }
   }
 `

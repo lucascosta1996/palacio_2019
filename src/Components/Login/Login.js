@@ -21,7 +21,11 @@ const LoginWrapper = styled.section`
 
   .formWrapper {
     .fullCollection {
-      font-size: 20px;
+      font-size: 18px;
+      padding-bottom: 3px;
+    }
+
+    .marginBottom {
       padding-bottom: 50px;
     }
     
@@ -101,7 +105,7 @@ const Login = (props) => {
   async function login() {
 		try {
       await firebase.login(email, password)
-      props.history.replace('/acervo/catalogo')
+      props.history.replace('/viewing-room/catalogo')
 		} catch(error) {
 			alert(error.message)
 		}
@@ -116,7 +120,7 @@ const Login = (props) => {
   }
   
   if (firebase.getCurrentUsername()) {
-		props.history.replace('/acervo/catalogo')
+		props.history.replace('/viewing-room/catalogo')
 		return null
   }
 
@@ -127,6 +131,9 @@ const Login = (props) => {
           <form className="formWrapper" onSubmit={e => e.preventDefault() && false }>
             <span className="fullCollection">
               {translate('fullCollection')}
+            </span>
+            <span className="fullCollection marginBottom">
+              {translate('fullCollection2')}
             </span>
             <input id="email" name="email" type="email" value={ email } placeholder="Email" onChange={e => setEmail(e.target.value)} />
             <input id="password" name="password" type="password" value={ password } placeholder={translate('password')} onChange={e => setPassword(e.target.value)} />
