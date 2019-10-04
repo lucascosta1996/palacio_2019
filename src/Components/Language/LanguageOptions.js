@@ -16,7 +16,7 @@ const OptionsWrapper = styled.section`
     color: #000;
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 500;
     text-transform: uppercase;
     transition: all ease .3s;

@@ -14,6 +14,7 @@ const ExhibitionsListWrapper = styled.div`
   padding: 100px;
   position: absolute;
   right: 0;
+  top: 100px;
   text-align: center;
 
   @media (max-width: 520px) {
@@ -27,7 +28,8 @@ const ExhibitionsListWrapper = styled.div`
     span {
       color: #000;
       display: block;
-      padding: 10px;
+      font-size: 14px;
+      font-weight: 500;
       text-align: left;
     }
 

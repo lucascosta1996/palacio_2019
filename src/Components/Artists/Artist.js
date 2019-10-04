@@ -7,7 +7,7 @@ const ArtistWrapper = styled.section`
 
   h2 {
     font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
   }
 

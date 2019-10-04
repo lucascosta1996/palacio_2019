@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react"
 import styled from 'styled-components'
 import { Link, Route } from 'react-router-dom'
 import Artist from './Artist'
+import Copyright from '../../Components/Copyright/Copyright'
 import detritos from '../../assets/artists/Organismo-Digital-2018-2019-Andrés-Stephanou-Screenshot-(9)-All-Rights-Reserved.png'
 import olhos from '../../assets/artists/Contato-Visual-(1)-2018-2019-Chiaki-Mihara-Screenshot-(1)-All-Rights-Reserved.png'
 import emerson from '../../assets/artists/O-Regime-dos-Ventos-2018-Emerson-da-Silva-Screenshot-(6)-All-Rights-Reserved.jpg'
@@ -21,9 +22,10 @@ const ArtistsList = styled.section`
   a {
     color: #000;
     font-family: 'Roboto', sans-serif;
-    font-size: 22px;
+    font-size: 16px;
     font-weight: 500;
     margin: 0;
+    padding: 2px 0;
     text-decoration: none;
     transition: .3s all ease;
     width: auto;
@@ -107,6 +109,7 @@ const Artists = props => {
           render={ props => <Artist {...props} artist={ artists[3] } /> }
         />
       </div>
+      <Copyright position="absolute" />
     </ArtistsList>
   )
 }

@@ -26,6 +26,7 @@ const NavigationWrapper = styled.section`
   h1,
   a {
     color: #000;
+    font-size: 14px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     margin: 0;
@@ -41,14 +42,12 @@ const NavigationWrapper = styled.section`
     }
   }
 
-  a {
-    font-size: 18px;
-  }
-
   h1 {
     line-height: 1;
+
     a {
-      font-size: 20px;
+      font-family: 'Jaldi', sans-serif;
+      font-size: 22px;
     }
   }
 
@@ -57,6 +56,7 @@ const NavigationWrapper = styled.section`
   }
 
   .navigation {
+    align-items: flex-end;
     display: flex;
     position: fixed;
     right: 65px;
@@ -104,10 +104,20 @@ const NavigationWrapper = styled.section`
   }
 
   .logoutLang {
+    align-items: flex-end;
+    display: flex;
     padding-left: 35px;
 
     @media ( max-width: 768px ) {
       padding-left: 0;
+    }
+  }
+
+  .logout {
+    cursor: pointer;
+
+    @media ( min-width: 520px ) {
+      padding-right: 10px;
     }
   }
 `
@@ -147,42 +157,42 @@ const Navigation = props => {
       <div className="navigation">
         <Link
           to="/about"
-          className={ `${isActive( 'about' ) ? 'active' : ''}` }
+          className={ `link ${isActive( 'about' ) ? 'active' : ''}` }
           onClick={ () => { setActive( 'about' ); setOpen( false ); } }
         >
           { translate('about') }
         </Link>
         <Link
           to="/artists"
-          className={ `${ isActive( 'artists' ) ? 'active' : '' }` }
+          className={ `link ${ isActive( 'artists' ) ? 'active' : '' }` }
           onClick={ () => setActive( 'artists' ) }
         >
           { translate('artists') }
         </Link>
         <Link
           to="/exhibitions"
-          className={ `${ isActive( 'exhibitions' ) ? 'active' : '' }` }
+          className={ `link${ isActive( 'exhibitions' ) ? 'active' : '' }` }
           onClick={ () => { setActive( 'exhibitions' ); setOpen( false ); } }
         >
           { translate('exhibitions') }
         </Link>
         <Link
           to="/viewing-room/login"
-          className={ `${ isActive( 'viewing-room' ) ? 'active' : '' }` }
+          className={ `link ${ isActive( 'viewing-room' ) ? 'active' : '' }` }
           onClick={ () => { setActive( 'viewing-room' ); setOpen( false ); } }
         >
           { translate('collection') }
         </Link>
-        <aside className="logoutLang">
+        <span className="logoutLang">
           {
-            ( isMobile() && isActive( 'viewing-room' ) && firebase.getCurrentUsername() ) && (
-              <a onClick={ logout }>
+            ( isActive( 'viewing-room' ) && firebase.getCurrentUsername() ) && (
+              <a className="logout" onClick={ logout }>
                 Log out
               </a>
             )
           }
           <LanguageOptions />
-        </aside>
+        </span>
       </div>
       <VeganBurguerIcon
         onClick={ () => setOpen( !open ) }
