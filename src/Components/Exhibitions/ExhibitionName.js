@@ -9,6 +9,7 @@ const ExhibitionNameWrapper = styled.div`
   span {
     color: #000;
     display: block;
+    font-size: 14px;
     padding: ${props => props.padding};
     text-align: left;
   }

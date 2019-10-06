@@ -12,7 +12,7 @@ const NavigationWrapper = styled.section`
   ${props => props.isOpened && `width: 100%; height: 200px;`}
   display: flex;
   flex-direction: column;
-  left: 65px;
+  left: 25px;
   position: fixed;
   overflow: hidden;
   text-align: left;
@@ -47,8 +47,12 @@ const NavigationWrapper = styled.section`
 
     a {
       font-family: 'Jaldi', sans-serif;
-      font-size: 22px;
+      font-size: 23px;
     }
+  }
+
+  .link {
+    text-transform: uppercase;
   }
 
   .active {
@@ -59,8 +63,8 @@ const NavigationWrapper = styled.section`
     align-items: flex-end;
     display: flex;
     position: fixed;
-    right: 65px;
-    top: 40px;
+    right: 25px;
+    top: 44px;
 
     a {
       margin: 0 8px;
@@ -81,7 +85,7 @@ const NavigationWrapper = styled.section`
   .viewing-room {
     position: fixed;
     bottom: 50px;
-    left: 65px;
+    left: 25px;
 
     @media ( max-width: 768px ) {
       display: none;
@@ -171,7 +175,7 @@ const Navigation = props => {
         </Link>
         <Link
           to="/exhibitions"
-          className={ `link${ isActive( 'exhibitions' ) ? 'active' : '' }` }
+          className={ `link ${ isActive( 'exhibitions' ) ? 'active' : '' }` }
           onClick={ () => { setActive( 'exhibitions' ); setOpen( false ); } }
         >
           { translate('exhibitions') }

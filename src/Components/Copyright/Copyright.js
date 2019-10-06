@@ -2,6 +2,7 @@ import React, { useContext, Fragment } from "react"
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import { I18nContext } from "../../i18n"
+import Back from "../Back/Back"
 
 const CopyrightWrapper = styled.section`
   align-items: center;
@@ -10,6 +11,7 @@ const CopyrightWrapper = styled.section`
   justify-content: center;
   left: 0;
   margin: auto;
+  padding-top: ${props => !props.position ? '50px' : '0'};
   position: ${props => props.position};
   right: 0;
   text-align: center;
@@ -28,6 +30,7 @@ const CopyrightWrapper = styled.section`
     font-size: 12px!important;
     font-weight: 500!important;
     line-height: 12px!important;
+    margin-bottom: 0;
     padding: 0 5px;
     text-decoration: none;
   }
@@ -55,6 +58,9 @@ const Copyright = props => {
       <a className="terms" href="#">
         {translate('privacypolicy')}
       </a>
+      {
+        props.back && <Back route={props.route} position="absolute" />
+      }
     </CopyrightWrapper>
   )
 }

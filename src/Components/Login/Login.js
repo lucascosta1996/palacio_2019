@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react"
+import React, { useContext, useEffect, useState } from "react"
 import styled from 'styled-components'
 import firebase from '../../firebase'
 import { Link, withRouter } from 'react-router-dom'
@@ -10,33 +10,38 @@ const LoginWrapper = styled.section`
   display: flex;
   flex-direction: column;
   font-family: 'Roboto', sans-serif;
+  font-size: 14px;
   justify-content: center;
   left: 0;
   margin: auto;
   max-width: 700px;
   position: absolute;
   right: 0;
-  text-align: center;
+  text-align: left;
   top: 0;
 
   .formWrapper {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 520px) {
+      padding-left: 20px;
+    }
+
     .fullCollection {
-      font-size: 18px;
+      font-size: 14px;
       padding-bottom: 3px;
     }
 
     .marginBottom {
-      padding-bottom: 50px;
+      padding-bottom: 20px;
     }
-    
-    align-items: center;
-    display: flex;
-    flex-direction: column;
 
     input {
       border: 1.1px solid #000;
       color: #000;
-      font-size: 16px;
+      font-size: 14px;
       margin: 5px 0;
       max-width: 230px;
       padding: 6px 8px;
@@ -50,16 +55,22 @@ const LoginWrapper = styled.section`
 
     button {
       background: #fff;
-      border: none;
+      border: 1px solid #000;
       color: #000;
       cursor: pointer;
       font-family: 'Roboto', sans-serif;
       font-weight: 500;
-      padding: 6px 18px;
+      padding: 7px 18px;
       margin: 7px 0 0 0;
+      margin-left: 15px;
       
       &:hover {
         font-weight: bold;
+      }
+
+      @media (max-width: 520px) {
+        display: block;
+        margin-left: 0;
       }
     }
 
@@ -102,10 +113,14 @@ const Login = (props) => {
   const [ fullName, setFullName ] = useState('')
   const [ password, setPassword ] = useState('')
 
+  if ( firebase.isLoggedIn() ) {
+    props.history.replace('/viewing-room/catalogue')
+  }
+  
   async function login() {
 		try {
       await firebase.login(email, password)
-      props.history.replace('/viewing-room/catalogo')
+      props.history.replace('/viewing-room/catalogue')
 		} catch(error) {
 			alert(error.message)
 		}
@@ -113,16 +128,13 @@ const Login = (props) => {
   
   async function onRegister() {
 		try {
-			await firebase.register(fullName, newEmail, `palacioKPwwbhRxr3`)
+      await firebase.register(fullName, newEmail, `palacio`)
+		  await firebase.logout()
 		} catch(error) {
       alert(error.message)
 		}
   }
   
-  if (firebase.getCurrentUsername()) {
-		props.history.replace('/viewing-room/catalogo')
-		return null
-  }
 
   return (
     <LoginWrapper>
@@ -136,22 +148,29 @@ const Login = (props) => {
               {translate('fullCollection2')}
             </span>
             <input id="email" name="email" type="email" value={ email } placeholder="Email" onChange={e => setEmail(e.target.value)} />
-            <input id="password" name="password" type="password" value={ password } placeholder={translate('password')} onChange={e => setPassword(e.target.value)} />
-            <button type="submit" onClick={login}>Login</button>
+            <div className="inputAndButton">
+              <input id="password" name="password" type="password" value={ password } placeholder={translate('password')} onChange={e => setPassword(e.target.value)} />
+              <button type="submit" onClick={login}>Login</button>
+            </div>
             <span className="becomeMember alreadyMember padding-top" href="#" onClick={ () => setSubscribe(true) }>{translate('becomeMember')}</span>
           </form>
         ) : (
           <form className="formWrapper" onSubmit={e => e.preventDefault() && false }>
+            <span className="fullCollection2 marginBottom">
+              {translate('becomeMember')}
+            </span>
             <input id="name" name="name" type="text" value={ fullName } placeholder={translate("fullName")} onChange={e => setFullName(e.target.value)} />
-            <input id="email" name="email" type="email" value={ newEmail } placeholder="Email" onChange={e => setNewEmail(e.target.value)} />
-            <button type="submit" onClick={onRegister}>{translate('signUp')}</button>
+            <div className="inputAndButton">
+              <input id="email" name="email" type="email" value={ newEmail } placeholder="Email" onChange={e => setNewEmail(e.target.value)} />
+              <button type="submit" onClick={onRegister}>{translate('signUp')}</button>
+            </div>
             <span className="becomeMember padding-top align-left" onClick={ () => setSubscribe(false) }>
               {translate('alreadyMember')}
               <a href="#">
                 {"Login."}
               </a>
             </span>
-            <span className="becomeMember align-left">
+            {/*<span className="becomeMember align-left">
               {translate('sharing')}
               <a href="#">
                 {translate('termsConditions')}
@@ -161,7 +180,7 @@ const Login = (props) => {
                 {translate('privacypolicy')}
               </a>
               .
-            </span>
+            </span>*/}
           </form>
         )
       }

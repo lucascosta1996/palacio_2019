@@ -3,14 +3,17 @@ import styled from 'styled-components'
 import Slide from '../Slide/Slide'
 import { I18nContext } from "../../i18n"
 import { isMobile } from '../../helpers/helpers'
+import Copyright from '../Copyright/Copyright'
+import Back from '../Back/Back'
 
 const ItemWrapper = styled.div`
   align-items: center;
   bottom: 0;
   display: flex;
   font-family: 'Roboto', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
+  line-height: 16px;
   justify-content: center;
   position: absolute;
   top: 0;
@@ -18,7 +21,7 @@ const ItemWrapper = styled.div`
   @media ( max-width: 768px ) {
     left: 0;
     right: 0;
-    top: unset;
+    top: 0;
   }
 
   .center {
@@ -30,39 +33,46 @@ const ItemWrapper = styled.div`
   }
 
   .artist {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 500px!important;
   }
 
   .infos {
     display: flex;
     flex-direction: column;
-    margin-left: 60px;
-    padding-top: 40px;
+    justify-content: center;
+    margin-left: 140px;
     max-width: 400px;
 
     @media ( max-width: 768px ) {
       margin-left: 0;
+      padding-top: 30px;
     }
   }
 
   .additionalInfo {
     display: flex;
     flex-direction: column;
-    padding-bottom: 60px; 
-    padding-top: 25px;
+    padding-top: 40px;
   }
 
   .gallery {
-    display: flex;
-    flex-direction: column;
-    padding-top: 60px;
+    padding-top: 40px;
 
-    a {
+    button {
+      background: none;
+      border: 1px solid #1d6cdb;
       color: #1d6cdb;
+      cursor: pointer;
       font-family: 'Roboto', sans-serif;
       font-weight: 500;
-      padding: 5px 0;
+      padding: 10px 5px;
+      width: auto;
+
+      &:hover {
+        color: #1d6cd1;
+        border: 1px solid #1d6cd1;
+      }
     }
   }
 `
@@ -73,7 +83,7 @@ function Item (props) {
   return (
     <ItemWrapper>
       <div className="center">
-        <Slide slides={props.item.slides} width={isMobile() ? 300 : 700} />
+        <Slide slides={props.item.slides} width={isMobile() ? 250 : 700} />
         <div className="infos">
           <span className="artist">{ props.item.artist }</span>
           <i>{ props.item.name }</i>
@@ -87,11 +97,12 @@ function Item (props) {
           </section>
           <span>{ props.item.price }</span>
           <section className="gallery">
-            <a href="#">{translate('galleryContact')}</a>
-            <a href="#">{translate('workInfo')}</a>
+            <button>{translate('galleryContact')}</button>
           </section>
         </div>
       </div>
+      <Copyright position="absolute" />
+      <Back position="fixed" bottom route="/viewing-room" />
     </ItemWrapper>
   )
 }

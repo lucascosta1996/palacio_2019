@@ -4,14 +4,17 @@ import Slide from '../Slide/Slide'
 import ExhibitionName from './ExhibitionName';
 import { isMobile } from '../../helpers/helpers'
 import { I18nContext } from '../../i18n';
+import Copyright from '../Copyright/Copyright';
+import Back from '../Back/Back';
 
 const ExhibitionWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  font-size: 14px;
   justify-content: center;
+  line-height: 16px;
   margin: auto;
-  max-width: 800px;
-  padding-top: 100px;
+  max-width: 700px;
   position: relative;
 
   @media ( max-width: 520px ) {
@@ -19,9 +22,31 @@ const ExhibitionWrapper = styled.div`
     max-width: 500px;
   }
 
+  .text {
+    padding-bottom: 60px;
+  }
+
+  .pdf {
+    padding-top: 20px;
+    
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .back {
+    position: relative;
+  }
+
   .slideWrapper {
     align-self: center;
+    padding-bottom: 20px;
   }
+`
+
+const BackWrapper = styled.div`
+  padding-top: 140px;
+  padding-bottom: 40px;
 `
 
 function Exhibition (props) {
@@ -33,7 +58,7 @@ function Exhibition (props) {
   const fourthParagraph = useRef()
 
   useEffect(() => {
-    window.scrollTo(0, 0)
+    window.scrollTo(0,0)
     firstParagraph.current.innerHTML = firstParagraph.current.innerHTML
     .replace(/Contato Visual/g, `<i>Contato Visual</i>`)
     .replace(/\(1\)/g, `<i>(1)</i>` )
@@ -53,34 +78,37 @@ function Exhibition (props) {
   })
 
   return (
-    <ExhibitionWrapper>
-      <ExhibitionName
-        padding="5px"
-        show={props.show}
-      />
-      <div className="slideWrapper">
-        <Slide exhibition width={isMobile() ? 300 : 800} slides={props.show.slide} />
-      </div>
-      <section className="text">
-        <p className="text__paragraph" ref={ firstParagraph }>
-          {translate(props.show.paragraph1)}
-        </p>
-        <p className="text__paragraph" ref={ secondParagraph }>
-          {translate(props.show.paragraph2)}
-        </p>
-        <p className="text__paragraph" ref={ thirdParagraph }>
-          {translate(props.show.paragraph3)}
-        </p>
-        <p className="text__paragraph" ref={ fourthParagraph }>
-          {translate(props.show.paragraph4)}
-        </p>
-        <p className="text__pressRelease">
-          <a href={ `https://palacio.xyz/exhibitions/${props.show.pressRelase}` }>
-            {translate('pressRelease')}
-          </a>
-        </p>
-      </section>
-    </ExhibitionWrapper>
+    <BackWrapper>
+      <ExhibitionWrapper>
+        <ExhibitionName
+          padding="5px"
+          show={props.show}
+        />
+        <div className="slideWrapper">
+          <Slide exhibition width={isMobile() ? 300 : 700} slides={props.show.slide} />
+        </div>
+        <section className="text">
+          <p className="text__paragraph" ref={ firstParagraph }>
+            {translate(props.show.paragraph1)}
+          </p>
+          <p className="text__paragraph" ref={ secondParagraph }>
+            {translate(props.show.paragraph2)}
+          </p>
+          <p className="text__paragraph" ref={ thirdParagraph }>
+            {translate(props.show.paragraph3)}
+          </p>
+          <p className="text__paragraph" ref={ fourthParagraph }>
+            {translate(props.show.paragraph4)}
+          </p>
+          <p className="pdf">
+            <a href={ `https://palacio.xyz/exhibitions/${props.show.pressRelase}` }>
+              {translate('pdf')}
+            </a>
+          </p>
+        </section>
+      </ExhibitionWrapper>
+      <Copyright back route="/exhibitions"/>
+    </BackWrapper>
   )
 }
 

@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import { collection } from './collection'
+import Copyright from '../Copyright/Copyright'
 
 const ImageCatalogueWrapper = styled.div`
 display: flex;
@@ -33,34 +34,41 @@ padding-bottom: 120px;
   .artistName {
     color: #000;
     font-family: 'Roboto', sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 500;
     text-decoration: none;
   }
 
   .workTitle {
     font-style: italic;
-    padding-top: 8px;
+    padding-top: 2px;
   }
+`
+
+const CopyRightPadding = styled.div`
+  padding-bottom: 40px;
 `
 
 function ImageCatalogue (props) {
   return (
-    <ImageCatalogueWrapper>
-      {
-        collection.map( item => (
-          <Link to={`/viewing-room/catalogo/${item.route}`} className="item">
-            <img src={ require( `../../assets/catalogue/${item.coverImage}` ) } />
-            <span className="artistName">
-              {item.artist}
-            </span>    
-            <span className="workTitle">
-              {item.name}
-            </span>    
-          </Link>
-        ))
-      }
-    </ImageCatalogueWrapper>
+    <CopyRightPadding>
+      <ImageCatalogueWrapper>
+        {
+          collection.map( item => (
+            <Link to={`/viewing-room/catalogue/${item.route}`} className="item">
+              <img src={ require( `../../assets/catalogue/${item.coverImage}` ) } />
+              <span className="artistName">
+                {item.artist}
+              </span>    
+              <span className="workTitle">
+                {item.name}
+              </span>    
+            </Link>
+          ))
+        }
+      </ImageCatalogueWrapper>
+      <Copyright />
+    </CopyRightPadding>
   )
 }
 

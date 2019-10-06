@@ -5,14 +5,9 @@ import arrow from '../../assets/icons/arrow.png'
 const SlideWrapper = styled.div`
   bottom: 0;
   max-width: ${ props => props.width }px;
-  min-height: 460px;
   position: relative;
   text-align: right;
   width: 100%;
-
-  @media ( max-width: 520px ) {
-    min-height: 180px;
-  }
 
   .hidden {
     display: none;
@@ -96,7 +91,7 @@ function Slide (props) {
     >
       <img src={ require( `../../assets/${active.img}` ) } />
       <section className={ props.exhibition && `hidden` }>
-      {
+      {/*
         props.slides.map( ( slide, index ) => {
           const previous = index !== 0 ? index : 0
           const next = index + 1
@@ -110,7 +105,7 @@ function Slide (props) {
             </span>
           )
         } )
-      }
+      */}
       </section>
       <div
         className="prev"
@@ -121,12 +116,12 @@ function Slide (props) {
         onClick={ () => updateSlide( nextDiv, nextDiv === props.slides.length - 1 ? props.slides.length - 1 : nextDiv + 1, nextDiv.index + 1 ) }
       />
       <img
-        className={ props.exhibition ? `leftArrow ${active.index === 0 ? `hidden` : ''}` : 'hidden' }
+        className={ `leftArrow ${active.index === 0 ? `hidden` : ''}` }
         onClick={ () => updateSlide( previousDiv, previousDiv.index === 0 ? 0 : previousDiv.index - 1, previousDiv.index + 1 ) }
         src={ arrow }
       />
       <img
-        className={ props.exhibition ? `rightArrow ${active.index === props.slides.length - 1 ? `hidden` : ''}` : 'hidden' }
+        className={ `rightArrow ${active.index === props.slides.length - 1 ? `hidden` : ''}` }
         onClick={ () => updateSlide( nextDiv, nextDiv === props.slides.length - 1 ? props.slides.length - 1 : nextDiv + 1, nextDiv.index + 1 ) }
         src={ arrow }
       />

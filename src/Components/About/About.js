@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react"
+import React, { useContext, useEffect, useState } from "react"
 import styled from 'styled-components'
 import { I18nContext } from "../../i18n"
 import Copyright from "../Copyright/Copyright"
@@ -10,11 +10,13 @@ const AboutWrapper = styled.section`
   bottom: 0;
   display: flex;
   font-family: 'Roboto', sans-serif;
+  font-size: 14px;
   justify-content: center;
   left: 0;
   margin: auto;
   max-width: 90%;
-  position: absolute;
+  position: ${props => isMobile() ? 'inital' : 'absolute'};
+  padding-bottom: ${props => isMobile() ? '40px' : '0'};
   right: 0;
   text-align: left;
   top: 0;
@@ -22,11 +24,49 @@ const AboutWrapper = styled.section`
   @media ( max-width: 520px ) {
     flex-direction: column;
     max-width: 320px;
-    padding-top: 80px;
+    padding-top: 120px;
   }
 
   .infosWrapper {
     padding-right: 80px;
+
+    .galeria {
+      padding-top: 0;
+    }
+
+    .firstSection {
+      p {
+        margin-bottom: 2px;
+        margin-top: 2px;
+      }
+    }
+
+    .secondSection {
+      padding-top: 15px;
+
+      p {
+        margin-bottom: 2px;
+        margin-top: 2px;
+      }
+    }
+
+    .thirdSection {
+      padding-top: 15px;
+
+      p {
+        margin-bottom: 2px;
+        margin-top: 2px;
+      }
+    }
+
+    .fourthSection {
+      padding-top: 15px;
+
+      p {
+        margin-bottom: 2px;
+        margin-top: 2px;
+      }
+    }
 
     .address,
     .email {
@@ -34,7 +74,6 @@ const AboutWrapper = styled.section`
       font-weight: 500;
       font-size: 14px;
       line-height: 20px;
-      margin: 9px 0;
 
       @media ( max-width: 520px ) {
         max-width: 320px;
@@ -56,8 +95,12 @@ const AboutWrapper = styled.section`
       text-decoration: none;
 
       &:hover {
-        color:  #b3b4b5;
+        color:  #b3b4f1;
       }
+    }
+
+    .map {
+      color: #b3b4b5;
     }
 
     .newsletter {
@@ -133,21 +176,46 @@ const About = props => {
 		}
   }
 
+  useEffect(() => {
+    window.scrollTo(0,0)
+  })
+
   return (
     <AboutWrapper>
       <div className="infosWrapper">
-        <p className="address">
-          Rua Duque de Caxias, 1554 - Centro Histórico - Porto Alegre, RS
+       <section className="firstSection">
+        <p className="galeria">
+          Galeria Palácio
         </p>
-        <a className="address" href="https://www.google.com/maps/@-30.0330618,-51.2257867,21z" target="_blank">
+        <p className="address">
+          Rua Duque de Caxias, 1554 - Centro Histórico - Porto Alegre, Brasil
+        </p>
+        <a className="address map" href="https://www.google.com/maps/@-30.0330618,-51.2257867,21z" target="_blank">
           Ver mapa
         </a>
-        <p className="address">
+       </section>
+      <section className="secondSection">
+        <p className="phone">
           {translate('phone')}
         </p>
         <a className="email" href="mailto:someone@example.com?Subject=Hello%20again" target="_top">
-          info@palacio.xyz
+          e. info@palacio.xyz
         </a>
+      </section>
+      <section className="thirdSection">
+        <p>
+          {translate('businessHours')}
+        </p>
+        <p>
+          {translate('hours')}
+        </p>
+        <p>
+          {translate('parking')}
+        </p>
+      </section>
+      <section className="fourthSection">
+        {translate('artistRequests')}
+      </section>
           {
             !sucesso ? (
               <form className="newsletter">

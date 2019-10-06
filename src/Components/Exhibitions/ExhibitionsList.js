@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import { exhibitions } from './exhibitionsJson'
 import { I18nContext } from '../../i18n'
+import Copyright from '../Copyright/Copyright'
 
 const ExhibitionsListWrapper = styled.div`
   display: flex;
@@ -11,7 +12,7 @@ const ExhibitionsListWrapper = styled.div`
   left: 0;
   margin: auto;
   max-width: fit-content;
-  padding: 100px;
+  padding: 100px 100px 40px;
   position: absolute;
   right: 0;
   top: 100px;
@@ -53,6 +54,7 @@ function ExhibitionsList (props) {
           </Link>
         ))
       }
+      <Copyright />
     </ExhibitionsListWrapper>
   )
 }
