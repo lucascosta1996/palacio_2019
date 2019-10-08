@@ -10,7 +10,7 @@ const AboutWrapper = styled.section`
   bottom: 0;
   display: flex;
   font-family: 'Roboto', sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   justify-content: center;
   left: 0;
   margin: auto;
@@ -59,20 +59,11 @@ const AboutWrapper = styled.section`
       }
     }
 
-    .fourthSection {
-      padding-top: 15px;
-
-      p {
-        margin-bottom: 2px;
-        margin-top: 2px;
-      }
-    }
-
     .address,
     .email {
       color: #000;
       font-weight: 500;
-      font-size: 14px;
+      font-size: 13px;
       line-height: 20px;
 
       @media ( max-width: 520px ) {
@@ -95,7 +86,7 @@ const AboutWrapper = styled.section`
       text-decoration: none;
 
       &:hover {
-        color:  #b3b4f1;
+        color:  #4547ee;
       }
     }
 
@@ -104,7 +95,7 @@ const AboutWrapper = styled.section`
     }
 
     .newsletter {
-      font-size: 14px;
+      font-size: 13px;
       padding-top: 40px;
 
       @media ( max-width: 520px ) {
@@ -127,7 +118,7 @@ const AboutWrapper = styled.section`
         input {
           border: 1.1px solid #000;
           color: #000;
-          font-size: 14px;
+          font-size: 13px;
           margin-right: 10px;
           max-width: 230px;
           padding: 6px 8px;
@@ -147,12 +138,20 @@ const AboutWrapper = styled.section`
           background: #fff;
           border: 1.1px solid #000;
           color: #000;
+          cursor: pointer;
           font-family: 'Roboto', sans-serif;
           font-weight: 500;
           padding: 7px 18px;
   
           @media ( max-width: 520px ) {
             margin-left: 0;
+          }
+
+          &:hover {
+            border: none;
+            background: #4547ee;
+            color: #fff;
+            padding: 8px 19px;
           }
         }
       }
@@ -188,7 +187,7 @@ const About = props => {
           Galeria Palácio
         </p>
         <p className="address">
-          Rua Duque de Caxias, 1554 - Centro Histórico - Porto Alegre, Brasil
+          {translate('address')}
         </p>
         <a className="address map" href="https://www.google.com/maps/@-30.0330618,-51.2257867,21z" target="_blank">
           Ver mapa
@@ -204,17 +203,11 @@ const About = props => {
       </section>
       <section className="thirdSection">
         <p>
-          {translate('businessHours')}
-        </p>
-        <p>
           {translate('hours')}
         </p>
         <p>
           {translate('parking')}
         </p>
-      </section>
-      <section className="fourthSection">
-        {translate('artistRequests')}
       </section>
           {
             !sucesso ? (

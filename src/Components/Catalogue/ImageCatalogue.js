@@ -27,20 +27,32 @@ padding-bottom: 120px;
   img {
     max-width: 350px;
     margin-bottom: 20px;
+    transition: all .3s ease;
     width: 100%;
+
+    &:hover {
+      opacity: .7;
+    }
   }
 
   .workTitle,
   .artistName {
     color: #000;
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 500;
     text-decoration: none;
+
+    &:hover {
+      color: #4547ee;
+    }
+  }
+
+  .artistName {
+    font-weight: 500;
   }
 
   .workTitle {
-    font-style: italic;
     padding-top: 2px;
   }
 `
@@ -55,14 +67,16 @@ function ImageCatalogue (props) {
       <ImageCatalogueWrapper>
         {
           collection.map( item => (
-            <Link to={`/viewing-room/catalogue/${item.route}`} className="item">
+            <Link to={`/viewing-room/main/${item.route}`} className="item">
               <img src={ require( `../../assets/catalogue/${item.coverImage}` ) } />
               <span className="artistName">
                 {item.artist}
               </span>    
-              <span className="workTitle">
-                {item.name}
-              </span>    
+              <p className="workTitle">
+                <i>
+                  {item.name}
+                </i>, <span> {item.period} </span>
+              </p>    
             </Link>
           ))
         }

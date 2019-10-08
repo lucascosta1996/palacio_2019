@@ -10,11 +10,11 @@ class Routes extends Component {
     
     return (
       <Switch>
-        <Route exact path="/viewing-room/catalogue" component={ ImageCatalogue }  />}
+        <Route exact path="/viewing-room/main" component={ ImageCatalogue }  />}
         {
           collection.map( item => (
             <Route
-              exact path={`/viewing-room/catalogue/${item.route}`}
+              exact path={`/viewing-room/main/${item.route}`}
               render={ props => <Item {...this.props} item={item} /> } 
             /> 
           ) )

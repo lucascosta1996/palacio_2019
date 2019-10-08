@@ -26,7 +26,7 @@ function App( props ) {
       <Route path="/artists" component={ Artists } />
       <Route path="/about" component={ About } />
       <Route exact path="/viewing-room/login" component={ Login } />
-      <Route path="/viewing-room/catalogue" component={ Catalogue } />
+      <Route path="/viewing-room/main" component={ Catalogue } />
       <Route path="/exhibitions" component={ Exhibitions } />
     </Router>
   );

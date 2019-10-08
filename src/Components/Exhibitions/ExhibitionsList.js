@@ -26,11 +26,14 @@ const ExhibitionsListWrapper = styled.div`
     margin-bottom: 40px;
     text-decoration: none;
 
+    @media (min-width: 1024px) {
+      padding-left: 100px;
+    }
+
     span {
       color: #000;
       display: block;
-      font-size: 14px;
-      font-weight: 500;
+      font-size: 13px;
       text-align: left;
     }
 

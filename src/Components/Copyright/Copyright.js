@@ -15,7 +15,7 @@ const CopyrightWrapper = styled.section`
   position: ${props => props.position};
   right: 0;
   text-align: center;
-  width: 482px;
+  width: 588px;
   z-index: 2;
 
   @media ( max-width: 520px ) {
@@ -25,7 +25,7 @@ const CopyrightWrapper = styled.section`
 
   .rights,
   .terms {
-    color: #000;
+    color: #c3c3c3;
     font-family: 'Roboto', sans-serif;
     font-size: 12px!important;
     font-weight: 500!important;
@@ -33,6 +33,12 @@ const CopyrightWrapper = styled.section`
     margin-bottom: 0;
     padding: 0 5px;
     text-decoration: none;
+  }
+
+  .terms {
+    &:hover {
+      color: #000;
+    }
   }
 
   .rights {

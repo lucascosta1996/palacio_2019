@@ -10,7 +10,7 @@ const LoginWrapper = styled.section`
   display: flex;
   flex-direction: column;
   font-family: 'Roboto', sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   justify-content: center;
   left: 0;
   margin: auto;
@@ -24,6 +24,7 @@ const LoginWrapper = styled.section`
     align-items: flex-start;
     display: flex;
     flex-direction: column;
+    padding-left: 100px;
 
     @media (max-width: 520px) {
       padding-left: 20px;
@@ -41,7 +42,7 @@ const LoginWrapper = styled.section`
     input {
       border: 1.1px solid #000;
       color: #000;
-      font-size: 14px;
+      font-size: 13px;
       margin: 5px 0;
       max-width: 230px;
       padding: 6px 8px;
@@ -60,12 +61,15 @@ const LoginWrapper = styled.section`
       cursor: pointer;
       font-family: 'Roboto', sans-serif;
       font-weight: 500;
-      padding: 7px 18px;
+      padding: 6px 18px;
       margin: 7px 0 0 0;
       margin-left: 15px;
       
       &:hover {
-        font-weight: bold;
+        border: none;
+        background: #4547ee;
+        color: #fff;
+        padding: 7px 19px;
       }
 
       @media (max-width: 520px) {
@@ -78,7 +82,7 @@ const LoginWrapper = styled.section`
       cursor: pointer;
 
       &:hover {
-        font-weight: bold;
+        color: #4547ee;
       }
     }
 
@@ -94,12 +98,16 @@ const LoginWrapper = styled.section`
 
     .becomeMember {
       color: #000;
-      font-size: 14px;
+      font-size: 13px;
       font-size: 500;
 
       a {
         color: #000;
         text-decoration: underline;
+
+        &:hover {    
+          color: #c3c3c3;
+        }
       }
     }
   }
@@ -114,13 +122,13 @@ const Login = (props) => {
   const [ password, setPassword ] = useState('')
 
   if ( firebase.isLoggedIn() ) {
-    props.history.replace('/viewing-room/catalogue')
+    props.history.replace('/viewing-room/main')
   }
   
   async function login() {
 		try {
       await firebase.login(email, password)
-      props.history.replace('/viewing-room/catalogue')
+      props.history.replace('/viewing-room/main')
 		} catch(error) {
 			alert(error.message)
 		}
@@ -152,7 +160,11 @@ const Login = (props) => {
               <input id="password" name="password" type="password" value={ password } placeholder={translate('password')} onChange={e => setPassword(e.target.value)} />
               <button type="submit" onClick={login}>Login</button>
             </div>
-            <span className="becomeMember alreadyMember padding-top" href="#" onClick={ () => setSubscribe(true) }>{translate('becomeMember')}</span>
+            <span className="becomeMember alreadyMember padding-top" href="#" onClick={ () => setSubscribe(true) }>
+              <a href="#">
+                {translate('becomeMember')}
+              </a>
+            </span>
           </form>
         ) : (
           <form className="formWrapper" onSubmit={e => e.preventDefault() && false }>
@@ -170,7 +182,7 @@ const Login = (props) => {
                 {"Login."}
               </a>
             </span>
-            {/*<span className="becomeMember align-left">
+            <span className="becomeMember align-left">
               {translate('sharing')}
               <a href="#">
                 {translate('termsConditions')}
@@ -180,7 +192,7 @@ const Login = (props) => {
                 {translate('privacypolicy')}
               </a>
               .
-            </span>*/}
+            </span>
           </form>
         )
       }

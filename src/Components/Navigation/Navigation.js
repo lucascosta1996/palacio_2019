@@ -16,7 +16,7 @@ const NavigationWrapper = styled.section`
   position: fixed;
   overflow: hidden;
   text-align: left;
-  top: 40px;
+  top: 25px;
   z-index: 2;
 
   @media ( max-width: 520px ) {
@@ -26,7 +26,7 @@ const NavigationWrapper = styled.section`
   h1,
   a {
     color: #000;
-    font-size: 14px;
+    font-size: 13px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     margin: 0;
@@ -34,7 +34,7 @@ const NavigationWrapper = styled.section`
     transition: .3s all ease;
 
     &:hover {
-      color: #81828F;
+      color: #4547ee;
     }
 
     @media ( max-width: 520px ) {
@@ -46,8 +46,8 @@ const NavigationWrapper = styled.section`
     line-height: 1;
 
     a {
-      font-family: 'Jaldi', sans-serif;
-      font-size: 23px;
+      font-family: 'Roboto Condensed', sans-serif;
+      font-size: 20px;
     }
   }
 
@@ -56,7 +56,11 @@ const NavigationWrapper = styled.section`
   }
 
   .active {
-    color: #81828F;
+    color: #4547ee;
+  }
+
+  .activeViewingRoom { 
+    color: #6bf93c;
   }
 
   .navigation {
@@ -64,7 +68,7 @@ const NavigationWrapper = styled.section`
     display: flex;
     position: fixed;
     right: 25px;
-    top: 44px;
+    top: 25px;
 
     a {
       margin: 0 8px;
@@ -117,8 +121,14 @@ const NavigationWrapper = styled.section`
     }
   }
 
+  .divider {
+    color: #c3c3c3!important;
+    padding-right: 10px;
+  }
+
   .logout {
     cursor: pointer;
+    margin: 0 0!important;
 
     @media ( min-width: 520px ) {
       padding-right: 10px;
@@ -182,19 +192,28 @@ const Navigation = props => {
         </Link>
         <Link
           to="/viewing-room/login"
-          className={ `link ${ isActive( 'viewing-room' ) ? 'active' : '' }` }
+          className={ `link ${ isActive( 'viewing-room' ) ? 'activeViewingRoom' : '' }` }
           onClick={ () => { setActive( 'viewing-room' ); setOpen( false ); } }
         >
           { translate('collection') }
         </Link>
         <span className="logoutLang">
           {
-            ( isActive( 'viewing-room' ) && firebase.getCurrentUsername() ) && (
+            ( isActive( 'viewing-room' ) && firebase.getCurrentUsername() ) ? (
               <a className="logout" onClick={ logout }>
                 Log out
               </a>
+            ) : (
+              <Link
+                className="logout"
+                onClick={ () => { setActive( 'viewing-room' ); setOpen( false ); } }
+                to="/viewing-room/login"
+              >
+                Log in
+              </Link>
             )
           }
+          <span className="divider"> | </span>
           <LanguageOptions />
         </span>
       </div>

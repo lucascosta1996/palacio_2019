@@ -11,7 +11,7 @@ const ItemWrapper = styled.div`
   bottom: 0;
   display: flex;
   font-family: 'Roboto', sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
   line-height: 16px;
   justify-content: center;
@@ -33,7 +33,7 @@ const ItemWrapper = styled.div`
   }
 
   .artist {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 500px!important;
   }
 
@@ -95,7 +95,6 @@ function Item (props) {
               props.item.info2 && <span>{translate(props.item.info2)}</span>
             }
           </section>
-          <span>{ props.item.price }</span>
           <section className="gallery">
             <button>{translate('galleryContact')}</button>
           </section>

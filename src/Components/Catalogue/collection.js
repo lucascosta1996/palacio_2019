@@ -1,7 +1,9 @@
 export const collection = [
   {
-    name: "Um lugar para estar (2018–2019)",
+    name: "Um lugar para estar",
+    period: '(2018–2019)',
     artist: "Lucas Alves Costa",
+    route: 'um-lugar-para-estar',
     coverImage: '1-Um-lugar-para-estar-2018-2019-Lucas-Alves-Costa-Screenshot-(1)-All-Rights-Reserved.png',
     info1: "lugarparaestar1",
     info2: "lugarparaestar2",
@@ -21,7 +23,8 @@ export const collection = [
     ]
   },
   {
-    name: 'Terrestre (2017)',
+    name: 'Terrestre',
+    period: '(2017)',
     artist: 'Emerson da Silva',
     route: 'luzaguaterrapreta',
     coverImage: '2-Terrestre-2017-Emerson-da-Silva-Screenshot-(3)-All-Rights-Reserved.jpg',
@@ -44,7 +47,8 @@ export const collection = [
     ]
   },
   {
-    name: 'Partículas de luz 1 (2017-2018)',
+    name: 'Partículas de luz 1',
+    period: '(2017-2018)',
     artist: 'Andrés Stephanou',
     route: 'particulas-de-luz-1',
     coverImage: '3-Partículas-de-Luz-1-2017-2018-Andrés-Stephanou-Screenshot-(4)-All-Rights-Reserved.png',
@@ -66,7 +70,8 @@ export const collection = [
     ]
   },
   {
-    name: 'Autorretrato (2) (2018)',
+    name: 'Autorretrato (2)',
+    period: '(2018)',
     artist: 'Chiaki Mihara',
     route: 'autoretrato',
     coverImage: '4-Autorretrato-(2)-2018-Chiaki-Mihara-Installation-View-Photo-Galeria-Palácio-(4).jpg',
@@ -80,7 +85,8 @@ export const collection = [
     ]
   },
   {
-    name: 'Organismo Digital (2018–2019)',
+    name: 'Organismo Digita',
+    period: '(2018–2019)',
     artist: 'Andrés Stephanou',
     route: 'organismo-digital',
     coverImage: '5-Organismo-Digital-2018-2019-Andrés-Stephanou-Screenshot-(3)-All-Rights-Reserved.png',
@@ -102,7 +108,8 @@ export const collection = [
     ]
   },
   {
-    name: 'Entre o Céu e o Oceano (2019)',
+    name: 'Entre o Céu e o Oceano',
+    period: '(2019)',
     artist: 'Emerson da Silva',
     route: 'entre-o-ceu-e-a-terra',
     coverImage: '6-Entre-o-Céu-e-o-Oceano-2019-Emerson-da-Silva-Screenshot-(4)-All-Rights-Reserved.jpg',
@@ -124,7 +131,8 @@ export const collection = [
     ]
   },
   {
-    name: 'Mundo Aberto (2017–2018)',
+    name: 'Mundo Aberto',
+    period: '(2017–2018)',
     artist: 'Lucas Alves Costa',
     route: 'mundo-aberto',
     coverImage: '7- Mundo-Aberto-2017-2018-Lucas-Alves-Costa-Screenshot-(1)-All-Rights-Reserved.png',
@@ -146,7 +154,8 @@ export const collection = [
     ]
   },
   {
-    name: 'O Regime dos Ventos (2018)',
+    name: 'O Regime dos Ventos',
+    period: '(2018)',
     artist: 'Emerson da Silva',
     route: 'o-regime-dos-ventos',
     coverImage: '8-O-Regime-dos-Ventos-2018-Emerson-da-Silva-Screenshot-(3)-All-Rights-Reserved.jpg',
@@ -168,7 +177,8 @@ export const collection = [
     ]
   },
   {
-    name: 'Terreno (2019)',
+    name: 'Terreno',
+    period: '(2019)',
     artist: 'Lucas Alves Costa',
     route: 'terreno',
     coverImage: '9-Terreno-2019-Lucas-Alves-Costa-All-Rights-Reserved-Galeria-Palácio-(1).jpg',
@@ -191,7 +201,8 @@ export const collection = [
     ]
   },
   {
-    name: 'Micropartículas (2016–2017)',
+    name: 'Micropartículas',
+    period: '(2016–2017)',
     artist: 'Andrés Stephanou',
     route: 'organismo-digital',
     coverImage: '11-Micropartículas-2016-2017-Andrés-Stephanou-Screenshot-(6)-All-Rights-Reserved.png',
@@ -213,7 +224,8 @@ export const collection = [
     ]
   },
   {
-    name: 'Contato Visual (1) (2018–2019)',
+    name: 'Contato Visual (1)',
+    period: '(2018–2019)',
     artist: 'Chiaki Mihara',
     route: 'contato-visual',
     coverImage: '12-Contato-Visual-(1)-2018-2019-Chiaki-Mihara-Screenshot-(1)-All-Rights-Reserved.png',

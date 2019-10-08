@@ -22,7 +22,7 @@ const ArtistsList = styled.section`
   a {
     color: #000;
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 500;
     margin: 0;
     padding: 2px 0;

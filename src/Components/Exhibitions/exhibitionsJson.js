@@ -1,6 +1,6 @@
 export const exhibitions = [
   {
-    artist: 'Chiaki Matsuda',
+    artist: 'Chiaki Mihara',
     showName: 'Contato Visual',
     showDate: 'contatoDate',
     showRoute: 'contato-visual',
@@ -193,13 +193,20 @@ export const exhibitions = [
     paragraph2: 'atividadep2',
     paragraph3: 'atividadep3',
     paragraph4: 'atividadep4',
-    paragraph5: 'atividadep5'
+    paragraph5: 'atividadep5',
+    slide: [
+      {
+        alt: 'A pesca enquanto atividade humana, 2019. Emerson da Silva - Galeria Palácio',
+        img: 'exhibitions/humana/Organismo-Digital-2018-2019-Andrés-Stephanou-Installation-View-Galeria-Palácio-(1).jpg',
+        index: 0
+      },
+    ]
   },
   {
-    artist: 'Chiaki Matsuda',
-    showName: 'Autoretratos',
+    artist: 'Chiaki Mihara',
+    showName: 'Autorretratos',
     showDate: 'autoretratosDate',
-    showRoute: 'autoretratos',
+    showRoute: 'autorretratos',
     paragraph1: 'autoretratosp1',
     paragraph2: 'autoretratosp2',
     paragraph3: 'autoretratosp3',
