@@ -12,7 +12,6 @@ const ItemWrapper = styled.div`
   display: flex;
   font-family: 'Roboto', sans-serif;
   font-size: 13px;
-  font-weight: 500;
   line-height: 16px;
   justify-content: center;
   position: absolute;
@@ -34,7 +33,7 @@ const ItemWrapper = styled.div`
 
   .artist {
     font-size: 13px;
-    font-weight: 500px!important;
+    font-weight: 500!important;
   }
 
   .infos {
@@ -54,6 +53,11 @@ const ItemWrapper = styled.div`
     display: flex;
     flex-direction: column;
     padding-top: 40px;
+
+    span {
+      font-size: 11px;
+      font-weight: 300;
+    }
   }
 
   .gallery {
@@ -65,13 +69,22 @@ const ItemWrapper = styled.div`
       color: #1d6cdb;
       cursor: pointer;
       font-family: 'Roboto', sans-serif;
-      font-weight: 500;
+      font-weight: 300;
       padding: 10px 5px;
       width: auto;
 
       &:hover {
-        color: #1d6cd1;
-        border: 1px solid #1d6cd1;
+        background: #4547ee;
+        border: none;
+        padding: 11px 6px;
+
+        a {
+          color: #fff;
+        }
+      }
+
+      a {
+        text-decoration: none;
       }
     }
   }
@@ -96,12 +109,15 @@ function Item (props) {
             }
           </section>
           <section className="gallery">
-            <button>{translate('galleryContact')}</button>
+            <button>
+              <a className="email" href="mailto:info@palacio.xyz" target="_top">
+                {translate('galleryContact')}
+              </a>
+            </button>
           </section>
         </div>
       </div>
-      <Copyright position="absolute" />
-      <Back position="fixed" bottom route="/viewing-room" />
+      <Back position="fixed" bottom route="/viewing-room/main" />
     </ItemWrapper>
   )
 }

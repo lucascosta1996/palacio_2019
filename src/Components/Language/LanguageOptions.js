@@ -16,13 +16,13 @@ const OptionsWrapper = styled.section`
     color: #000;
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 13px;
+    font-weight: 300;
     text-transform: uppercase;
     transition: all ease .3s;
 
     &:hover {
-      font-style: italic;
+      font-weight: bold;
     }
   }
 

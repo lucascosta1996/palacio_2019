@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import { collection } from './collection'
 import Copyright from '../Copyright/Copyright'
+import Image from './Image'
 
 const ImageCatalogueWrapper = styled.div`
 display: flex;
@@ -16,6 +17,10 @@ padding-bottom: 120px;
   padding-bottom: 60px;
 }
 
+.hidden {
+  display: none;
+}
+
 .item {
   align-items: center;
   display: flex;
@@ -23,6 +28,17 @@ padding-bottom: 120px;
   margin-top: 120px;
   max-width: 350px;
   text-decoration: none;
+
+  &:hover {
+    .workTitle,
+    .artistName {
+      color: #c3c3c3;
+    }
+
+    img {
+      opacity: .7;
+    }
+  }
   
   img {
     max-width: 350px;
@@ -40,12 +56,20 @@ padding-bottom: 120px;
     color: #000;
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
-    font-weight: 500;
     text-decoration: none;
 
     &:hover {
-      color: #4547ee;
+      color: #c3c3c3;
     }
+  }
+
+  .loading {
+    background: #d1d1d1;
+    height: 196px;
+    margin-bottom: 20px;
+    opacity: 0.4;
+    position: relative;
+    width: 350px;
   }
 
   .artistName {
@@ -53,6 +77,7 @@ padding-bottom: 120px;
   }
 
   .workTitle {
+    font-weight: 300;
     padding-top: 2px;
   }
 `
@@ -68,20 +93,19 @@ function ImageCatalogue (props) {
         {
           collection.map( item => (
             <Link to={`/viewing-room/main/${item.route}`} className="item">
-              <img src={ require( `../../assets/catalogue/${item.coverImage}` ) } />
+              <Image coverImage={ require( `../../assets/catalogue/${item.coverImage}`) } />
               <span className="artistName">
                 {item.artist}
               </span>    
               <p className="workTitle">
                 <i>
                   {item.name}
-                </i>, <span> {item.period} </span>
+                </i> <span> {item.period} </span>
               </p>    
             </Link>
           ))
         }
       </ImageCatalogueWrapper>
-      <Copyright />
     </CopyRightPadding>
   )
 }

@@ -85,7 +85,7 @@ export const collection = [
     ]
   },
   {
-    name: 'Organismo Digita',
+    name: 'Organismo Digital',
     period: '(2018–2019)',
     artist: 'Andrés Stephanou',
     route: 'organismo-digital',
@@ -140,15 +140,15 @@ export const collection = [
     info2: 'ceuterra2',
     slides: [
       {
-        img: 'catalogue/mundo/alface.jpg',
+        img: 'catalogue/mundo/Mundo-Aberto-2017-2018-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(1).jpg',
         index: 0
       },
       {
-        img: 'catalogue/mundo/detritos.png',
+        img: 'catalogue/mundo/Mundo-Aberto-2017-2018-Lucas-Alves-Costa-Screenshot-(1)-All-Rights-Reserved.png',
         index: 1
       },
       {
-        img: 'catalogue/mundo/luz_viva.png',
+        img: 'catalogue/mundo/Mundo-Aberto-2017-2018-Lucas-Alves-Costa-Screenshot-(2)-All-Rights-Reserved.png',
         index: 2
       }
     ]
@@ -163,15 +163,15 @@ export const collection = [
     info2: 'regimeVentos2',
     slides: [
       {
-        img: 'catalogue/regime/alface.jpg',
+        img: 'catalogue/ventos/O-Regime-dos-Ventos-2018-Emerson-da-Silva-Installation-View-Galeria-Palácio-(2).jpg',
         index: 0
       },
       {
-        img: 'catalogue/regime/detritos.png',
+        img: 'catalogue/ventos/O-Regime-dos-Ventos-2018-Emerson-da-Silva-Screenshot-(5)-All-Rights-Reserved.jpg',
         index: 1
       },
       {
-        img: 'catalogue/regime/luz_viva.png',
+        img: 'catalogue/ventos/O-Regime-dos-Ventos-2018-Emerson-da-Silva-Screenshot-(6)-All-Rights-Reserved.jpg',
         index: 2
       }
     ]
@@ -187,16 +187,12 @@ export const collection = [
     info3: 'terreno3',
     slides: [
       {
-        img: 'catalogue/terreno/alface.jpg',
+        img: 'catalogue/terreno/Terreno-2019-Lucas-Alves-Costa-All-rights-reserved-Galeria-Palácio-(1).jpg',
         index: 0
       },
       {
-        img: 'catalogue/terreno/detritos.png',
+        img: 'catalogue/terreno/Terreno-2019-Lucas-Alves-Costa-All-rights-reserved-Galeria-Palácio-(2).jpg',
         index: 1
-      },
-      {
-        img: 'catalogue/terreno/luz_viva.png',
-        index: 2
       }
     ]
   },
@@ -204,21 +200,21 @@ export const collection = [
     name: 'Micropartículas',
     period: '(2016–2017)',
     artist: 'Andrés Stephanou',
-    route: 'organismo-digital',
+    route: 'microparticulas',
     coverImage: '11-Micropartículas-2016-2017-Andrés-Stephanou-Screenshot-(6)-All-Rights-Reserved.png',
     info1: 'microparticulas1',
     info2: 'microparticulas2',
     slides: [
       {
-        img: 'catalogue/micro/alface.jpg',
+        img: 'catalogue/micro/Micropartículas-2016-2017-Andrés-Stephanou-Installation-View-Galeria-Palácio-(1).jpg',
         index: 0
       },
       {
-        img: 'catalogue/micro/detritos.png',
+        img: 'catalogue/micro/Micropartículas-2016-2017-Andrés-Stephanou-Screenshot-(1)-All-rights-reserved.png',
         index: 1
       },
       {
-        img: 'catalogue/micro/luz_viva.png',
+        img: 'catalogue/micro/Micropartículas-2016-2017-Andrés-Stephanou-Screenshot-(3)-All-rights-reserved.png',
         index: 2
       }
     ]
@@ -233,16 +229,12 @@ export const collection = [
     info2: 'contatoVisual2',
     slides: [
       {
-        img: 'catalogue/contato/alface.jpg',
+        img: 'catalogue/contato/Contato-Visual-2018-2019-Chiaki-Mihara-Installation-View-Galeria-Palácio-(1).jpg',
         index: 0
       },
       {
-        img: 'catalogue/contato/detritos.png',
+        img: 'catalogue/contato/Contato-Visual-2019-Chiaki-Mihara-Screenshot-(1)-All-Rights-Reserved.png',
         index: 1
-      },
-      {
-        img: 'catalogue/contato/luz_viva.png',
-        index: 2
       }
     ]
   },

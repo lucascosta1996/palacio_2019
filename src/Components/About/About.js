@@ -30,6 +30,10 @@ const AboutWrapper = styled.section`
   .infosWrapper {
     padding-right: 80px;
 
+    @media (min-width: 520px) {
+      min-width: 437px;
+    }
+
     .galeria {
       padding-top: 0;
     }
@@ -62,8 +66,8 @@ const AboutWrapper = styled.section`
     .address,
     .email {
       color: #000;
-      font-weight: 500;
       font-size: 13px;
+      font-weight: 300;
       line-height: 20px;
 
       @media ( max-width: 520px ) {
@@ -86,7 +90,7 @@ const AboutWrapper = styled.section`
       text-decoration: none;
 
       &:hover {
-        color:  #4547ee;
+        color: #4547ee;
       }
     }
 
@@ -126,7 +130,7 @@ const AboutWrapper = styled.section`
           ::placeholder {
             color: #b3b4b5;
             font-family: 'Roboto', sans-serif;
-            font-weight: 500;
+            font-weight: 300;
           }
   
           @media ( max-width: 520px ) {
@@ -140,7 +144,7 @@ const AboutWrapper = styled.section`
           color: #000;
           cursor: pointer;
           font-family: 'Roboto', sans-serif;
-          font-weight: 500;
+          font-weight: 300;
           padding: 7px 18px;
   
           @media ( max-width: 520px ) {
@@ -182,26 +186,29 @@ const About = props => {
   return (
     <AboutWrapper>
       <div className="infosWrapper">
-       <section className="firstSection">
+        <section className="firstSection">
         <p className="galeria">
           Galeria Palácio
         </p>
         <p className="address">
           {translate('address')}
         </p>
+        <p className="address">
+          {translate('country')}
+        </p>
         <a className="address map" href="https://www.google.com/maps/@-30.0330618,-51.2257867,21z" target="_blank">
-          Ver mapa
+          {translate('seeMap')}
         </a>
        </section>
-      <section className="secondSection">
-        <p className="phone">
-          {translate('phone')}
-        </p>
-        <a className="email" href="mailto:someone@example.com?Subject=Hello%20again" target="_top">
-          e. info@palacio.xyz
-        </a>
-      </section>
-      <section className="thirdSection">
+        <section className="secondSection">
+          <p className="phone">
+            {translate('phone')}
+          </p>
+          <a className="email" href="mailto:info@palacio.xyz" target="_top">
+            info@palacio.xyz
+          </a>
+        </section>
+        <section className="thirdSection">
         <p>
           {translate('hours')}
         </p>
@@ -220,7 +227,9 @@ const About = props => {
                 </div>
               </form>
             ) : (
-              <span> {translate('thanksSubscriber')} </span>
+              <div className="newsletter">
+                <span className="newsletter"> {translate('thanksSubscriber')} </span>
+              </div>
             )
           }
       </div>

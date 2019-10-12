@@ -9,8 +9,9 @@ import Back from '../Back/Back';
 
 const ExhibitionWrapper = styled.div`
   display: flex;
+  font-family: 'Roboto', sans-serif;
   flex-direction: column;
-  font-size: 14px;
+  font-weight: 300;
   justify-content: center;
   line-height: 16px;
   margin: auto;
@@ -23,10 +24,12 @@ const ExhibitionWrapper = styled.div`
   }
 
   .text {
+    font-size: 13px;
     padding-bottom: 60px;
   }
 
   .pdf {
+    font-size: 13px;
     padding-top: 20px;
     
     a {
@@ -50,7 +53,6 @@ const BackWrapper = styled.div`
 `
 
 function Exhibition (props) {
-  
   const { translate } = useContext(I18nContext)
   const firstParagraph = useRef()
   const secondParagraph = useRef()

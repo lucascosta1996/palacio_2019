@@ -1,5 +1,6 @@
 import React from "react"
 import styled from 'styled-components'
+import Back from "../Back/Back"
 
 
 const ArtistWrapper = styled.section`
@@ -8,7 +9,7 @@ const ArtistWrapper = styled.section`
   h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
-    font-weight: 500;
+    font-weight: 300;
   }
 
   img {
@@ -25,6 +26,7 @@ const Artist = props => {
     <ArtistWrapper>
       <h2>{ props.artist.name } ({ props.artist.birthDate }, Porto Alegre)</h2>
       <img src={ props.artist.artistWork } />
+      <Back position="absolute" route="/artists" bottom />
     </ArtistWrapper>
   )
 }

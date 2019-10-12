@@ -31,12 +31,12 @@ const LoginWrapper = styled.section`
     }
 
     .fullCollection {
-      font-size: 14px;
+      font-size: 13px;
       padding-bottom: 3px;
     }
 
     .marginBottom {
-      padding-bottom: 20px;
+      padding-bottom: 16px;
     }
 
     input {
@@ -50,7 +50,7 @@ const LoginWrapper = styled.section`
       ::placeholder {
         color: #b3b4b5;
         font-family: 'Roboto', sans-serif;
-        font-weight: 500;
+        font-weight: 300;
       }
     }
 
@@ -60,7 +60,7 @@ const LoginWrapper = styled.section`
       color: #000;
       cursor: pointer;
       font-family: 'Roboto', sans-serif;
-      font-weight: 500;
+      font-weight: 300;
       padding: 6px 18px;
       margin: 7px 0 0 0;
       margin-left: 15px;
@@ -99,7 +99,7 @@ const LoginWrapper = styled.section`
     .becomeMember {
       color: #000;
       font-size: 13px;
-      font-size: 500;
+      font-weight: 300;
 
       a {
         color: #000;
@@ -196,9 +196,6 @@ const Login = (props) => {
           </form>
         )
       }
-      <Copyright
-        position="absolute"
-      />
     </LoginWrapper>
   )
 }

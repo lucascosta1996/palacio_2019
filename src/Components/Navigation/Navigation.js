@@ -1,4 +1,4 @@
-import React, { Fragment, useContext, useState } from 'react'
+import React, { Fragment, useContext, useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import { I18nContext } from '../../i18n'
@@ -6,6 +6,9 @@ import LanguageOptions from '../Language/LanguageOptions'
 import close from '../../assets/icons/close.png'
 import { isMobile } from '../../helpers/helpers'
 import firebase from '../../firebase'
+import app from 'firebase/app'
+import 'firebase/auth'
+import { async } from 'q'
 
 const NavigationWrapper = styled.section`
   ${props => props.isOpened && `background-color: #fff;`}
@@ -34,11 +37,7 @@ const NavigationWrapper = styled.section`
     transition: .3s all ease;
 
     &:hover {
-      color: #4547ee;
-    }
-
-    @media ( max-width: 520px ) {
-      font-size: 18px!important;
+      color: #c3c3c3;
     }
   }
 
@@ -56,11 +55,11 @@ const NavigationWrapper = styled.section`
   }
 
   .active {
-    color: #4547ee;
+    color: #c3c3c3;
   }
 
   .activeViewingRoom { 
-    color: #6bf93c;
+    color: #6bf93c!important;
   }
 
   .navigation {
@@ -152,12 +151,17 @@ const Navigation = props => {
   const { translate } = useContext(I18nContext)
   const [ active, setActive ] = useState( '' )
   const [ open, setOpen ] = useState( false )
+  const [ isLogged, setIsLogged ] = useState( false )
   const isActive = ( path ) => window.location.href.indexOf( path ) > 1
 
   async function logout() {
 		await firebase.logout()
-		window.location.replace("/");
+		window.location.replace("/viewing-room/login");
   }
+
+  useEffect( () => {
+    setInterval( () => firebase.isLoggedIn() && setIsLogged( true ), 1000 )
+  } )
 
   return (
     <NavigationWrapper
@@ -192,14 +196,14 @@ const Navigation = props => {
         </Link>
         <Link
           to="/viewing-room/login"
-          className={ `link ${ isActive( 'viewing-room' ) ? 'activeViewingRoom' : '' }` }
+          className={ `link ${( isActive( 'viewing-room' ) && isLogged ) && 'activeViewingRoom'} ${ (isActive( 'viewing-room' ) && !firebase.isLoggedIn() ) ? 'active' : '' }` }
           onClick={ () => { setActive( 'viewing-room' ); setOpen( false ); } }
         >
           { translate('collection') }
         </Link>
         <span className="logoutLang">
           {
-            ( isActive( 'viewing-room' ) && firebase.getCurrentUsername() ) ? (
+            ( firebase.isLoggedIn() ) ? (
               <a className="logout" onClick={ logout }>
                 Log out
               </a>

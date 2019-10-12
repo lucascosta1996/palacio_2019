@@ -23,7 +23,7 @@ const ArtistsList = styled.section`
     color: #000;
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
-    font-weight: 500;
+    font-weight: 300;
     margin: 0;
     padding: 2px 0;
     text-decoration: none;
@@ -56,10 +56,10 @@ const Artists = props => {
       route: 'andresstephanou'
     },
     {
-      name: 'Chiaki Matsuda',
+      name: 'Chiaki Mihara',
       birthDate: '1997',
       artistWork: olhos,
-      route: 'chiakimatsuda'
+      route: 'chiakimihara'
     },
     {
       name: 'Emerson da Silva',
@@ -97,7 +97,7 @@ const Artists = props => {
           render={ props => <Artist {...props} artist={ artists[0] } /> }
         />
         <Route 
-          exact path={ `/artists/chiakimatsuda` }
+          exact path={ `/artists/chiakimihara` }
           render={ props => <Artist {...props} artist={ artists[1] } /> }
         />
         <Route 
@@ -109,7 +109,6 @@ const Artists = props => {
           render={ props => <Artist {...props} artist={ artists[3] } /> }
         />
       </div>
-      <Copyright position="absolute" />
     </ArtistsList>
   )
 }

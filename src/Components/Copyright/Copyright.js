@@ -28,7 +28,7 @@ const CopyrightWrapper = styled.section`
     color: #c3c3c3;
     font-family: 'Roboto', sans-serif;
     font-size: 12px!important;
-    font-weight: 500!important;
+    font-weight: 300!important;
     line-height: 12px!important;
     margin-bottom: 0;
     padding: 0 5px;

@@ -23,6 +23,7 @@ const ExhibitionsListWrapper = styled.div`
   }
 
   a {
+    font-family: 'Roboto', sans-serif;
     margin-bottom: 40px;
     text-decoration: none;
 
@@ -57,7 +58,6 @@ function ExhibitionsList (props) {
           </Link>
         ))
       }
-      <Copyright />
     </ExhibitionsListWrapper>
   )
 }

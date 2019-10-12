@@ -17,33 +17,28 @@ export const exhibitions = [
       },
       {
         alt: 'Contato Visual, 2019. Chiaki Mihara - Galeria Palácio',
-        img: 'exhibitions/contatoVisual/Contato-Visual-2018-2019-Chiaki-Mihara-Installation-View-Galeria-Palácio-(2).jpg',
+        img: 'exhibitions/contatoVisual/Contato-Visual-(1)-2018-2019-Chiaki-Mihara-Screenshot-(1)-All-Rights-Reserved.png',
         index: 1
       },
       {
         alt: 'Contato Visual, 2019. Chiaki Mihara - Galeria Palácio',
-        img: 'exhibitions/contatoVisual/Contato-Visual-(1)-2018-2019-Chiaki-Mihara-Screenshot-(1)-All-Rights-Reserved.png',
+        img: 'exhibitions/contatoVisual/Estudo-para-Contato-Visual-2019-Chiaki-Mihara-Installation-View-Galeria-Palácio-(1).jpg',
         index: 2
       },
       {
         alt: 'Contato Visual, 2019. Chiaki Mihara - Galeria Palácio',
-        img: 'exhibitions/contatoVisual/Estudo-para-Contato-Visual-2019-Chiaki-Mihara-Installation-View-Galeria-Palácio-(1).jpg',
+        img: 'exhibitions/contatoVisual/Estudo-para-Contato-Visual-2019-Chiaki-Mihara-Installation-View-Galeria-Palácio-(2).jpg',
         index: 3
       },
       {
         alt: 'Contato Visual, 2019. Chiaki Mihara - Galeria Palácio',
-        img: 'exhibitions/contatoVisual/Estudo-para-Contato-Visual-2019-Chiaki-Mihara-Installation-View-Galeria-Palácio-(2).jpg',
+        img: 'exhibitions/contatoVisual/Contato-Visual-2019-Chiaki-Mihara-Installation-View-Galeria-Palácio-(3).jpg',
         index: 4
       },
       {
         alt: 'Contato Visual, 2019. Chiaki Mihara - Galeria Palácio',
-        img: 'exhibitions/contatoVisual/Contato-Visual-2019-Chiaki-Mihara-Installation-View-Galeria-Palácio-(3).jpg',
-        index: 5
-      },
-      {
-        alt: 'Contato Visual, 2019. Chiaki Mihara - Galeria Palácio',
         img: 'exhibitions/contatoVisual/Contato-Visual-(2)-2018-2019-Chiaki-Mihara-Screenshot-(1)-All-Rights-Reserved.png',
-        index: 6
+        index: 5
       }
     ]
   },
@@ -197,9 +192,39 @@ export const exhibitions = [
     slide: [
       {
         alt: 'A pesca enquanto atividade humana, 2019. Emerson da Silva - Galeria Palácio',
-        img: 'exhibitions/humana/Organismo-Digital-2018-2019-Andrés-Stephanou-Installation-View-Galeria-Palácio-(1).jpg',
+        img: 'exhibitions/humana/Entre-o-Céu-e-o-Oceano-2019-Emerson-da-Silva-Installation-View-Galeria-Palácio-(2).jpg',
         index: 0
       },
+      {
+        alt: 'A pesca enquanto atividade humana, 2019. Emerson da Silva - Galeria Palácio',
+        img: 'exhibitions/humana/Entre-o-Céu-e-o-Oceano-2019-Emerson-da-Silva-Installation-View-Galeria-Palácio-(4).jpg',
+        index: 1
+      },
+      {
+        alt: 'A pesca enquanto atividade humana, 2019. Emerson da Silva - Galeria Palácio',
+        img: 'exhibitions/humana/Entre-o-Céu-e-o-Oceano-2019-Emerson-da-Silva-Screenshot-(3)-All-Rights-Reserved.jpg',
+        index: 2
+      },
+      {
+        alt: 'A pesca enquanto atividade humana, 2019. Emerson da Silva - Galeria Palácio',
+        img: 'exhibitions/humana/Entre-o-Céu-e-o-Oceano-2019-Emerson-da-Silva-Screenshot-(4)-All-Rights-Reserved.jpg',
+        index: 3
+      },
+      {
+        alt: 'A pesca enquanto atividade humana, 2019. Emerson da Silva - Galeria Palácio',
+        img: 'exhibitions/humana/Espécies-do-Litoral-Sul-Brasileiro-2019-Emerson-da-Silva-Installation-View-Galeria-Palácio-(1).jpg',
+        index: 4
+      },
+      {
+        alt: 'A pesca enquanto atividade humana, 2019. Emerson da Silva - Galeria Palácio',
+        img: 'exhibitions/humana/Espécies-do-Litoral-Sul-Brasileiro-2019-Emerson-da-Silva-Installation-View-Galeria-Palácio-(2).jpg',
+        index: 5
+      },
+      {
+        alt: 'A pesca enquanto atividade humana, 2019. Emerson da Silva - Galeria Palácio',
+        img: 'exhibitions/humana/Pré-Consumo-Arraia-2019-Pré-Consumo-Papa-Terra-2019-Emerson-da-Silva-Installation-View-Galeria-Palácio-(1).jpg',
+        index: 6
+      }
     ]
   },
   {
@@ -269,7 +294,64 @@ export const exhibitions = [
     paragraph4: 'mundoAbertop4',
     paragraph5: 'mundoAbertop5',
     paragraph6: 'mundoAbertop6',
-    paragraph7: 'mundoAbertop7'
+    paragraph7: 'mundoAbertop7',
+    slide: [
+      {
+        alt: 'Mundo Aberto, 2018. Lucas Alves Costa - Galeria Palácio',
+        img: 'exhibitions/mundo/Mundo-Aberto-2017-2018-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(1).jpg',
+        index: 0
+      },
+      {
+        alt: 'Mundo Aberto, 2018. Lucas Alves Costa - Galeria Palácio',
+        img: 'exhibitions/mundo/Mundo-Aberto-2017-2018-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(2).jpg',
+        index: 1
+      },
+      {
+        alt: 'Mundo Aberto, 2018. Lucas Alves Costa - Galeria Palácio',
+        img: 'exhibitions/mundo/Mundo-Aberto-2017-2018-Lucas-Alves-Costa-Screenshot-(1)-All-Rights-Reserved.png',
+        index: 2
+      },
+      {
+        alt: 'Mundo Aberto, 2018. Lucas Alves Costa - Galeria Palácio',
+        img: 'exhibitions/mundo/Mundo-Aberto-2017-2018-Lucas-Alves-Costa-Screenshot-(2)-All-Rights-Reserved.png',
+        index: 3
+      },
+      {
+        alt: 'Mundo Aberto, 2018. Lucas Alves Costa - Galeria Palácio',
+        img: 'exhibitions/mundo/Mundo-Aberto-2017-2018-Lucas-Alves-Costa-VR-Experience-(1)-Galeria-Palácio.jpg',
+        index: 4
+      },
+      {
+        alt: 'Mundo Aberto, 2018. Lucas Alves Costa - Galeria Palácio',
+        img: 'exhibitions/mundo/Mundo-Aberto-2017-2018-Lucas-Alves-Costa-VR-Experience-(2)-Galeria-Palácio.jpg',
+        index: 5
+      },
+      {
+        alt: 'Mundo Aberto, 2018. Lucas Alves Costa - Galeria Palácio',
+        img: 'exhibitions/mundo/Mundo-Aberto-2017-2018-Lucas-Alves-Costa-VR-Experience-(3)-Galeria-Palácio.jpg',
+        index: 6
+      },
+      {
+        alt: 'Mundo Aberto, 2018. Lucas Alves Costa - Galeria Palácio',
+        img: 'exhibitions/mundo/Superfície-de-Mundo-Aberto-2018-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(1).jpg',
+        index: 7
+      },
+      {
+        alt: 'Mundo Aberto, 2018. Lucas Alves Costa - Galeria Palácio',
+        img: 'exhibitions/mundo/Superfície-de-Mundo-Aberto-2018-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(2).jpg',
+        index: 8
+      },
+      {
+        alt: 'Mundo Aberto, 2018. Lucas Alves Costa - Galeria Palácio',
+        img: 'exhibitions/mundo/Visão-Aérea-de-Mundo-Aberto-2018-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(1).jpg',
+        index: 9
+      },
+      {
+        alt: 'Mundo Aberto, 2018. Lucas Alves Costa - Galeria Palácio',
+        img: 'exhibitions/mundo/Visão-Aérea-de-Mundo-Aberto-2018-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(2).jpg',
+        index: 10
+      }
+    ]
   },
   {
     artist: 'Andrés Stephanou',
@@ -335,6 +417,43 @@ export const exhibitions = [
     paragraph3: 'ventosp3',
     paragraph4: 'ventosp4',
     paragraph5: 'ventosp5',
+    slide: [
+      {
+        alt: 'O Regime dos Ventos, 2018. Emerson da Silva - Galeria Palácio',
+        img: 'exhibitions/ventos/O-Regime-dos-Ventos-2018-Emerson-da-Silva-Installation-View-Galeria-Palácio-(1).jpg',
+        index: 0
+      },
+      {
+        alt: 'O Regime dos Ventos, 2018. Emerson da Silva - Galeria Palácio',
+        img: 'exhibitions/ventos/O-Regime-dos-Ventos-2018-Emerson-da-Silva-Installation-View-Galeria-Palácio-(2).jpg',
+        index: 1
+      },
+      {
+        alt: 'O Regime dos Ventos, 2018. Emerson da Silva - Galeria Palácio',
+        img: 'exhibitions/ventos/O-Regime-dos-Ventos-2018-Emerson-da-Silva-Screenshot-(2)-All-Rights-Reserved.jpg',
+        index: 2
+      },
+      {
+        alt: 'O Regime dos Ventos, 2018. Emerson da Silva - Galeria Palácio',
+        img: 'exhibitions/ventos/O-Regime-dos-Ventos-2018-Emerson-da-Silva-Screenshot-(4)-All-Rights-Reserved.jpg',
+        index: 3
+      },
+      {
+        alt: 'O Regime dos Ventos, 2018. Emerson da Silva - Galeria Palácio',
+        img: 'exhibitions/ventos/Parque-Eólico,2018-Emerson-da-Silva-Installation-View-Photo,Galeria-Palácio(1).jpg',
+        index: 4
+      },
+      {
+        alt: 'O Regime dos Ventos, 2018. Emerson da Silva - Galeria Palácio',
+        img: 'exhibitions/ventos/Parque-Eólico,2018-Emerson-da-Silva-Installation-View-Photo,Galeria-Palácio(2).jpg',
+        index: 5
+      },
+      {
+        alt: 'O Regime dos Ventos, 2018. Emerson da Silva - Galeria Palácio',
+        img: 'exhibitions/ventos/Dunas-Parque-Eólico-Soterramento-2018-Emerson-da-Silva-Installation-View-Galeria-Palácio-(1).jpg',
+        index: 6
+      }
+    ]
   },
   {
     artist: 'Lucas Alves Costa',
@@ -346,6 +465,43 @@ export const exhibitions = [
     paragraph3: 'tropicalp3',
     paragraph4: 'tropicalp4',
     paragraph5: 'tropicalp5',
+    slide: [
+      {
+        alt: 'Paraíso Tropical, 2017. Lucas Alves Costa - Galeria Palácio',
+        img: 'exhibitions/tropical/Paraíso-Tropical-2017-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(1).jpg',
+        index: 0
+      },
+      {
+        alt: 'Paraíso Tropical, 2017. Lucas Alves Costa - Galeria Palácio',
+        img: 'exhibitions/tropical/Paraíso-Tropical-2017-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(2).jpg',
+        index: 1
+      },
+      {
+        alt: 'Paraíso Tropical, 2017. Lucas Alves Costa - Galeria Palácio',
+        img: 'exhibitions/tropical/Paraíso-Tropical-2017-Lucas-Alves-Costa-Screenshot-(1)-All-Rights-Reserved.png',
+        index: 2
+      },
+      {
+        alt: 'Paraíso Tropical, 2017. Lucas Alves Costa - Galeria Palácio',
+        img: 'exhibitions/tropical/Paraíso-Tropical-2017-Lucas-Alves-Costa-Screenshot-(3)-All-Rights-Reserved.png',
+        index: 3
+      },
+      {
+        alt: 'Paraíso Tropical, 2017. Lucas Alves Costa - Galeria Palácio',
+        img: 'exhibitions/tropical/Mata-Atlântica-2017-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(1).jpg',
+        index: 4
+      },
+      {
+        alt: 'Paraíso Tropical, 2017. Lucas Alves Costa - Galeria Palácio',
+        img: 'exhibitions/tropical/Mata-Atlântica-2017-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(2).jpg',
+        index: 5
+      },
+      {
+        alt: 'Paraíso Tropical, 2017. Lucas Alves Costa - Galeria Palácio',
+        img: 'exhibitions/tropical/Mata-Atlântica-(Digital)-2017-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(1).jpg',
+        index: 6
+      }
+    ]
   },
   {
     artist: 'Andrés Stephanou',
@@ -356,6 +512,38 @@ export const exhibitions = [
     paragraph2: 'microp2',
     paragraph3: 'microp3',
     paragraph4: 'microp4',
+    slide: [
+      {
+        alt: 'Micropartículas, 2017. Andrés Stephanou - Galeria Palácio',
+        img: 'exhibitions/micro/Micropartículas-2016-2017-Andrés-Stephanou-Installation-View-Galeria-Palácio-(1).jpg',
+        index: 0
+      },
+      {
+        alt: 'Micropartículas, 2017. Andrés Stephanou - Galeria Palácio',
+        img: 'exhibitions/micro/Micropartículas-2016-2017-Andrés-Stephanou-Installation-View-Galeria-Palácio-(2).jpg',
+        index: 1
+      },
+      {
+        alt: 'Micropartículas, 2017. Andrés Stephanou - Galeria Palácio',
+        img: 'exhibitions/micro/Micropartículas-2016-2017-Andrés-Stephanou-Screenshot-(1)-All-rights-reserved.png',
+        index: 2
+      },
+      {
+        alt: 'Micropartículas, 2017. Andrés Stephanou - Galeria Palácio',
+        img: 'exhibitions/micro/Micropartículas-2016-2017-Andrés-Stephanou-Screenshot-(2)-All-rights-reserved.png',
+        index: 3
+      },
+      {
+        alt: 'Micropartículas, 2017. Andrés Stephanou - Galeria Palácio',
+        img: 'exhibitions/micro/Micropartículas-2016-2017-Andrés-Stephanou-Screenshot-(4)-All-rights-reserved.png',
+        index: 4
+      },
+      {
+        alt: 'Micropartículas, 2017. Andrés Stephanou - Galeria Palácio',
+        img: 'exhibitions/micro/Micropartículas-2016-2017-Andrés-Stephanou-Installation-View-Galeria-Palácio-(3).jpg',
+        index: 5
+      }
+    ]
   },
   {
     artist: 'Emerson da Silva',
@@ -368,5 +556,47 @@ export const exhibitions = [
     paragraph4: 'terrap4',
     paragraph5: 'terrap5',
     paragraph6: 'terrap6',
+    slide: [
+      {
+        alt: 'Luz, Água e Terra Preta, 2017. Emerson da Silva - Galeria Palácio',
+        img: 'exhibitions/terra/Terrestre-2018-Emerson-da-Silva-Installation-View-Galeria-Palácio-(1).jpg',
+        index: 0
+      },
+      {
+        alt: 'Luz, Água e Terra Preta, 2017. Emerson da Silva - Galeria Palácio',
+        img: 'exhibitions/terra/Terrestre-2018-Emerson-da-Silva-Installation-View-Galeria-Palácio-(2).jpg',
+        index: 1
+      },
+      {
+        alt: 'Luz, Água e Terra Preta, 2017. Emerson da Silva - Galeria Palácio',
+        img: 'exhibitions/terra/Terrestre-2018-Emerson-da-Silva-Screenshot-(2)-All-Rights-Reserved.jpg',
+        index: 2
+      },
+      {
+        alt: 'Luz, Água e Terra Preta, 2017. Emerson da Silva - Galeria Palácio',
+        img: 'exhibitions/terra/Terrestre-2018-Emerson-da-Silva-Screenshot-(3)-All-Rights-Reserved.jpg',
+        index: 3
+      },
+      {
+        alt: 'Luz, Água e Terra Preta, 2017. Emerson da Silva - Galeria Palácio',
+        img: 'exhibitions/terra/Terrestre-2018-Emerson-da-Silva-Screenshot-(4)-All-Rights-Reserved.jpg',
+        index: 4
+      },
+      {
+        alt: 'Luz, Água e Terra Preta, 2017. Emerson da Silva - Galeria Palácio',
+        img: 'exhibitions/terra/Luz-Água-e-Terra-Preta-2017-Emerson-da-Silva-Installation-View-Galeria-Palácio-(1).jpg',
+        index: 5
+      },
+      {
+        alt: 'Luz, Água e Terra Preta, 2017. Emerson da Silva - Galeria Palácio',
+        img: 'exhibitions/terra/Luz-Água-e-Terra-Preta-2017-Emerson-da-Silva-Installation-View-Galeria-Palácio-(2).jpg',
+        index: 6
+      },
+      {
+        alt: 'Luz, Água e Terra Preta, 2017. Emerson da Silva - Galeria Palácio',
+        img: 'exhibitions/terra/Pré-Consumo-Alface-Lisa-2017-Emerson-da-Silva-Installation-View-Galeria-Palácio-(1).jpg',
+        index: 7
+      }
+    ]
   },
 ]

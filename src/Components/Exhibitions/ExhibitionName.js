@@ -6,10 +6,17 @@ const ExhibitionNameWrapper = styled.div`
   margin-bottom: 40px;
   text-decoration: none;
 
+  .title_exh {
+    font-size: 13px;
+  }
+
+  .date_exh {
+    font-size: 13px;
+  }
+
   span {
     color: #000;
     display: block;
-    font-size: 14px;
     padding: ${props => props.padding};
     text-align: left;
   }
@@ -21,8 +28,8 @@ function ExhibitionName (props) {
     <ExhibitionNameWrapper
       padding={ props.padding }
     >
-      <span>{props.show.artist}: <i>{props.show.showName}</i></span>
-      <span>{translate(props.show.showDate)}</span>
+      <span className="title_exh">{props.show.artist}: <i>{props.show.showName}</i></span>
+      <span className="date_exh">{translate(props.show.showDate)}</span>
     </ExhibitionNameWrapper>
   )
 }
