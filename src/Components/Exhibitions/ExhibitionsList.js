@@ -12,7 +12,7 @@ const ExhibitionsListWrapper = styled.div`
   left: 0;
   margin: auto;
   max-width: fit-content;
-  padding: 100px 100px 40px;
+  padding: 100px 100px 100px;
   position: absolute;
   right: 0;
   top: 100px;
@@ -26,10 +26,6 @@ const ExhibitionsListWrapper = styled.div`
     font-family: 'Roboto', sans-serif;
     margin-bottom: 40px;
     text-decoration: none;
-
-    @media (min-width: 1024px) {
-      padding-left: 100px;
-    }
 
     span {
       color: #000;

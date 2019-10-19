@@ -10,11 +10,12 @@ import firebase from './firebase'
 import Catalogue from './Components/Catalogue/Catalogue'
 import Exhibitions from './Components/Exhibitions/Exhibitions'
 import CurrentExhibition from './Components/CurrentExhibition'
+import Terms from './Components/TermsAndPrivacy/Terms'
+import Privacy from './Components/TermsAndPrivacy/Privacy'
+import Banner from './Components/Banner'
 
 function App( props ) {
   const [firebaseInitialized, setFirebaseInitialized] = useState(false)
-  // const [, updateState] = useState();
-  // const forceUpdate = useCallback(() => updateState({}), []);
 
 	useEffect(() => {
 		firebase.isInitialized().then(val => {
@@ -25,12 +26,15 @@ function App( props ) {
   return (
     <Router>
       <Navigation />
-      <Route exact path="/" component={ CurrentExhibition } />
+      <Route exact path="/" component={ Banner } />
+      <Route exact path="/home" component={ CurrentExhibition } />
       <Route path="/artists" component={ Artists } />
       <Route path="/about" component={ About } />
       <Route exact path="/viewing-room/login" component={ Login } />
       <Route path="/viewing-room/main" component={ Catalogue } />
       <Route path="/exhibitions" component={ Exhibitions } />
+      <Route path="/terms-and-conditions" component={ Terms } />
+      <Route path="/privacy-policy" component={ Privacy } />
     </Router>
   );
 }

@@ -5,20 +5,18 @@ export const collection = [
     artist: "Lucas Alves Costa",
     route: 'um-lugar-para-estar',
     coverImage: '1-Um-lugar-para-estar-2018-2019-Lucas-Alves-Costa-Screenshot-(1)-All-Rights-Reserved.png',
+    date: 'lugarparaestardate',
     info1: "lugarparaestar1",
     info2: "lugarparaestar2",
+    date: 'lugarparaestardate',
     slides: [
       {
-        img: 'catalogue/lugar/Um-lugar-para-estar-2018-2019-Lucas-Alves-Costa-Installation-View.jpg',
+        img: 'catalogue/1-Um-lugar-para-estar-2018-2019-Lucas-Alves-Costa-Screenshot-(1)-All-Rights-Reserved.png',
         index: 0
       },
       {
-        img: 'catalogue/lugar/Um-lugar-para-estar-2018-2019-Lucas-Alves-Costa-Screenshot-(3)-All-Rights-Reserved.png',
+        img: 'catalogue/lugar/Um-lugar-para-estar-2018-2019-Lucas-Alves-Costa-VR-Experience-Galeria-Palácio-(1).jpg',
         index: 1
-      },
-      {
-        img: 'catalogue/lugar/Um-lugar-para-estar-2018-2019-Lucas-Alves-Costa-Screenshot-(4)-All-Rights-Reserved.png',
-        index: 2
       }
     ]
   },
@@ -31,41 +29,27 @@ export const collection = [
     price: '$ 155,000',
     info1: 'luzaguaterra1',
     info2: 'luzaguaterra2',
+    date: 'luzaguaterradate',
     slides: [
       {
-        img: 'catalogue/terrestre/Terrestre-2018-Emerson-da-Silva-Installation-View-Galeria-Palácio-(2).jpg',
+        img: 'catalogue/2-Terrestre-2017-Emerson-da-Silva-Screenshot-(3)-All-Rights-Reserved.jpg',
         index: 0
-      },
-      {
-        img: 'catalogue/terrestre/Terrestre-2018-Emerson-da-Silva-Screenshot-(3)-All-Rights-Reserved.jpg',
-        index: 1
-      },
-      {
-        img: 'catalogue/terrestre/Terrestre-2018-Emerson-da-Silva-Screenshot-(4)-All-Rights-Reserved.jpg',
-        index: 2
       }
     ]
   },
   {
-    name: 'Partículas de luz 1',
-    period: '(2017-2018)',
+    name: 'Partículas de Luz 1',
+    period: '(2017–2018)',
     artist: 'Andrés Stephanou',
     route: 'particulas-de-luz-1',
     coverImage: '3-Partículas-de-Luz-1-2017-2018-Andrés-Stephanou-Screenshot-(4)-All-Rights-Reserved.png',
     info1: 'particulasdeluz1-1',
     info2: 'particulasdeluz1-2',
+    date: 'particulasdeluz1date',
     slides: [
       {
-        img: 'catalogue/particulas/Partículas-de-Luz-1-2017-2018-Andrés-Stephanou-Installation-View-Galeria-Palácio-(1).jpg',
+        img: 'catalogue/3-Partículas-de-Luz-1-2017-2018-Andrés-Stephanou-Screenshot-(4)-All-Rights-Reserved.png',
         index: 0
-      },
-      {
-        img: 'catalogue/particulas/Partículas-de-Luz-1-2017-2018-Andrés-Stephanou-Screenshot-(1)-All-Rights-Reserved.png',
-        index: 1
-      },
-      {
-        img: 'catalogue/particulas/Partículas-de-Luz-1-2017-2018-Andrés-Stephanou-Screenshot-(3)-All-Rights-Reserved.png',
-        index: 2
       }
     ]
   },
@@ -77,6 +61,8 @@ export const collection = [
     coverImage: '4-Autorretrato-(2)-2018-Chiaki-Mihara-Installation-View-Photo-Galeria-Palácio-(4).jpg',
     info1: 'autoretrato1',
     info2: 'autoretrato2',
+    info3: 'autoretrato3',
+    date: 'autoretrato1date',
     slides: [
       {
         img: 'catalogue/autoretrato/Autorretrato-(2)-2018-Chiaki-Mihara-Installation-View-Galeria-Palácio-(4).jpg',
@@ -85,25 +71,18 @@ export const collection = [
     ]
   },
   {
-    name: 'Organismo Digital',
+    name: 'Partículas',
     period: '(2018–2019)',
     artist: 'Andrés Stephanou',
-    route: 'organismo-digital',
-    coverImage: '5-Organismo-Digital-2018-2019-Andrés-Stephanou-Screenshot-(3)-All-Rights-Reserved.png',
+    route: 'particulas',
+    coverImage: '5-Partículas-2018-2019-Andrés-Stephanou-Screenshot-(3)-All-Rights-Reserved.png',
     info1: 'organismodigital1',
     info2: 'organismodigital2',
+    date: 'organismodigital1date',
     slides: [
       {
-        img: 'catalogue/organismo/Micropartículas-2016-2017-Andrés-Stephanou-Screenshot-(5)-All-rights-reserved.png',
+        img: 'catalogue/5-Partículas-2018-2019-Andrés-Stephanou-Screenshot-(3)-All-Rights-Reserved.png',
         index: 0
-      },
-      {
-        img: 'catalogue/organismo/Organismo-Digital-2018-2019-Andrés-Stephanou-Installation-View-Galeria-Palácio-(1).jpg',
-        index: 1
-      },
-      {
-        img: 'catalogue/organismo/Organismo-Digital-2018-2019-Andrés-Stephanou-Screenshot-(1)-All-Rights-Reserved.png',
-        index: 2
       }
     ]
   },
@@ -115,18 +94,11 @@ export const collection = [
     coverImage: '6-Entre-o-Céu-e-o-Oceano-2019-Emerson-da-Silva-Screenshot-(4)-All-Rights-Reserved.jpg',
     info1: 'ceuterra1',
     info2: 'ceuterra2',
+    date: 'ceuterra1date',
     slides: [
       {
-        img: 'catalogue/ceu/Entre-o-Céu-e-o-Oceano-2019-Emerson-da-Silva-Installation-View-Galeria-Palácio-(2).jpg',
+        img: 'catalogue/6-Entre-o-Céu-e-o-Oceano-2019-Emerson-da-Silva-Screenshot-(4)-All-Rights-Reserved.jpg',
         index: 0
-      },
-      {
-        img: 'catalogue/ceu/Entre-o-Céu-e-o-Oceano-2019-Emerson-da-Silva-Screenshot-(3)-All-Rights-Reserved.jpg',
-        index: 1
-      },
-      {
-        img: 'catalogue/ceu/Entre-o-Céu-e-o-Oceano-2019-Emerson-da-Silva-Screenshot-(4)-All-Rights-Reserved.jpg',
-        index: 2
       }
     ]
   },
@@ -136,20 +108,17 @@ export const collection = [
     artist: 'Lucas Alves Costa',
     route: 'mundo-aberto',
     coverImage: '7- Mundo-Aberto-2017-2018-Lucas-Alves-Costa-Screenshot-(1)-All-Rights-Reserved.png',
-    info1: 'ceuterra1',
-    info2: 'ceuterra2',
+    info1: 'mundoAberto1',
+    info2: 'mundoAberto2',
+    date: 'mundoAberto1date',
     slides: [
       {
-        img: 'catalogue/mundo/Mundo-Aberto-2017-2018-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(1).jpg',
+        img: 'catalogue/7- Mundo-Aberto-2017-2018-Lucas-Alves-Costa-Screenshot-(1)-All-Rights-Reserved.png',
         index: 0
       },
       {
-        img: 'catalogue/mundo/Mundo-Aberto-2017-2018-Lucas-Alves-Costa-Screenshot-(1)-All-Rights-Reserved.png',
+        img: 'catalogue/mundo/Mundo-Aberto-2017-2018-Lucas-Alves-Costa-VR-Experience-(1)-Galeria-Palácio.jpg',
         index: 1
-      },
-      {
-        img: 'catalogue/mundo/Mundo-Aberto-2017-2018-Lucas-Alves-Costa-Screenshot-(2)-All-Rights-Reserved.png',
-        index: 2
       }
     ]
   },
@@ -161,18 +130,11 @@ export const collection = [
     coverImage: '8-O-Regime-dos-Ventos-2018-Emerson-da-Silva-Screenshot-(3)-All-Rights-Reserved.jpg',
     info1: 'regimeVentos1',
     info2: 'regimeVentos2',
+    date: 'regimeVentos1date',
     slides: [
       {
-        img: 'catalogue/ventos/O-Regime-dos-Ventos-2018-Emerson-da-Silva-Installation-View-Galeria-Palácio-(2).jpg',
+        img: 'catalogue/8-O-Regime-dos-Ventos-2018-Emerson-da-Silva-Screenshot-(3)-All-Rights-Reserved.jpg',
         index: 0
-      },
-      {
-        img: 'catalogue/ventos/O-Regime-dos-Ventos-2018-Emerson-da-Silva-Screenshot-(5)-All-Rights-Reserved.jpg',
-        index: 1
-      },
-      {
-        img: 'catalogue/ventos/O-Regime-dos-Ventos-2018-Emerson-da-Silva-Screenshot-(6)-All-Rights-Reserved.jpg',
-        index: 2
       }
     ]
   },
@@ -185,6 +147,7 @@ export const collection = [
     info1: 'terreno1',
     info2: 'terreno2',
     info3: 'terreno3',
+    date: 'terrenodate',
     slides: [
       {
         img: 'catalogue/terreno/Terreno-2019-Lucas-Alves-Costa-All-rights-reserved-Galeria-Palácio-(1).jpg',
@@ -204,18 +167,11 @@ export const collection = [
     coverImage: '11-Micropartículas-2016-2017-Andrés-Stephanou-Screenshot-(6)-All-Rights-Reserved.png',
     info1: 'microparticulas1',
     info2: 'microparticulas2',
+    date: 'microparticulasdate',
     slides: [
       {
-        img: 'catalogue/micro/Micropartículas-2016-2017-Andrés-Stephanou-Installation-View-Galeria-Palácio-(1).jpg',
+        img: 'catalogue/11-Micropartículas-2016-2017-Andrés-Stephanou-Screenshot-(6)-All-Rights-Reserved.png',
         index: 0
-      },
-      {
-        img: 'catalogue/micro/Micropartículas-2016-2017-Andrés-Stephanou-Screenshot-(1)-All-rights-reserved.png',
-        index: 1
-      },
-      {
-        img: 'catalogue/micro/Micropartículas-2016-2017-Andrés-Stephanou-Screenshot-(3)-All-rights-reserved.png',
-        index: 2
       }
     ]
   },
@@ -227,14 +183,11 @@ export const collection = [
     coverImage: '12-Contato-Visual-(1)-2018-2019-Chiaki-Mihara-Screenshot-(1)-All-Rights-Reserved.png',
     info1: 'contatoVisual1',
     info2: 'contatoVisual2',
+    date: 'contatoVisualdate',
     slides: [
       {
-        img: 'catalogue/contato/Contato-Visual-2018-2019-Chiaki-Mihara-Installation-View-Galeria-Palácio-(1).jpg',
+        img: 'catalogue/12-Contato-Visual-(1)-2018-2019-Chiaki-Mihara-Screenshot-(1)-All-Rights-Reserved.png',
         index: 0
-      },
-      {
-        img: 'catalogue/contato/Contato-Visual-2019-Chiaki-Mihara-Screenshot-(1)-All-Rights-Reserved.png',
-        index: 1
       }
     ]
   },

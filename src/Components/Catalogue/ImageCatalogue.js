@@ -78,7 +78,7 @@ padding-bottom: 120px;
 
   .workTitle {
     font-weight: 300;
-    padding-top: 2px;
+    margin: 5px 0;
   }
 `
 

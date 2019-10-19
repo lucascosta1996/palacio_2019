@@ -78,11 +78,10 @@ const AboutWrapper = styled.section`
 
     .info {
       line-height: 25px;
-      padding-bottom: 20px;
 
       @media ( max-width: 520px ) {
         line-height: 20px;
-        padding-bottom: 5px;
+        padding-bottom: 100px;
       }
     }
 

@@ -87,7 +87,7 @@ const LoginWrapper = styled.section`
     }
 
     .padding-top {
-      padding-top: 20px;
+      padding-top: 13px;
     }
 
     .align-left {
@@ -184,13 +184,13 @@ const Login = (props) => {
             </span>
             <span className="becomeMember align-left">
               {translate('sharing')}
-              <a href="#">
+              <Link to="/terms-and-conditions">
                 {translate('termsConditions')}
-              </a>
+              </Link>
               {translate('andOur')}
-              <a href="#">
+              <Link to="/privacy-policy">
                 {translate('privacypolicy')}
-              </a>
+              </Link>
               .
             </span>
           </form>

@@ -8,7 +8,7 @@ export const exhibitions = [
     paragraph2: 'contatop2',
     paragraph3: 'contatop3',
     paragraph4: 'contatop4',
-    paragraph5: 'contatop5',
+    pdf: 'pdfContato',
     slide: [
       {
         alt: 'Contato Visual, 2019. Chiaki Mihara - Galeria Palácio',
@@ -54,6 +54,7 @@ export const exhibitions = [
     paragraph5: 'lugarp5',
     paragraph6: 'lugarp6',
     paragraph7: 'lugarp7',
+    pdf: 'pdfLugar',
     slide: [
       {
         alt: 'Um lugar para estar, 2019. Lucas Alves Costa - Galeria Palácio',
@@ -136,30 +137,31 @@ export const exhibitions = [
     paragraph2: 'sistemasp2',
     paragraph3: 'sistemasp3',
     paragraph4: 'sistemasp4',
+    pdf: 'pdfSistemas',
     slide: [
       {
         alt: 'Sistemas e processos, 2019. Andrés Stephanou - Galeria Palácio',
-        img: 'exhibitions/sistemas/Organismo-Digital-2018-2019-Andrés-Stephanou-Installation-View-Galeria-Palácio-(1).jpg',
+        img: 'exhibitions/sistemas/Partículas-2018-2019-Andrés-Stephanou-Installation-View-Galeria-Palácio-(1).jpg',
         index: 0
       },
       {
         alt: 'Sistemas e processos, 2019. Andrés Stephanou - Galeria Palácio',
-        img: 'exhibitions/sistemas/Organismo-Digital-2018-2019-Andrés-Stephanou-Installation-View-Galeria-Palácio-(2).jpg',
+        img: 'exhibitions/sistemas/Partículas-2018-2019-Andrés-Stephanou-Installation-View-Galeria-Palácio-(2).jpg',
         index: 1
       },
       {
         alt: 'Sistemas e processos, 2019. Andrés Stephanou - Galeria Palácio',
-        img: 'exhibitions/sistemas/Organismo-Digital-2018-2019-Andrés-Stephanou-Screenshot-(1)-All-Rights-Reserved.png',
+        img: 'exhibitions/sistemas/Partículas-2018-2019-Andrés-Stephanou-Screenshot-(1)-All-Rights-Reserved.png',
         index: 2
       },
       {
         alt: 'Sistemas e processos, 2019. Andrés Stephanou - Galeria Palácio',
-        img: 'exhibitions/sistemas/Organismo-Digital-2018-2019-Andrés-Stephanou-Screenshot-(3)-All-Rights-Reserved.png',
+        img: 'exhibitions/sistemas/Partículas-2018-2019-Andrés-Stephanou-Screenshot-(3)-All-Rights-Reserved.png',
         index: 3
       },
       {
         alt: 'Sistemas e processos, 2019. Andrés Stephanou - Galeria Palácio',
-        img: 'exhibitions/sistemas/Organismo-Digital-2018-2019-Andrés-Stephanou-Screenshot-(4)-All-Rights-Reserved.png',
+        img: 'exhibitions/sistemas/Partículas-2018-2019-Andrés-Stephanou-Screenshot-(4)-All-Rights-Reserved.png',
         index: 4
       },
       {
@@ -189,6 +191,7 @@ export const exhibitions = [
     paragraph3: 'atividadep3',
     paragraph4: 'atividadep4',
     paragraph5: 'atividadep5',
+    pdf: 'pdfHumana',
     slide: [
       {
         alt: 'A pesca enquanto atividade humana, 2019. Emerson da Silva - Galeria Palácio',
@@ -235,6 +238,7 @@ export const exhibitions = [
     paragraph1: 'autoretratosp1',
     paragraph2: 'autoretratosp2',
     paragraph3: 'autoretratosp3',
+    pdf: 'pdfAutorretratos',
     slide: [
       {
         alt: 'Autoretratos, 2018. Chiaki Mihara - Galeria Palácio',
@@ -295,6 +299,7 @@ export const exhibitions = [
     paragraph5: 'mundoAbertop5',
     paragraph6: 'mundoAbertop6',
     paragraph7: 'mundoAbertop7',
+    pdf: 'pdfMundo',
     slide: [
       {
         alt: 'Mundo Aberto, 2018. Lucas Alves Costa - Galeria Palácio',
@@ -363,7 +368,7 @@ export const exhibitions = [
     paragraph3: 'particulasp3',
     paragraph4: 'particulasp4',
     paragraph5: 'particulasp5',
-    paragraph6: 'particulasp6',
+    pdf: 'pdfParticulasLuz',
     slide: [
       {
         alt: 'Partículas de Luz, 2018. Andrés Stephanou - Galeria Palácio',
@@ -417,6 +422,7 @@ export const exhibitions = [
     paragraph3: 'ventosp3',
     paragraph4: 'ventosp4',
     paragraph5: 'ventosp5',
+    pdf: 'pdfVentos',
     slide: [
       {
         alt: 'O Regime dos Ventos, 2018. Emerson da Silva - Galeria Palácio',
@@ -465,6 +471,7 @@ export const exhibitions = [
     paragraph3: 'tropicalp3',
     paragraph4: 'tropicalp4',
     paragraph5: 'tropicalp5',
+    pdf: 'pdfParaiso',
     slide: [
       {
         alt: 'Paraíso Tropical, 2017. Lucas Alves Costa - Galeria Palácio',
@@ -512,6 +519,7 @@ export const exhibitions = [
     paragraph2: 'microp2',
     paragraph3: 'microp3',
     paragraph4: 'microp4',
+    pdf: 'pdfMicro',
     slide: [
       {
         alt: 'Micropartículas, 2017. Andrés Stephanou - Galeria Palácio',
@@ -552,10 +560,11 @@ export const exhibitions = [
     showRoute: 'luz-agua-e-terra-preta',
     paragraph1: 'terrap1',
     paragraph2: 'terrap2',
-    paragraph3: 'terrap3',
+    paragraph3: 'arrayTerra',
     paragraph4: 'terrap4',
     paragraph5: 'terrap5',
     paragraph6: 'terrap6',
+    pdf: 'pdfLuzAgua',
     slide: [
       {
         alt: 'Luz, Água e Terra Preta, 2017. Emerson da Silva - Galeria Palácio',

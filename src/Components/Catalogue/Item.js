@@ -57,6 +57,7 @@ const ItemWrapper = styled.div`
     span {
       font-size: 11px;
       font-weight: 300;
+      line-height: 13px;
     }
   }
 
@@ -65,8 +66,8 @@ const ItemWrapper = styled.div`
 
     button {
       background: none;
-      border: 1px solid #1d6cdb;
-      color: #1d6cdb;
+      border: 1px solid #4547ee;
+      color: #4547ee;
       cursor: pointer;
       font-family: 'Roboto', sans-serif;
       font-weight: 300;
@@ -101,11 +102,15 @@ function Item (props) {
           <span className="artist">{ props.item.artist }</span>
           <i>{ props.item.name }</i>
           <section className="additionalInfo">
+            <span>{translate(props.item.date)}</span>
             {
               props.item.info1 && <span>{translate(props.item.info1)}</span>
             }
             {
               props.item.info2 && <span>{translate(props.item.info2)}</span>
+            }
+            {
+              props.item.info3 && <span>{translate(props.item.info3)}</span>
             }
           </section>
           <section className="gallery">

@@ -58,12 +58,12 @@ const Copyright = props => {
       <span className="rights">
         {translate('allrights')} &copy; {translate('palacio')}
       </span>
-      <a className="terms" href="#">
+      <Link className="terms" to="/terms-and-conditions">
         {translate('termsofuse')}
-      </a>
-      <a className="terms" href="#">
+      </Link>
+      <Link className="terms" to="/privacy-policy">
         {translate('privacypolicy')}
-      </a>
+      </Link>
       {
         props.back && <Back route={props.route} position="absolute" />
       }

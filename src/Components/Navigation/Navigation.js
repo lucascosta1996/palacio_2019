@@ -12,7 +12,7 @@ import { async } from 'q'
 
 const NavigationWrapper = styled.section`
   ${props => props.isOpened && `background-color: #fff;`}
-  ${props => props.isOpened && `width: 100%; height: 200px;`}
+  ${props => props.isOpened && `width: 100%; height: 128px;`}
   display: flex;
   flex-direction: column;
   left: 25px;
@@ -23,7 +23,8 @@ const NavigationWrapper = styled.section`
   z-index: 2;
 
   @media ( max-width: 520px ) {
-    left: 25px;
+    left: 0;
+    padding-left: 25px;
   }
   
   h1,
@@ -78,9 +79,10 @@ const NavigationWrapper = styled.section`
     }
 
     @media ( max-width: 768px ) {
+      align-items: flex-start;
       flex-direction: column;
       right:unset;
-      top: 80px;
+      top: 55px;
       ${props => !props.isOpened && `display: none;`}
     }
   }
@@ -106,7 +108,7 @@ const NavigationWrapper = styled.section`
   .close {
     position: fixed;
     right: 35px;
-    top: 40px;
+    top: 22px;
     width: 14px;
   }
 
@@ -128,10 +130,7 @@ const NavigationWrapper = styled.section`
   .logout {
     cursor: pointer;
     margin: 0 0!important;
-
-    @media ( min-width: 520px ) {
-      padding-right: 10px;
-    }
+    padding-right: 10px;
   }
 `
 
@@ -140,7 +139,7 @@ const VeganBurguerIcon = styled.div`
   font-size: 18px;
   position: fixed;
   right: 35px;
-  top: 35px;
+  top: 22px;
 
   @media ( min-width: 769px ) {
     display: none;
@@ -168,7 +167,7 @@ const Navigation = props => {
       isOpened={ open }
     >
       <h1 onClick={ () => setActive( '/' ) }>
-        <Link to="/">
+        <Link to="/home">
           { 'GALERIA PALÁCIO' }
         </Link>
       </h1>

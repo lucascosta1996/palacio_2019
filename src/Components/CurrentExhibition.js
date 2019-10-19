@@ -50,13 +50,13 @@ const CurrentExhibitionWrapper = styled.section`
 
   .infosCurrentEx {
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     text-align: center;
 
     a {
       color: #000;
       font-family: 'Roboto', sans-serif;
-      font-size: 14px;
+      font-size: 13px;
       text-decoration: underline;
 
       &:hover {
@@ -79,7 +79,7 @@ function CurrentExhibition( props ) {
           {translate('contatoDate')}
         </p>
         <Link to="/exhibitions/contato-visual">
-          {translate('Learn more')}
+          {translate('learnMore')}
         </Link>
       </div>
       <div className="marginLeft imageWrapper">
