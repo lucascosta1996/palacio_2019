@@ -132,6 +132,14 @@ const NavigationWrapper = styled.section`
     margin: 0 0!important;
     padding-right: 10px;
   }
+
+  .title {
+    a {
+      &:hover {
+        color: #000;
+      }
+    }
+  }
 `
 
 const VeganBurguerIcon = styled.div`
@@ -166,7 +174,7 @@ const Navigation = props => {
     <NavigationWrapper
       isOpened={ open }
     >
-      <h1 onClick={ () => setActive( '/' ) }>
+      <h1 className="title" onClick={ () => setActive( '/' ) }>
         <Link to="/home">
           { 'GALERIA PALÁCIO' }
         </Link>

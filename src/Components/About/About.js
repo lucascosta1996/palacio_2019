@@ -211,16 +211,13 @@ const About = props => {
         <p>
           {translate('hours')}
         </p>
-        <p>
-          {translate('parking')}
-        </p>
       </section>
           {
             !sucesso ? (
               <form className="newsletter">
                 <label>Newsletter</label>
                 <div className="inputs">
-                  <input id="name" name="name" type="text" value={ name } placeholder={translate("name")} onChange={e => setName(e.target.value)} />
+                  <input id="name" name="name" type="text" value={ name } placeholder={translate("fullName")} onChange={e => setName(e.target.value)} />
                   <input id="email" name="email" type="email" value={ email } placeholder="Email" onChange={e => setEmail(e.target.value)} />
                   <button type="button" onClick={subscribe}>{translate('send')}</button>
                 </div>
@@ -232,9 +229,14 @@ const About = props => {
             )
           }
       </div>
-      <p className="info">
-        {translate('aboutInfo')}
-      </p>
+      <div>
+        <p className="info">
+          {translate('aboutInfo')}
+        </p>
+        <p className="info">
+          {translate('aboutInfo2')}
+        </p>
+      </div>
       <Copyright
         position={ isMobile() ? 'initial' : 'absolute' }
       />

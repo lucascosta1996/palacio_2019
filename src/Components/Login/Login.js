@@ -39,6 +39,10 @@ const LoginWrapper = styled.section`
       padding-bottom: 16px;
     }
 
+    .marginBottom2 {
+      padding-bottom: 10px;
+    }
+
     input {
       border: 1.1px solid #000;
       color: #000;
@@ -149,11 +153,14 @@ const Login = (props) => {
       {
         !subscribe ? (
           <form className="formWrapper" onSubmit={e => e.preventDefault() && false }>
-            <span className="fullCollection">
-              {translate('fullCollection')}
+            <span className="fullCollection marginBottom2">
+              {translate('onView')}
+            </span>
+            <span className="fullCollection marginBottom2">
+              <i>Selected Works: 2016–2019</i>
             </span>
             <span className="fullCollection marginBottom">
-              {translate('fullCollection2')}
+              {translate('selectedWorksDate')}
             </span>
             <input id="email" name="email" type="email" value={ email } placeholder="Email" onChange={e => setEmail(e.target.value)} />
             <div className="inputAndButton">
@@ -168,8 +175,11 @@ const Login = (props) => {
           </form>
         ) : (
           <form className="formWrapper" onSubmit={e => e.preventDefault() && false }>
-            <span className="fullCollection2 marginBottom">
-              {translate('becomeMember')}
+            <span className="fullCollection">
+              {translate('fullCollection')}
+            </span>
+            <span className="fullCollection marginBottom">
+              {translate('fullCollection2')}
             </span>
             <input id="name" name="name" type="text" value={ fullName } placeholder={translate("fullName")} onChange={e => setFullName(e.target.value)} />
             <div className="inputAndButton">
@@ -179,8 +189,8 @@ const Login = (props) => {
             <span className="becomeMember padding-top align-left" onClick={ () => setSubscribe(false) }>
               {translate('alreadyMember')}
               <a href="#">
-                {"Login."}
-              </a>
+                {"Login"}
+              </a>.
             </span>
             <span className="becomeMember align-left">
               {translate('sharing')}
@@ -190,8 +200,7 @@ const Login = (props) => {
               {translate('andOur')}
               <Link to="/privacy-policy">
                 {translate('privacypolicy')}
-              </Link>
-              .
+              </Link>.
             </span>
           </form>
         )

@@ -1,16 +1,17 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import { collection } from './collection'
 import Copyright from '../Copyright/Copyright'
 import Image from './Image'
+import { I18nContext } from '../../i18n'
 
 const ImageCatalogueWrapper = styled.div`
 display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
 padding: 0 70px;
-padding-bottom: 120px;
+padding-bottom: 80px;
 
 @media ( max-width: 768px ) {
   justify-content: center;
@@ -25,7 +26,7 @@ padding-bottom: 120px;
   align-items: center;
   display: flex;
   flex-direction: column;
-  margin-top: 120px;
+  margin-bottom: 120px;
   max-width: 350px;
   text-decoration: none;
 
@@ -84,11 +85,45 @@ padding-bottom: 120px;
 
 const CopyRightPadding = styled.div`
   padding-bottom: 40px;
+
+  .exhibitionTitle {
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    padding: 0 70px;
+    padding-bottom: 80px;
+    padding-top: 80px;
+
+    p {
+      margin-bottom: 0;
+    }
+
+    a {
+      color: #000;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      text-decoration: none;
+
+      &:hover {
+        color: #4547ee;
+      }
+    }
+  }
 `
 
 function ImageCatalogue (props) {
+  const { translate } = useContext(I18nContext)
+
   return (
     <CopyRightPadding>
+      <section className="exhibitionTitle">
+        <div>
+         <i>Selected Works: 2016–2019</i>
+         <p>{translate('selectedWorksDate')}</p>
+        </div>
+        <a href={ require( `../../assets/downloads/${translate('pdfSelectedWorks')}` ) } target="_blank">press release</a>
+      </section>
       <ImageCatalogueWrapper>
         {
           collection.map( item => (
