@@ -78,7 +78,7 @@ const TermsWrapper = styled.section`
 
   .back {
     color: #000;
-    font-size: 14px;
+    font-size: 13px;
     padding-top: 60px;
     position: relative;
     padding-left: 25px;

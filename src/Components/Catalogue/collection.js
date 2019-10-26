@@ -147,6 +147,7 @@ export const collection = [
     info1: 'terreno1',
     info2: 'terreno2',
     info3: 'terreno3',
+    info4: 'terreno4',
     date: 'terrenodate',
     slides: [
       {

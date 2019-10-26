@@ -112,6 +112,9 @@ function Item (props) {
             {
               props.item.info3 && <span>{translate(props.item.info3)}</span>
             }
+            {
+              props.item.info4 && <span>{translate(props.item.info4)}</span>
+            }
           </section>
           <section className="gallery">
             <button>

@@ -2,22 +2,17 @@ import React, { useContext } from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import { I18nContext } from '../i18n/index'
+import Copyright from './Copyright/Copyright'
 
 const CurrentExhibitionWrapper = styled.section`
   align-items: center;
   bottom: 0;
-  display: flex;
-  justify-content: center;
   left: 0;
   margin: auto;
   position: absolute;
   right: 0
-  top: 0;
+  top: 150px;
   width: 100%;
-
-  @media (max-width: 1279px) {
-    flex-direction: column-reverse;
-  }
 
   .marginLeft {
     @media (min-width: 1279px) {
@@ -28,6 +23,29 @@ const CurrentExhibitionWrapper = styled.section`
   .marginRight {
     @media (min-width: 1279px) {
       margin-right: 50px;
+    }
+  }
+
+  section {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: 1279px) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  .copy {
+    padding-bottom: 40px;
+  }
+
+  .viewing {
+    padding-bottom: 80px;
+    padding-top: 80px;
+
+    @media (max-width: 1279px) {
+      flex-direction: column;
     }
   }
 
@@ -71,19 +89,40 @@ function CurrentExhibition( props ) {
 
   return(
     <CurrentExhibitionWrapper>
-      <div className="marginRight infosCurrentEx">
-        <p>
-          Chiaki Mihara: <i>Contato Visual</i>
-        </p>
-        <p>
-          {translate('contatoDate')}
-        </p>
-        <Link to="/exhibitions/contato-visual">
-          {translate('learnMore')}
-        </Link>
-      </div>
-      <div className="marginLeft imageWrapper">
-        <img alt="Galeria Palácio current exhibition - Contato visual, 2019 - Chiaki Mihara" src={ require( `../assets/exhibitions/contatoVisual/Estudo-para-Contato-Visual-2019-Chiaki-Mihara-Installation-View-Galeria-Palácio-(2).jpg` ) } />
+      <section className="current">
+        <div className="marginRight infosCurrentEx">
+          <p>
+            Chiaki Mihara: <i>Contato Visual</i>
+          </p>
+          <p>
+            {translate('contatoDate')}
+          </p>
+          <Link to="/exhibitions/contato-visual">
+            {translate('learnMore')}
+          </Link>
+        </div>
+        <div className="marginLeft imageWrapper">
+          <img alt="Galeria Palácio current exhibition - Contato visual, 2019 - Chiaki Mihara" src={ require( `../assets/exhibitions/contatoVisual/Estudo-para-Contato-Visual-2019-Chiaki-Mihara-Installation-View-Galeria-Palácio-(2).jpg` ) } />
+        </div>
+      </section>
+      <section className="viewing">
+        <div className="marginRight imageWrapper">
+          <img alt="Galeria Palácio current exhibition - Contato visual, 2019 - Chiaki Mihara" src={ require( `../assets/exhibitions/terra/Terrestre-2018-Emerson-da-Silva-Screenshot-(3)-All-Rights-Reserved.jpg` ) } />
+        </div>
+        <div className="marginLeft infosCurrentEx">
+          <p>
+            <i>Selected Works: 2016–2019</i>
+          </p>
+          <p>
+            {translate('selectedWorksDate')}
+          </p>
+          <Link to="/viewing-room/main">
+            Viewing Room
+          </Link>
+        </div>
+      </section>
+      <div className="copy">
+        <Copyright />
       </div>
     </CurrentExhibitionWrapper>
   )

@@ -56,7 +56,7 @@ const Copyright = props => {
       position={ props.position }
     >
       <span className="rights">
-        {translate('allrights')} &copy; {translate('palacio')}
+      © Galeria Palácio
       </span>
       <Link className="terms" to="/terms-and-conditions">
         {translate('termsofuse')}

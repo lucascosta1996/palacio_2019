@@ -151,10 +151,9 @@ const AboutWrapper = styled.section`
           }
 
           &:hover {
-            border: none;
             background: #4547ee;
+            border: 1.1px solid #c3c3c300;
             color: #fff;
-            padding: 8px 19px;
           }
         }
       }
@@ -235,6 +234,9 @@ const About = props => {
         </p>
         <p className="info">
           {translate('aboutInfo2')}
+        </p>
+        <p className="info">
+          {translate('aboutInfo3')}
         </p>
       </div>
       <Copyright
