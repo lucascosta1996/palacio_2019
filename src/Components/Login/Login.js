@@ -162,7 +162,7 @@ const Login = (props) => {
             <span className="fullCollection marginBottom">
               {translate('selectedWorksDate')}
             </span>
-            <input id="email" name="email" type="email" value={ email } placeholder="Email" onChange={e => setEmail(e.target.value)} />
+            <input id="email" name="email" type="email" value={ email } placeholder="E-mail" onChange={e => setEmail(e.target.value)} />
             <div className="inputAndButton">
               <input id="password" name="password" type="password" value={ password } placeholder={translate('password')} onChange={e => setPassword(e.target.value)} />
               <button type="submit" onClick={login}>Login</button>
@@ -175,15 +175,12 @@ const Login = (props) => {
           </form>
         ) : (
           <form className="formWrapper" onSubmit={e => e.preventDefault() && false }>
-            <span className="fullCollection">
-              {translate('fullCollection')}
-            </span>
             <span className="fullCollection marginBottom">
-              {translate('fullCollection2')}
+              {translate('becomeMember')}
             </span>
             <input id="name" name="name" type="text" value={ fullName } placeholder={translate("fullName")} onChange={e => setFullName(e.target.value)} />
             <div className="inputAndButton">
-              <input id="email" name="email" type="email" value={ newEmail } placeholder="Email" onChange={e => setNewEmail(e.target.value)} />
+              <input id="email" name="email" type="email" value={ newEmail } placeholder="E-mail" onChange={e => setNewEmail(e.target.value)} />
               <button type="submit" onClick={onRegister}>{translate('signUp')}</button>
             </div>
             <span className="becomeMember padding-top align-left" onClick={ () => setSubscribe(false) }>

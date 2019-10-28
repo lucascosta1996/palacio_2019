@@ -10,6 +10,7 @@ const ArtistWrapper = styled.section`
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
     font-weight: 300;
+    padding-bottom: 6px;
   }
 
   img {
