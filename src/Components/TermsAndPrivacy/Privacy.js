@@ -31,7 +31,6 @@ const PrivacyWrapper = styled.section`
     h2 {
       font-size: 14px;
       padding-bottom: 14px;
-      text-transform: uppercase;
     }
 
     h3 {
@@ -129,6 +128,8 @@ function  Privacy( props ) {
         <p>{translate('p4t')}</p>
         <b>{translate('p5')}</b>
         <p>{translate('p5t')}</p>
+        <b>{translate('p6')}</b>
+        <p>{translate('p6t')}</p>
         <div className="update">
           <span>{translate('lastUpdatePt')}</span>
         </div>

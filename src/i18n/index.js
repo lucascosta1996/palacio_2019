@@ -1,10 +1,9 @@
-import React, { useReducer } from "react";
-
-import EN from "./en.json";
-import PT from "./pt.json";
+import React, { useReducer } from "react"
+import EN from "./en.json"
+import PT from "./pt.json"
 
 // To make it easier to read from JSON files
-const translations = {
+let translations = {
   en: EN,
   pt: PT
 };
@@ -14,9 +13,18 @@ const getTranslate = langCode => key => translations[langCode][key] || key;
 const initialState = {
   langCode: "en",
   translate: getTranslate("en"),
-};
+}
 
-export const I18nContext = React.createContext(initialState);
+// const getEnglishTexts = async () => {
+//   let result;
+//   await firebase.getEnglishText().then( res => { return result = res } )
+//   translations.en = Object.assign( result, translations )
+//   console.log( translations )
+// }
+
+// console.log( getEnglishTexts() )
+
+export const I18nContext = React.createContext(initialState)
 
 export const I18nContextProvider = ({ children }) => {
   

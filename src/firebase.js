@@ -58,6 +58,21 @@ class Firebase {
       return
     } )
   }
+
+  async getEnglishText( en ) {
+    let json = {}
+    await this.db.collection( 'en' ).get()
+    .then(snapshot => {
+      snapshot.forEach(doc => {
+        json = Object.assign( doc.data(), en )
+      })
+    })
+    .catch( error => {
+      console.log( 'error', error )
+    } )
+    
+    return json
+  }
   
   isInitialized() {
 		return new Promise(resolve => {

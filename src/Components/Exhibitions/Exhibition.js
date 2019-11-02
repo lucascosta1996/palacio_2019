@@ -1,11 +1,10 @@
 import React, { useContext, useEffect, useRef } from 'react'
 import styled from 'styled-components'
 import Slide from '../Slide/Slide'
-import ExhibitionName from './ExhibitionName';
+import ExhibitionName from './ExhibitionName'
 import { isMobile } from '../../helpers/helpers'
-import { I18nContext } from '../../i18n';
-import Copyright from '../Copyright/Copyright';
-import Back from '../Back/Back';
+import { I18nContext } from '../../i18n'
+import Copyright from '../Copyright/Copyright'
 
 const ExhibitionWrapper = styled.div`
   display: flex;

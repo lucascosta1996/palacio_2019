@@ -180,6 +180,11 @@ export const exhibitions = [
         alt: 'Partículas, 2019. Andrés Stephanou - Galeria Palácio',
         img: 'exhibitions/sistemas/1-minuto-2019-Andrés-Stephanou-Installation-View-Photo-Galeria-Palácio-(3).jpg',
         index: 7
+      },
+      {
+        alt: 'Partículas, 2019. Andrés Stephanou - Galeria Palácio',
+        img: 'exhibitions/sistemas/1-minuto-2019-Andrés-Stephanou-Screenshot (1)-All-Rights-Reserved.png',
+        index: 8
       }
     ]
   },

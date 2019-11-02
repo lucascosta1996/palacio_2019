@@ -47,7 +47,7 @@ const NavigationWrapper = styled.section`
 
     a {
       font-family: 'Roboto Condensed', sans-serif;
-      font-size: 20px;
+      font-size: 22px;
     }
   }
 
@@ -181,32 +181,32 @@ const Navigation = props => {
       </h1>
       <div className="navigation">
         <Link
-          to="/about"
-          className={ `link ${isActive( 'about' ) ? 'active' : ''}` }
-          onClick={ () => { setActive( 'about' ); setOpen( false ); } }
-        >
-          { translate('about') }
-        </Link>
-        <Link
           to="/artists"
           className={ `link ${ isActive( 'artists' ) ? 'active' : '' }` }
-          onClick={ () => setActive( 'artists' ) }
+          onClick={ () => { setActive( 'artists' ); window.scrollTo(0,0); } }
         >
           { translate('artists') }
         </Link>
         <Link
           to="/exhibitions"
           className={ `link ${ isActive( 'exhibitions' ) ? 'active' : '' }` }
-          onClick={ () => { setActive( 'exhibitions' ); setOpen( false ); } }
+          onClick={ () => { setActive( 'exhibitions' ); setOpen( false ); window.scrollTo(0,0) } }
         >
           { translate('exhibitions') }
         </Link>
         <Link
           to="/viewing-room/login"
           className={ `link ${( isActive( 'viewing-room' ) && isLogged ) && 'activeViewingRoom'} ${ (isActive( 'viewing-room' ) && !firebase.isLoggedIn() ) ? 'active' : '' }` }
-          onClick={ () => { setActive( 'viewing-room' ); setOpen( false ); } }
+          onClick={ () => { setActive( 'viewing-room' ); setOpen( false ); window.scrollTo(0,0) } }
         >
           { translate('collection') }
+        </Link>
+        <Link
+          to="/about"
+          className={ `link ${isActive( 'about' ) ? 'active' : ''}` }
+          onClick={ () => { setActive( 'about' ); setOpen( false ); window.scrollTo(0,0) } }
+        >
+          { translate('about') }
         </Link>
         <span className="logoutLang">
           {
@@ -217,7 +217,7 @@ const Navigation = props => {
             ) : (
               <Link
                 className="logout"
-                onClick={ () => { setActive( 'viewing-room' ); setOpen( false ); } }
+                onClick={ () => { setActive( 'viewing-room' ); setOpen( false ); window.scrollTo(0,0) } }
                 to="/viewing-room/login"
               >
                 Log in

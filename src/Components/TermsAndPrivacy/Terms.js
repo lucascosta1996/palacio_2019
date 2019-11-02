@@ -28,7 +28,6 @@ const TermsWrapper = styled.section`
     font-size: 14px;
     font-weight: 500;
     padding-bottom: 14px;
-    text-transform: uppercase;
   }
 
   .title {
@@ -118,7 +117,6 @@ function Terms( props ) {
         <p><b>{translate('t3.2')}</b> <span>{translate('t3.2t')}</span></p>
         <p className="title"><b>{translate('t4')}</b></p>
         <p><b>{translate('t4.1')}</b> <span>{translate('t4.1t')}</span></p>
-        <p><b>{translate('t4.2')}</b> <span>{translate('t4.2t')}</span></p>
         <div className="update">
           <span>{translate('lastUpdateTt')}</span>
         </div>
