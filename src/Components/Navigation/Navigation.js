@@ -48,6 +48,7 @@ const NavigationWrapper = styled.section`
     a {
       font-family: 'Roboto Condensed', sans-serif;
       font-size: 22px;
+      line-height: 26px;
     }
   }
 
