@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react"
 import styled from 'styled-components'
 import { Link, Route } from 'react-router-dom'
 import Artist from './Artist'
-import detritos from '../../assets/exhibitions/micro/Micropartículas-2016-2017-Andrés-Stephanou-Installation-View-Galeria-Palácio-(2).jpg'
+import detritos from '../../assets/exhibitions/micro/Micropartículas-2016-2017-Andrés-Stephanou-Installation-View-Galeria-Palácio-(1).jpg'
 import luzvivazoomout from '../../assets/exhibitions/luz/Partículas-de-Luz-2-2017-2018-Andrés-Stephanou-Screenshot-(2)-All-Rights-Reserved.png'
 import olhos from '../../assets/artists/Autorretratos-2018-Chiaki-Mihara-Installation-View-Photo-Galeria-Palácio-(4).jpg'
 import olhoazul from '../../assets/exhibitions/contatoVisual/Contato-Visual-2018-2019-Chiaki-Mihara-Installation-View-Galeria-Palácio-(1).jpg'
@@ -10,6 +10,10 @@ import emerson from '../../assets/artists/Entre-o-Céu-e-o-Oceano-2019-Emerson-d
 import ventos from '../../assets/exhibitions/ventos/O-Regime-dos-Ventos-2018-Emerson-da-Silva-Screenshot-(4)-All-Rights-Reserved.jpg'
 import lucasalves from '../../assets/artists/Um-lugar-para-estar-2018-2019-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(1).jpg'
 import mundo from '../../assets/catalogue/7- Mundo-Aberto-2017-2018-Lucas-Alves-Costa-Screenshot-(1)-All-Rights-Reserved.png'
+import olhosvermelhos from '../../assets/exhibitions/contatoVisual/Contato-Visual-(2)-2018-2019-Chiaki-Mihara-Screenshot-(1)-All-Rights-Reserved.png'
+import paraiso from '../../assets/exhibitions/tropical/Paraíso-Tropical-2017-Lucas-Alves-Costa-Screenshot-(3)-All-Rights-Reserved.png'
+import alface from '../../assets/artists/3-Luz-Água-e-Terra-Preta-2017.jpg'
+import particulas from '../../assets/exhibitions/sistemas/Partículas-2018-2019-Andrés-Stephanou-Screenshot-(3)-All-Rights-Reserved.png'
 
 const ArtistsList = styled.section`
   .wrapper {
@@ -63,37 +67,49 @@ const Artists = props => {
       name: 'Andrés Stephanou',
       birthDate: '1993',
       artistWork: detritos,
-      route: 'andresstephanou',
+      route: 'andres-stephanou',
       text: 'andresA',
       image: luzvivazoomout,
-      work: "andresW"
+      work: "andresW",
+      siteUrl: "https://andres-stephanou.com",
+      site: "andres-stephanou.com",
+      bigImage: particulas
     },
     {
       name: 'Chiaki Mihara',
       birthDate: '1997',
       artistWork: olhoazul,
-      route: 'chiakimihara',
+      route: 'chiaki-mihara',
       text: 'chiakiA',
       image: olhos,
-      work: "chiakiW"
+      work: "chiakiW",
+      siteUrl: "https://chiakimihara.com",
+      site: "chiakimihara.com",
+      bigImage: olhosvermelhos
     },
     {
       name: 'Emerson da Silva',
       birthDate: '1988',
       artistWork: emerson,
-      route: 'emersondasilva',
+      route: 'emerson-da-silva',
       text: 'emersonA',
       image: ventos,
-      work: "emersonW"
+      work: "emersonW",
+      siteUrl: "https://emersondasilva.com",
+      site: "emersondasilva.com",
+      bigImage: alface
     },
     {
       name: 'Lucas Alves Costa',
       birthDate: '1996',
       artistWork: lucasalves,
-      route: 'lucasalvescosta',
+      route: 'lucas-alves-costa',
       text: 'lucasA',
       image: mundo,
-      work: "lucasW"
+      work: "lucasW",
+      siteUrl: "https://lucasalvescosta.com",
+      site: "lucasalvescosta.com",
+      bigImage: paraiso
     }
   ]
 
@@ -114,19 +130,19 @@ const Artists = props => {
     <ArtistsList>
       <div className='wrapper'>
         <Route 
-          exact path={ `/artists/andresstephanou` }
+          exact path={ `/artists/andres-stephanou` }
           render={ props => <Artist {...props} artist={ artists[0] } /> }
         />
         <Route 
-          exact path={ `/artists/chiakimihara` }
+          exact path={ `/artists/chiaki-mihara` }
           render={ props => <Artist {...props} artist={ artists[1] } /> }
         />
         <Route 
-          exact path={ `/artists/emersondasilva` }
+          exact path={ `/artists/emerson-da-silva` }
           render={ props => <Artist {...props} artist={ artists[2] } /> }
         />
         <Route 
-          exact path={ `/artists/lucasalvescosta` }
+          exact path={ `/artists/lucas-alves-costa` }
           render={ props => <Artist {...props} artist={ artists[3] } /> }
         />
       </div>

@@ -21,6 +21,17 @@ const AboutWrapper = styled.section`
   text-align: left;
   top: 0;
 
+  .icon {
+    color: #ADB5BD;
+    font-size: 18px;
+    margin-right: 10px;
+    margin-top: 26px;
+
+    &:hover {
+      color: #000;
+    }
+  }
+
   @media ( max-width: 520px ) {
     flex-direction: column;
     max-width: 320px;
@@ -95,6 +106,10 @@ const AboutWrapper = styled.section`
 
     .map {
       color: #b3b4b5;
+
+      &:hover {
+        color: #000;
+      }
     }
 
     .newsletter {
@@ -151,7 +166,7 @@ const AboutWrapper = styled.section`
           }
 
           &:hover {
-            background: #4547ee;
+            background: #000;
             border: 1.1px solid #c3c3c300;
             color: #fff;
           }
@@ -227,6 +242,14 @@ const About = props => {
               </div>
             )
           }
+          <div>
+            <a href="https://twitter.com/GaleriaPalacio" target="_blank">
+              <i className="fab fa-twitter icon"></i>
+            </a>
+            <a href="https://www.instagram.com/galeriapalacio/" target="_blank">
+              <i className="fab fa-instagram icon"></i>
+            </a>
+          </div>
       </div>
       <div>
         <p className="info">
@@ -234,9 +257,6 @@ const About = props => {
         </p>
         <p className="info">
           {translate('aboutInfo2')}
-        </p>
-        <p className="info">
-          {translate('aboutInfo3')}
         </p>
       </div>
       <Copyright

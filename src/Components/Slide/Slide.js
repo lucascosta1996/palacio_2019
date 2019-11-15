@@ -97,12 +97,21 @@ const SlideWrapper = styled.div`
   }
 
   .rightArrow {
+    color: #c3c3c3;
     right: -30px;
+
+    &:hover {
+      color: #000;
+    }
   }
 
   .leftArrow {
+    color: #c3c3c3;
     left: -30px;
-    transform: rotate(-180deg);
+
+    &:hover {
+      color: #000;
+    }
   }
 `
 
@@ -170,16 +179,14 @@ function Slide (props) {
         className="next"
         onClick={ () => updateSlide( nextDiv, nextDiv === props.slides.length - 1 ? props.slides.length - 1 : nextDiv + 1, nextDiv.index + 1 ) }
       />
-      <img
-        className={ `leftArrow ${active.index === 0 ? `hidden` : ''}` }
+      <i
+        className={`fas fa-chevron-left leftArrow ${active.index === 0 ? `hidden` : ''}`}
         onClick={ () => updateSlide( previousDiv, previousDiv.index === 0 ? 0 : previousDiv.index - 1, previousDiv.index + 1 ) }
-        src={ arrow }
-      />
-      <img
-        className={ `rightArrow ${active.index === props.slides.length - 1 ? `hidden` : ''}` }
+      ></i>
+      <i
+        className={`fas fa-chevron-right rightArrow ${active.index === props.slides.length - 1 ? `hidden` : ''}`}
         onClick={ () => updateSlide( nextDiv, nextDiv === props.slides.length - 1 ? props.slides.length - 1 : nextDiv + 1, nextDiv.index + 1 ) }
-        src={ arrow }
-      />
+      ></i>
     </SlideWrapper>
   )
 }

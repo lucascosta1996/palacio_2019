@@ -102,21 +102,21 @@ function Terms( props ) {
       <section>
         <h2>{translate('termsTitle')}</h2>
         <p>{translate('terms')} <Link to="/privacy-policy">{translate('clickHere')}</Link> {translate('terms2')}</p>
-        <p className="title"><b>{translate('t1')}</b></p>
-        <p><b>{translate('t1.1')}</b> <span>{translate('t1.1t')}</span></p>
-        <p><b>{translate('t1.2')}</b> <span>{translate('t1.2t')}</span></p>
-        <p><b>{translate('t1.3')}</b> <span>{translate('t1.3t')}</span></p>
-        <p><b>{translate('t1.4')}</b> <span>{translate('t1.4t')}</span></p>
-        <p className="title"><b>{translate('t2')}</b></p>
-        <p><b>{translate('t2.1')}</b> <span>{translate('t2.1t')}</span></p>
-        <p><b>{translate('t2.2')}</b> <span>{translate('t2.2t')}</span></p>
-        <p><b>{translate('t2.3')}</b> <span>{translate('t2.3t')}</span></p>
-        <p><b>{translate('t2.4')}</b> <span>{translate('t2.4t')} <Link to="/privacy-policy">{translate('t2.4tPrivacy')}</Link> {translate('t2.4t2')}</span></p>
-        <p className="title"><b>{translate('t3')}</b></p>
-        <p><b>{translate('t3.1')}</b> <span>{translate('t3.1t')}</span></p>
-        <p><b>{translate('t3.2')}</b> <span>{translate('t3.2t')}</span></p>
-        <p className="title"><b>{translate('t4')}</b></p>
-        <p><b>{translate('t4.1')}</b> <span>{translate('t4.1t')}</span></p>
+        <p className="title"><b>{translate('t1')}</b> <span>{translate('t1t')}</span></p>
+        <p><b>{translate('t2')}</b> <span>{translate('t2t')}</span></p>
+        <p><b>{translate('t3')}</b> <span>{translate('t3t')}</span></p>
+        <p><b>{translate('t4')}</b> <span>{translate('t4t')}</span></p>
+        <p><b>{translate('t5')}</b> <span>{translate('t5t')}</span></p>
+        <p><b>{translate('t6')}</b> <span>{translate('t6t')}</span></p>
+        <p><b>{translate('t7')}</b> <span>{translate('t7t')}</span></p>
+        <p><b>{translate('t8')}</b> <span>{translate('t8t')}</span></p>
+        <p><b>{translate('t9')}</b> <span>{translate('t9t')}</span></p>
+        <p><b>{translate('t10')}</b> <span>{translate('t10t')}</span></p>
+        <p><b>{translate('t11')}</b> <span>{translate('t11t')} <Link to="/privacy-policy">{translate('t11t1Click')}</Link>{translate('t11t2')}</span></p>
+        <p><b>{translate('t12')}</b> <span>{translate('t12t')}</span></p>
+        <p><b>{translate('t13')}</b> <span>{translate('t13t')}</span></p>
+        <p><b>{translate('t14')}</b> <span>{translate('t14t')}</span></p>
+        <p><b>{translate('t15')}</b> <span>{translate('t15t')}</span></p>
         <div className="update">
           <span>{translate('lastUpdateTt')}</span>
         </div>

@@ -139,6 +139,7 @@ export const exhibitions = [
     paragraph3: 'sistemasp3',
     paragraph4: 'sistemasp4',
     paragraph5: 'sistemasp5',
+    paragraph6: 'sistemasp6',
     pdf: 'pdfSistemas',
     slide: [
       {

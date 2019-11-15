@@ -157,6 +157,7 @@ function Exhibition (props) {
     .replace(/Superf\ície de Mundo Aberto/g, `<i>Superfície de Mundo Aberto</i>`)
     .replace(/Partículas de Luz \(VR\)/g, `<i>Partículas de Luz (VR)</i>`)
     .replace(/Partículas de Luz 3/g, `<i>Partículas de Luz 3</i>`)
+    .replace(/1 minuto/g, `<i>1 minuto</i>`)
     .replace(/Terreno/g, `<i>Terreno</i>`)
     .replace(/Um lugar para estar/g, `<i>Um lugar para estar</i>`)
     .replace(/Mundo Aberto/g, `<i>Mundo Aberto</i>`)

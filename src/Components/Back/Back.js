@@ -9,6 +9,8 @@ const BackWrapper = styled.div`
   ${props => props.position === 'fixed' && 'position: fixed;'}
   left: 25px;
 
+  display: none;
+
   a {
     color: #000;
     font-family: 'Roboto', sans-serif;

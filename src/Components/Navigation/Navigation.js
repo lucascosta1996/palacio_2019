@@ -12,19 +12,20 @@ import { async } from 'q'
 
 const NavigationWrapper = styled.section`
   ${props => props.isOpened && `background-color: #fff;`}
-  ${props => props.isOpened && `width: 100%; height: 128px;`}
   display: flex;
   flex-direction: column;
   left: 25px;
+  padding-top: 25px;
   position: fixed;
   overflow: hidden;
   text-align: left;
-  top: 25px;
+  top: 0;
   z-index: 2;
 
   @media ( max-width: 520px ) {
     left: 0;
     padding-left: 25px;
+    ${props => props.isOpened && `width: 100%; height: 128px;`}
   }
   
   h1,
@@ -57,7 +58,7 @@ const NavigationWrapper = styled.section`
   }
 
   .active {
-    color: #c3c3c3;
+    /*color: #c3c3c3;*/
   }
 
   .activeViewingRoom { 
@@ -103,7 +104,7 @@ const NavigationWrapper = styled.section`
   }
 
   .hidden {
-    display: none;
+    display: none!important;
   }
 
   .close {
@@ -141,14 +142,30 @@ const NavigationWrapper = styled.section`
       }
     }
   }
+
+  .menu {
+    cursor: pointer;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 20px;
+    padding-top: 6px;
+
+    &:hover {
+      font-weight: 500;
+    }
+  }
+
+  .bold {
+    font-weight: 500;
+  }
 `
 
 const VeganBurguerIcon = styled.div`
   cursor: pointer;
-  font-size: 18px;
+  font-size: 16px;
   position: fixed;
   right: 35px;
-  top: 22px;
+  top: 26px;
 
   @media ( min-width: 769px ) {
     display: none;
@@ -183,33 +200,33 @@ const Navigation = props => {
       <div className="navigation">
         <Link
           to="/artists"
-          className={ `link ${ isActive( 'artists' ) ? 'active' : '' }` }
-          onClick={ () => { setActive( 'artists' ); window.scrollTo(0,0); } }
+          className={ `link ${ isActive( 'artists' ) ? 'active' : '' } ${ open ? '' : 'hidden' }` }
+          onClick={ () => { setActive( 'artists' ); setOpen( false ); window.scrollTo(0,0); } }
         >
           { translate('artists') }
         </Link>
         <Link
           to="/exhibitions"
-          className={ `link ${ isActive( 'exhibitions' ) ? 'active' : '' }` }
+          className={ `link ${ isActive( 'exhibitions' ) ? 'active' : '' } ${ open ? '' : 'hidden' }` }
           onClick={ () => { setActive( 'exhibitions' ); setOpen( false ); window.scrollTo(0,0) } }
         >
           { translate('exhibitions') }
         </Link>
         <Link
           to="/viewing-room/login"
-          className={ `link ${( isActive( 'viewing-room' ) && isLogged ) && 'activeViewingRoom'} ${ (isActive( 'viewing-room' ) && !firebase.isLoggedIn() ) ? 'active' : '' }` }
+          className={ `link ${( isActive( 'viewing-room' ) && isLogged ) && 'activeViewingRoom'} ${ (isActive( 'viewing-room' ) && !firebase.isLoggedIn() ) ? 'active' : '' } ${ open ? '' : 'hidden' }` }
           onClick={ () => { setActive( 'viewing-room' ); setOpen( false ); window.scrollTo(0,0) } }
         >
           { translate('collection') }
         </Link>
         <Link
           to="/about"
-          className={ `link ${isActive( 'about' ) ? 'active' : ''}` }
+          className={ `link ${isActive( 'about' ) ? 'active' : ''} ${ open ? '' : 'hidden' }` }
           onClick={ () => { setActive( 'about' ); setOpen( false ); window.scrollTo(0,0) } }
         >
           { translate('about') }
         </Link>
-        <span className="logoutLang">
+        <span className={`logoutLang ${ open ? '' : 'hidden' }`}>
           {
             ( firebase.isLoggedIn() ) ? (
               <a className="logout" onClick={ logout }>
@@ -228,16 +245,19 @@ const Navigation = props => {
           <span className="divider"> | </span>
           <LanguageOptions />
         </span>
+        <span className={`menu ${!open ? '' : 'bold'}`} onClick={ () => setOpen( !open ) }>
+          MENU
+        </span>
       </div>
       <VeganBurguerIcon
         onClick={ () => setOpen( !open ) }
       >
         {
           open ? (
-            <img className="close" src={ close } />
+            <b>MENU</b>
           ) : (
             <Fragment>
-              <div>&#9776;</div>
+              <span>MENU</span>
             </Fragment>
           )
         }

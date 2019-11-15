@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import styled from 'styled-components'
 import { I18nContext } from "../../i18n";
 
-const OptionsWrapper = styled.section`
+const OptionsWrapper = styled.div`
   width: 20px;
   z-index: 2;
 

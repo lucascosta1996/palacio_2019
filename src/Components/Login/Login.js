@@ -14,7 +14,7 @@ const LoginWrapper = styled.section`
   justify-content: center;
   left: 0;
   margin: auto;
-  max-width: 700px;
+  max-width: 458px;
   position: absolute;
   right: 0;
   text-align: left;
@@ -24,7 +24,7 @@ const LoginWrapper = styled.section`
     align-items: flex-start;
     display: flex;
     flex-direction: column;
-    padding-left: 100px;
+    padding-left: 60px;
 
     @media (max-width: 520px) {
       padding-left: 20px;
@@ -71,7 +71,7 @@ const LoginWrapper = styled.section`
       
       &:hover {
         border: none;
-        background: #4547ee;
+        background: #000;
         color: #fff;
         padding: 7px 19px;
       }
@@ -96,7 +96,8 @@ const LoginWrapper = styled.section`
 
     .align-left {
       align-self: start;
-      padding-top: 10px;
+      max-width: 334px;
+      padding-top: 20px;
       text-align: left;
     }
 
@@ -114,6 +115,10 @@ const LoginWrapper = styled.section`
         }
       }
     }
+  }
+
+  .small {
+    font-size: 12px!important;
   }
 `
 
@@ -154,13 +159,7 @@ const Login = (props) => {
         !subscribe ? (
           <form className="formWrapper" onSubmit={e => e.preventDefault() && false }>
             <span className="fullCollection marginBottom2">
-              {translate('onView')}
-            </span>
-            <span className="fullCollection marginBottom2">
-              <i>Selected Works: 2016–2019</i>
-            </span>
-            <span className="fullCollection marginBottom">
-              {translate('selectedWorksDate')}
+              Viewing Room
             </span>
             <input id="email" name="email" type="email" value={ email } placeholder="E-mail" onChange={e => setEmail(e.target.value)} />
             <div className="inputAndButton">
@@ -168,29 +167,29 @@ const Login = (props) => {
               <button type="submit" onClick={login}>Login</button>
             </div>
             <span className="becomeMember alreadyMember padding-top" href="#" onClick={ () => setSubscribe(true) }>
-              <a href="#">
-                {translate('becomeMember')}
+              <a href="#" className="small">
+                {translate('signUp')}
               </a>
             </span>
           </form>
         ) : (
           <form className="formWrapper" onSubmit={e => e.preventDefault() && false }>
             <span className="fullCollection marginBottom">
-              {translate('becomeMember')}
+              Viewing Room
             </span>
             <input id="name" name="name" type="text" value={ fullName } placeholder={translate("fullName")} onChange={e => setFullName(e.target.value)} />
             <div className="inputAndButton">
               <input id="email" name="email" type="email" value={ newEmail } placeholder="E-mail" onChange={e => setNewEmail(e.target.value)} />
               <button type="submit" onClick={onRegister}>{translate('signUp')}</button>
             </div>
-            <span className="becomeMember padding-top align-left" onClick={ () => setSubscribe(false) }>
+            {/* <span className="becomeMember padding-top align-left" onClick={ () => setSubscribe(false) }>
               {translate('alreadyMember')}
               <a href="#">
                 {"Login"}
               </a>.
-            </span>
-            <span className="becomeMember align-left">
-              {translate('sharing')}
+            </span> */}
+            <span className="becomeMember align-left small">
+              * {translate('sharing')}
               <Link to="/terms-and-conditions">
                 {translate('termsConditions')}
               </Link>

@@ -130,6 +130,10 @@ function  Privacy( props ) {
         <p>{translate('p5t')}</p>
         <b>{translate('p6')}</b>
         <p>{translate('p6t')}</p>
+        <b>{translate('p7')}</b>
+        <p>{translate('p7t')}</p>
+        <b>{translate('p8')}</b>
+        <p>{translate('p8t')}</p>
         <div className="update">
           <span>{translate('lastUpdatePt')}</span>
         </div>

@@ -192,4 +192,20 @@ export const collection = [
       }
     ]
   },
+  {
+    name: 'Paraíso Tropical',
+    period: '(2017)',
+    artist: 'Lucas Alves Costa',
+    route: 'paraiso-tropical',
+    coverImage: 'Paraíso-Tropical-2017-Lucas-Alves-Costa-Screenshot-(1)-All-Rights-Reserved.png',
+    info1: 'ptropical1',
+    info2: 'ptropical2',
+    date: 'ptropicalDate',
+    slides: [
+      {
+        img: 'exhibitions/tropical/Paraíso-Tropical-2017-Lucas-Alves-Costa-Screenshot-(1)-All-Rights-Reserved.png',
+        index: 0
+      }
+    ]
+  }
 ]

@@ -11,8 +11,36 @@ const CurrentExhibitionWrapper = styled.section`
   margin: auto;
   position: absolute;
   right: 0
-  top: 150px;
-  width: 100%;
+  top: 130px;
+  width: 800px;
+
+  a {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    padding: 0 5px;
+    text-decoration: none;
+
+    section {
+      transition: all .3s ease;
+    }
+    
+    &:hover {
+      section {
+        opacity: 0.6;
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
+
+  .current-wrapper {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column-reverse;
+  }
 
   .marginLeft {
     @media (min-width: 1279px) {
@@ -41,6 +69,9 @@ const CurrentExhibitionWrapper = styled.section`
   }
 
   .viewing {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
     padding-bottom: 80px;
     padding-top: 80px;
 
@@ -50,11 +81,9 @@ const CurrentExhibitionWrapper = styled.section`
   }
 
   img {
-    max-width: 80%;
     width: 100%;
 
     @media (min-width: 1279px) {
-      margin-right: 50px;
       max-width: 800px;
     }
   }
@@ -67,14 +96,21 @@ const CurrentExhibitionWrapper = styled.section`
   }
 
   .infosCurrentEx {
+    align-items: center;
+    display: flex;
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
     text-align: center;
+
+    p {
+      padding: 0 3px;
+    }
 
     a {
       color: #000;
       font-family: 'Roboto', sans-serif;
       font-size: 13px;
+      padding: 0 5px;
       text-decoration: underline;
 
       &:hover {
@@ -89,38 +125,37 @@ function CurrentExhibition( props ) {
 
   return(
     <CurrentExhibitionWrapper>
-      <section className="current">
-        <div className="marginRight infosCurrentEx">
-          <p>
-            Chiaki Mihara: <i>Contato Visual</i>
-          </p>
-          <p>
-            {translate('contatoDate')}
-          </p>
-          <Link to="/exhibitions/contato-visual">
-            {translate('learnMore')}
-          </Link>
-        </div>
-        <div className="marginLeft imageWrapper">
-          <img alt="Galeria Palácio current exhibition - Contato visual, 2019 - Chiaki Mihara" src={ require( `../assets/exhibitions/contatoVisual/Estudo-para-Contato-Visual-2019-Chiaki-Mihara-Installation-View-Galeria-Palácio-(2).jpg` ) } />
-        </div>
-      </section>
-      <section className="viewing">
-        <div className="marginRight imageWrapper">
-          <img alt="Galeria Palácio current exhibition - Contato visual, 2019 - Chiaki Mihara" src={ require( `../assets/exhibitions/terra/Terrestre-2018-Emerson-da-Silva-Screenshot-(3)-All-Rights-Reserved.jpg` ) } />
-        </div>
-        <div className="marginLeft infosCurrentEx">
-          <p>
-            <i>Selected Works: 2016–2019</i>
-          </p>
-          <p>
-            {translate('selectedWorksDate')}
-          </p>
-          <Link to="/viewing-room/main">
-            Viewing Room
-          </Link>
-        </div>
-      </section>
+      <Link to="/exhibitions/contato-visual">
+        <section className="current current-wrapper">
+          <div className="marginRight infosCurrentEx">
+            <p>
+              Chiaki Mihara: <i>Contato Visual</i>,
+            </p>
+            <p>
+              {translate('contatoDate')}
+            </p>
+          </div>
+          <div className="imageWrapper">
+            <img alt="Galeria Palácio current exhibition - Contato visual, 2019 - Chiaki Mihara" src={ require( `../assets/exhibitions/contatoVisual/Estudo-para-Contato-Visual-2019-Chiaki-Mihara-Installation-View-Galeria-Palácio-(2).jpg` ) } />
+          </div>
+        </section>
+      </Link>
+      
+      <Link to="/viewing-room/main">
+        <section className="viewing">
+          <div className="imageWrapper">
+            <img alt="Galeria Palácio current exhibition - Contato visual, 2019 - Chiaki Mihara" src={ require( `../assets/exhibitions/terra/Terrestre-2018-Emerson-da-Silva-Screenshot-(3)-All-Rights-Reserved.jpg` ) } />
+          </div>
+          <div className="infosCurrentEx">
+            <p>
+              <i>Selected Works: 2016–2019</i>, 
+            </p>
+            <p>
+              {translate('selectedWorksDate')}
+            </p>
+          </div>
+        </section>
+      </Link>
       <div className="copy">
         <Copyright />
       </div>
