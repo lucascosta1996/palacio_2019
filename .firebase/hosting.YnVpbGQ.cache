@@ -1,161 +1,161 @@
 favicon.ico,1571190035348,f7adad76fbcd20c98017226e1a7b6cdd68e481016ad913262faf4aefd05ce62d
-index.html,1573847809974,ddb2e96104a68073c968608581082e5dc412f0a3918e336c6c3979eb54ee1723
-static/css/2.27fdde94.chunk.css,1573847809986,577578cf12e085e48625d7e6377dd761bb744a09b32ffe1865944a4aeb16c141
+index.html,1573874103198,0bdcd8276121b11e0ff348b562e13b96abedb5f77a3694c4c3265eed132a51e3
+static/css/2.27fdde94.chunk.css,1573874103197,577578cf12e085e48625d7e6377dd761bb744a09b32ffe1865944a4aeb16c141
 manifest.json,1562115562181,a40a4294484385ec155814f7d72caf5967a19f5efcbedf7a62b2cdff07e42711
-static/css/main.34de6062.chunk.css,1573847809973,5acd8330a231ceea1c836c7f2f9dd7703ab7ffcc21677b1712a29ae4b222d194
-service-worker.js,1573847809986,62960e5ac34cfaa5a6ffaf290c0d85281bdd5b5def7b9263b03ef56fb88016ea
-static/css/main.34de6062.chunk.css.map,1573847809998,0d132c2535953984e13844194483a969d4c34cbe81a4e0ac5ff74874e794be68
-asset-manifest.json,1573847809985,4d53a99462a6127f475e77712e32b252eca528c70c2422c53f3b303d82ae9887
-static/js/runtime~main.a8a9905a.js,1573847809986,27518aed75eb917ee7575e8c911b596e850b5265b9e5694a7681cba901419f4d
-static/css/2.27fdde94.chunk.css.map,1573847809997,96dfb9b310ccd293453f00f3273170180c110a9229ff5f26e01f7c2cf5c2a5e8
-static/js/runtime~main.a8a9905a.js.map,1573847809998,d13b46ae2acf0d2863e1c6449a51f64702fa5b464c475c0ec20d6e8de9970ef9
-precache-manifest.500361dbe204919f22db8dca9a358c8f.js,1573847809974,ba1d1d0e001cbc260808b412bf947fb7aa052c77e83f4b27294972433b557746
-static/media/1-minuto-2019-Andrés-Stephanou-Screenshot (1)-All-Rights-Reserved.85ec3182.png,1573847809957,897295db3383bb5f8af828d2254206052b9e64980fd6bc72284f8c1709a901db
-static/media/arrow.30ce4b4e.png,1573847809900,3aab496fa892b5cac30abd9e2086780bd645a79d757fcef499b1fc1305ab46b4
-static/media/Andrés Stephanou - Partículas de Luz, 2018 - Galeria Palácio, PDF (EN).173cb894.pdf,1573847809915,b45df8cf6248cd7d38399f252cf7f276e5696cf603f0ed47a066c3c09d73c5fd
-static/media/Andrés Stephanou - Micropartículas, 2017 - Galeria Palácio, PDF (PT).d4cc75cf.pdf,1573847809915,eddf6bf367b788abd5503b1b2042d17535b76a75a4ede6caadcec7890b48906a
-static/media/Andrés Stephanou - Micropartículas, 2017 - Galeria Palácio, PDF (EN).7f7516a1.pdf,1573847809915,481e8d199174b21bde00d12885ba94d88d566f02fda2b143252a96df6b4afa93
-static/media/Andrés Stephanou - Partículas de Luz, 2018 - Galeria Palácio, PDF (PT).4c1b0d79.pdf,1573847809916,04d49899cc12125d0df2a02e98e2c5c7a9b11b25a360c56726340f44ae1be106
-static/media/Andrés Stephanou - Partículas, 2019 - Galeria Palácio, PDF (EN).9b3374b9.pdf,1573847809917,73c4625cb84ae66077c0af7f77818dff83669fc69b160fa9521fc78d5e8aa230
-static/media/Andrés Stephanou - Partículas, 2019 - Galeria Palácio, PDF (PT).65289348.pdf,1573847809917,7a353a19572adbc5f2fd8a539f368f93853bbab7f150cefb363f5b8978707c3e
-static/media/alface.fe9144b8.jpg,1573847809910,c88fc2b2149c929e94a56c9ed9853d1a5706be9cce471deefe2b2c447dacf395
-static/media/Chiaki Mihara - Autorretratos, 2018 - Galeria Palácio, PDF (EN).9dfbe905.pdf,1573847809917,18b3c203e184846e838d42625f92f5db03bb286d78d885bbb3592d69e345ba60
-static/media/Chiaki Mihara - Autorretratos, 2018 - Galeria Palácio, PDF (PT).92a0369c.pdf,1573847809918,466b0559f42a6090c247aab277884733523bcaec0c159f96bfc72ad73a281873
-static/media/1-minuto-2019-Andrés-Stephanou-Installation-View-Photo-Galeria-Palácio-(1).46c34dd6.jpg,1573847809956,196676bb3af88534e454eb44d929f093eb2e0bfd2e9cba43458ccb9a6d494906
-static/media/5-Partículas-2018-2019-Andrés-Stephanou-Screenshot-(3)-All-Rights-Reserved.c1c5c715.png,1573847809910,7afc384dd36f543f86c08ae99f04e8e9e652272f831498c1a88b13e870670194
-static/media/Chiaki Mihara - Contato Visual, 2019 - Galeria Palácio, PDF (EN).f300340a.pdf,1573847809919,93fe19a240e85ee0a029a9e445fffe3e677ab1e78cee3a6476a7bf3bc84d0422
-static/media/Chiaki Mihara - Contato Visual, 2019 - Galeria Palácio, PDF (PT).2e564134.pdf,1573847809919,29be6254a41ef3c8a1aeffa33672112fd067fb321736ef7df0ab489d77a2c42f
-static/media/1-minuto-2019-Andrés-Stephanou-Installation-View-Photo-Galeria-Palácio-(3).53832aae.jpg,1573847809957,de739bf348450feddc262fa8921ef92aa6466137661df59fed80c1093f90dc14
-static/media/1-minuto-2019-Andrés-Stephanou-Installation-View-Photo-Galeria-Palácio-(2).c9c574a3.jpg,1573847809956,5cbe2ee8aa95225ceb03eaf9d5abcb2c6fe94fba0bb7f8c3e59a19739844e38d
-static/js/main.aa8314da.chunk.js,1573847809973,f43a221871a361adcbda606c03ba19aedf5d839c457cfc7b390d3cd6ccefbb5f
-static/media/Emerson da Silva - A pesca enquanto atividade humana, 2019 - Galeria Palácio, PDF (EN).06f5b5ef.pdf,1573847809919,2a0652f68085b1fbc3e4daa96841d797500e304cad3d0c3a503023bd0c0b41d9
-static/media/Emerson da Silva - A pesca enquanto atividade humana, 2019 - Galeria Palácio, PDF (PT).f1840329.pdf,1573847809919,2074d3e4ee84c14afd4266b6c1f5e870fa1cc5697291b82178aea838b1773ace
-static/js/main.aa8314da.chunk.js.map,1573847809998,7161beac6b60b6829eebf97ef261c72e944e527b0f7b458c469c128f83675c59
-static/media/Emerson da Silva - Luz, Água e Terra Preta, 2017 - Galeria Palácio, PDF (EN).ac880705.pdf,1573847809920,1a010b40a5a7c30151efd6f252984005c904093d1f821c3f4e38b2d08fda3463
-static/media/Emerson da Silva - Luz, Água e Terra Preta, 2017 - Galeria Palácio, PDF (PT).83df0b6c.pdf,1573847809920,963d7d8dda699e041f2be6fd6370e63e1fe9e6a45a236772b64b3726349776a2
-static/media/Emerson da Silva - O Regime dos Ventos, 2018 - Galeria Palácio, PDF (PT).fc2d12b5.pdf,1573847809920,4c021b6018f8492d6225c2989e7f1f5ae70a52178d96b323fb6f2811fde6fd98
-static/media/areia.ce549a6f.jpg,1573847809910,1da647e9375edf7518337e42c67c7051e52ba0a64577268063eff78174d7e0f1
-static/media/Emerson da Silva - O Regime dos Ventos, 2018 - Galeria Palácio, PDF (EN).5811d781.pdf,1573847809920,6cc8024753e9c282cf0d09edfaa1912eec0d1d25374b1c3c6877e515a5bfb9c5
-static/media/Autorretratos-2018-Chiaki-Mihara-Installation-View-Photo-Galeria-Palácio-(6).8dd9824b.jpg,1573847809926,e762c8b1b0defcc57847ad61cc9426abeebbcfb81b5f4c4c93e3e9403313bf06
-static/media/detritos.03fda4c9.png,1573847809911,285c0b37211fa5a3a6ad37a3a9fd4251e1c3203cfcbaaaa058aceeddfdd29a04
-static/media/11-Micropartículas-2016-2017-Andrés-Stephanou-Screenshot-(6)-All-Rights-Reserved.cc1fc65f.png,1573847809900,f4b1bf74d1a3a8f27eeebe77447355fbf3bbb9f2738c3173f60b8159ee86a912
-static/media/Lucas Alves Costa - Mundo Aberto, 2018 - Galeria Palácio, PDF (EN).3fa4ddf4.pdf,1573847809920,adc8dd9604b19762b85ffc3e0f74400fcead9687dedff032fe02b03d8cfda506
-static/media/Lucas Alves Costa - Mundo Aberto, 2018 - Galeria Palácio, PDF (PT).1a713908.pdf,1573847809920,2ad5551a561909de9f95313663b2b16e8c1ab0d4e7e28215ea647fed75aa3f18
-static/media/Lucas Alves Costa - Paraíso, 2017 - Galeria Palácio, PDF (EN).fc6e190a.pdf,1573847809922,c88aa46a6338ca7f8d5f083819f4ad997e3c43a7feae4c9f5e7185488ce097b3
-static/media/Contato-Visual-2018-2019-Chiaki-Mihara-Installation-View-Galeria-Palácio-(1).aee3e51a.jpg,1573847809853,207a52c4ca89269bdc93e7d7ad4d548b9077b5ae39b836c4572b8058a843a09e
-static/media/6-Entre-o-Céu-e-o-Oceano-2019-Emerson-da-Silva-Screenshot-(4)-All-Rights-Reserved.3eb636bd.jpg,1573847809908,54ecc4ea3ecf2fb02ae1b869212750ef664bb447a5f8a14b5f13af0a445bde5c
-static/media/Lucas Alves Costa - Paraíso, 2017 - Galeria Palácio, PDF (PT).8d01809b.pdf,1573847809922,d8382795145c06ef1203d7533147dbd4719f79040215e48a18f8c73b139dfed1
-static/media/Lucas Alves Costa - Um lugar para estar, 2019 - Galeria Palácio, PDF (EN).3c3d2500.pdf,1573847809922,1a785ef4364287817433479193f6c89a50e77ed104ed205f5e2a8ffe8605baa8
-static/media/Lucas Alves Costa - Um lugar para estar, 2019 - Galeria Palácio, PDF (PT).f7549c6d.pdf,1573847809924,3b0e443ca360fa76faca878d920daa6fb538c3060401f3b309b1f30262ba2d9b
-static/media/Contato-Visual-2018-2019-Chiaki-Mihara-Installation-View-Galeria-Palácio-(2).d9f58136.jpg,1573847809930,07d992268e1ef039d9a10e692f8e00ed1ab87e6dd8419d9bd8b580d057940745
-static/media/Autorretratos-2018-Chiaki-Mihara-Installation-View-Photo-Galeria-Palácio-(2).c28b250a.jpg,1573847809925,ae844ef2f80842863353b9a5803dca076c776eec4daf8d58aa8ee957fd815845
-static/media/Contato-Visual-2019-Chiaki-Mihara-Installation-View-Galeria-Palácio-(3).f453537d.jpg,1573847809931,8511288f9c4cb1226b9e14b9a9ed6143f55dd9e3dbd1db518432d4f044469fd5
-static/media/12-Contato-Visual-(Azul)-2018-2019-Chiaki-Mihara-Screenshot-(1)-All-Rights-Reserved.fe902603.png,1573847809906,bffbe81c82e9cd6535aa266dc3a1241334dca3122d583b91da9f15199ce0dda7
-static/media/Entre-o-Céu-e-o-Oceano-2019-Emerson-da-Silva-Screenshot-(4)-All-Rights-Reserved.3eb636bd.jpg,1573847809931,54ecc4ea3ecf2fb02ae1b869212750ef664bb447a5f8a14b5f13af0a445bde5c
-static/media/Autorretratos-2018-Chiaki-Mihara-Installation-View-Photo-Galeria-Palácio-(1).1374f02e.jpg,1573847809925,a3ecb8e39202068df32bc42c041c98450c48b564f7e23971376da2ebdd0e47d0
-static/media/Contato-Visual-(Vermelho)-2018-2019-Chiaki-Mihara-Screenshot-(1)-All-Rights-Reserved.c0079508.png,1573847809853,06ea2f610aa86fccb547e3dd03a8110e6c8ab1d00f1ac0d9af038a61d4f1f4a7
-static/media/Micropartículas-2016-2017-Andrés-Stephanou-Screenshot-(1)-All-rights-reserved.cf14223f.png,1573847809946,1138f8f9b88fc6820243f71dcd68500b241101cb52392a155a7138729f2808e8
-static/media/Luz-Água-e-Terra-Preta-2017-Emerson-da-Silva-Installation-View-Galeria-Palácio-(1).d5250504.jpg,1573847809958,c69796feeaba06bb5f887471b1fb5232fc5671d00a0ff4253c0a618d6d4278fe
-static/media/Incidência-de-luz-em-um-ambiente-virtual-2019-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(2).35b0a886.jpg,1573847809932,ec728449586030727b0c41b8c6020fba634a5ea04faa751857493e25ccf77872
-static/media/Dunas-Parque-Eólico-Soterramento-2018-Emerson-da-Silva-Installation-View-Galeria-Palácio-(1).6cf39cca.jpg,1573847809964,57114a4214193d3381f78b02ba97ec322db0cc0943ce2d6f220e4de28aaa7c53
-static/media/Incidência-de-luz-em-um-ambiente-virtual-2019-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(1).64b17553.jpg,1573847809932,1c17a66bc1fd11a145c649459fb9db1ea1c0ca708ff353317fce5bb9c9a98b02
-static/media/Contato-Visual-(Azul)-2018-2019-Chiaki-Mihara-Screenshot-(1)-All-Rights-Reserved.fe902603.png,1573847809930,bffbe81c82e9cd6535aa266dc3a1241334dca3122d583b91da9f15199ce0dda7
-static/js/2.8778af70.chunk.js,1573847809998,e76d49b56057fedeaf754b31875ef00a72b53d58219e55de3face173c9930342
-static/media/Mata-Atlântica-(Digital)-2017-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(1).1bdbb224.jpg,1573847809963,d0a972336992e8f92b8ab1693e1f9286b681ccfd819770b5675d601548310c17
-static/media/Estudo-para-Contato-Visual-2019-Chiaki-Mihara-Installation-View-Galeria-Palácio-(1).3c2a1a2b.jpg,1573847809931,a4d21848cc51b95b5319d240f43d507c7aa3a4295d2ffd0883fd45c935c66ce8
-static/media/Entre-o-Céu-e-o-Oceano-2019-Emerson-da-Silva-Installation-View-Galeria-Palácio-(4).5d6dca46.jpg,1573847809931,4ced1ba0795001a8a0c1248fc5044f749653be4ca2ca0bc0ec6400a971cd94e2
-static/media/9-Terreno-2019-Lucas-Alves-Costa-All-Rights-Reserved-Galeria-Palácio-(1).882296d9.jpg,1573847809908,16e8eae73f53b28a71adcd8194220e2910220f99a1fdbd33e9c55602669193d1
-static/media/Mundo-Aberto-2017-2018-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(1).717cc1e3.jpg,1573847809914,c86d964ef5abc1d595655320070b205c9276f72bb6ccb2752044e0ec3cb5ec73
-static/media/Entre-o-Céu-e-o-Oceano-2019-Emerson-da-Silva-Installation-View-Galeria-Palácio-(2).368b22a3.jpg,1573847809853,8f0bd689865abf7616d28676e83b4be08ad447a79361dc5cc2efaf235c93e274
-static/media/Mundo-Aberto-2017-2018-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(1).1f31f115.jpg,1573847809947,4dc23dd50dcc1216abaf138b9cbc25551fef06da76591db7ccaa9c1d1b2b0b17
-static/media/Micropartículas-2016-2017-Andrés-Stephanou-Screenshot-(4)-All-rights-reserved.85c02668.png,1573847809947,c9baaaceded1e10587d6ae25be58622e11d3985606eab40f3ee1dfd063be7fe2
-static/media/Micropartículas-2016-2017-Andrés-Stephanou-Screenshot-(2)-All-rights-reserved.2cd2f940.png,1573847809946,ded10d130ff3de61f1f9d1954072462da680561c715eaaee94e9ed91115d444c
-static/media/Mata-Atlântica-2017-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(1).555451c3.jpg,1573847809963,f5bcb7aca9e749ab71c1b79ee4d9dab7f209a329f8855bc11357fb0049913adc
-static/media/Mundo-Aberto-2017-2018-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(2).de373a8d.jpg,1573847809947,bdb9a2a236fe57723387f6a0d0c621cb96baef199f6d579015764e65c65ce7d0
-static/media/Estudo-para-Contato-Visual-2019-Chiaki-Mihara-Installation-View-Galeria-Palácio-(2).856d4aad.jpg,1573847809925,c2a623dbc81716ea6fe6954d4901d1d1ad2e69eb39192e7c48aa11ff5abbf06a
-static/media/Espécies-do-Litoral-Sul-Brasileiro-2019-Emerson-da-Silva-Installation-View-Galeria-Palácio-(1).d49e3ea6.jpg,1573847809932,939ef29f4094c76f8fb4a4ac32db44d219e5afa757f220972c10b1ec9cbaa102
-static/media/Mata-Atlântica-2017-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(2).031fce54.jpg,1573847809963,970708bfef35fe8bdf26ce7d1d1dba1f703754441ecd87b7e11004989085aae3
-static/media/Partículas-2018-2019-Andrés-Stephanou-Screenshot-(1)-All-Rights-Reserved.2c11251e.png,1573847809957,8620a0e63b7662862369c61e270b8624e79a6eee2ba6b973a436f8ca81cb4911
-static/media/Micropartículas-2016-2017-Andrés-Stephanou-Installation-View-Galeria-Palácio-(1).c7a3fd69.jpg,1573847809852,89e90a66a668dc75975ff04ef9f6a9ad98d97cce9ab15e87d445ae54346ea1ee
-static/media/Partículas-2018-2019-Andrés-Stephanou-Screenshot-(4)-All-Rights-Reserved.c1c5c715.png,1573847809957,7afc384dd36f543f86c08ae99f04e8e9e652272f831498c1a88b13e870670194
-static/media/Micropartículas-2016-2017-Andrés-Stephanou-Installation-View-Galeria-Palácio-(2).b15bd00b.jpg,1573847809944,177f3a29e130958f7dd766e243ce0d80d7cbacd29625b94329ac93ef557e4b60
-static/media/olhosEstudo.15ff5310.png,1573847809955,40574023b1b1dd10f7efa83732e9f48c82bc53d3f02404080c46046f21565aeb
-static/media/Mundo-Aberto-2017-2018-Lucas-Alves-Costa-Screenshot-(2)-All-Rights-Reserved.531eccfa.png,1573847809948,1410b8539b6c935819394c9fd12551788d05ecbec9b692d8974bea26b1caea88
-static/media/Micropartículas-2016-2017-Andrés-Stephanou-Installation-View-Galeria-Palácio-(3).8072b6a6.jpg,1573847809945,5a769603b3ae1181856a3689f6d39e6c47fcd90cb2cf934688ecd107d34c49fa
-static/media/Mundo-Aberto-2017-2018-Lucas-Alves-Costa-VR-Experience-(2)-Galeria-Palácio.3f4574cf.jpg,1573847809949,ed68971e3c018b261a71b81d2ee467d0b9f18b6afbfdcd75654b80168f590c9b
-static/media/O-Regime-dos-Ventos-2018-Emerson-da-Silva-Installation-View-Galeria-Palácio-(1).03152b1d.jpg,1573847809965,895d5dad25b67f006032ca446d3ef2c47231947f89e3ff8d761d8f5ac484f620
-static/media/Mundo-Aberto-2017-2018-Lucas-Alves-Costa-VR-Experience-(1)-Galeria-Palácio.fe2bf291.jpg,1573847809914,cdcedc862d3a5c23b1accbb61b3786cc262012bb605820dda055c45a31aec7ac
-static/media/Partículas-2018-2019-Andrés-Stephanou-Screenshot-(3)-All-Rights-Reserved.e09a1ab2.png,1573847809900,a1ee6369288eacffe043cdbe8a0282efb15a5e11633f643cdb9ffb48c5ea1d32
-static/media/Partículas-2018-2019-Andrés-Stephanou-Installation-View-Galeria-Palácio-(2).c18e5799.jpg,1573847809957,bbeeceb4946c92ec7128488e513751019db9be8c6d542930c7afc515b5dd3420
-static/media/3-Partículas-de-Luz-1-2017-2018-Andrés-Stephanou-Screenshot-(4)-All-Rights-Reserved.31f53779.png,1573847809908,01000a9329b6c78f7ebf705df2978d651e569044644fe8a94910b6d494c1d919
-static/media/Paraíso-2017-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(1).77a9c0a1.jpg,1573847809964,e7662f6ff3346d40043f75de3ca9c13f530a64e6fe1dcc6766d2708856e986f2
-static/media/Partículas-2018-2019-Andrés-Stephanou-Installation-View-Galeria-Palácio-(1).ac50ed46.jpg,1573847809925,c2325e41ac3658b292e0f1a01c79083b187acf030c14fa7e67b54a91495ff032
-static/media/Mundo-Aberto-2017-2018-Lucas-Alves-Costa-VR-Experience-(3)-Galeria-Palácio.0fa0cf2b.jpg,1573847809950,e499f421caa720e54fb1901ebb4e37841eba24211e7d2e306a364db1bb8af07a
-static/media/O-Regime-dos-Ventos-2018-Emerson-da-Silva-Installation-View-Galeria-Palácio-(2).6ee43f9c.jpg,1573847809965,976ddabaeae608d445bc4b4f50c61281bff700314995c672e7b6df2146142ccb
-static/media/Selected Works_ 2016–2019, Galeria Palácio (Viewing Room) - PDF (EN).02192385.pdf,1573847809925,3252473a983893add3401363d7eb9c42b3fcbd23220620dee2a923e1a247964e
-static/media/Selected Works_ 2016–2019, Galeria Palácio (Viewing Room) - PDF (PT).f1a71d0d.pdf,1573847809925,0c1d397cbaad553c189850497dbafcc8eb29d1211d6e0381666db234431b1a12
-static/media/Autorretratos-2018-Chiaki-Mihara-Installation-View-Photo-Galeria-Palácio-(3).bf35d054.jpg,1573847809926,7b1db2496dd9d784edd4c0ca49950177fa10f9cc4747b735a1a6714c1bd2bd66
-static/media/2-Terrestre-2017-Emerson-da-Silva-Screenshot-(3)-All-Rights-Reserved.a13ad547.jpg,1573847809908,e76d095c5bf9dfab03ceb7324d88bfbd1d39e25e7a884ee01e5b9626024f0ede
-static/media/Partículas-de-Luz-2-2017-2018-Andrés-Stephanou-Screenshot-(1)-All-Rights-Reserved.a1430e7d.png,1573847809942,f3696fc6d496bb9acabfe6714f7ffedd52ef80229b5601d63930f560ece52ad4
-static/media/Mundo-Aberto-2017-2018-Lucas-Alves-Costa-Screenshot-(1)-All-Rights-Reserved.a5df3da6.png,1573847809948,147b16710f4c9412a3a64c3ff106b178d38033c842e43bc71b3fc391b23bc1e4
-static/media/Autorretratos-2018-Chiaki-Mihara-Installation-View-Photo-Galeria-Palácio-(5).4f03defe.jpg,1573847809926,bfeb75239aac3e76c193464c209a71c7ecd46dc9a5391af17891c301889561ed
-static/media/Parque-Eólico,2018-Emerson-da-Silva-Installation-View-Photo,Galeria-Palácio(2).91944de9.jpg,1573847809966,b3b3de219611421ae315a91025272caa9132aa1e6a305209b3be8dbb22df99b6
-static/media/Autorretratos-2018-Chiaki-Mihara-Installation-View-Photo-Galeria-Palácio-(4).39e4ee75.jpg,1573847809852,915b0e6c0b123185a1e6b094ab7108e7e2a484c00545d44f13e1d92091a56401
-static/media/Partículas-de-Luz-1-2017-2018-Andrés-Stephanou-Installation-View-Galeria-Palácio-(1).e141d6d0.jpg,1573847809938,ac22d45694f3831d54b2e45b687f1f2be3da013110ded711c909d26cda044f92
-static/media/8-O-Regime-dos-Ventos-2018-Emerson-da-Silva-Screenshot-(3)-All-Rights-Reserved.8e48d36d.jpg,1573847809908,f3a56af4a2e3b43776a55b90655142ef5faca5e4019c93090138687456d6f49a
-static/media/Partículas-de-Luz-1-2017-2018-Andrés-Stephanou-Installation-View-Galeria-Palácio-(2).9aabd8b7.jpg,1573847809939,3240ce560fb7bce681ba75e108c0c27df661b0a134dbc5384047d21cef52b91b
-static/media/Mundo-Aberto-2017-2018-Lucas-Alves-Costa-Screenshot-(1)-All-Rights-Reserved.77f6043d.png,1573847809914,241061eea910ea2197f043e1d6b89882195071b36b9a23b9ddf7217b414ab919
-static/media/Autorretratos-2018-Chiaki-Mihara-Installation-View-Photo-Galeria-Palácio-(8).8e9eda86.jpg,1573847809928,d3089e1dcb419542f5fa159b071cc6cc7032b5ccf88a1e2c247f1212ba1ad1f7
-static/media/Autorretratos-2018-Chiaki-Mihara-Installation-View-Photo-Galeria-Palácio-(7).8923c43d.jpg,1573847809926,443027e94169790cac7fd2beb28e863b357370f681a30f9f519157aeaeacccff
-static/media/Pré-Consumo-Arraia-2019-Pré-Consumo-Papa-Terra-2019-Emerson-da-Silva-Installation-View-Galeria-Palácio-(1).05f0d6a2.jpg,1573847809932,26193254731e74ff60e1bb14558e75cca7a15d6bd2702b2c603b2bd85160c4e9
-static/media/Partículas-de-Luz-2-2017-2018-Andrés-Stephanou-Installation-View-Galeria-Palácio-(2).434d9587.jpg,1573847809941,68e89e44186e5a6bbda25f535609ce7e4d9bc4ae45b4fc2959e3a296268c88cc
-static/media/Partículas-de-Luz-2-2017-2018-Andrés-Stephanou-Installation-View-Galeria-Palácio-(1).082d79ba.jpg,1573847809942,84b3364c60389914602eb23d2c4bf17dc7a011107a8f6c6bfb88e3ddcc00e85a
-static/media/Terreno-2019-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(1).0f9771c0.jpg,1573847809933,4bebf04b82126d904df6d15d79494ef846268f330bb8ecbf87736daeaa4a9317
-static/media/luz_viva.06077af8.png,1573847809914,dae5c4add980e5ba06ce0b78e36c06b51c7bb037c6f48615ce3ea54dc4f70057
-static/media/Terrestre-2018-Emerson-da-Silva-Screenshot-(2)-All-Rights-Reserved.78707261.jpg,1573847809962,06fccd6e3893889f1bd316927d5b59ffaf386f2a8364cfdb666fa59ec34a122a
-static/media/Paraíso-2017-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(2).0e6d4ad9.jpg,1573847809963,766332d59f19feb2fde512fc73a6da0b933a2ec45863bfaed2d2f63f07be0261
-static/media/Partículas-de-Luz-2-2017-2018-Andrés-Stephanou-Screenshot-(2)-All-Rights-Reserved.5c184b10.png,1573847809853,10efad548ed1498b1543e1d64fdd7b702b03e0cfcd87af607329b0b4d0a14ecc
-static/media/Autorretratos-2018-Chiaki-Mihara-Installation-View-Photo-Galeria-Palácio-(9).d02d46e6.jpg,1573847809928,d8f8932008950875049b275571a661361f4bce604c6443772fbca6692f5e61ee
-static/media/Terreno-2019-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(2).e1f01fe9.jpg,1573847809934,9e8e886a200c5be21214ef6dd6106bde105c9b94b40b897d0f28ae02c08ea675
-static/media/Pré-Consumo-Alface-Lisa-2017-Emerson-da-Silva-Installation-View-Galeria-Palácio-(1).a1f5066d.jpg,1573847809960,b8a03aeb8ea25b59ebcd9f9d60af36ddba7f3e57d1d8e0a458c106c3605da37f
-static/media/O-Regime-dos-Ventos-2018-Emerson-da-Silva-Screenshot-(4)-All-Rights-Reserved.7f9e3027.jpg,1573847809853,d521644134ea9ac153404b5ea8f5c32c7b4fb653e03c29328ad2c0276d6d29e6
-static/media/Luz-Água-e-Terra-Preta-2017-Emerson-da-Silva-Installation-View-Galeria-Palácio-(2).f7cceec5.jpg,1573847809960,b273b489f6cd73e4e6c2a144769b8531182c14b634bf5e2498d2d72a2e7baade
-static/media/Superfície-de-Mundo-Aberto-2018-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(1).6b21b7a8.jpg,1573847809950,19fae86dad5539a8cd184d4f0557b0710cf10d955f1611b8a12ca187256fa8ef
-static/media/Superfície-de-Mundo-Aberto-2018-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(2).b45f7eb4.jpg,1573847809950,677bbcf16931e4d868f662f682b0f06fa436011f2df1b67f877b255a4a981a6e
-static/media/Visão-Aérea-de-Mundo-Aberto-2018-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(1).ad6a3d69.jpg,1573847809952,5a5a864f796b02e3aa17e7fe5b7090400c6cf6cd907451679d31c823b8f3be72
-static/media/Um-lugar-para-estar-2018-2019-Lucas-Alves-Costa-VR-Experience-Galeria-Palácio-(1).90dde0cb.jpg,1573847809912,e067d4bd5c433332b8e154a58d860956fccba1513d7ed524e2b60583544111ae
-static/media/Terreno-2019-Lucas-Alves-Costa-All-rights-reserved-Galeria-Palácio-(1).882296d9.jpg,1573847809914,16e8eae73f53b28a71adcd8194220e2910220f99a1fdbd33e9c55602669193d1
-static/media/Um-lugar-para-estar-2018-2019-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(3).8ec621e1.jpg,1573847809936,db0658782c4eb7b5a678d9c3906d11a285998b0099040626a1dcbf45ae28de00
-static/media/Terreno-2019-Lucas-Alves-Costa-All-rights-reserved-Galeria-Palácio-(2).37c04325.jpg,1573847809915,2b53fa0ed17ea29200880ceb3661d30ba836b22fd7685169d0ff41637c6da9fc
-static/media/Um-lugar-para-estar-2018-2019-Lucas-Alves-Costa-VR-Experience-Galeria-Palácio-(2).e15b4514.jpg,1573847809937,9687eb0c316688067b14721bbf2d480a819c668fae90121f598982d1d1b0a8cd
-static/media/Um-lugar-para-estar-2018-2019-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(2).dd57938e.jpg,1573847809936,3a4b17841fee93e07f86d332c847453b0d38233d9f2637fa337cb7a7b88bf8ad
-static/media/Um-lugar-para-estar-2018-2019-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(1).7cae96fd.jpg,1573847809853,3d18ba30b2884074ac6a6ce035b11fde1717a0d7b7f921c61c9941ffeb109feb
-static/media/O-Regime-dos-Ventos-2018-Emerson-da-Silva-Screenshot-(2)-All-Rights-Reserved.8e48d36d.jpg,1573847809965,f3a56af4a2e3b43776a55b90655142ef5faca5e4019c93090138687456d6f49a
-static/media/Um-lugar-para-estar-2018-2019-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(4).e254180e.jpg,1573847809937,ab2e2886573ba9af20128dcdf5c1ca6e055333754955a3e98cd6fc91aa9003cc
-static/media/4-Autorretrato-(2)-2018-Chiaki-Mihara-Installation-View-Photo-Galeria-Palácio-(4).c2cf7021.jpg,1573847809908,5f4f485f5ad92017b2602705b225c9c1dbd3a56342909a630a0bed30d256d857
-static/media/Autorretrato-(2)-2018-Chiaki-Mihara-Installation-View-Galeria-Palácio-(4).c2cf7021.jpg,1573847809910,5f4f485f5ad92017b2602705b225c9c1dbd3a56342909a630a0bed30d256d857
-static/media/Partículas-de-Luz-1-2017-2018-Andrés-Stephanou-Screenshot-(4)-All-Rights-Reserved.31f53779.png,1573847809939,01000a9329b6c78f7ebf705df2978d651e569044644fe8a94910b6d494c1d919
-static/media/Um-lugar-para-estar-2018-2019-Lucas-Alves-Costa-VR-Experience-Galeria-Palácio-(3).c91ac7d8.jpg,1573847809938,30c54a6cec0444ee459bac56f447e719777fc13f4966470a2e453911de5a6ab1
-static/media/Espécies-do-Litoral-Sul-Brasileiro-2019-Emerson-da-Silva-Installation-View-Galeria-Palácio-(2).bcf220be.jpg,1573847809932,b7bad3b671639b2552abb9244dc7652d00c87b827633dcf867defabc3e919c78
-static/media/Parque-Eólico,2018-Emerson-da-Silva-Installation-View-Photo,Galeria-Palácio(1).355460d5.jpg,1573847809965,68e043c23519ef6b3d4202504f0f87db11bd4acf76014538bc78533d5cdf62c9
-static/media/Visão-Aérea-de-Mundo-Aberto-2018-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(2).ab0918e2.jpg,1573847809955,b6f95591b88ef3e08024a5c49f3b26cd58078298d5be973ee531d696a3391fb6
-static/media/Partículas-de-Luz-1-2017-2018-Andrés-Stephanou-Screenshot-(2)-All-Rights-Reserved.dea70a97.png,1573847809939,3e22411c7777daeb29c5ca3371bea5e20411b1fee46c5d90343f7696120c1dd2
-static/media/7- Mundo-Aberto-2017-2018-Lucas-Alves-Costa-Screenshot-(1)-All-Rights-Reserved.cbe220e0.png,1573847809850,1bc6d79cc6d57163e25a84bbe462914088df9fad2a816e7893100ec25392dc05
-static/media/olhos.92374589.png,1573847809955,56b05d905b6489da37fabdbe671a19eeec2d0904724ea808516eeaef09c5c1fc
-static/media/Terrestre-2018-Emerson-da-Silva-Screenshot-(3)-All-Rights-Reserved.a13ad547.jpg,1573847809925,e76d095c5bf9dfab03ceb7324d88bfbd1d39e25e7a884ee01e5b9626024f0ede
-static/media/Terrestre-2018-Emerson-da-Silva-Installation-View-Galeria-Palácio-(1).cdf65b7f.jpg,1573847809962,e569b09c500318505e187fd387091eeeab844dc834a824b36aedfce42227b450
-static/media/olhosAzuis.48bca707.png,1573847809955,2a0e12a175b3a9220510a029deb247811806f067aa28a39d88d582b877fa170a
-static/media/Terrestre-2018-Emerson-da-Silva-Installation-View-Galeria-Palácio-(2).e6fd921d.jpg,1573847809962,08f48784685cecd358ebc7941074313aba13520c146873653bfe8755225e23f1
-static/js/2.8778af70.chunk.js.map,1573847809999,59565bc3a39a2dc0eb4b9f203786ef0fff92b9e39b054651a7b38149f4b3e8a6
-static/media/Terrestre-2018-Emerson-da-Silva-Screenshot-(4)-All-Rights-Reserved.0b24d274.jpg,1573847809963,de31d9862d1bcdceb918c1e6bb1f3f23b874f3eb9a0679250424821860cd02a2
-static/media/Mundo-Aberto-2017-2018-Lucas-Alves-Costa-Screenshot-(2)-All-Rights-Reserved.cbe220e0.png,1573847809914,1bc6d79cc6d57163e25a84bbe462914088df9fad2a816e7893100ec25392dc05
-static/media/Entre-o-Céu-e-o-Oceano-2019-Emerson-da-Silva-Screenshot-(3)-All-Rights-Reserved.07b7290a.jpg,1573847809933,30ceaf25445589c9a9f0fd0ad135601436301224ddc14fc9a9f03fae846fd460
-static/media/Terreno-2019-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(3).efd8f129.jpg,1573847809935,44f6d28ac7206b149a5dab16a3e4db14bd08bad883ecaf66df9176e2b61c6723
-static/media/1-Um-lugar-para-estar-2018-2019-Lucas-Alves-Costa-Screenshot-(1)-All-Rights-Reserved.4f58ec88.png,1573847809901,0e5b01786e3e9417c93f13b976a80ce6c64a6bc2fc826ac40cf8b62a20c01368
-static/media/Lucas-Alves-Costa-Um-Lugar-Para-Estar-2019.297a5b84.png,1573847809910,dba3cc5447a6ba0aea4828151f9f5ae24a1a6e66c827e013324cd3087543a725
-static/media/Um-lugar-para-estar-2018-2019-Lucas-Alves-Costa-Screenshot-(2)-All-Rights-Reserved.badbb9ce.png,1573847809938,fa8788244da917d645ffd059e81836a7ccdf46191386e759d3714ff2d71749c4
-static/media/Paraíso-2017-Lucas-Alves-Costa-Screenshot-(1)-All-Rights-Reserved.c1c358ef.png,1573847809910,b3b70028285196a07a7ef91b00890f7338b2ccee7169a5960263b46ff32976eb
-static/media/Paraíso-2017-Lucas-Alves-Costa-Screenshot-(3)-All-Rights-Reserved.13a696ee.png,1573847809901,19d1c62fedb8d9de80be749eff7fded725456d224226e5883ea3904ba7eefa46
-static/media/Um-lugar-para-estar-2018-2019-Lucas-Alves-Costa-Screenshot-(1)-All-Rights-Reserved.a584dac3.png,1573847809938,6338cc0d8bb1eea5394bf3e076e9efe6a72e728ac977056d981b5caf9b1172d6
-static/media/vrFloresta.9fadaca3.png,1573847809916,37c8e2b163d5aa278842b158d0443ee8f41fc85cb2c42b9294d5ec4a1aada9da
-static/media/3-Luz-Água-e-Terra-Preta-2017.9f077af6.jpg,1573847809903,4a248d4867ee0fdcc0c431d9e1336bfee653bd03030ca6e4250ab7d103dc0fd0
+asset-manifest.json,1573874103199,9ad5c4c1d93da955043c845f40e5d9149f60aa7569cdf5d1501c8feb8c93379a
+static/css/main.34de6062.chunk.css,1573874103184,5acd8330a231ceea1c836c7f2f9dd7703ab7ffcc21677b1712a29ae4b222d194
+service-worker.js,1573874103199,760ac9dfd5a43fcb40705ad97ce035ef266801a725d4ef9c77d9ff189e50d8d7
+precache-manifest.7514945af4af412d20625635299b6270.js,1573874103199,6adc8e6a8e1ee4d0e96029956acf8f1676eb26f30e13f6ba4b45218730b761ef
+static/css/main.34de6062.chunk.css.map,1573874103210,0d132c2535953984e13844194483a969d4c34cbe81a4e0ac5ff74874e794be68
+static/css/2.27fdde94.chunk.css.map,1573874103199,96dfb9b310ccd293453f00f3273170180c110a9229ff5f26e01f7c2cf5c2a5e8
+static/js/runtime~main.a8a9905a.js,1573874103186,27518aed75eb917ee7575e8c911b596e850b5265b9e5694a7681cba901419f4d
+static/js/runtime~main.a8a9905a.js.map,1573874103211,d13b46ae2acf0d2863e1c6449a51f64702fa5b464c475c0ec20d6e8de9970ef9
+static/media/1-minuto-2019-Andrés-Stephanou-Screenshot (1)-All-Rights-Reserved.85ec3182.png,1573874103173,897295db3383bb5f8af828d2254206052b9e64980fd6bc72284f8c1709a901db
+static/media/arrow.30ce4b4e.png,1573874103122,3aab496fa892b5cac30abd9e2086780bd645a79d757fcef499b1fc1305ab46b4
+static/media/Andrés Stephanou - Micropartículas, 2017 - Galeria Palácio, PDF (EN).04eb6a16.pdf,1573874103134,359c526e082c1a12c41e0beed7acdf0396d1925b5adbdf78c3b0573c4dcd8639
+static/media/Andrés Stephanou - Partículas de Luz, 2018 - Galeria Palácio, PDF (EN).173cb894.pdf,1573874103134,b45df8cf6248cd7d38399f252cf7f276e5696cf603f0ed47a066c3c09d73c5fd
+static/media/Andrés Stephanou - Partículas de Luz, 2018 - Galeria Palácio, PDF (PT).4c1b0d79.pdf,1573874103134,04d49899cc12125d0df2a02e98e2c5c7a9b11b25a360c56726340f44ae1be106
+static/media/Andrés Stephanou - Partículas, 2019 - Galeria Palácio, PDF (PT).eb208a94.pdf,1573874103135,3241fa135752be03cb2124b32db575e593526120903c92255b23c1588187c722
+static/media/Andrés Stephanou - Partículas, 2019 - Galeria Palácio, PDF (EN).37f275ac.pdf,1573874103135,1bb24410b84162bea826373d08a0a5f8d1a628ada88112194222542f649dab1e
+static/media/Andrés Stephanou - Micropartículas, 2017 - Galeria Palácio, PDF (PT).32e5bf8a.pdf,1573874103134,1dca31e346e777a278b7bfd4bb11a8188dea5c28101e89da3aae597033017f4e
+static/media/alface.fe9144b8.jpg,1573874103129,c88fc2b2149c929e94a56c9ed9853d1a5706be9cce471deefe2b2c447dacf395
+static/media/Chiaki Mihara - Autorretratos, 2018 - Galeria Palácio, PDF (EN).9dfbe905.pdf,1573874103136,18b3c203e184846e838d42625f92f5db03bb286d78d885bbb3592d69e345ba60
+static/media/Chiaki Mihara - Autorretratos, 2018 - Galeria Palácio, PDF (PT).92a0369c.pdf,1573874103139,466b0559f42a6090c247aab277884733523bcaec0c159f96bfc72ad73a281873
+static/media/5-Partículas-2018-2019-Andrés-Stephanou-Screenshot-(3)-All-Rights-Reserved.c1c5c715.png,1573874103127,7afc384dd36f543f86c08ae99f04e8e9e652272f831498c1a88b13e870670194
+static/media/1-minuto-2019-Andrés-Stephanou-Installation-View-Photo-Galeria-Palácio-(1).46c34dd6.jpg,1573874103173,196676bb3af88534e454eb44d929f093eb2e0bfd2e9cba43458ccb9a6d494906
+static/media/Chiaki Mihara - Contato Visual, 2019 - Galeria Palácio, PDF (EN).f8961f66.pdf,1573874103139,bfd4e51090f759f168c07ac835d7e61b76ae73cef5d9bca3f271a5027f95521d
+static/media/Chiaki Mihara - Contato Visual, 2019 - Galeria Palácio, PDF (PT).ded77e9d.pdf,1573874103139,2bd1f03f2a4498c9d6749a6f92b50d499077600c103f720e95b8f2ace21d69c6
+static/js/main.17eb6980.chunk.js,1573874103185,4b6e266a510dfe3f5c33e76ca4f2d929e707e8ad612633d90e02aff5b47b0e53
+static/js/main.17eb6980.chunk.js.map,1573874103210,5a54b5ff455eb11d799f8797abd5aaeb98321328cf2980a30b3b7baf829f1bdc
+static/media/1-minuto-2019-Andrés-Stephanou-Installation-View-Photo-Galeria-Palácio-(3).53832aae.jpg,1573874103173,de739bf348450feddc262fa8921ef92aa6466137661df59fed80c1093f90dc14
+static/media/1-minuto-2019-Andrés-Stephanou-Installation-View-Photo-Galeria-Palácio-(2).c9c574a3.jpg,1573874103173,5cbe2ee8aa95225ceb03eaf9d5abcb2c6fe94fba0bb7f8c3e59a19739844e38d
+static/media/Emerson da Silva - A pesca enquanto atividade humana, 2019 - Galeria Palácio, PDF (EN).06f5b5ef.pdf,1573874103139,2a0652f68085b1fbc3e4daa96841d797500e304cad3d0c3a503023bd0c0b41d9
+static/media/Emerson da Silva - A pesca enquanto atividade humana, 2019 - Galeria Palácio, PDF (PT).88ab0969.pdf,1573874103139,7dea6ce2fe0e61af2c8d36d3585a8eba59255ecfb0fc5da33b545c97cc395585
+static/media/Emerson da Silva - Luz, Água e Terra Preta, 2017 - Galeria Palácio, PDF (PT).88cda3a9.pdf,1573874103139,885d29cd88f526f96c56766c5cc8891d232287edbaadb263b8cb01296be0c925
+static/media/Emerson da Silva - Luz, Água e Terra Preta, 2017 - Galeria Palácio, PDF (EN).1602702b.pdf,1573874103139,1c24dcc0f6cf1b50bd78dd24e8077469dfe78628f2f0ac1bc6e983a29e87f28f
+static/media/Emerson da Silva - O Regime dos Ventos, 2018 - Galeria Palácio, PDF (EN).abb7ec30.pdf,1573874103140,c481700736b8e93c54f3b329b9ddaf1b8ed9e0b161c3d0c15f464a66e966bf58
+static/media/areia.ce549a6f.jpg,1573874103129,1da647e9375edf7518337e42c67c7051e52ba0a64577268063eff78174d7e0f1
+static/media/Emerson da Silva - O Regime dos Ventos, 2018 - Galeria Palácio, PDF (PT).a3f28c0b.pdf,1573874103140,ac19fb93680cc4a3adaaf3ea9749f1cb8de8c3f3dc690ce8fb3395b275b55a28
+static/media/detritos.03fda4c9.png,1573874103130,285c0b37211fa5a3a6ad37a3a9fd4251e1c3203cfcbaaaa058aceeddfdd29a04
+static/media/11-Micropartículas-2016-2017-Andrés-Stephanou-Screenshot-(6)-All-Rights-Reserved.cc1fc65f.png,1573874103122,f4b1bf74d1a3a8f27eeebe77447355fbf3bbb9f2738c3173f60b8159ee86a912
+static/media/Lucas Alves Costa - Paraíso, 2017 - Galeria Palácio, PDF (EN).a58b3692.pdf,1573874103141,2d4e2e5c162c5707c6a31da2c54c34f7819db0b41d29f7040df85581abaea051
+static/media/Autorretratos-2018-Chiaki-Mihara-Installation-View-Photo-Galeria-Palácio-(6).8dd9824b.jpg,1573874103147,e762c8b1b0defcc57847ad61cc9426abeebbcfb81b5f4c4c93e3e9403313bf06
+static/media/Lucas Alves Costa - Mundo Aberto, 2018 - Galeria Palácio, PDF (EN).3fa4ddf4.pdf,1573874103140,adc8dd9604b19762b85ffc3e0f74400fcead9687dedff032fe02b03d8cfda506
+static/media/Lucas Alves Costa - Mundo Aberto, 2018 - Galeria Palácio, PDF (PT).1a713908.pdf,1573874103140,2ad5551a561909de9f95313663b2b16e8c1ab0d4e7e28215ea647fed75aa3f18
+static/media/Autorretratos-2018-Chiaki-Mihara-Installation-View-Photo-Galeria-Palácio-(2).c28b250a.jpg,1573874103145,ae844ef2f80842863353b9a5803dca076c776eec4daf8d58aa8ee957fd815845
+static/media/Contato-Visual-2018-2019-Chiaki-Mihara-Installation-View-Galeria-Palácio-(1).aee3e51a.jpg,1573874103120,207a52c4ca89269bdc93e7d7ad4d548b9077b5ae39b836c4572b8058a843a09e
+static/media/6-Entre-o-Céu-e-o-Oceano-2019-Emerson-da-Silva-Screenshot-(4)-All-Rights-Reserved.3eb636bd.jpg,1573874103127,54ecc4ea3ecf2fb02ae1b869212750ef664bb447a5f8a14b5f13af0a445bde5c
+static/media/Lucas Alves Costa - Paraíso, 2017 - Galeria Palácio, PDF (PT).3f1887ab.pdf,1573874103142,abf72f120bbc6f4f38ecc270402d73c6ef7da99274a34804c17782e5cdb5160c
+static/media/Lucas Alves Costa - Um lugar para estar, 2019 - Galeria Palácio, PDF (EN).72d78df5.pdf,1573874103142,cf252a84a0aac284b0b09933c79ffabf9426823b930391fd1a0eaea26372d732
+static/media/Lucas Alves Costa - Um lugar para estar, 2019 - Galeria Palácio, PDF (PT).7797c942.pdf,1573874103143,5dd24fa8f8a727044bc76bb357ba1bda180cda11a123dd467bb8a252d7e43b64
+static/media/Contato-Visual-2018-2019-Chiaki-Mihara-Installation-View-Galeria-Palácio-(2).d9f58136.jpg,1573874103148,07d992268e1ef039d9a10e692f8e00ed1ab87e6dd8419d9bd8b580d057940745
+static/media/Contato-Visual-2019-Chiaki-Mihara-Installation-View-Galeria-Palácio-(3).f453537d.jpg,1573874103149,8511288f9c4cb1226b9e14b9a9ed6143f55dd9e3dbd1db518432d4f044469fd5
+static/media/12-Contato-Visual-(Azul)-2018-2019-Chiaki-Mihara-Screenshot-(1)-All-Rights-Reserved.fe902603.png,1573874103126,bffbe81c82e9cd6535aa266dc3a1241334dca3122d583b91da9f15199ce0dda7
+static/media/Entre-o-Céu-e-o-Oceano-2019-Emerson-da-Silva-Screenshot-(4)-All-Rights-Reserved.3eb636bd.jpg,1573874103151,54ecc4ea3ecf2fb02ae1b869212750ef664bb447a5f8a14b5f13af0a445bde5c
+static/media/Autorretratos-2018-Chiaki-Mihara-Installation-View-Photo-Galeria-Palácio-(1).1374f02e.jpg,1573874103145,a3ecb8e39202068df32bc42c041c98450c48b564f7e23971376da2ebdd0e47d0
+static/media/Contato-Visual-(Vermelho)-2018-2019-Chiaki-Mihara-Screenshot-(1)-All-Rights-Reserved.c0079508.png,1573874103120,06ea2f610aa86fccb547e3dd03a8110e6c8ab1d00f1ac0d9af038a61d4f1f4a7
+static/media/Micropartículas-2016-2017-Andrés-Stephanou-Screenshot-(1)-All-rights-reserved.cf14223f.png,1573874103163,1138f8f9b88fc6820243f71dcd68500b241101cb52392a155a7138729f2808e8
+static/media/Dunas-Parque-Eólico-Soterramento-2018-Emerson-da-Silva-Installation-View-Galeria-Palácio-(1).6cf39cca.jpg,1573874103182,57114a4214193d3381f78b02ba97ec322db0cc0943ce2d6f220e4de28aaa7c53
+static/media/Luz-Água-e-Terra-Preta-2017-Emerson-da-Silva-Installation-View-Galeria-Palácio-(1).d5250504.jpg,1573874103175,c69796feeaba06bb5f887471b1fb5232fc5671d00a0ff4253c0a618d6d4278fe
+static/media/Incidência-de-luz-em-um-ambiente-virtual-2019-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(2).35b0a886.jpg,1573874103153,ec728449586030727b0c41b8c6020fba634a5ea04faa751857493e25ccf77872
+static/media/Incidência-de-luz-em-um-ambiente-virtual-2019-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(1).64b17553.jpg,1573874103153,1c17a66bc1fd11a145c649459fb9db1ea1c0ca708ff353317fce5bb9c9a98b02
+static/media/Contato-Visual-(Azul)-2018-2019-Chiaki-Mihara-Screenshot-(1)-All-Rights-Reserved.fe902603.png,1573874103148,bffbe81c82e9cd6535aa266dc3a1241334dca3122d583b91da9f15199ce0dda7
+static/media/Estudo-para-Contato-Visual-2019-Chiaki-Mihara-Installation-View-Galeria-Palácio-(1).3c2a1a2b.jpg,1573874103149,a4d21848cc51b95b5319d240f43d507c7aa3a4295d2ffd0883fd45c935c66ce8
+static/media/Mata-Atlântica-(Digital)-2017-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(1).1bdbb224.jpg,1573874103180,d0a972336992e8f92b8ab1693e1f9286b681ccfd819770b5675d601548310c17
+static/js/2.8778af70.chunk.js,1573874103198,e76d49b56057fedeaf754b31875ef00a72b53d58219e55de3face173c9930342
+static/media/Mundo-Aberto-2017-2018-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(1).717cc1e3.jpg,1573874103132,c86d964ef5abc1d595655320070b205c9276f72bb6ccb2752044e0ec3cb5ec73
+static/media/Entre-o-Céu-e-o-Oceano-2019-Emerson-da-Silva-Installation-View-Galeria-Palácio-(2).368b22a3.jpg,1573874103120,8f0bd689865abf7616d28676e83b4be08ad447a79361dc5cc2efaf235c93e274
+static/media/Entre-o-Céu-e-o-Oceano-2019-Emerson-da-Silva-Installation-View-Galeria-Palácio-(4).5d6dca46.jpg,1573874103150,4ced1ba0795001a8a0c1248fc5044f749653be4ca2ca0bc0ec6400a971cd94e2
+static/media/9-Terreno-2019-Lucas-Alves-Costa-All-Rights-Reserved-Galeria-Palácio-(1).882296d9.jpg,1573874103128,16e8eae73f53b28a71adcd8194220e2910220f99a1fdbd33e9c55602669193d1
+static/media/Mundo-Aberto-2017-2018-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(2).de373a8d.jpg,1573874103166,bdb9a2a236fe57723387f6a0d0c621cb96baef199f6d579015764e65c65ce7d0
+static/media/Mundo-Aberto-2017-2018-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(1).1f31f115.jpg,1573874103165,4dc23dd50dcc1216abaf138b9cbc25551fef06da76591db7ccaa9c1d1b2b0b17
+static/media/Micropartículas-2016-2017-Andrés-Stephanou-Screenshot-(4)-All-rights-reserved.85c02668.png,1573874103165,c9baaaceded1e10587d6ae25be58622e11d3985606eab40f3ee1dfd063be7fe2
+static/media/Micropartículas-2016-2017-Andrés-Stephanou-Screenshot-(2)-All-rights-reserved.2cd2f940.png,1573874103164,ded10d130ff3de61f1f9d1954072462da680561c715eaaee94e9ed91115d444c
+static/media/Mata-Atlântica-2017-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(1).555451c3.jpg,1573874103180,f5bcb7aca9e749ab71c1b79ee4d9dab7f209a329f8855bc11357fb0049913adc
+static/media/Estudo-para-Contato-Visual-2019-Chiaki-Mihara-Installation-View-Galeria-Palácio-(2).856d4aad.jpg,1573874103144,c2a623dbc81716ea6fe6954d4901d1d1ad2e69eb39192e7c48aa11ff5abbf06a
+static/media/Espécies-do-Litoral-Sul-Brasileiro-2019-Emerson-da-Silva-Installation-View-Galeria-Palácio-(1).d49e3ea6.jpg,1573874103152,939ef29f4094c76f8fb4a4ac32db44d219e5afa757f220972c10b1ec9cbaa102
+static/media/Mata-Atlântica-2017-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(2).031fce54.jpg,1573874103181,970708bfef35fe8bdf26ce7d1d1dba1f703754441ecd87b7e11004989085aae3
+static/media/Partículas-2018-2019-Andrés-Stephanou-Screenshot-(1)-All-Rights-Reserved.2c11251e.png,1573874103175,8620a0e63b7662862369c61e270b8624e79a6eee2ba6b973a436f8ca81cb4911
+static/media/Micropartículas-2016-2017-Andrés-Stephanou-Installation-View-Galeria-Palácio-(1).c7a3fd69.jpg,1573874103120,89e90a66a668dc75975ff04ef9f6a9ad98d97cce9ab15e87d445ae54346ea1ee
+static/media/Partículas-2018-2019-Andrés-Stephanou-Screenshot-(4)-All-Rights-Reserved.c1c5c715.png,1573874103175,7afc384dd36f543f86c08ae99f04e8e9e652272f831498c1a88b13e870670194
+static/media/Micropartículas-2016-2017-Andrés-Stephanou-Installation-View-Galeria-Palácio-(2).b15bd00b.jpg,1573874103163,177f3a29e130958f7dd766e243ce0d80d7cbacd29625b94329ac93ef557e4b60
+static/media/olhosEstudo.15ff5310.png,1573874103172,40574023b1b1dd10f7efa83732e9f48c82bc53d3f02404080c46046f21565aeb
+static/media/Mundo-Aberto-2017-2018-Lucas-Alves-Costa-Screenshot-(2)-All-Rights-Reserved.531eccfa.png,1573874103166,1410b8539b6c935819394c9fd12551788d05ecbec9b692d8974bea26b1caea88
+static/media/Micropartículas-2016-2017-Andrés-Stephanou-Installation-View-Galeria-Palácio-(3).8072b6a6.jpg,1573874103163,5a769603b3ae1181856a3689f6d39e6c47fcd90cb2cf934688ecd107d34c49fa
+static/media/Mundo-Aberto-2017-2018-Lucas-Alves-Costa-VR-Experience-(2)-Galeria-Palácio.3f4574cf.jpg,1573874103168,ed68971e3c018b261a71b81d2ee467d0b9f18b6afbfdcd75654b80168f590c9b
+static/media/O-Regime-dos-Ventos-2018-Emerson-da-Silva-Installation-View-Galeria-Palácio-(1).03152b1d.jpg,1573874103183,895d5dad25b67f006032ca446d3ef2c47231947f89e3ff8d761d8f5ac484f620
+static/media/Partículas-2018-2019-Andrés-Stephanou-Screenshot-(3)-All-Rights-Reserved.e09a1ab2.png,1573874103121,a1ee6369288eacffe043cdbe8a0282efb15a5e11633f643cdb9ffb48c5ea1d32
+static/media/3-Partículas-de-Luz-1-2017-2018-Andrés-Stephanou-Screenshot-(4)-All-Rights-Reserved.31f53779.png,1573874103127,01000a9329b6c78f7ebf705df2978d651e569044644fe8a94910b6d494c1d919
+static/media/Mundo-Aberto-2017-2018-Lucas-Alves-Costa-VR-Experience-(1)-Galeria-Palácio.fe2bf291.jpg,1573874103133,cdcedc862d3a5c23b1accbb61b3786cc262012bb605820dda055c45a31aec7ac
+static/media/Partículas-2018-2019-Andrés-Stephanou-Installation-View-Galeria-Palácio-(1).ac50ed46.jpg,1573874103145,c2325e41ac3658b292e0f1a01c79083b187acf030c14fa7e67b54a91495ff032
+static/media/Partículas-2018-2019-Andrés-Stephanou-Installation-View-Galeria-Palácio-(2).c18e5799.jpg,1573874103175,bbeeceb4946c92ec7128488e513751019db9be8c6d542930c7afc515b5dd3420
+static/media/Mundo-Aberto-2017-2018-Lucas-Alves-Costa-VR-Experience-(3)-Galeria-Palácio.0fa0cf2b.jpg,1573874103168,e499f421caa720e54fb1901ebb4e37841eba24211e7d2e306a364db1bb8af07a
+static/media/Paraíso-2017-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(1).77a9c0a1.jpg,1573874103182,e7662f6ff3346d40043f75de3ca9c13f530a64e6fe1dcc6766d2708856e986f2
+static/media/O-Regime-dos-Ventos-2018-Emerson-da-Silva-Installation-View-Galeria-Palácio-(2).6ee43f9c.jpg,1573874103184,976ddabaeae608d445bc4b4f50c61281bff700314995c672e7b6df2146142ccb
+static/media/Selected Works_ 2016–2019, Galeria Palácio (Viewing Room) - PDF (EN).02192385.pdf,1573874103144,3252473a983893add3401363d7eb9c42b3fcbd23220620dee2a923e1a247964e
+static/media/Selected Works_ 2016–2019, Galeria Palácio (Viewing Room) - PDF (PT).f1a71d0d.pdf,1573874103144,0c1d397cbaad553c189850497dbafcc8eb29d1211d6e0381666db234431b1a12
+static/media/Partículas-de-Luz-2-2017-2018-Andrés-Stephanou-Screenshot-(1)-All-Rights-Reserved.a1430e7d.png,1573874103163,f3696fc6d496bb9acabfe6714f7ffedd52ef80229b5601d63930f560ece52ad4
+static/media/Autorretratos-2018-Chiaki-Mihara-Installation-View-Photo-Galeria-Palácio-(5).4f03defe.jpg,1573874103146,bfeb75239aac3e76c193464c209a71c7ecd46dc9a5391af17891c301889561ed
+static/media/Mundo-Aberto-2017-2018-Lucas-Alves-Costa-Screenshot-(1)-All-Rights-Reserved.a5df3da6.png,1573874103165,147b16710f4c9412a3a64c3ff106b178d38033c842e43bc71b3fc391b23bc1e4
+static/media/Parque-Eólico,2018-Emerson-da-Silva-Installation-View-Photo,Galeria-Palácio(2).91944de9.jpg,1573874103185,b3b3de219611421ae315a91025272caa9132aa1e6a305209b3be8dbb22df99b6
+static/media/Autorretratos-2018-Chiaki-Mihara-Installation-View-Photo-Galeria-Palácio-(3).bf35d054.jpg,1573874103146,7b1db2496dd9d784edd4c0ca49950177fa10f9cc4747b735a1a6714c1bd2bd66
+static/media/2-Terrestre-2017-Emerson-da-Silva-Screenshot-(3)-All-Rights-Reserved.a13ad547.jpg,1573874103127,e76d095c5bf9dfab03ceb7324d88bfbd1d39e25e7a884ee01e5b9626024f0ede
+static/media/Mundo-Aberto-2017-2018-Lucas-Alves-Costa-Screenshot-(1)-All-Rights-Reserved.77f6043d.png,1573874103133,241061eea910ea2197f043e1d6b89882195071b36b9a23b9ddf7217b414ab919
+static/media/8-O-Regime-dos-Ventos-2018-Emerson-da-Silva-Screenshot-(3)-All-Rights-Reserved.8e48d36d.jpg,1573874103128,f3a56af4a2e3b43776a55b90655142ef5faca5e4019c93090138687456d6f49a
+static/media/Partículas-de-Luz-1-2017-2018-Andrés-Stephanou-Installation-View-Galeria-Palácio-(1).e141d6d0.jpg,1573874103159,ac22d45694f3831d54b2e45b687f1f2be3da013110ded711c909d26cda044f92
+static/media/Autorretratos-2018-Chiaki-Mihara-Installation-View-Photo-Galeria-Palácio-(4).39e4ee75.jpg,1573874103120,915b0e6c0b123185a1e6b094ab7108e7e2a484c00545d44f13e1d92091a56401
+static/media/Partículas-de-Luz-1-2017-2018-Andrés-Stephanou-Installation-View-Galeria-Palácio-(2).9aabd8b7.jpg,1573874103160,3240ce560fb7bce681ba75e108c0c27df661b0a134dbc5384047d21cef52b91b
+static/media/Autorretratos-2018-Chiaki-Mihara-Installation-View-Photo-Galeria-Palácio-(7).8923c43d.jpg,1573874103147,443027e94169790cac7fd2beb28e863b357370f681a30f9f519157aeaeacccff
+static/media/Pré-Consumo-Arraia-2019-Pré-Consumo-Papa-Terra-2019-Emerson-da-Silva-Installation-View-Galeria-Palácio-(1).05f0d6a2.jpg,1573874103152,26193254731e74ff60e1bb14558e75cca7a15d6bd2702b2c603b2bd85160c4e9
+static/media/Autorretratos-2018-Chiaki-Mihara-Installation-View-Photo-Galeria-Palácio-(8).8e9eda86.jpg,1573874103147,d3089e1dcb419542f5fa159b071cc6cc7032b5ccf88a1e2c247f1212ba1ad1f7
+static/media/luz_viva.06077af8.png,1573874103132,dae5c4add980e5ba06ce0b78e36c06b51c7bb037c6f48615ce3ea54dc4f70057
+static/media/Partículas-de-Luz-2-2017-2018-Andrés-Stephanou-Installation-View-Galeria-Palácio-(1).082d79ba.jpg,1573874103162,84b3364c60389914602eb23d2c4bf17dc7a011107a8f6c6bfb88e3ddcc00e85a
+static/media/Terreno-2019-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(1).0f9771c0.jpg,1573874103155,4bebf04b82126d904df6d15d79494ef846268f330bb8ecbf87736daeaa4a9317
+static/media/Partículas-de-Luz-2-2017-2018-Andrés-Stephanou-Installation-View-Galeria-Palácio-(2).434d9587.jpg,1573874103162,68e89e44186e5a6bbda25f535609ce7e4d9bc4ae45b4fc2959e3a296268c88cc
+static/media/Autorretratos-2018-Chiaki-Mihara-Installation-View-Photo-Galeria-Palácio-(9).d02d46e6.jpg,1573874103148,d8f8932008950875049b275571a661361f4bce604c6443772fbca6692f5e61ee
+static/media/Paraíso-2017-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(2).0e6d4ad9.jpg,1573874103182,766332d59f19feb2fde512fc73a6da0b933a2ec45863bfaed2d2f63f07be0261
+static/media/Terrestre-2018-Emerson-da-Silva-Screenshot-(2)-All-Rights-Reserved.78707261.jpg,1573874103178,06fccd6e3893889f1bd316927d5b59ffaf386f2a8364cfdb666fa59ec34a122a
+static/media/Partículas-de-Luz-2-2017-2018-Andrés-Stephanou-Screenshot-(2)-All-Rights-Reserved.5c184b10.png,1573874103120,10efad548ed1498b1543e1d64fdd7b702b03e0cfcd87af607329b0b4d0a14ecc
+static/media/Terreno-2019-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(2).e1f01fe9.jpg,1573874103155,9e8e886a200c5be21214ef6dd6106bde105c9b94b40b897d0f28ae02c08ea675
+static/media/Pré-Consumo-Alface-Lisa-2017-Emerson-da-Silva-Installation-View-Galeria-Palácio-(1).a1f5066d.jpg,1573874103177,b8a03aeb8ea25b59ebcd9f9d60af36ddba7f3e57d1d8e0a458c106c3605da37f
+static/media/Luz-Água-e-Terra-Preta-2017-Emerson-da-Silva-Installation-View-Galeria-Palácio-(2).f7cceec5.jpg,1573874103176,b273b489f6cd73e4e6c2a144769b8531182c14b634bf5e2498d2d72a2e7baade
+static/media/O-Regime-dos-Ventos-2018-Emerson-da-Silva-Screenshot-(4)-All-Rights-Reserved.7f9e3027.jpg,1573874103121,d521644134ea9ac153404b5ea8f5c32c7b4fb653e03c29328ad2c0276d6d29e6
+static/media/Superfície-de-Mundo-Aberto-2018-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(1).6b21b7a8.jpg,1573874103169,19fae86dad5539a8cd184d4f0557b0710cf10d955f1611b8a12ca187256fa8ef
+static/media/Superfície-de-Mundo-Aberto-2018-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(2).b45f7eb4.jpg,1573874103169,677bbcf16931e4d868f662f682b0f06fa436011f2df1b67f877b255a4a981a6e
+static/media/Um-lugar-para-estar-2018-2019-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(3).8ec621e1.jpg,1573874103156,db0658782c4eb7b5a678d9c3906d11a285998b0099040626a1dcbf45ae28de00
+static/media/Um-lugar-para-estar-2018-2019-Lucas-Alves-Costa-VR-Experience-Galeria-Palácio-(1).90dde0cb.jpg,1573874103130,e067d4bd5c433332b8e154a58d860956fccba1513d7ed524e2b60583544111ae
+static/media/Visão-Aérea-de-Mundo-Aberto-2018-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(1).ad6a3d69.jpg,1573874103169,5a5a864f796b02e3aa17e7fe5b7090400c6cf6cd907451679d31c823b8f3be72
+static/media/Terreno-2019-Lucas-Alves-Costa-All-rights-reserved-Galeria-Palácio-(1).882296d9.jpg,1573874103133,16e8eae73f53b28a71adcd8194220e2910220f99a1fdbd33e9c55602669193d1
+static/media/Terreno-2019-Lucas-Alves-Costa-All-rights-reserved-Galeria-Palácio-(2).37c04325.jpg,1573874103133,2b53fa0ed17ea29200880ceb3661d30ba836b22fd7685169d0ff41637c6da9fc
+static/media/Um-lugar-para-estar-2018-2019-Lucas-Alves-Costa-VR-Experience-Galeria-Palácio-(2).e15b4514.jpg,1573874103159,9687eb0c316688067b14721bbf2d480a819c668fae90121f598982d1d1b0a8cd
+static/media/Um-lugar-para-estar-2018-2019-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(2).dd57938e.jpg,1573874103156,3a4b17841fee93e07f86d332c847453b0d38233d9f2637fa337cb7a7b88bf8ad
+static/media/Um-lugar-para-estar-2018-2019-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(1).7cae96fd.jpg,1573874103121,3d18ba30b2884074ac6a6ce035b11fde1717a0d7b7f921c61c9941ffeb109feb
+static/media/O-Regime-dos-Ventos-2018-Emerson-da-Silva-Screenshot-(2)-All-Rights-Reserved.8e48d36d.jpg,1573874103185,f3a56af4a2e3b43776a55b90655142ef5faca5e4019c93090138687456d6f49a
+static/media/Um-lugar-para-estar-2018-2019-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(4).e254180e.jpg,1573874103156,ab2e2886573ba9af20128dcdf5c1ca6e055333754955a3e98cd6fc91aa9003cc
+static/media/Espécies-do-Litoral-Sul-Brasileiro-2019-Emerson-da-Silva-Installation-View-Galeria-Palácio-(2).bcf220be.jpg,1573874103152,b7bad3b671639b2552abb9244dc7652d00c87b827633dcf867defabc3e919c78
+static/media/Partículas-de-Luz-1-2017-2018-Andrés-Stephanou-Screenshot-(4)-All-Rights-Reserved.31f53779.png,1573874103161,01000a9329b6c78f7ebf705df2978d651e569044644fe8a94910b6d494c1d919
+static/media/Autorretrato-(2)-2018-Chiaki-Mihara-Installation-View-Galeria-Palácio-(4).c2cf7021.jpg,1573874103130,5f4f485f5ad92017b2602705b225c9c1dbd3a56342909a630a0bed30d256d857
+static/media/Parque-Eólico,2018-Emerson-da-Silva-Installation-View-Photo,Galeria-Palácio(1).355460d5.jpg,1573874103185,68e043c23519ef6b3d4202504f0f87db11bd4acf76014538bc78533d5cdf62c9
+static/media/Um-lugar-para-estar-2018-2019-Lucas-Alves-Costa-VR-Experience-Galeria-Palácio-(3).c91ac7d8.jpg,1573874103159,30c54a6cec0444ee459bac56f447e719777fc13f4966470a2e453911de5a6ab1
+static/media/4-Autorretrato-(2)-2018-Chiaki-Mihara-Installation-View-Photo-Galeria-Palácio-(4).c2cf7021.jpg,1573874103128,5f4f485f5ad92017b2602705b225c9c1dbd3a56342909a630a0bed30d256d857
+static/media/Visão-Aérea-de-Mundo-Aberto-2018-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(2).ab0918e2.jpg,1573874103171,b6f95591b88ef3e08024a5c49f3b26cd58078298d5be973ee531d696a3391fb6
+static/media/Partículas-de-Luz-1-2017-2018-Andrés-Stephanou-Screenshot-(2)-All-Rights-Reserved.dea70a97.png,1573874103160,3e22411c7777daeb29c5ca3371bea5e20411b1fee46c5d90343f7696120c1dd2
+static/media/7- Mundo-Aberto-2017-2018-Lucas-Alves-Costa-Screenshot-(1)-All-Rights-Reserved.cbe220e0.png,1573874103095,1bc6d79cc6d57163e25a84bbe462914088df9fad2a816e7893100ec25392dc05
+static/media/olhos.92374589.png,1573874103171,56b05d905b6489da37fabdbe671a19eeec2d0904724ea808516eeaef09c5c1fc
+static/media/olhosAzuis.48bca707.png,1573874103172,2a0e12a175b3a9220510a029deb247811806f067aa28a39d88d582b877fa170a
+static/media/Terrestre-2018-Emerson-da-Silva-Screenshot-(3)-All-Rights-Reserved.a13ad547.jpg,1573874103144,e76d095c5bf9dfab03ceb7324d88bfbd1d39e25e7a884ee01e5b9626024f0ede
+static/media/Terrestre-2018-Emerson-da-Silva-Installation-View-Galeria-Palácio-(1).cdf65b7f.jpg,1573874103178,e569b09c500318505e187fd387091eeeab844dc834a824b36aedfce42227b450
+static/media/Terrestre-2018-Emerson-da-Silva-Installation-View-Galeria-Palácio-(2).e6fd921d.jpg,1573874103178,08f48784685cecd358ebc7941074313aba13520c146873653bfe8755225e23f1
+static/media/Terrestre-2018-Emerson-da-Silva-Screenshot-(4)-All-Rights-Reserved.0b24d274.jpg,1573874103179,de31d9862d1bcdceb918c1e6bb1f3f23b874f3eb9a0679250424821860cd02a2
+static/js/2.8778af70.chunk.js.map,1573874103212,59565bc3a39a2dc0eb4b9f203786ef0fff92b9e39b054651a7b38149f4b3e8a6
+static/media/Mundo-Aberto-2017-2018-Lucas-Alves-Costa-Screenshot-(2)-All-Rights-Reserved.cbe220e0.png,1573874103133,1bc6d79cc6d57163e25a84bbe462914088df9fad2a816e7893100ec25392dc05
+static/media/Entre-o-Céu-e-o-Oceano-2019-Emerson-da-Silva-Screenshot-(3)-All-Rights-Reserved.07b7290a.jpg,1573874103152,30ceaf25445589c9a9f0fd0ad135601436301224ddc14fc9a9f03fae846fd460
+static/media/Terreno-2019-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(3).efd8f129.jpg,1573874103156,44f6d28ac7206b149a5dab16a3e4db14bd08bad883ecaf66df9176e2b61c6723
+static/media/1-Um-lugar-para-estar-2018-2019-Lucas-Alves-Costa-Screenshot-(1)-All-Rights-Reserved.4f58ec88.png,1573874103122,0e5b01786e3e9417c93f13b976a80ce6c64a6bc2fc826ac40cf8b62a20c01368
+static/media/Lucas-Alves-Costa-Um-Lugar-Para-Estar-2019.297a5b84.png,1573874103129,dba3cc5447a6ba0aea4828151f9f5ae24a1a6e66c827e013324cd3087543a725
+static/media/Um-lugar-para-estar-2018-2019-Lucas-Alves-Costa-Screenshot-(2)-All-Rights-Reserved.badbb9ce.png,1573874103160,fa8788244da917d645ffd059e81836a7ccdf46191386e759d3714ff2d71749c4
+static/media/Paraíso-2017-Lucas-Alves-Costa-Screenshot-(1)-All-Rights-Reserved.c1c358ef.png,1573874103130,b3b70028285196a07a7ef91b00890f7338b2ccee7169a5960263b46ff32976eb
+static/media/Paraíso-2017-Lucas-Alves-Costa-Screenshot-(3)-All-Rights-Reserved.13a696ee.png,1573874103122,19d1c62fedb8d9de80be749eff7fded725456d224226e5883ea3904ba7eefa46
+static/media/Um-lugar-para-estar-2018-2019-Lucas-Alves-Costa-Screenshot-(1)-All-Rights-Reserved.a584dac3.png,1573874103158,6338cc0d8bb1eea5394bf3e076e9efe6a72e728ac977056d981b5caf9b1172d6
+static/media/vrFloresta.9fadaca3.png,1573874103135,37c8e2b163d5aa278842b158d0443ee8f41fc85cb2c42b9294d5ec4a1aada9da
+static/media/3-Luz-Água-e-Terra-Preta-2017.9f077af6.jpg,1573874103123,4a248d4867ee0fdcc0c431d9e1336bfee653bd03030ca6e4250ab7d103dc0fd0
