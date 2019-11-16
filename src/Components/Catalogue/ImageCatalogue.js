@@ -11,11 +11,11 @@ display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
 padding: 0 70px;
-padding-bottom: 80px;
+padding-bottom: 10px;
 
 @media ( max-width: 768px ) {
   justify-content: center;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
 }
 
 .hidden {

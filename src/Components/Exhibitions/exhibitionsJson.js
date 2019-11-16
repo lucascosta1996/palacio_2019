@@ -9,6 +9,7 @@ export const exhibitions = [
     paragraph3: 'contatop3',
     paragraph4: 'contatop4',
     paragraph5: 'contatop5',
+    paragraph6: 'contatop6',
     pdf: 'pdfContato',
     slide: [
       {
@@ -18,7 +19,7 @@ export const exhibitions = [
       },
       {
         alt: 'Contato Visual, 2019. Chiaki Mihara - Galeria Palácio',
-        img: 'exhibitions/contatoVisual/Contato-Visual-(1)-2018-2019-Chiaki-Mihara-Screenshot-(1)-All-Rights-Reserved.png',
+        img: 'exhibitions/contatoVisual/Contato-Visual-(Azul)-2018-2019-Chiaki-Mihara-Screenshot-(1)-All-Rights-Reserved.png',
         index: 1
       },
       {
@@ -38,7 +39,7 @@ export const exhibitions = [
       },
       {
         alt: 'Contato Visual, 2019. Chiaki Mihara - Galeria Palácio',
-        img: 'exhibitions/contatoVisual/Contato-Visual-(2)-2018-2019-Chiaki-Mihara-Screenshot-(1)-All-Rights-Reserved.png',
+        img: 'exhibitions/contatoVisual/Contato-Visual-(Vermelho)-2018-2019-Chiaki-Mihara-Screenshot-(1)-All-Rights-Reserved.png',
         index: 5
       }
     ]
@@ -140,6 +141,7 @@ export const exhibitions = [
     paragraph4: 'sistemasp4',
     paragraph5: 'sistemasp5',
     paragraph6: 'sistemasp6',
+    paragraph7: 'sistemasp7',
     pdf: 'pdfSistemas',
     slide: [
       {
@@ -245,8 +247,6 @@ export const exhibitions = [
     showRoute: 'autorretratos',
     paragraph1: 'autoretratosp1',
     paragraph2: 'autoretratosp2',
-    paragraph3: 'autoretratosp3',
-    paragraph4: 'autoretratosp4',
     pdf: 'pdfAutorretratos',
     slide: [
       {
@@ -307,7 +307,6 @@ export const exhibitions = [
     paragraph4: 'mundoAbertop4',
     paragraph5: 'mundoAbertop5',
     paragraph6: 'mundoAbertop6',
-    paragraph7: 'mundoAbertop7',
     pdf: 'pdfMundo',
     slide: [
       {
@@ -473,9 +472,9 @@ export const exhibitions = [
   },
   {
     artist: 'Lucas Alves Costa',
-    showName: 'Paraíso Tropical',
+    showName: 'Paraíso',
     showDate: 'tropicalDate',
-    showRoute: 'paraiso-tropical',
+    showRoute: 'paraiso',
     paragraph1: 'tropicalp1',
     paragraph2: 'tropicalp2',
     paragraph3: 'tropicalp3',
@@ -484,37 +483,37 @@ export const exhibitions = [
     pdf: 'pdfParaiso',
     slide: [
       {
-        alt: 'Paraíso Tropical, 2017. Lucas Alves Costa - Galeria Palácio',
-        img: 'exhibitions/tropical/Paraíso-Tropical-2017-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(1).jpg',
+        alt: 'Paraíso, 2017. Lucas Alves Costa - Galeria Palácio',
+        img: 'exhibitions/tropical/Paraíso-2017-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(1).jpg',
         index: 0
       },
       {
-        alt: 'Paraíso Tropical, 2017. Lucas Alves Costa - Galeria Palácio',
-        img: 'exhibitions/tropical/Paraíso-Tropical-2017-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(2).jpg',
+        alt: 'Paraíso, 2017. Lucas Alves Costa - Galeria Palácio',
+        img: 'exhibitions/tropical/Paraíso-2017-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(2).jpg',
         index: 1
       },
       {
-        alt: 'Paraíso Tropical, 2017. Lucas Alves Costa - Galeria Palácio',
-        img: 'exhibitions/tropical/Paraíso-Tropical-2017-Lucas-Alves-Costa-Screenshot-(1)-All-Rights-Reserved.png',
+        alt: 'Paraíso, 2017. Lucas Alves Costa - Galeria Palácio',
+        img: 'exhibitions/tropical/Paraíso-2017-Lucas-Alves-Costa-Screenshot-(1)-All-Rights-Reserved.png',
         index: 2
       },
       {
-        alt: 'Paraíso Tropical, 2017. Lucas Alves Costa - Galeria Palácio',
-        img: 'exhibitions/tropical/Paraíso-Tropical-2017-Lucas-Alves-Costa-Screenshot-(3)-All-Rights-Reserved.png',
+        alt: 'Paraíso, 2017. Lucas Alves Costa - Galeria Palácio',
+        img: 'exhibitions/tropical/Paraíso-2017-Lucas-Alves-Costa-Screenshot-(3)-All-Rights-Reserved.png',
         index: 3
       },
       {
-        alt: 'Paraíso Tropical, 2017. Lucas Alves Costa - Galeria Palácio',
+        alt: 'Paraíso, 2017. Lucas Alves Costa - Galeria Palácio',
         img: 'exhibitions/tropical/Mata-Atlântica-2017-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(1).jpg',
         index: 4
       },
       {
-        alt: 'Paraíso Tropical, 2017. Lucas Alves Costa - Galeria Palácio',
+        alt: 'Paraíso, 2017. Lucas Alves Costa - Galeria Palácio',
         img: 'exhibitions/tropical/Mata-Atlântica-2017-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(2).jpg',
         index: 5
       },
       {
-        alt: 'Paraíso Tropical, 2017. Lucas Alves Costa - Galeria Palácio',
+        alt: 'Paraíso, 2017. Lucas Alves Costa - Galeria Palácio',
         img: 'exhibitions/tropical/Mata-Atlântica-(Digital)-2017-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(1).jpg',
         index: 6
       }

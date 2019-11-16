@@ -189,7 +189,7 @@ const Login = (props) => {
               </a>.
             </span> */}
             <span className="becomeMember align-left small">
-              * {translate('sharing')}
+              *{translate('sharing')}
               <Link to="/terms-and-conditions">
                 {translate('termsConditions')}
               </Link>

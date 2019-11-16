@@ -243,20 +243,17 @@ const About = props => {
             )
           }
           <div>
-            <a href="https://twitter.com/GaleriaPalacio" target="_blank">
-              <i className="fab fa-twitter icon"></i>
-            </a>
             <a href="https://www.instagram.com/galeriapalacio/" target="_blank">
               <i className="fab fa-instagram icon"></i>
+            </a>
+            <a href="https://twitter.com/GaleriaPalacio" target="_blank">
+              <i className="fab fa-twitter icon"></i>
             </a>
           </div>
       </div>
       <div>
         <p className="info">
           {translate('aboutInfo')}
-        </p>
-        <p className="info">
-          {translate('aboutInfo2')}
         </p>
       </div>
       <Copyright

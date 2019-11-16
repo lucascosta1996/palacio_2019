@@ -4,14 +4,14 @@ export const collection = [
     period: '(2018–2019)',
     artist: "Lucas Alves Costa",
     route: 'um-lugar-para-estar',
-    coverImage: '1-Um-lugar-para-estar-2018-2019-Lucas-Alves-Costa-Screenshot-(1)-All-Rights-Reserved.png',
+    coverImage: 'Lucas-Alves-Costa-Um-Lugar-Para-Estar-2019.png',
     date: 'lugarparaestardate',
     info1: "lugarparaestar1",
     info2: "lugarparaestar2",
     date: 'lugarparaestardate',
     slides: [
       {
-        img: 'catalogue/1-Um-lugar-para-estar-2018-2019-Lucas-Alves-Costa-Screenshot-(1)-All-Rights-Reserved.png',
+        img: 'catalogue/Lucas-Alves-Costa-Um-Lugar-Para-Estar-2019.png',
         index: 0
       },
       {
@@ -177,33 +177,33 @@ export const collection = [
     ]
   },
   {
-    name: 'Contato Visual (1)',
+    name: 'Contato Visual (Azul)',
     period: '(2018–2019)',
     artist: 'Chiaki Mihara',
     route: 'contato-visual',
-    coverImage: '12-Contato-Visual-(1)-2018-2019-Chiaki-Mihara-Screenshot-(1)-All-Rights-Reserved.png',
+    coverImage: '12-Contato-Visual-(Azul)-2018-2019-Chiaki-Mihara-Screenshot-(1)-All-Rights-Reserved.png',
     info1: 'contatoVisual1',
     info2: 'contatoVisual2',
     date: 'contatoVisualdate',
     slides: [
       {
-        img: 'catalogue/12-Contato-Visual-(1)-2018-2019-Chiaki-Mihara-Screenshot-(1)-All-Rights-Reserved.png',
+        img: 'catalogue/12-Contato-Visual-(Azul)-2018-2019-Chiaki-Mihara-Screenshot-(1)-All-Rights-Reserved.png',
         index: 0
       }
     ]
   },
   {
-    name: 'Paraíso Tropical',
+    name: 'Paraíso',
     period: '(2017)',
     artist: 'Lucas Alves Costa',
-    route: 'paraiso-tropical',
-    coverImage: 'Paraíso-Tropical-2017-Lucas-Alves-Costa-Screenshot-(1)-All-Rights-Reserved.png',
+    route: 'paraiso',
+    coverImage: 'Paraíso-2017-Lucas-Alves-Costa-Screenshot-(1)-All-Rights-Reserved.png',
     info1: 'ptropical1',
     info2: 'ptropical2',
     date: 'ptropicalDate',
     slides: [
       {
-        img: 'exhibitions/tropical/Paraíso-Tropical-2017-Lucas-Alves-Costa-Screenshot-(1)-All-Rights-Reserved.png',
+        img: 'exhibitions/tropical/Paraíso-2017-Lucas-Alves-Costa-Screenshot-(1)-All-Rights-Reserved.png',
         index: 0
       }
     ]

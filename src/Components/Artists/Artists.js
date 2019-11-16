@@ -10,8 +10,8 @@ import emerson from '../../assets/artists/Entre-o-Céu-e-o-Oceano-2019-Emerson-d
 import ventos from '../../assets/exhibitions/ventos/O-Regime-dos-Ventos-2018-Emerson-da-Silva-Screenshot-(4)-All-Rights-Reserved.jpg'
 import lucasalves from '../../assets/artists/Um-lugar-para-estar-2018-2019-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(1).jpg'
 import mundo from '../../assets/catalogue/7- Mundo-Aberto-2017-2018-Lucas-Alves-Costa-Screenshot-(1)-All-Rights-Reserved.png'
-import olhosvermelhos from '../../assets/exhibitions/contatoVisual/Contato-Visual-(2)-2018-2019-Chiaki-Mihara-Screenshot-(1)-All-Rights-Reserved.png'
-import paraiso from '../../assets/exhibitions/tropical/Paraíso-Tropical-2017-Lucas-Alves-Costa-Screenshot-(3)-All-Rights-Reserved.png'
+import olhosvermelhos from '../../assets/exhibitions/contatoVisual/Contato-Visual-(Vermelho)-2018-2019-Chiaki-Mihara-Screenshot-(1)-All-Rights-Reserved.png'
+import paraiso from '../../assets/exhibitions/tropical/Paraíso-2017-Lucas-Alves-Costa-Screenshot-(3)-All-Rights-Reserved.png'
 import alface from '../../assets/artists/3-Luz-Água-e-Terra-Preta-2017.jpg'
 import particulas from '../../assets/exhibitions/sistemas/Partículas-2018-2019-Andrés-Stephanou-Screenshot-(3)-All-Rights-Reserved.png'
 
