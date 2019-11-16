@@ -141,6 +141,7 @@ function Exhibition (props) {
     .replace(/Mata Atlântica/g, `<i>Mata Atlântica</i>`)
     fourthParagraph.current.innerHTML = fourthParagraph.current.innerHTML
     .replace(/Dunas, Torre Eólica, Soterramento/g, `<i>Dunas, Torre Eólica, Soterramento</i>`)
+    .replace(/Contato Visual/g, `<i>Contato Visual</i>`)
     .replace(/Partículas de Luz 1/g, `<i>Partículas de Luz 1</i>`)
     .replace(/Partículas de Luz 2/g, `<i>Partículas de Luz 2</i>`)
     .replace(/Partículas de Luz/g, `<i>Partículas de Luz</i>`)
@@ -180,6 +181,7 @@ function Exhibition (props) {
     .replace(/Contato Visual \(Azul\)/g, `<i>Contato Visual (Azul)</i>`)
     .replace(/Contato Visual \(Vermelho\)/g, `<i>Contato Visual (Vermelho)</i>`)
     .replace(/Estudo para Contato Visual/g, `<i>Estudo para Contato Visual</i>`)
+    .replace(/O Regime dos Ventos/g, `<i>O Regime dos Ventos</i>`)
     sixthParagraph.current.innerHTML = sixthParagraph.current.innerHTML
     .replace(/Incidência de luz em um ambiente virtual/g, `<i>Incidência de luz em um ambiente virtual</i>`)
     .replace(/Um lugar para estar/g, `<i>Um lugar para estar</i>`)
