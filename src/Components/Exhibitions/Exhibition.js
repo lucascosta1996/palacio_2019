@@ -139,6 +139,7 @@ function Exhibition (props) {
     .replace(/Contato Visual \(Azul\)/g, `<i>Contato Visual (Azul)</i>`)
     .replace(/Contato Visual/g, `<i>Contato Visual</i>`)
     .replace(/Mata Atlântica/g, `<i>Mata Atlântica</i>`)
+    .replace(/Terrestre/g, `<i>Terrestre</i>`)
     fourthParagraph.current.innerHTML = fourthParagraph.current.innerHTML
     .replace(/Dunas, Torre Eólica, Soterramento/g, `<i>Dunas, Torre Eólica, Soterramento</i>`)
     .replace(/Contato Visual/g, `<i>Contato Visual</i>`)
@@ -161,10 +162,10 @@ function Exhibition (props) {
     .replace(/Contato Visual \(Azul\)/g, `<i>Contato Visual (Azul)</i>`)
     .replace(/Contato Visual \(Vermelho\)/g, `<i>Contato Visual (Vermelho)</i>`)
     .replace(/Luz, Água e Terra Preta/g, `<i>Luz, Água e Terra Preta</i>`)
-    .replace(/Pré-Consumo, Arraia/g, `<i>Pré-Consumo, Arraia</i>`)
+    .replace(/Arraia/g, `<i>Arraia</i>`)
     .replace(/Entre o Céu e o Oceano/g, `<i>Entre o Céu e o Oceano</i>`)
-    .replace(/Pré-Consumo, Papa Terra/g, `<i>Pré-Consumo, Papa Terra</i>`)
-    .replace(/Pré-Consumo, Alface Lisa/g, `<i>Pré-Consumo, Alface Lisa</i>`)
+    .replace(/Papa Terra/g, `<i>Papa Terra</i>`)
+    .replace(/Alface Lisa/g, `<i>Alface Lisa</i>`)
     fifthParagraph.current.innerHTML = fifthParagraph.current.innerHTML
     .replace(/Superfície de Mundo Aberto/g, `<i>Superfície de Mundo Aberto</i>`)
     .replace(/Superf\ície de Mundo Aberto/g, `<i>Superfície de Mundo Aberto</i>`)
@@ -209,23 +210,7 @@ function Exhibition (props) {
             {translate(props.show.paragraph2)}
           </p>
           <p className="text__paragraph" ref={ thirdParagraph }>
-            {
-              props.show.paragraph3 !== 'arrayTerra' && (
-                translate(props.show.paragraph3)
-              )
-            }
-          </p>
-          <p className="text_paragraph">
-            {
-              props.show.paragraph3 === 'arrayTerra' && (
-                <ul>
-                  <li>{translate('terrap3item1')}</li>
-                  <li>{translate('terrap3item2')}</li>
-                  <li>{translate('terrap3item3')}</li>
-                  <li>{translate('terrap3item4')}</li>
-                </ul>
-              )
-            }
+            {translate(props.show.paragraph3)}
           </p>
           <p className="text__paragraph" ref={ fourthParagraph }>
             {translate(props.show.paragraph4)}

@@ -233,7 +233,7 @@ export const exhibitions = [
       },
       {
         alt: 'A pesca enquanto atividade humana, 2019. Emerson da Silva - Galeria Palácio',
-        img: 'exhibitions/humana/Pré-Consumo-Arraia-2019-Pré-Consumo-Papa-Terra-2019-Emerson-da-Silva-Installation-View-Galeria-Palácio-(1).jpg',
+        img: 'exhibitions/humana/Arraia-2019-Papa-Terra-2019-Emerson-da-Silva-Installation-View-Galeria-Palácio-(1).jpg',
         index: 6
       }
     ]
@@ -552,11 +552,6 @@ export const exhibitions = [
         alt: 'Micropartículas, 2017. Andrés Stephanou - Galeria Palácio',
         img: 'exhibitions/micro/Micropartículas-2016-2017-Andrés-Stephanou-Screenshot-(4)-All-rights-reserved.png',
         index: 4
-      },
-      {
-        alt: 'Micropartículas, 2017. Andrés Stephanou - Galeria Palácio',
-        img: 'exhibitions/micro/Micropartículas-2016-2017-Andrés-Stephanou-Installation-View-Galeria-Palácio-(3).jpg',
-        index: 5
       }
     ]
   },
@@ -567,7 +562,7 @@ export const exhibitions = [
     showRoute: 'luz-agua-e-terra-preta',
     paragraph1: 'terrap1',
     paragraph2: 'terrap2',
-    paragraph3: 'arrayTerra',
+    paragraph3: 'terrap3',
     paragraph4: 'terrap4',
     paragraph5: 'terrap5',
     paragraph6: 'terrap6',
@@ -610,7 +605,7 @@ export const exhibitions = [
       },
       {
         alt: 'Luz, Água e Terra Preta, 2017. Emerson da Silva - Galeria Palácio',
-        img: 'exhibitions/terra/Pré-Consumo-Alface-Lisa-2017-Emerson-da-Silva-Installation-View-Galeria-Palácio-(1).jpg',
+        img: 'exhibitions/terra/Alface-Lisa-2017-Emerson-da-Silva-Installation-View-Galeria-Palácio-(1).jpg',
         index: 7
       }
     ]

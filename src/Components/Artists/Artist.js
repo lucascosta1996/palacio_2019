@@ -55,7 +55,7 @@ const ArtistWrapper = styled.section`
         font-family: 'Roboto', sans-serif;
         font-size: 13px;
         line-height: 18px;
-        max-width: 300px;
+        max-width: 328px;
       }
 
       span{

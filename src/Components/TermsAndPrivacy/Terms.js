@@ -10,7 +10,7 @@ const TermsWrapper = styled.section`
   justify-content: center;
   left: 0;
   margin: auto;
-  padding-bottom: 40px;
+  padding-bottom: 100px;
   position: absolute;
   right: 0;
   top: 100px;
@@ -121,9 +121,6 @@ function Terms( props ) {
           <span>{translate('lastUpdateTt')}</span>
         </div>
       </section>
-      <Link className="back" to="/about">
-        {translate('back')}
-      </Link>
     </TermsWrapper>
   )
 }

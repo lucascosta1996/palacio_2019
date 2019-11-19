@@ -134,17 +134,26 @@ const AboutWrapper = styled.section`
         }
 
         input {
-          border: 1.1px solid #000;
+          border: none;
+          border-bottom: 2.1px solid #ADB5BD;
           color: #000;
+          font-family: 'Roboto', sans-serif;
           font-size: 13px;
-          margin-right: 10px;
+          margin-right: 15px;
           max-width: 230px;
-          padding: 6px 8px;
+          padding: 6px 0;
   
           ::placeholder {
             color: #b3b4b5;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 300;
+            font-family: 'Roboto'
+          }
+
+          &:hover {
+            border-bottom: 2.1px solid #000;
+
+            ::placeholder {
+              color: #d4d7da;
+            }
           }
   
           @media ( max-width: 520px ) {
@@ -172,6 +181,21 @@ const AboutWrapper = styled.section`
           }
         }
       }
+    }
+  }
+
+  .info {
+    margin-bottom: 0;
+    margin-top: 5px;
+  }
+
+  .arrow {
+    cursor: pointer;
+    color: #ADB5BD;
+    font-size: 28px;
+
+    &:hover {
+      color: #000;
     }
   }
 `
@@ -209,7 +233,7 @@ const About = props => {
         <p className="address">
           {translate('country')}
         </p>
-        <a className="address map" href="https://www.google.com/maps/@-30.0330618,-51.2257867,21z" target="_blank">
+        <a className="address map" href="https://www.google.com/maps/dir//R.+Duque+de+Caxias,+1554+-+Centro+Hist%C3%B3rico,+Porto+Alegre+-+RS,+90010-280/@-30.0327698,-51.2958678,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x9519790688882cfb:0x5a406f81341312de!2m2!1d-51.2258269!2d-30.032937" target="_blank">
           {translate('seeMap')}
         </a>
        </section>
@@ -233,7 +257,7 @@ const About = props => {
                 <div className="inputs">
                   <input id="name" name="name" type="text" value={ name } placeholder={translate("fullName")} onChange={e => setName(e.target.value)} />
                   <input id="email" name="email" type="email" value={ email } placeholder="E-mail" onChange={e => setEmail(e.target.value)} />
-                  <button type="button" onClick={subscribe}>{translate('send')}</button>
+                  <i className="fas fa-long-arrow-alt-right arrow" onClick={subscribe}></i>
                 </div>
               </form>
             ) : (
@@ -254,6 +278,9 @@ const About = props => {
       <div>
         <p className="info">
           {translate('aboutInfo')}
+        </p>
+        <p className="info">
+          {translate('aboutInfo2')}
         </p>
       </div>
       <Copyright
