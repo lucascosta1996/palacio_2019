@@ -429,6 +429,7 @@ export const exhibitions = [
     paragraph3: 'ventosp3',
     paragraph4: 'ventosp4',
     paragraph5: 'ventosp5',
+    paragraph6: 'ventosp6',
     pdf: 'pdfVentos',
     slide: [
       {
@@ -526,6 +527,7 @@ export const exhibitions = [
     paragraph2: 'microp2',
     paragraph3: 'microp3',
     paragraph4: 'microp4',
+    paragraph5: 'microp5',
     pdf: 'pdfMicro',
     slide: [
       {
