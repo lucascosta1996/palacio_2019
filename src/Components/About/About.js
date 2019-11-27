@@ -135,13 +135,14 @@ const AboutWrapper = styled.section`
 
         input {
           border: none;
-          border-bottom: 2.1px solid #ADB5BD;
+          border-bottom: 1px solid #ADB5BD;
           color: #000;
           font-family: 'Roboto', sans-serif;
           font-size: 13px;
           margin-right: 15px;
           max-width: 230px;
           padding: 6px 0;
+          outline: none;
   
           ::placeholder {
             color: #b3b4b5;
@@ -149,8 +150,6 @@ const AboutWrapper = styled.section`
           }
 
           &:hover {
-            border-bottom: 2.1px solid #000;
-
             ::placeholder {
               color: #d4d7da;
             }
@@ -192,7 +191,7 @@ const AboutWrapper = styled.section`
   .arrow {
     cursor: pointer;
     color: #ADB5BD;
-    font-size: 28px;
+    font-size: 24px;
 
     &:hover {
       color: #000;
@@ -269,9 +268,6 @@ const About = props => {
           <div>
             <a href="https://www.instagram.com/galeriapalacio/" target="_blank">
               <i className="fab fa-instagram icon"></i>
-            </a>
-            <a href="https://twitter.com/GaleriaPalacio" target="_blank">
-              <i className="fab fa-twitter icon"></i>
             </a>
           </div>
       </div>

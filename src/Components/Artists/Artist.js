@@ -54,15 +54,20 @@ const ArtistWrapper = styled.section`
       p {
         font-family: 'Roboto', sans-serif;
         font-size: 13px;
-        line-height: 18px;
+        line-height: 16px;
+        margin: 0;
         max-width: 328px;
       }
 
-      span{
+      .p-top {
+        padding-top: 8px;
+      }
+
+      span {
         display: block;
         font-family: 'Roboto', sans-serif;
         font-size: 13px;
-        line-height: 18px;
+        line-height: 16px;
       }
     }
 
@@ -146,6 +151,7 @@ const Artist = props => {
         <img src={ props.artist.image } />
         <div>
           <p ref={ text }>{ translate( props.artist.text ) }</p>
+          <p className="p-top" ref={ text }>{ translate( props.artist.work ) }</p>
         </div>
       </section>
       <section className="singleImage">
