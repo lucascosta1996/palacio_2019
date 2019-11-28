@@ -140,6 +140,7 @@ export const exhibitions = [
     paragraph3: 'sistemasp3',
     paragraph4: 'sistemasp4',
     paragraph5: 'sistemasp5',
+    paragraph6: 'sistemasp6',
     pdf: 'pdfSistemas',
     slide: [
       {
@@ -374,7 +375,6 @@ export const exhibitions = [
     paragraph3: 'particulasp3',
     paragraph4: 'particulasp4',
     paragraph5: 'particulasp5',
-    paragraph6: 'particulasp6',
     pdf: 'pdfParticulasLuz',
     slide: [
       {
@@ -527,7 +527,6 @@ export const exhibitions = [
     paragraph2: 'microp2',
     paragraph3: 'microp3',
     paragraph4: 'microp4',
-    paragraph5: 'microp5',
     pdf: 'pdfMicro',
     slide: [
       {

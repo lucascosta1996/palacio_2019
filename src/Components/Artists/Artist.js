@@ -134,11 +134,12 @@ const ArtistWrapper = styled.section`
 
 const Artist = props => {
   const { translate } = useContext(I18nContext)
-  const text = useRef()
+  const artistText = useRef()
 
   useEffect( () => {
-    text.current.innerHTML = text.current.innerHTML
+    artistText.current.innerHTML = artistText.current.innerHTML
     .replace(/Entre o Céu e o Oceano/g, `<i>Entre o Céu e o Oceano</i>`)
+    .replace(/Micropartículas/g, `<i>Micropartículas</i>`)
   } )
 
   return (
@@ -150,8 +151,8 @@ const Artist = props => {
       <section className="row secondRow">
         <img src={ props.artist.image } />
         <div>
-          <p ref={ text }>{ translate( props.artist.text ) }</p>
-          <p className="p-top" ref={ text }>{ translate( props.artist.work ) }</p>
+          <p ref={ artistText }>{ translate( props.artist.text ) }</p>
+          <p className="p-top">{ translate( props.artist.work ) }</p>
         </div>
       </section>
       <section className="singleImage">

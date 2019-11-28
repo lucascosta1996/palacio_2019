@@ -143,6 +143,7 @@ function Exhibition (props) {
     fourthParagraph.current.innerHTML = fourthParagraph.current.innerHTML
     .replace(/Dunas, Torre Eólica, Soterramento/g, `<i>Dunas, Torre Eólica, Soterramento</i>`)
     .replace(/Contato Visual/g, `<i>Contato Visual</i>`)
+    .replace(/Partículas de Luz \(VR\)/g, `<i>Partículas de Luz (VR)</i>`)
     .replace(/Partículas de Luz 1/g, `<i>Partículas de Luz 1</i>`)
     .replace(/Partículas de Luz 2/g, `<i>Partículas de Luz 2</i>`)
     .replace(/Partículas de Luz/g, `<i>Partículas de Luz</i>`)
@@ -170,7 +171,6 @@ function Exhibition (props) {
     .replace(/Superfície de Mundo Aberto/g, `<i>Superfície de Mundo Aberto</i>`)
     .replace(/Superf\ície de Mundo Aberto/g, `<i>Superfície de Mundo Aberto</i>`)
     .replace(/Parque Eólico Litorâneo/g, `<i>Parque Eólico Litorâneo</i>`)
-    .replace(/Partículas de Luz \(VR\)/g, `<i>Partículas de Luz (VR)</i>`)
     .replace(/Partículas de Luz 3/g, `<i>Partículas de Luz 3</i>`)
     .replace(/1 minuto/g, `<i>1 minuto</i>`)
     .replace(/Terreno/g, `<i>Terreno</i>`)
