@@ -8,8 +8,6 @@ export const exhibitions = [
     paragraph2: 'contatop2',
     paragraph3: 'contatop3',
     paragraph4: 'contatop4',
-    paragraph5: 'contatop5',
-    paragraph6: 'contatop6',
     pdf: 'pdfContato',
     slide: [
       {
@@ -55,7 +53,6 @@ export const exhibitions = [
     paragraph4: 'lugarp4',
     paragraph5: 'lugarp5',
     paragraph6: 'lugarp6',
-    paragraph7: 'lugarp7',
     pdf: 'pdfLugar',
     slide: [
       {
@@ -140,7 +137,6 @@ export const exhibitions = [
     paragraph3: 'sistemasp3',
     paragraph4: 'sistemasp4',
     paragraph5: 'sistemasp5',
-    paragraph6: 'sistemasp6',
     pdf: 'pdfSistemas',
     slide: [
       {
@@ -305,7 +301,6 @@ export const exhibitions = [
     paragraph3: 'mundoAbertop3',
     paragraph4: 'mundoAbertop4',
     paragraph5: 'mundoAbertop5',
-    paragraph6: 'mundoAbertop6',
     pdf: 'pdfMundo',
     slide: [
       {

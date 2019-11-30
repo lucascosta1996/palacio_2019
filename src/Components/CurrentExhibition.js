@@ -129,7 +129,7 @@ function CurrentExhibition( props ) {
         <section className="current current-wrapper">
           <div className="marginRight infosCurrentEx">
             <p>
-              Chiaki Mihara: <i>Contato Visual</i>,
+              Chiaki Mihara, <i>Contato Visual</i>,
             </p>
             <p>
               {translate('contatoDate')}
@@ -148,7 +148,7 @@ function CurrentExhibition( props ) {
           </div>
           <div className="infosCurrentEx">
             <p>
-              <i>Selected Works: 2016–2019</i>, 
+              <i>Selected Works, 2016–2019</i>, 
             </p>
             <p>
               {translate('selectedWorksDate')}

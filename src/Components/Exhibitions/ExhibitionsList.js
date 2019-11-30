@@ -24,13 +24,14 @@ const ExhibitionsListWrapper = styled.div`
 
   a {
     font-family: 'Roboto', sans-serif;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     text-decoration: none;
 
     span {
       color: #000;
       display: block;
       font-size: 13px;
+      padding: 5px 0;
       text-align: left;
     }
 
@@ -49,7 +50,8 @@ function ExhibitionsList (props) {
       {
         exhibitions.map( show => (
           <Link to={`exhibitions/${show.showRoute}`}>
-            <span>{show.artist}: <i>{show.showName}</i></span>
+            <span>{show.artist}</span>
+            <span><i>{show.showName}</i></span>
             <span>{translate(show.showDate)}</span>
           </Link>
         ))

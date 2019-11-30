@@ -28,7 +28,8 @@ function ExhibitionName (props) {
     <ExhibitionNameWrapper
       padding={ props.padding }
     >
-      <span className="title_exh">{props.show.artist}: <i>{props.show.showName}</i></span>
+      <span className="date_exh">{props.show.artist}</span>
+      <span className="date_exh"><i>{props.show.showName}</i></span>
       <span className="date_exh">{translate(props.show.showDate)}</span>
     </ExhibitionNameWrapper>
   )
