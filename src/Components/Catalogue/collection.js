@@ -38,17 +38,17 @@ export const collection = [
     ]
   },
   {
-    name: 'Partículas de Luz 1',
+    name: 'Light of Particles (Zoom In)',
     period: '(2017–2018)',
     artist: 'Andrés Stephanou',
-    route: 'particulas-de-luz-1',
-    coverImage: '3-Partículas-de-Luz-1-2017-2018-Andrés-Stephanou-Screenshot-(4)-All-Rights-Reserved.png',
+    route: 'light-of-particles-zoom-in',
+    coverImage: '3-Light-Particles-Andrés-Stephanou-Screenshot-(4)-All-Rights-Reserved.png',
     info1: 'particulasdeluz1-1',
     info2: 'particulasdeluz1-2',
     date: 'particulasdeluz1date',
     slides: [
       {
-        img: 'catalogue/3-Partículas-de-Luz-1-2017-2018-Andrés-Stephanou-Screenshot-(4)-All-Rights-Reserved.png',
+        img: 'catalogue/3-Light-Particles-Andrés-Stephanou-Screenshot-(4)-All-Rights-Reserved.png',
         index: 0
       }
     ]
@@ -71,17 +71,17 @@ export const collection = [
     ]
   },
   {
-    name: 'Partículas',
+    name: 'Flock of Particles Swarming',
     period: '(2018–2019)',
     artist: 'Andrés Stephanou',
-    route: 'particulas',
-    coverImage: '5-Partículas-2018-2019-Andrés-Stephanou-Screenshot-(3)-All-Rights-Reserved.png',
+    route: 'flock-of-particles-swarming',
+    coverImage: '3-Flock-of-Particles-Swarming-Andrés-Stephanou-Screenshot-(3)-All-Rights-Reserved.png',
     info1: 'organismodigital1',
     info2: 'organismodigital2',
     date: 'organismodigital1date',
     slides: [
       {
-        img: 'catalogue/5-Partículas-2018-2019-Andrés-Stephanou-Screenshot-(3)-All-Rights-Reserved.png',
+        img: 'catalogue/3-Flock-of-Particles-Swarming-Andrés-Stephanou-Screenshot-(3)-All-Rights-Reserved.png',
         index: 0
       }
     ]
@@ -161,17 +161,17 @@ export const collection = [
     ]
   },
   {
-    name: 'Micropartículas',
+    name: 'Microparticles',
     period: '(2016–2017)',
     artist: 'Andrés Stephanou',
-    route: 'microparticulas',
-    coverImage: '11-Micropartículas-2016-2017-Andrés-Stephanou-Screenshot-(6)-All-Rights-Reserved.png',
+    route: 'microparticles',
+    coverImage: '11-Microparticles-Andrés-Stephanou-Screenshot-(6)-All-Rights-Reserved.png',
     info1: 'microparticulas1',
     info2: 'microparticulas2',
     date: 'microparticulasdate',
     slides: [
       {
-        img: 'catalogue/11-Micropartículas-2016-2017-Andrés-Stephanou-Screenshot-(6)-All-Rights-Reserved.png',
+        img: 'catalogue/11-Microparticles-Andrés-Stephanou-Screenshot-(6)-All-Rights-Reserved.png',
         index: 0
       }
     ]

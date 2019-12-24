@@ -2,8 +2,8 @@ import React, { useContext, useState } from "react"
 import styled from 'styled-components'
 import { Link, Route } from 'react-router-dom'
 import Artist from './Artist'
-import detritos from '../../assets/exhibitions/micro/Micropartículas-2016-2017-Andrés-Stephanou-Installation-View-Galeria-Palácio-(1).jpg'
-import luzvivazoomout from '../../assets/exhibitions/luz/Partículas-de-Luz-2-2017-2018-Andrés-Stephanou-Screenshot-(2)-All-Rights-Reserved.png'
+import detritos from '../../assets/exhibitions/micro/Microparticles-Andrés-Stephanou-Installation-View-Galeria-Palácio-(1).jpg'
+import luzvivazoomout from '../../assets/exhibitions/luz/Light-Particles-Andrés-Stephanou-Screenshot-(2)-All-Rights-Reserved.png'
 import olhos from '../../assets/artists/Autorretratos-2018-Chiaki-Mihara-Installation-View-Photo-Galeria-Palácio-(4).jpg'
 import olhoazul from '../../assets/exhibitions/contatoVisual/Contato-Visual-2018-2019-Chiaki-Mihara-Installation-View-Galeria-Palácio-(1).jpg'
 import emerson from '../../assets/artists/Entre-o-Céu-e-o-Oceano-2019-Emerson-da-Silva-Installation-View-Galeria-Palácio-(2).jpg'
@@ -13,7 +13,7 @@ import mundo from '../../assets/catalogue/7- Mundo-Aberto-2017-2018-Lucas-Alves-
 import olhosvermelhos from '../../assets/exhibitions/contatoVisual/Contato-Visual-(Vermelho)-2018-2019-Chiaki-Mihara-Screenshot-(1)-All-Rights-Reserved.png'
 import paraiso from '../../assets/exhibitions/tropical/Paraíso-2017-Lucas-Alves-Costa-Screenshot-(3)-All-Rights-Reserved.png'
 import alface from '../../assets/artists/3-Luz-Água-e-Terra-Preta-2017.jpg'
-import particulas from '../../assets/exhibitions/sistemas/Partículas-2018-2019-Andrés-Stephanou-Screenshot-(3)-All-Rights-Reserved.png'
+import particulas from '../../assets/exhibitions/sistemas/Flock-of-Particles-Swarming-Andrés-Stephanou-Screenshot-(3)-All-Rights-Reserved.png'
 
 const ArtistsList = styled.section`
   .wrapper {
