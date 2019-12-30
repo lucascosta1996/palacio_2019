@@ -281,7 +281,6 @@ export const exhibitions = [
     paragraph2: 'mundoAbertop2',
     paragraph3: 'mundoAbertop3',
     paragraph4: 'mundoAbertop4',
-    paragraph5: 'mundoAbertop5',
     pdf: 'pdfMundo',
     slide: [
       {
@@ -311,33 +310,8 @@ export const exhibitions = [
       },
       {
         alt: 'Mundo Aberto, 2018. Lucas Alves Costa - Galeria Palácio',
-        img: 'exhibitions/mundo/Mundo-Aberto-2017-2018-Lucas-Alves-Costa-VR-Experience-(2)-Galeria-Palácio.jpg',
-        index: 5
-      },
-      {
-        alt: 'Mundo Aberto, 2018. Lucas Alves Costa - Galeria Palácio',
         img: 'exhibitions/mundo/Mundo-Aberto-2017-2018-Lucas-Alves-Costa-VR-Experience-(3)-Galeria-Palácio.jpg',
-        index: 6
-      },
-      {
-        alt: 'Mundo Aberto, 2018. Lucas Alves Costa - Galeria Palácio',
-        img: 'exhibitions/mundo/Superfície-de-Mundo-Aberto-2018-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(1).jpg',
-        index: 7
-      },
-      {
-        alt: 'Mundo Aberto, 2018. Lucas Alves Costa - Galeria Palácio',
-        img: 'exhibitions/mundo/Superfície-de-Mundo-Aberto-2018-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(2).jpg',
-        index: 8
-      },
-      {
-        alt: 'Mundo Aberto, 2018. Lucas Alves Costa - Galeria Palácio',
-        img: 'exhibitions/mundo/Visão-Aérea-de-Mundo-Aberto-2018-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(1).jpg',
-        index: 9
-      },
-      {
-        alt: 'Mundo Aberto, 2018. Lucas Alves Costa - Galeria Palácio',
-        img: 'exhibitions/mundo/Visão-Aérea-de-Mundo-Aberto-2018-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(2).jpg',
-        index: 10
+        index: 5
       }
     ]
   },
@@ -510,6 +484,11 @@ export const exhibitions = [
         alt: 'Microparticles, 2017. Andrés Stephanou - Galeria Palácio',
         img: 'exhibitions/micro/Microparticles-Andrés-Stephanou-Screenshot-(1)-All-rights-reserved.png',
         index: 2
+      },
+      {
+        alt: 'Microparticles, 2017. Andrés Stephanou - Galeria Palácio',
+        img: 'exhibitions/micro/Microparticles-Andrés-Stephanou-Screenshot-(4)-All-rights-reserved.png',
+        index: 3
       }
     ]
   },
