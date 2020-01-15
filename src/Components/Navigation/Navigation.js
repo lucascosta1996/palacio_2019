@@ -8,7 +8,7 @@ import { isMobile } from '../../helpers/helpers'
 import firebase from '../../firebase'
 import app from 'firebase/app'
 import 'firebase/auth'
-import { async } from 'q'
+import HamburgerMenu from 'react-hamburger-menu'
 
 const NavigationWrapper = styled.section`
   ${props => props.isOpened && `background-color: #fff;`}
@@ -145,13 +145,17 @@ const NavigationWrapper = styled.section`
 
   .menu {
     cursor: pointer;
-    font-size: 13px;
     font-family: 'Roboto', sans-serif;
+    padding-bottom: 1px;
     padding-left: 20px;
     padding-top: 6px;
 
     &:hover {
       font-weight: 500;
+    }
+
+    @media(max-width: 520px) {
+      display: none;
     }
   }
 
@@ -245,22 +249,36 @@ const Navigation = props => {
           <span className="divider"> | </span>
           <LanguageOptions />
         </span>
-        <span className={`menu ${!open ? '' : 'bold'}`} onClick={ () => setOpen( !open ) }>
-          MENU
+        <span className={`menu`} onClick={ () => setOpen( !open ) }>
+          <HamburgerMenu
+            isOpen={open}
+            menuClicked={ () => setOpen( !open ) }
+            width={18}
+            height={15}
+            strokeWidth={1.2}
+            rotate={0}
+            color='black'
+            borderRadius={0}
+            animationDuration={0.5}
+          />
         </span>
       </div>
       <VeganBurguerIcon
         onClick={ () => setOpen( !open ) }
       >
-        {
-          open ? (
-            <b>MENU</b>
-          ) : (
-            <Fragment>
-              <span>MENU</span>
-            </Fragment>
-          )
-        }
+        <Fragment>
+          <HamburgerMenu
+            isOpen={open}
+            menuClicked={ () => setOpen( !open ) }
+            width={18}
+            height={15}
+            strokeWidth={1.2}
+            rotate={0}
+            color='black'
+            borderRadius={0}
+            animationDuration={0.5}
+          />
+        </Fragment> 
       </VeganBurguerIcon>
     </NavigationWrapper>
   )

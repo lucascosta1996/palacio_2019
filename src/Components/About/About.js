@@ -188,6 +188,13 @@ const AboutWrapper = styled.section`
     margin-top: 5px;
   }
 
+  .about-text-info {
+    @media (max-width: 520px) {
+      padding-top: 10px;
+      padding-bottom: 30px;
+    }
+  }
+
   .arrow {
     cursor: pointer;
     color: #ADB5BD;
@@ -271,7 +278,7 @@ const About = props => {
             </a>
           </div>
       </div>
-      <div>
+      <div className="about-text-info">
         <p className="info">
           {translate('aboutInfo')}
         </p>

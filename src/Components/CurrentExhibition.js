@@ -93,6 +93,11 @@ const CurrentExhibitionWrapper = styled.section`
       margin-bottom: 40px;
       text-align: center;
     }
+
+    @media (max-width: 520px) {
+      margin: 0 auto 10px;
+      width: 90%;
+    }
   }
 
   .infosCurrentEx {
@@ -101,6 +106,11 @@ const CurrentExhibitionWrapper = styled.section`
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
     text-align: center;
+
+    @media (max-width: 520px) {
+      flex-direction: column;
+      margin: 0 auto;
+    }
 
     p {
       padding: 0 3px;
