@@ -37,7 +37,7 @@ const ExhibitionWrapper = styled.div`
       text-decoration: none;
 
       &:hover {
-        color: #4547ee;
+        text-decoration: underline;
       }
     }
   }

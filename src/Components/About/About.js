@@ -22,7 +22,7 @@ const AboutWrapper = styled.section`
   top: 0;
 
   .icon {
-    color: #ADB5BD;
+    color: #000;
     font-size: 18px;
     margin-right: 10px;
     margin-top: 26px;
@@ -85,6 +85,11 @@ const AboutWrapper = styled.section`
         max-width: 320px;
         padding: 0;
       }
+
+      &:hover {
+        color: #000;
+        text-decoration: underline;
+      }
     }
 
     .info {
@@ -131,6 +136,19 @@ const AboutWrapper = styled.section`
         @media ( max-width: 520px ) {
           align-items: flex-start;
           flex-direction: column;
+        }
+
+        .emailInput,
+        .nameInput {
+          transition: all .3s ease;
+        }
+
+        .nameInput {
+          ${props => props.name !== "" && 'border-bottom: 1px solid #000;'}
+        }
+
+        .emailInput {
+          ${props => props.email !== "" && 'border-bottom: 1px solid #000;'}
         }
 
         input {
@@ -227,7 +245,10 @@ const About = props => {
   })
 
   return (
-    <AboutWrapper>
+    <AboutWrapper
+      email={ email }
+      name={ name }
+    >
       <div className="infosWrapper">
         <section className="firstSection">
         <p className="galeria">
@@ -261,8 +282,8 @@ const About = props => {
               <form className="newsletter">
                 <label>Newsletter</label>
                 <div className="inputs">
-                  <input id="name" name="name" type="text" value={ name } placeholder={translate("fullName")} onChange={e => setName(e.target.value)} />
-                  <input id="email" name="email" type="email" value={ email } placeholder="E-mail" onChange={e => setEmail(e.target.value)} />
+                  <input className="nameInput" id="name" name="name" type="text" value={ name } placeholder={translate("fullName")} onChange={e => setName(e.target.value)} />
+                  <input className="emailInput" id="email" name="email" type="email" value={ email } placeholder="E-mail" onChange={e => setEmail(e.target.value)} />
                   <i className="fas fa-long-arrow-alt-right arrow" onClick={subscribe}></i>
                 </div>
               </form>

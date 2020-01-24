@@ -19,7 +19,6 @@ const OptionsWrapper = styled.div`
     font-size: 13px;
     font-weight: 300;
     text-transform: uppercase;
-    transition: all ease .3s;
 
     &:hover {
       font-weight: bold;

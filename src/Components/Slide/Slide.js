@@ -66,6 +66,10 @@ const SlideWrapper = styled.div`
     position: relative;
     width: ${ props => props.width }px;
 
+    @media (max-width: 768px) {
+      height: 179px;
+    }
+
     img {
       animation: Loader-spin infinite 5s linear;
       bottom: 0;
@@ -100,6 +104,10 @@ const SlideWrapper = styled.div`
     color: #c3c3c3;
     right: -30px;
 
+    @media (max-width: 768px) {
+      right: -20px;
+    }
+
     &:hover {
       color: #000;
     }
@@ -108,6 +116,10 @@ const SlideWrapper = styled.div`
   .leftArrow {
     color: #c3c3c3;
     left: -30px;
+
+    @media (max-width: 768px) {
+      left: -25px;
+    }
 
     &:hover {
       color: #000;

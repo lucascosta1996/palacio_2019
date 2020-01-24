@@ -45,6 +45,7 @@ const LoginWrapper = styled.section`
 
     input {
       border: 1.1px solid #000;
+      border-radius: 3px;
       color: #000;
       font-size: 13px;
       margin: 5px 0;
@@ -61,6 +62,7 @@ const LoginWrapper = styled.section`
     button {
       background: #fff;
       border: 1px solid #000;
+      border-radius: 3px;
       color: #000;
       cursor: pointer;
       font-family: 'Roboto', sans-serif;

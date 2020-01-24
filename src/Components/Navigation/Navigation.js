@@ -146,9 +146,17 @@ const NavigationWrapper = styled.section`
   .menu {
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
-    padding-bottom: 1px;
-    padding-left: 20px;
-    padding-top: 6px;
+    margin-bottom: 1px;
+    margin-left: 20px;
+    margin-top: 6px;
+    position: relative;
+    width: 18px;
+    height: 15px;
+
+    .hamburger-icon {
+      position: absolute;
+      z-index: 2;
+    }
 
     &:hover {
       font-weight: 500;
@@ -169,7 +177,7 @@ const VeganBurguerIcon = styled.div`
   font-size: 16px;
   position: fixed;
   right: 35px;
-  top: 26px;
+  top: 31px;
 
   @media ( min-width: 769px ) {
     display: none;
@@ -250,17 +258,19 @@ const Navigation = props => {
           <LanguageOptions />
         </span>
         <span className={`menu`} onClick={ () => setOpen( !open ) }>
-          <HamburgerMenu
-            isOpen={open}
-            menuClicked={ () => setOpen( !open ) }
-            width={18}
-            height={15}
-            strokeWidth={1.2}
-            rotate={0}
-            color='black'
-            borderRadius={0}
-            animationDuration={0.5}
-          />
+          <div className="hamburger-icon">
+            <HamburgerMenu
+              isOpen={open}
+              menuClicked={ () => setOpen( !open ) }
+              width={18}
+              height={15}
+              strokeWidth={1.2}
+              rotate={0}
+              color='black'
+              borderRadius={0}
+              animationDuration={0.5}
+            />
+          </div>
         </span>
       </div>
       <VeganBurguerIcon

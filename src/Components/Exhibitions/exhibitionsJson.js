@@ -450,11 +450,6 @@ export const exhibitions = [
         alt: 'Paraíso, 2017. Lucas Alves Costa - Galeria Palácio',
         img: 'exhibitions/tropical/Mata-Atlântica-2017-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(2).jpg',
         index: 5
-      },
-      {
-        alt: 'Paraíso, 2017. Lucas Alves Costa - Galeria Palácio',
-        img: 'exhibitions/tropical/Mata-Atlântica-(Digital)-2017-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(1).jpg',
-        index: 6
       }
     ]
   },

@@ -23,6 +23,10 @@ const ArtistsList = styled.section`
     padding-top: 180px;
     text-align: left;
     width: 100%;
+
+    @media (max-width: 520px) {
+      padding-top: 124px;
+    }
   }
 
   .artistsList {

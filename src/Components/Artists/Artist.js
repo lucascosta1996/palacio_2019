@@ -34,7 +34,7 @@ const ArtistWrapper = styled.section`
       max-width: 700px;
   
       @media ( max-width: 520px ) {
-        max-width: 300px;
+        max-width: 100%;
       }
     }
   }
@@ -44,6 +44,12 @@ const ArtistWrapper = styled.section`
 
     @media (max-width: 768px) {
       margin-bottom: 30px;
+    }
+
+    img {
+      @media ( max-width: 520px ) {
+        margin-top: 10px;
+      }
     }
   }
 
@@ -73,6 +79,16 @@ const ArtistWrapper = styled.section`
 
     @media (max-width: 1024px) {
       flex-direction: column-reverse;
+    }
+
+    @media ( max-width: 520px ) {
+      padding-bottom: 40px;
+    }
+
+    img {
+      @media ( max-width: 520px ) {
+        margin-top: 40px;
+      }
     }
   }
 
@@ -109,7 +125,6 @@ const ArtistWrapper = styled.section`
 
   footer {
     padding-bottom: 40px;
-    padding-left: 25px;
   }
 
   .singleImage {
@@ -124,6 +139,10 @@ const ArtistWrapper = styled.section`
 
     @media (max-width: 768px) {
       width: 90%;
+
+      img {
+        margin-top: 0;
+      }
     }
 
     img {

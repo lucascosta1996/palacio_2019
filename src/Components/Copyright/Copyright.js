@@ -55,9 +55,6 @@ const Copyright = props => {
     <CopyrightWrapper
       position={ props.position }
     >
-      <span className="rights">
-      © Galeria Palácio
-      </span>
       <Link className="terms" to="/terms-and-conditions">
         {translate('termsofuse')}
       </Link>
