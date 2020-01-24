@@ -135,18 +135,18 @@ function CurrentExhibition( props ) {
 
   return(
     <CurrentExhibitionWrapper>
-      <Link to="/exhibitions/contato-visual">
+      <Link to="/exhibitions/estadio">
         <section className="current current-wrapper">
           <div className="marginRight infosCurrentEx">
             <p>
-              Chiaki Mihara, <i>Contato Visual</i>,
+            Emerson da Silva, <i>Estádio</i>,
             </p>
             <p>
-              {translate('contatoDate')}
+              {translate('estadioDate')}
             </p>
           </div>
           <div className="imageWrapper">
-            <img alt="Galeria Palácio current exhibition - Contato visual, 2019 - Chiaki Mihara" src={ require( `../assets/exhibitions/contatoVisual/Estudo-para-Contato-Visual-2019-Chiaki-Mihara-Installation-View-Galeria-Palácio-(2).jpg` ) } />
+            <img alt="Galeria Palácio current exhibition - Contato visual, 2019 - Chiaki Mihara" src={ require( `../assets/index/Emerson-da-Silva-Estádio-2020-Galeria-Palácio-All-rights-reserved.jpg` ) } />
           </div>
         </section>
       </Link>
@@ -154,7 +154,7 @@ function CurrentExhibition( props ) {
       <Link to="/viewing-room/main">
         <section className="viewing">
           <div className="imageWrapper">
-            <img alt="Galeria Palácio current exhibition - Contato visual, 2019 - Chiaki Mihara" src={ require( `../assets/exhibitions/terra/Terrestre-2018-Emerson-da-Silva-Screenshot-(3)-All-Rights-Reserved.jpg` ) } />
+            <img alt="Galeria Palácio current exhibition - Contato visual, 2019 - Chiaki Mihara" src={ require( `../assets/exhibitions/autoretratos/Autorretratos-2018-Chiaki-Mihara-Installation-View-Photo-Galeria-Palácio-(4).jpg` ) } />
           </div>
           <div className="infosCurrentEx">
             <p>

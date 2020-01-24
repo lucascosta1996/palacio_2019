@@ -1,5 +1,14 @@
 export const exhibitions = [
   {
+    artist: 'Emerson da Silva',
+    showName: 'Estádio',
+    showDate: 'estadioDate',
+    showRoute: 'estadio',
+    period: 'upcoming',
+    upcomingTitle: 'estadioUpcomingTitle',
+    upcomingOpening: 'estadioOpening'
+  },
+  {
     artist: 'Chiaki Mihara',
     showName: 'Contato Visual',
     showDate: 'contatoDate',
@@ -9,6 +18,7 @@ export const exhibitions = [
     paragraph3: 'contatop3',
     paragraph4: 'contatop4',
     pdf: 'pdfContato',
+    period: 'current',
     slide: [
       {
         alt: 'Contato Visual, 2019. Chiaki Mihara - Galeria Palácio',
@@ -54,6 +64,7 @@ export const exhibitions = [
     paragraph5: 'lugarp5',
     paragraph6: 'lugarp6',
     pdf: 'pdfLugar',
+    period: 'past',
     slide: [
       {
         alt: 'Um lugar para estar, 2019. Lucas Alves Costa - Galeria Palácio',
@@ -139,6 +150,7 @@ export const exhibitions = [
     paragraph5: 'sistemasp5',
     paragraph6: 'sistemasp6',
     pdf: 'pdfSistemas',
+    period: 'past',
     slide: [
       {
         alt: 'Flock of Particles Swarming, 2019. Andrés Stephanou - Galeria Palácio',
@@ -178,6 +190,7 @@ export const exhibitions = [
     paragraph4: 'atividadep4',
     paragraph5: 'atividadep5',
     pdf: 'pdfHumana',
+    period: 'past',
     slide: [
       {
         alt: 'A pesca enquanto atividade humana, 2019. Emerson da Silva - Galeria Palácio',
@@ -224,6 +237,7 @@ export const exhibitions = [
     paragraph1: 'autoretratosp1',
     paragraph2: 'autoretratosp2',
     pdf: 'pdfAutorretratos',
+    period: 'past',
     slide: [
       {
         alt: 'Autoretratos, 2018. Chiaki Mihara - Galeria Palácio',
@@ -282,6 +296,7 @@ export const exhibitions = [
     paragraph3: 'mundoAbertop3',
     paragraph4: 'mundoAbertop4',
     pdf: 'pdfMundo',
+    period: 'past',
     slide: [
       {
         alt: 'Mundo Aberto, 2018. Lucas Alves Costa - Galeria Palácio',
@@ -326,6 +341,7 @@ export const exhibitions = [
     paragraph4: 'particulasp4',
     paragraph5: 'particulasp5',
     pdf: 'pdfParticulasLuz',
+    period: 'past',
     slide: [
       {
         alt: 'Light Particles, 2018. Andrés Stephanou - Galeria Palácio',
@@ -371,6 +387,7 @@ export const exhibitions = [
     paragraph5: 'ventosp5',
     paragraph6: 'ventosp6',
     pdf: 'pdfVentos',
+    period: 'past',
     slide: [
       {
         alt: 'O Regime dos Ventos, 2018. Emerson da Silva - Galeria Palácio',
@@ -420,6 +437,7 @@ export const exhibitions = [
     paragraph4: 'tropicalp4',
     paragraph5: 'tropicalp5',
     pdf: 'pdfParaiso',
+    period: 'past',
     slide: [
       {
         alt: 'Paraíso, 2017. Lucas Alves Costa - Galeria Palácio',
@@ -464,6 +482,7 @@ export const exhibitions = [
     paragraph4: 'microp4',
     paragraph5: 'microp5',
     pdf: 'pdfMicro',
+    period: 'past',
     slide: [
       {
         alt: 'Microparticles, 2017. Andrés Stephanou - Galeria Palácio',
@@ -499,6 +518,7 @@ export const exhibitions = [
     paragraph5: 'terrap5',
     paragraph6: 'terrap6',
     pdf: 'pdfLuzAgua',
+    period: 'past',
     slide: [
       {
         alt: 'Luz, Água e Terra Preta, 2017. Emerson da Silva - Galeria Palácio',
