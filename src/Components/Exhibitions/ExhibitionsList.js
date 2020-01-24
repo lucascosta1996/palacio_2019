@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import { exhibitions } from './exhibitionsJson'
 import { I18nContext } from '../../i18n'
-import Copyright from '../Copyright/Copyright'
 
 const ExhibitionsListWrapper = styled.div`
   display: flex;

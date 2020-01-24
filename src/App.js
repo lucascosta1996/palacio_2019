@@ -1,10 +1,8 @@
 import React, { useEffect ,useState } from 'react'
 import { BrowserRouter as Router, Route } from "react-router-dom"
-import LanguageOptions from './Components/Language/LanguageOptions'
 import Navigation from './Components/Navigation/Navigation'
 import Artists from './Components/Artists/Artists'
 import About from './Components/About/About'
-import Copyright from './Components/Copyright/Copyright'
 import Login from './Components/Login/Login'
 import firebase from './firebase'
 import Catalogue from './Components/Catalogue/Catalogue'

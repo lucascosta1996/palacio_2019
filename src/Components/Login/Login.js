@@ -1,9 +1,8 @@
-import React, { useContext, useEffect, useState } from "react"
+import React, { useContext, useState } from "react"
 import styled from 'styled-components'
 import firebase from '../../firebase'
 import { Link, withRouter } from 'react-router-dom'
 import { I18nContext } from "../../i18n"
-import Copyright from "../Copyright/Copyright";
 
 const LoginWrapper = styled.section`
   bottom: 0;

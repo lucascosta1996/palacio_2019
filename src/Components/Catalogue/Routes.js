@@ -3,7 +3,6 @@ import { Route, Switch } from 'react-router-dom'
 import Item from './Item'
 import ImageCatalogue from './ImageCatalogue'
 import { collection } from './collection'
-import Copyright from '../Copyright/Copyright'
 
 class Routes extends Component {
   render() {

@@ -1,9 +1,8 @@
-import React, { Component, useContext } from 'react'
-import { Link, withRouter } from 'react-router-dom'
+import React, { useContext } from 'react'
+import { withRouter } from 'react-router-dom'
 import styled from 'styled-components'
 import { I18nContext } from "../../i18n"
 import firebase from '../../firebase'
-import Logout from '../Login/Logout'
 import Routes from './Routes'
 
 const CatalogueWrapper = styled.div`
@@ -19,7 +18,6 @@ const CatalogueWrapper = styled.div`
 `
 
 function Catalogue( props ) {
-  const { translate } = useContext(I18nContext)
   
   if (!firebase.getCurrentUsername()) {
 		props.history.replace('/viewing-room/login')

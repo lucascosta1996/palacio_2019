@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import Slide from '../Slide/Slide'
 import { I18nContext } from "../../i18n"
 import { isMobile } from '../../helpers/helpers'
-import Copyright from '../Copyright/Copyright'
 import Back from '../Back/Back'
 
 const ItemWrapper = styled.div`
