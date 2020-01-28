@@ -112,11 +112,7 @@ function Terms( props ) {
         <p><b>{translate('t8')}</b> <span>{translate('t8t')}</span></p>
         <p><b>{translate('t9')}</b> <span>{translate('t9t')}</span></p>
         <p><b>{translate('t10')}</b> <span>{translate('t10t')}</span></p>
-        <p><b>{translate('t11')}</b> <span>{translate('t11t')} <Link to="/privacy-policy">{translate('t11t1Click')}</Link>{translate('t11t2')}</span></p>
-        <p><b>{translate('t12')}</b> <span>{translate('t12t')}</span></p>
-        <p><b>{translate('t13')}</b> <span>{translate('t13t')}</span></p>
-        <p><b>{translate('t14')}</b> <span>{translate('t14t')}</span></p>
-        <p><b>{translate('t15')}</b> <span>{translate('t15t')}</span></p>
+        <p><b>{translate('t11')}</b> <span>{translate('t11t')}</span></p>
         <div className="update">
           <span>{translate('lastUpdateTt')}</span>
         </div>

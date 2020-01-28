@@ -131,7 +131,7 @@ function Exhibition (props) {
       .replace(/Contato Visual \(Azul\)/g, `<i>Contato Visual (Azul)</i>`)
       .replace(/Contato Visual \(Vermelho\)/g, `<i>Contato Visual (Vermelho)</i>`)
       .replace(/Contato Visual/g, `<i>Contato Visual</i>`)
-      .replace(/O Regime dos Ventos/g, `<i>O Regime dos Ventos</i>`)
+      .replace(/Regime dos Ventos/g, `<i>Regime dos Ventos</i>`)
       .replace(/Autorretratos/g, `<i>Autorretratos</i>`)
       .replace(/Luz, Água e Terra Preta/g, `<i>Luz, Água e Terra Preta</i>`)
       .replace(/Um lugar para estar/g, `<i>Um lugar para estar</i>`)
@@ -161,10 +161,10 @@ function Exhibition (props) {
       .replace(/Microparticles/g, `<i>Microparticles</i>`)
       .replace(/Paraíso/g, `<i>Paraíso</i>`)
       .replace(/Terrestre/g, `<i>Terrestre</i>`)
-      .replace(/O Regime dos Ventos/g, `<i>O Regime dos Ventos</i>`)
+      .replace(/Regime dos Ventos/g, `<i>Regime dos Ventos</i>`)
       .replace(/Autorretratos/g, `<i>Autorretratos</i>`)
       .replace(/Entre o Céu e o Oceano/g, `<i>Entre o Céu e o Oceano</i>`)
-      .replace(/O Regime dos Ventos/g, `<i>O Regime dos Ventos</i>`)
+      .replace(/Regime dos Ventos/g, `<i>Regime dos Ventos</i>`)
       .replace(/Terrestre /g, `<i>Terrestre </i>`)
       .replace(/Mundo Aberto/g, `<i>Mundo Aberto</i>`)
     }
@@ -176,7 +176,7 @@ function Exhibition (props) {
       .replace(/Light Particles \(Zoom Out\)/g, `<i>Light Particles \(Zoom Out\)</i>`)
       .replace(/Light Particles/g, `<i>Light Particles</i>`)
       .replace(/Autorretratos/g, `<i>Autorretratos</i>`)
-      .replace(/O Regime dos Ventos/g, `<i>O Regime dos Ventos</i>`)
+      .replace(/Regime dos Ventos/g, `<i>Regime dos Ventos</i>`)
       .replace(/Paraíso/g, `<i>Paraíso</i>`)
       .replace(/Terreno/g, `<i>Terreno</i>`)
       .replace(/Um lugar para estar/g, `<i>Um lugar para estar</i>`)
@@ -199,7 +199,6 @@ function Exhibition (props) {
       .replace(/Dunas, Torre Eólica, Soterramento/g, `<i>Dunas, Torre Eólica, Soterramento</i>`)
       .replace(/Superfície de Mundo Aberto/g, `<i>Superfície de Mundo Aberto</i>`)
       .replace(/Superf\ície de Mundo Aberto/g, `<i>Superfície de Mundo Aberto</i>`)
-      .replace(/Contato Visual/g, `<i>Contato Visual</i>`)
       .replace(/Light Particles VR/g, `<i>Light Particles VR</i>`)
       .replace(/Light Particles \(Zoom In\)/g, `<i>Light Particles \(Zoom In\)</i>`)
       .replace(/Light Particles \(Zoom Out\)/g, `<i>Light Particles \(Zoom Out\)</i>`)
@@ -212,7 +211,7 @@ function Exhibition (props) {
       .replace(/Line of Light/g, `<i>Line of Light</i>`)
       .replace(/Microparticles/g, `<i>Microparticles</i>`)
       .replace(/Um lugar para estar/g, `<i>Um lugar para estar</i>`)
-      .replace(/O Regime dos Ventos/g, `<i>O Regime dos Ventos</i>`)
+      .replace(/Regime dos Ventos/g, `<i>Regime dos Ventos</i>`)
       .replace(/Paraíso/g, `<i>Paraíso</i>`)
       .replace(/Mata Atlântica \(Digital\)/g, `<i>Mata Atlântica (Digital)</i>`)
       .replace(/Mata Atlântica/g, `<i>Mata Atlântica</i>`)
@@ -220,11 +219,13 @@ function Exhibition (props) {
       .replace(/Estudo para Contato Visual/g, `<i>Estudo para Contato Visual</i>`)
       .replace(/Contato Visual \(Azul\)/g, `<i>Contato Visual (Azul)</i>`)
       .replace(/Contato Visual \(Vermelho\)/g, `<i>Contato Visual (Vermelho)</i>`)
+      .replace(/Contato Visual/g, `<i>Contato Visual</i>`)
       .replace(/Luz, Água e Terra Preta/g, `<i>Luz, Água e Terra Preta</i>`)
       .replace(/Arraia/g, `<i>Arraia</i>`)
       .replace(/Entre o Céu e o Oceano/g, `<i>Entre o Céu e o Oceano</i>`)
       .replace(/Papa Terra/g, `<i>Papa Terra</i>`)
       .replace(/Terreno/g, `<i>Terreno</i>`)
+      .replace(/Alface Lisa/g, `<i>Alface Lisa</i>`)
     }
     if ( fifthParagraph.current ) {
       fifthParagraph.current.innerHTML = fifthParagraph.current.innerHTML
@@ -239,7 +240,7 @@ function Exhibition (props) {
       .replace(/Contato Visual \(Azul\)/g, `<i>Contato Visual (Azul)</i>`)
       .replace(/Contato Visual \(Vermelho\)/g, `<i>Contato Visual (Vermelho)</i>`)
       .replace(/Estudo para Contato Visual/g, `<i>Estudo para Contato Visual</i>`)
-      .replace(/O Regime dos Ventos/g, `<i>O Regime dos Ventos</i>`)
+      .replace(/Regime dos Ventos/g, `<i>Regime dos Ventos</i>`)
       .replace(/Incidência de luz em um ambiente virtual/g, `<i>Incidência de luz em um ambiente virtual</i>`)
     }
     if ( sixthParagraph.current ) {
@@ -288,7 +289,7 @@ function Exhibition (props) {
                 {translate(props.show.paragraph7)}
               </p>
               <p className="pdf">
-                <a href={ !upcoming ? null : require( `../../assets/downloads/${translate(props.show.pdf)}` ) } target="_blank">
+                <a href={ upcoming ? null : require( `../../assets/downloads/${translate(props.show.pdf)}` ) } target="_blank">
                   {translate('pdf')}
                 </a>
               </p>

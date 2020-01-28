@@ -9,7 +9,6 @@ const ImageCatalogueWrapper = styled.div`
 display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
-padding: 0 70px;
 padding-bottom: 10px;
 
 @media ( max-width: 768px ) {
@@ -26,7 +25,7 @@ padding-bottom: 10px;
   display: flex;
   flex-direction: column;
   margin-bottom: 120px;
-  max-width: 350px;
+  max-width: 476px;
   text-decoration: none;
 
   &:hover {
@@ -41,7 +40,6 @@ padding-bottom: 10px;
   }
   
   img {
-    max-width: 350px;
     margin-bottom: 20px;
     transition: all .3s ease;
     width: 100%;
@@ -90,8 +88,7 @@ const CopyRightPadding = styled.div`
     display: flex;
     justify-content: space-between;
     font-size: 13px;
-    padding: 0 70px;
-    padding-bottom: 80px;
+    padding-bottom: 110px;
     padding-top: 80px;
 
     p {
@@ -105,7 +102,7 @@ const CopyRightPadding = styled.div`
       text-decoration: none;
 
       &:hover {
-        color: #4547ee;
+        text-decoration: underline;
       }
     }
   }
@@ -118,10 +115,9 @@ function ImageCatalogue (props) {
     <CopyRightPadding>
       <section className="exhibitionTitle">
         <div>
-         <i>Selected Works: 2016–2019</i>
+         <i>Selected Works</i>
          <p>{translate('selectedWorksDate')}</p>
         </div>
-        <a href={ require( `../../assets/downloads/${translate('pdfSelectedWorks')}` ) } target="_blank">press release</a>
       </section>
       <ImageCatalogueWrapper>
         {
@@ -140,6 +136,9 @@ function ImageCatalogue (props) {
           ))
         }
       </ImageCatalogueWrapper>
+      <section className="exhibitionTitle" style={{ paddingTop: '0' }}>
+        <a href={ require( `../../assets/downloads/${translate('pdfSelectedWorks')}` ) } target="_blank">Download PDF</a>
+      </section>
     </CopyRightPadding>
   )
 }

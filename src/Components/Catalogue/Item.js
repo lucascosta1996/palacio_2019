@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useRef, useEffect } from 'react'
 import styled from 'styled-components'
 import Slide from '../Slide/Slide'
 import { I18nContext } from "../../i18n"
@@ -7,20 +7,11 @@ import Back from '../Back/Back'
 
 const ItemWrapper = styled.div`
   align-items: center;
-  bottom: 0;
   display: flex;
   font-family: 'Roboto', sans-serif;
   font-size: 13px;
   line-height: 16px;
   justify-content: center;
-  position: absolute;
-  top: 0;
-
-  @media ( max-width: 768px ) {
-    left: 0;
-    right: 0;
-    top: 0;
-  }
 
   .center {
     display: flex;
@@ -39,7 +30,7 @@ const ItemWrapper = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 140px;
+    margin-left: 99px;
     max-width: 400px;
 
     @media ( max-width: 768px ) {
@@ -65,16 +56,21 @@ const ItemWrapper = styled.div`
 
     button {
       background: none;
-      border: 1px solid #4547ee;
-      color: #4547ee;
+      border: 1px solid #000;
+      border-radius: 3px;
+      color: #000;
       cursor: pointer;
       font-family: 'Roboto', sans-serif;
       font-weight: 300;
       padding: 10px 5px;
       width: auto;
 
+      .email {
+        color: #000;
+      }
+
       &:hover {
-        background: #4547ee;
+        background: #000;
         border: none;
         padding: 11px 6px;
 
@@ -90,42 +86,87 @@ const ItemWrapper = styled.div`
   }
 `
 
+const TextItemWrapper = styled.div`
+  padding-top: 100px;
+  max-width: 950px;
+
+  .text {
+    padding: 100px 0 80px;
+
+    p {
+      font-family: 'Roboto', sans-serif;
+      font-size: 13px;
+      max-width: 700px;
+      padding-bottom: 72px;
+    }
+
+    a {
+      color: #000;
+      font-family: 'Roboto', sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      text-decoration: none;
+    }
+  }
+`
+
 function Item (props) {
   const { translate } = useContext(I18nContext)
+  const textRef = useRef()
+
+  useEffect(() => {
+    textRef.current.innerHTML = textRef.current.innerHTML
+    .replace(/Terreno/g, `<i>Terreno</i>`)
+    .replace(/Terrestre/g, `<i>Terrestre</i>`)
+    .replace(/Autorretrato \(2\)/g, `<i>Autorretrato (2)</i>`)
+    .replace(/Autorretratos/g, `<i>Autorretratos</i>`)
+    .replace(/Terreno/g, `<i>Terreno</i>`)
+    .replace(/Luz, Água e Terra Preta/g, `<i>Luz, Água e Terra Preta</i>`)
+    .replace(/Light Particles/g, `<i>Light Particles</i>`)
+    .replace(/Um lugar para estar/g, `<i>Um lugar para estar</i>`)
+  })
 
   return (
-    <ItemWrapper>
-      <div className="center">
-        <Slide slides={props.item.slides} width={isMobile() ? 250 : 700} />
-        <div className="infos">
-          <span className="artist">{ props.item.artist }</span>
-          <i>{ props.item.name }</i>
-          <section className="additionalInfo">
-            <span>{translate(props.item.date)}</span>
-            {
-              props.item.info1 && <span>{translate(props.item.info1)}</span>
-            }
-            {
-              props.item.info2 && <span>{translate(props.item.info2)}</span>
-            }
-            {
-              props.item.info3 && <span>{translate(props.item.info3)}</span>
-            }
-            {
-              props.item.info4 && <span>{translate(props.item.info4)}</span>
-            }
-          </section>
-          <section className="gallery">
-            <button>
-              <a className="email" href="mailto:info@palacio.xyz" target="_top">
-                {translate('galleryContact')}
-              </a>
-            </button>
-          </section>
+    <TextItemWrapper>
+      <ItemWrapper>
+        <div className="center">
+          <Slide slides={props.item.slides} width={isMobile() ? 250 : 700} />
+          <div className="infos">
+            <span className="artist">{ props.item.artist }</span>
+            <i>{ props.item.name }</i>
+            <section className="additionalInfo">
+              <span>{translate(props.item.date)}</span>
+              {
+                props.item.info1 && <span>{translate(props.item.info1)}</span>
+              }
+              {
+                props.item.info2 && <span>{translate(props.item.info2)}</span>
+              }
+              {
+                props.item.info3 && <span>{translate(props.item.info3)}</span>
+              }
+              {
+                props.item.info4 && <span>{translate(props.item.info4)}</span>
+              }
+            </section>
+            <section className="gallery">
+              <button>
+                <a className="email" href="mailto:info@palacio.xyz" target="_top">
+                  {translate('galleryContact')}
+                </a>
+              </button>
+            </section>
+          </div>
         </div>
-      </div>
-      <Back position="fixed" bottom route="/viewing-room/main" />
-    </ItemWrapper>
+      </ItemWrapper>
+      <section className="text">
+          <p ref={textRef}>{translate(props.item.text)}</p>
+          <a className="email" href="mailto:info@palacio.xyz" target="_top">
+            {translate('request')}
+          </a>
+      </section>
+      <Back route="/viewing-room/main" />
+    </TextItemWrapper>
   )
 }
 

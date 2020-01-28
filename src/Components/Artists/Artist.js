@@ -105,7 +105,7 @@ const ArtistWrapper = styled.section`
       text-decoration: none; 
 
       &:hover {
-        color: #c3c3c3;
+        text-decoration: underline;
       }
 
       i {
@@ -177,9 +177,12 @@ const Artist = props => {
       <section className="singleImage">
         <img src={`${props.artist.bigImage}`} />
       </section>
+      <section className="singleImage">
+        <img src={`${props.artist.bigImage2}`} />
+      </section>
       <section className="externalLink">
         <a href={ props.artist.siteUrl } target="_blank">
-          { props.artist.site } <i class="fas fa-link"></i>
+          { props.artist.site }
         </a>
       </section>
       <footer>

@@ -62,7 +62,6 @@ export const exhibitions = [
     paragraph3: 'lugarp3',
     paragraph4: 'lugarp4',
     paragraph5: 'lugarp5',
-    paragraph6: 'lugarp6',
     pdf: 'pdfLugar',
     period: 'past',
     slide: [
@@ -147,8 +146,6 @@ export const exhibitions = [
     paragraph2: 'sistemasp2',
     paragraph3: 'sistemasp3',
     paragraph4: 'sistemasp4',
-    paragraph5: 'sistemasp5',
-    paragraph6: 'sistemasp6',
     pdf: 'pdfSistemas',
     period: 'past',
     slide: [
@@ -169,13 +166,8 @@ export const exhibitions = [
       },
       {
         alt: 'Flock of Particles Swarming, 2019. Andrés Stephanou - Galeria Palácio',
-        img: 'exhibitions/sistemas/Line-of-Light-Andrés-Stephanou-Installation-View-Photo-Galeria-Palácio-(1).jpg',
+        img: 'exhibitions/sistemas/Flock-of-Particles-Swarming-2018-2019-Andrés-Stephanou-Screenshot-(4)-All-rights-reserved.png',
         index: 3
-      },
-      {
-        alt: 'Flock of Particles Swarming, 2019. Andrés Stephanou - Galeria Palácio',
-        img: 'exhibitions/sistemas/Line-of-Light-Andrés-Stephanou-Installation-View-Photo-Galeria-Palácio-(2).jpg',
-        index: 4
       }
     ]
   },
@@ -188,7 +180,6 @@ export const exhibitions = [
     paragraph2: 'atividadep2',
     paragraph3: 'atividadep3',
     paragraph4: 'atividadep4',
-    paragraph5: 'atividadep5',
     pdf: 'pdfHumana',
     period: 'past',
     slide: [
@@ -235,7 +226,6 @@ export const exhibitions = [
     showDate: 'autoretratosDate',
     showRoute: 'autorretratos',
     paragraph1: 'autoretratosp1',
-    paragraph2: 'autoretratosp2',
     pdf: 'pdfAutorretratos',
     period: 'past',
     slide: [
@@ -294,7 +284,6 @@ export const exhibitions = [
     paragraph1: 'mundoAbertop1',
     paragraph2: 'mundoAbertop2',
     paragraph3: 'mundoAbertop3',
-    paragraph4: 'mundoAbertop4',
     pdf: 'pdfMundo',
     period: 'past',
     slide: [
@@ -339,7 +328,6 @@ export const exhibitions = [
     paragraph2: 'particulasp2',
     paragraph3: 'particulasp3',
     paragraph4: 'particulasp4',
-    paragraph5: 'particulasp5',
     pdf: 'pdfParticulasLuz',
     period: 'past',
     slide: [
@@ -377,50 +365,49 @@ export const exhibitions = [
   },
   {
     artist: 'Emerson da Silva',
-    showName: 'O Regime dos Ventos',
+    showName: 'Regime dos Ventos',
     showDate: 'ventosDate',
-    showRoute: 'o-regime-dos-ventos',
+    showRoute: 'regime-dos-ventos',
     paragraph1: 'ventosp1',
     paragraph2: 'ventosp2',
     paragraph3: 'ventosp3',
     paragraph4: 'ventosp4',
     paragraph5: 'ventosp5',
-    paragraph6: 'ventosp6',
     pdf: 'pdfVentos',
     period: 'past',
     slide: [
       {
-        alt: 'O Regime dos Ventos, 2018. Emerson da Silva - Galeria Palácio',
-        img: 'exhibitions/ventos/O-Regime-dos-Ventos-2018-Emerson-da-Silva-Installation-View-Galeria-Palácio-(1).jpg',
+        alt: 'Regime dos Ventos, 2018. Emerson da Silva - Galeria Palácio',
+        img: 'exhibitions/ventos/Regime-dos-Ventos-2018-Emerson-da-Silva-Installation-View-Galeria-Palácio-(1).jpg',
         index: 0
       },
       {
-        alt: 'O Regime dos Ventos, 2018. Emerson da Silva - Galeria Palácio',
-        img: 'exhibitions/ventos/O-Regime-dos-Ventos-2018-Emerson-da-Silva-Installation-View-Galeria-Palácio-(2).jpg',
+        alt: 'Regime dos Ventos, 2018. Emerson da Silva - Galeria Palácio',
+        img: 'exhibitions/ventos/Regime-dos-Ventos-2018-Emerson-da-Silva-Installation-View-Galeria-Palácio-(2).jpg',
         index: 1
       },
       {
-        alt: 'O Regime dos Ventos, 2018. Emerson da Silva - Galeria Palácio',
-        img: 'exhibitions/ventos/O-Regime-dos-Ventos-2018-Emerson-da-Silva-Screenshot-(2)-All-Rights-Reserved.jpg',
+        alt: 'Regime dos Ventos, 2018. Emerson da Silva - Galeria Palácio',
+        img: 'exhibitions/ventos/Regime-dos-Ventos-2018-Emerson-da-Silva-Screenshot-(2)-All-Rights-Reserved.jpg',
         index: 2
       },
       {
-        alt: 'O Regime dos Ventos, 2018. Emerson da Silva - Galeria Palácio',
-        img: 'exhibitions/ventos/O-Regime-dos-Ventos-2018-Emerson-da-Silva-Screenshot-(4)-All-Rights-Reserved.jpg',
+        alt: 'Regime dos Ventos, 2018. Emerson da Silva - Galeria Palácio',
+        img: 'exhibitions/ventos/Regime-dos-Ventos-2018-Emerson-da-Silva-Screenshot-(4)-All-Rights-Reserved.jpg',
         index: 3
       },
       {
-        alt: 'O Regime dos Ventos, 2018. Emerson da Silva - Galeria Palácio',
+        alt: 'Regime dos Ventos, 2018. Emerson da Silva - Galeria Palácio',
         img: 'exhibitions/ventos/Parque-Eólico,2018-Emerson-da-Silva-Installation-View-Photo,Galeria-Palácio(1).jpg',
         index: 4
       },
       {
-        alt: 'O Regime dos Ventos, 2018. Emerson da Silva - Galeria Palácio',
+        alt: 'Regime dos Ventos, 2018. Emerson da Silva - Galeria Palácio',
         img: 'exhibitions/ventos/Parque-Eólico,2018-Emerson-da-Silva-Installation-View-Photo,Galeria-Palácio(2).jpg',
         index: 5
       },
       {
-        alt: 'O Regime dos Ventos, 2018. Emerson da Silva - Galeria Palácio',
+        alt: 'Regime dos Ventos, 2018. Emerson da Silva - Galeria Palácio',
         img: 'exhibitions/ventos/Dunas-Parque-Eólico-Soterramento-2018-Emerson-da-Silva-Installation-View-Galeria-Palácio-(1).jpg',
         index: 6
       }
@@ -435,7 +422,6 @@ export const exhibitions = [
     paragraph2: 'tropicalp2',
     paragraph3: 'tropicalp3',
     paragraph4: 'tropicalp4',
-    paragraph5: 'tropicalp5',
     pdf: 'pdfParaiso',
     period: 'past',
     slide: [
@@ -480,7 +466,6 @@ export const exhibitions = [
     paragraph2: 'microp2',
     paragraph3: 'microp3',
     paragraph4: 'microp4',
-    paragraph5: 'microp5',
     pdf: 'pdfMicro',
     period: 'past',
     slide: [
@@ -516,7 +501,6 @@ export const exhibitions = [
     paragraph3: 'terrap3',
     paragraph4: 'terrap4',
     paragraph5: 'terrap5',
-    paragraph6: 'terrap6',
     pdf: 'pdfLuzAgua',
     period: 'past',
     slide: [

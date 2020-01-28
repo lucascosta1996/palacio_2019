@@ -119,7 +119,7 @@ function  Privacy( props ) {
           <p>info@palacio.xyz, contact@palacio.xyz</p>
         </div>
         <b>{translate('p1')}</b>
-        <p>{translate('p1t1')} <Link to="/terms-and-conditions">{translate('termsAndC')}</Link>{translate('p1t2')}</p>
+        <p>{translate('p1t1')}</p>
         <b>{translate('p2')}</b>
         <p>{translate('p2t')}</p>
         <b>{translate('p3')}</b>
@@ -128,12 +128,6 @@ function  Privacy( props ) {
         <p>{translate('p4t')}</p>
         <b>{translate('p5')}</b>
         <p>{translate('p5t')}</p>
-        <b>{translate('p6')}</b>
-        <p>{translate('p6t')}</p>
-        <b>{translate('p7')}</b>
-        <p>{translate('p7t')}</p>
-        <b>{translate('p8')}</b>
-        <p>{translate('p8t')}</p>
         <div className="update">
           <span>{translate('lastUpdatePt')}</span>
         </div>

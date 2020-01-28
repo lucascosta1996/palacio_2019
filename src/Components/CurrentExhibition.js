@@ -73,7 +73,7 @@ const CurrentExhibitionWrapper = styled.section`
     display: flex;
     flex-direction: column;
     padding-bottom: 80px;
-    padding-top: 80px;
+    padding-top: 120px;
 
     @media (max-width: 1279px) {
       flex-direction: column;
@@ -158,7 +158,7 @@ function CurrentExhibition( props ) {
           </div>
           <div className="infosCurrentEx">
             <p>
-              <i>Selected Works, 2016–2019</i>, 
+              <i>Selected Works</i>, 
             </p>
             <p>
               {translate('selectedWorksDate')}

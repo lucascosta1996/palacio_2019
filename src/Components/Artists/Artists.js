@@ -3,17 +3,21 @@ import styled from 'styled-components'
 import { Link, Route } from 'react-router-dom'
 import Artist from './Artist'
 import detritos from '../../assets/exhibitions/micro/Microparticles-Andrés-Stephanou-Installation-View-Galeria-Palácio-(1).jpg'
-import luzvivazoomout from '../../assets/exhibitions/luz/Light-Particles-Andrés-Stephanou-Screenshot-(2)-All-Rights-Reserved.png'
-import olhos from '../../assets/artists/Autorretratos-2018-Chiaki-Mihara-Installation-View-Photo-Galeria-Palácio-(4).jpg'
+import flock from '../../assets/artists/Flock-of-Particles-2018-2019-Andrés-Stephanou-Screenshot-All-rights-reserved-(1).png'
+import luzvivazoomout from '../../assets/artists/Light-Particles-(Zoom-In)-Andrés-Stephanou-Screenshot-(1)-All-Rights-Reserved.png'
+import olhos from '../../assets/exhibitions/autoretratos/Autorretratos-2018-Chiaki-Mihara-Installation-View-Photo-Galeria-Palácio-(9).jpg'
 import olhoazul from '../../assets/exhibitions/contatoVisual/Contato-Visual-2018-2019-Chiaki-Mihara-Installation-View-Galeria-Palácio-(1).jpg'
 import emerson from '../../assets/artists/Entre-o-Céu-e-o-Oceano-2019-Emerson-da-Silva-Installation-View-Galeria-Palácio-(2).jpg'
-import ventos from '../../assets/exhibitions/ventos/O-Regime-dos-Ventos-2018-Emerson-da-Silva-Screenshot-(4)-All-Rights-Reserved.jpg'
+import ventos from '../../assets/exhibitions/ventos/Regime-dos-Ventos-2018-Emerson-da-Silva-Screenshot-(4)-All-Rights-Reserved.jpg'
 import lucasalves from '../../assets/artists/Um-lugar-para-estar-2018-2019-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(1).jpg'
 import mundo from '../../assets/catalogue/7- Mundo-Aberto-2017-2018-Lucas-Alves-Costa-Screenshot-(1)-All-Rights-Reserved.png'
 import olhosvermelhos from '../../assets/exhibitions/contatoVisual/Contato-Visual-(Vermelho)-2018-2019-Chiaki-Mihara-Screenshot-(1)-All-Rights-Reserved.png'
 import paraiso from '../../assets/exhibitions/tropical/Paraíso-2017-Lucas-Alves-Costa-Screenshot-(3)-All-Rights-Reserved.png'
 import alface from '../../assets/artists/3-Luz-Água-e-Terra-Preta-2017.jpg'
-import particulas from '../../assets/exhibitions/sistemas/Flock-of-Particles-Swarming-Andrés-Stephanou-Screenshot-(3)-All-Rights-Reserved.png'
+import clouding from '../../assets/artists/Andrés-Stephanou-Clouding-(2018-2019)-Screenshot-3-All-rights-reserved.png'
+import contatoVisual from '../../assets/exhibitions/contatoVisual/Estudo-para-Contato-Visual-2019-Chiaki-Mihara-Installation-View-Galeria-Palácio-(2).jpg'
+import terreno from '../../assets/catalogue/Terreno-2019-Lucas-Alves-Costa-All-rights-reserved-Galeria-Palácio-(1) (2).jpg'
+import pescaria from '../../assets/artists/1-A-pescaria-enquanto-atividade-humana-2019.jpg'
 
 const ArtistsList = styled.section`
   .wrapper {
@@ -73,11 +77,12 @@ const Artists = props => {
       artistWork: detritos,
       route: 'andres-stephanou',
       text: 'andresA',
-      image: luzvivazoomout,
+      image: flock,
       work: "andresW",
       siteUrl: "https://andres-stephanou.com",
       site: "andres-stephanou.com",
-      bigImage: particulas
+      bigImage: luzvivazoomout,
+      bigImage2: clouding
     },
     {
       name: 'Chiaki Mihara',
@@ -89,7 +94,8 @@ const Artists = props => {
       work: "chiakiW",
       siteUrl: "https://chiakimihara.com",
       site: "chiakimihara.com",
-      bigImage: olhosvermelhos
+      bigImage: olhosvermelhos,
+      bigImage2: contatoVisual
     },
     {
       name: 'Emerson da Silva',
@@ -101,7 +107,8 @@ const Artists = props => {
       work: "emersonW",
       siteUrl: "https://emersondasilva.com",
       site: "emersondasilva.com",
-      bigImage: alface
+      bigImage: alface,
+      bigImage2: pescaria
     },
     {
       name: 'Lucas Alves Costa',
@@ -109,11 +116,12 @@ const Artists = props => {
       artistWork: lucasalves,
       route: 'lucas-alves-costa',
       text: 'lucasA',
-      image: mundo,
+      image: terreno,
       work: "lucasW",
       siteUrl: "https://lucasalvescosta.com",
       site: "lucasalvescosta.com",
-      bigImage: paraiso
+      bigImage: paraiso,
+      bigImage2: mundo
     }
   ]
 

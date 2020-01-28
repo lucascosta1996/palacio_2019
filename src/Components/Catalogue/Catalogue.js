@@ -9,12 +9,16 @@ const CatalogueWrapper = styled.div`
   bottom: 0;
   left: 0;
   margin: auto;
-  max-width: 1000px;
+  max-width: 1040px;
   padding-bottom: 60px;
   padding-top: 60px;
   position: absolute;
   right: 0;
   top: 0;
+
+  @media (max-width: 520px) {
+    max-width: 320px;
+  }
 `
 
 function Catalogue( props ) {

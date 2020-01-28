@@ -57,7 +57,7 @@ const AboutWrapper = styled.section`
     }
 
     .secondSection {
-      padding-top: 15px;
+      padding-top: 20px;
 
       p {
         margin-bottom: 2px;
@@ -66,7 +66,7 @@ const AboutWrapper = styled.section`
     }
 
     .thirdSection {
-      padding-top: 15px;
+      padding-top: 25px;
 
       p {
         margin-bottom: 2px;
@@ -84,11 +84,6 @@ const AboutWrapper = styled.section`
       @media ( max-width: 520px ) {
         max-width: 320px;
         padding: 0;
-      }
-
-      &:hover {
-        color: #000;
-        text-decoration: underline;
       }
     }
 
@@ -119,7 +114,7 @@ const AboutWrapper = styled.section`
 
     .newsletter {
       font-size: 13px;
-      padding-top: 40px;
+      padding-top: 50px;
 
       @media ( max-width: 520px ) {
         padding-top: 20px;
@@ -207,6 +202,8 @@ const AboutWrapper = styled.section`
   }
 
   .about-text-info {
+    max-width: 460px;
+
     @media (max-width: 520px) {
       padding-top: 10px;
       padding-bottom: 30px;

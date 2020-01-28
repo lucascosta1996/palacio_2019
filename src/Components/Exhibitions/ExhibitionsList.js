@@ -1,7 +1,8 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import { exhibitions } from './exhibitionsJson'
+import { viewingRoomExhibitions } from './viewingRoomExhibitionsJson'
 import { I18nContext } from '../../i18n'
 
 const ExhibitionsListWrapper = styled.div`
@@ -42,18 +43,54 @@ const ExhibitionsListWrapper = styled.div`
   }
 `
 
+const Categories = styled.div`
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 25px;
+  text-align: left;
+  top: 200px;
+
+  .active {
+    color: #c3c3c3;
+  }
+
+  span {
+    cursor: pointer;
+    font-size: 13px;
+    padding-bottom: 16px;
+
+    &:hover {
+      color: #c3c3c3;
+    }
+  }
+`
+
 function ExhibitionsList (props) {
   const { translate } = useContext(I18nContext)
+  const [ exhibitionsType, setExhibitionsType ] = useState( 'gallery' )
   return (
     <ExhibitionsListWrapper>
+      <Categories>
+        <span className={exhibitionsType === 'gallery' ? 'active' : null} onClick={() => setExhibitionsType( 'gallery' )}>{translate('gallery')}</span>
+        <span className={exhibitionsType === 'vr' ? 'active' : null} onClick={() => setExhibitionsType( 'vr' )}>Viewing Room</span>
+      </Categories>
       {
-        exhibitions.map( show => (
-          <Link to={`exhibitions/${show.showRoute}`}>
-            <span>{show.artist}</span>
-            <span><i>{show.showName}</i></span>
-            <span>{translate(show.showDate)}</span>
-          </Link>
-        ))
+        exhibitionsType === 'gallery' ? (
+          exhibitions.map( show => (
+            <Link to={`exhibitions/${show.showRoute}`}>
+              <span>{show.artist}</span>
+              <span><i>{show.showName}</i></span>
+              <span>{translate(show.showDate)}</span>
+            </Link>
+          )) ) : (
+            viewingRoomExhibitions.map( show => (
+              <Link to={`${show.showRoute}`}>
+                <span><i>{show.showName}</i></span>
+                <span>{translate(show.showDate)}</span>
+              </Link>
+            ))
+          )
       }
     </ExhibitionsListWrapper>
   )

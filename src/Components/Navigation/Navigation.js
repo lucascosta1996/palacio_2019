@@ -223,8 +223,8 @@ const Navigation = props => {
         </Link>
         <Link
           to="/viewing-room/login"
-          className={ `link ${( isActive( 'viewing-room' ) && isLogged ) && 'activeViewingRoom'} ${ (isActive( 'viewing-room' ) && !firebase.isLoggedIn() ) ? 'active' : '' } ${ open ? '' : 'hidden' }` }
-          onClick={ () => { setActive( 'viewing-room' ); setOpen( false ); window.scrollTo(0,0) } }
+          className={ `link ${ (isActive( 'viewing-room/main' ) ) ? 'active' : '' } ${ open ? '' : 'hidden' }` }
+          onClick={ () => { setActive( 'viewing-room/main' ); setOpen( false ); window.scrollTo(0,0) } }
         >
           { translate('collection') }
         </Link>
@@ -236,22 +236,6 @@ const Navigation = props => {
           { translate('about') }
         </Link>
         <span className={`logoutLang ${ open ? '' : 'hidden' }`}>
-          {
-            ( firebase.isLoggedIn() ) ? (
-              <a className="logout" onClick={ logout }>
-                Log out
-              </a>
-            ) : (
-              <Link
-                className="logout"
-                onClick={ () => { setActive( 'viewing-room' ); setOpen( false ); window.scrollTo(0,0) } }
-                to="/viewing-room/login"
-              >
-                Log in
-              </Link>
-            )
-          }
-          <span className="divider"> | </span>
           <LanguageOptions />
         </span>
         <span className={`menu`} onClick={ () => setOpen( !open ) }>

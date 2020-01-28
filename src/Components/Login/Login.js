@@ -137,7 +137,9 @@ const Login = (props) => {
   
   async function login() {
 		try {
-      await firebase.login(email, password)
+      await firebase.register(fullName, newEmail, `palacio`)
+      await firebase.login(newEmail, 'palacio')
+      await firebase.viewingRoom(fullName, newEmail)
       props.history.replace('/viewing-room/main')
 		} catch(error) {
 			alert(error.message)
@@ -157,7 +159,7 @@ const Login = (props) => {
   return (
     <LoginWrapper>
       {
-        !subscribe ? (
+        subscribe ? (
           <form className="formWrapper" onSubmit={e => e.preventDefault() && false }>
             <span className="fullCollection marginBottom2">
               Viewing Room
@@ -165,13 +167,8 @@ const Login = (props) => {
             <input id="email" name="email" type="email" value={ email } placeholder="E-mail" onChange={e => setEmail(e.target.value)} />
             <div className="inputAndButton">
               <input id="password" name="password" type="password" value={ password } placeholder={translate('password')} onChange={e => setPassword(e.target.value)} />
-              <button type="submit" onClick={login}>Login</button>
+            <button type="submit" onClick={login}>Login</button>
             </div>
-            <span className="becomeMember alreadyMember padding-top" href="#" onClick={ () => setSubscribe(true) }>
-              <a href="#" className="small">
-                {translate('signUp')}
-              </a>
-            </span>
           </form>
         ) : (
           <form className="formWrapper" onSubmit={e => e.preventDefault() && false }>
@@ -181,14 +178,8 @@ const Login = (props) => {
             <input id="name" name="name" type="text" value={ fullName } placeholder={translate("fullName")} onChange={e => setFullName(e.target.value)} />
             <div className="inputAndButton">
               <input id="email" name="email" type="email" value={ newEmail } placeholder="E-mail" onChange={e => setNewEmail(e.target.value)} />
-              <button type="submit" onClick={onRegister}>{translate('signUp')}</button>
+              <button type="submit" onClick={login}>{translate('enter')}</button>
             </div>
-            {/* <span className="becomeMember padding-top align-left" onClick={ () => setSubscribe(false) }>
-              {translate('alreadyMember')}
-              <a href="#">
-                {"Login"}
-              </a>.
-            </span> */}
             <span className="becomeMember align-left small">
               *{translate('sharing')}
               <Link to="/terms-and-conditions">
@@ -199,6 +190,12 @@ const Login = (props) => {
                 {translate('privacypolicy')}
               </Link>.
             </span>
+            {/* <span className="becomeMember padding-top align-left" onClick={ () => setSubscribe(false) }>
+              {translate('alreadyMember')}
+              <a href="#">
+                {"Login"}
+              </a>.
+            </span> */}
           </form>
         )
       }

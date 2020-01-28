@@ -33,6 +33,13 @@ class Firebase {
       email: email
     }).then( (response) => { return response })
   }
+
+  async viewingRoom(name, email) {
+    await this.db.doc(`viewing-room/${email}`).set({
+      name: name,
+      email: email
+    }).then( (response) => { return response })
+  }
   
   async register(name, email, password) {
     await this.auth.createUserWithEmailAndPassword(email, password)
