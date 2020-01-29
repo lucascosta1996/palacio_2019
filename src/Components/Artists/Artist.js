@@ -128,7 +128,7 @@ const ArtistWrapper = styled.section`
   }
 
   .singleImage {
-    padding-bottom: 54px;
+    padding-bottom: 110px;
     margin: auto;
     width: 1100px;
 

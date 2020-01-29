@@ -51,6 +51,15 @@ const ExhibitionWrapper = styled.div`
     padding-bottom: 40px;
   }
 
+  .imageWrapper {
+    max-width: 700px;
+    padding-bottom: 40px;
+
+    img {
+      width: 100%;
+    }
+  }
+
   p {
     ul {
       list-style: none;
@@ -60,6 +69,15 @@ const ExhibitionWrapper = styled.div`
       li {
         padding: 5px 0px;
       }
+    }
+  }
+
+  .rsvp {
+    color: #000;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
     }
   }
 `
@@ -296,14 +314,24 @@ function Exhibition (props) {
             </section>
         </ExhibitionWrapper>
         ) : (
-          <UpcomingExhibition>
-            <span ref={ upcomingExhibition } className="title_exh">{translate(props.show.upcomingTitle)}</span>
-            <section>
-              <span>{translate(props.show.upcomingOpening)}</span>
-              <span>{translate(props.show.showDate)}</span>
-              <span>RSVP: <a  href="mailto:rsvp@palacio.xyz" target="_top">rsvp@palacio.xyz</a></span>
+          <ExhibitionWrapper>
+            <ExhibitionName
+              padding="5px"
+              show={props.show}
+            />
+            <div className="imageWrapper">
+              <img src={ require( `../../assets/index/Emerson-da-Silva-Estádio-2020-Galeria-Palácio-All-rights-reserved.jpg` ) } />
+            </div>
+            <section className="text">
+              <p className="text__paragraph" ref={ firstParagraph }>
+                {translate(props.show.upcomingTitle)}
+              </p>
+              <section>
+                <p className="text__paragraph">{translate(props.show.upcomingOpening)}</p>
+                <p className="text__paragraph">RSVP: <a className="text__paragraph rsvp" href="mailto:rsvp@palacio.xyz" target="_top">rsvp@palacio.xyz</a></p>
+              </section>
             </section>
-          </UpcomingExhibition>
+        </ExhibitionWrapper>
         )
       }
       <Copyright back route="/exhibitions" position={ upcoming ? "absolute" : null}/>
