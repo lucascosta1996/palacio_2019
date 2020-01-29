@@ -146,6 +146,7 @@ function Exhibition (props) {
     if ( firstParagraph.current ) {
       firstParagraph.current.innerHTML = firstParagraph.current.innerHTML
       .replace(/Estudo para Contato Visual/g, `<i>Estudo para Contato Visual</i>`)
+      .replace(/Estádio/g, `<i>Estádio</i>`)
       .replace(/Contato Visual \(Azul\)/g, `<i>Contato Visual (Azul)</i>`)
       .replace(/Contato Visual \(Vermelho\)/g, `<i>Contato Visual (Vermelho)</i>`)
       .replace(/Contato Visual/g, `<i>Contato Visual</i>`)
@@ -334,7 +335,7 @@ function Exhibition (props) {
         </ExhibitionWrapper>
         )
       }
-      <Copyright back route="/exhibitions" position={ upcoming ? "absolute" : null}/>
+      <Copyright back route="/exhibitions" />
     </BackWrapper>
   )
 }
