@@ -54,6 +54,12 @@ const AboutWrapper = styled.section`
         margin-bottom: 2px;
         margin-top: 2px;
       }
+
+      .email {
+        &:hover {
+          color: #b3b4b5;
+        }
+      }
     }
 
     .secondSection {
@@ -100,7 +106,7 @@ const AboutWrapper = styled.section`
       text-decoration: none;
 
       &:hover {
-        color: #4547ee;
+        color: #b3b4b5;
       }
     }
 
@@ -248,19 +254,19 @@ const About = props => {
     >
       <div className="infosWrapper">
         <section className="firstSection">
-        <p className="galeria">
-          Galeria Palácio
-        </p>
-        <p className="address">
-          {translate('address')}
-        </p>
-        <p className="address">
-          {translate('country')}
-        </p>
-        <a className="address map" href="https://www.google.com/maps/dir//R.+Duque+de+Caxias,+1554+-+Centro+Hist%C3%B3rico,+Porto+Alegre+-+RS,+90010-280/@-30.0327698,-51.2958678,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x9519790688882cfb:0x5a406f81341312de!2m2!1d-51.2258269!2d-30.032937" target="_blank">
-          {translate('seeMap')}
-        </a>
-       </section>
+          <p className="galeria">
+            Galeria Palácio
+          </p>
+          <p className="address">
+            {translate('address')}
+          </p>
+          <p className="address">
+            {translate('country')}
+          </p>
+          <a className="address map" href="https://www.google.com/maps/dir//R.+Duque+de+Caxias,+1554+-+Centro+Hist%C3%B3rico,+Porto+Alegre+-+RS,+90010-280/@-30.0327698,-51.2958678,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x9519790688882cfb:0x5a406f81341312de!2m2!1d-51.2258269!2d-30.032937" target="_blank">
+            {translate('seeMap')}
+          </a>
+        </section>
         <section className="secondSection">
           <p className="phone">
             {translate('phone')}
