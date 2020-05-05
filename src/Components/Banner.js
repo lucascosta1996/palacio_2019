@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
@@ -31,6 +31,10 @@ const BannerWrapper = styled.div`
 `
 
 function Banner( props ) {
+  useEffect( () => {
+    setTimeout( () => props.history.push( '/home' ), 3000 )
+  } );
+
   return (
     <BannerWrapper>
       <Link to="/home" className="logo">GALERIA PALÁCIO</Link>
