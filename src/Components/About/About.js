@@ -47,6 +47,7 @@ const AboutWrapper = styled.section`
 
     .galeria {
       padding-top: 0;
+      font-weight: 500;
     }
 
     .firstSection {
@@ -77,6 +78,7 @@ const AboutWrapper = styled.section`
       p {
         margin-bottom: 2px;
         margin-top: 2px;
+        line-height: 20px;
       }
     }
 
@@ -124,10 +126,11 @@ const AboutWrapper = styled.section`
 
       @media ( max-width: 520px ) {
         padding-top: 20px;
-      }
-      
-      label {
+      }      
+
+      .newsletter-label {
         display: block;
+        font-weight: 500;
         padding-bottom: 10px;
       }
 
@@ -276,14 +279,17 @@ const About = props => {
           </a>
         </section>
         <section className="thirdSection">
-        <p>
-          {translate('hours')}
-        </p>
-      </section>
+          <p>
+            {translate('hours')}
+          </p>
+          <p>
+            ({translate('temporaryClosed')})
+          </p>
+        </section>
           {
             !sucesso ? (
               <form className="newsletter">
-                <label>Newsletter</label>
+                <label className="newsletter-label">Newsletter</label>
                 <div className="inputs">
                   <input className="nameInput" id="name" name="name" type="text" value={ name } placeholder={translate("fullName")} onChange={e => setName(e.target.value)} />
                   <input className="emailInput" id="email" name="email" type="email" value={ email } placeholder="E-mail" onChange={e => setEmail(e.target.value)} />
