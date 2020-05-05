@@ -58,6 +58,7 @@ const Categories = styled.div`
   span {
     cursor: pointer;
     font-size: 13px;
+    font-weight: 500;
     padding-bottom: 16px;
 
     &:hover {
@@ -69,11 +70,29 @@ const Categories = styled.div`
 function ExhibitionsList (props) {
   const { translate } = useContext(I18nContext)
   const [ exhibitionsType, setExhibitionsType ] = useState( 'gallery' )
+  const allExhibitions = viewingRoomExhibitions.concat( exhibitions )
+
   return (
     <ExhibitionsListWrapper>
       <Categories>
-        <span className={exhibitionsType === 'gallery' ? 'active' : null} onClick={() => setExhibitionsType( 'gallery' )}>{translate('gallery')}</span>
-        <span className={exhibitionsType === 'vr' ? 'active' : null} onClick={() => setExhibitionsType( 'vr' )}>Viewing Room</span>
+        <span
+          className={exhibitionsType === 'allExhibitions' ? 'active' : null}
+          onClick={() => setExhibitionsType( 'allExhibitions' )}
+        >
+          {translate('allExhibitions')}
+        </span>
+        <span
+          className={exhibitionsType === 'gallery' ? 'active' : null}
+          onClick={() => setExhibitionsType( 'gallery' )}
+        >
+          {translate('gallery')}
+        </span>
+        <span
+          className={exhibitionsType === 'vr' ? 'active' : null}
+          onClick={() => setExhibitionsType( 'vr' )}
+        >
+          Viewing Room
+        </span>
       </Categories>
       {
         exhibitionsType === 'gallery' ? (
@@ -84,12 +103,27 @@ function ExhibitionsList (props) {
               <span>{translate(show.showDate)}</span>
             </Link>
           )) ) : (
-            viewingRoomExhibitions.map( show => (
-              <Link to={`${show.showRoute}`}>
-                <span><i>{show.showName}</i></span>
-                <span>{translate(show.showDate)}</span>
-              </Link>
-            ))
+            exhibitionsType === 'allExhibitions' ? (
+              allExhibitions.map( show => (
+                <Link to={`${show.showRoute}`}>
+                  {
+                    !show.isNameHidden && <span>{show.artist}</span>
+                  }
+                  <span><i>{show.showName}</i></span>
+                  <span>{translate(show.showDate)}</span>
+                </Link>
+              ))
+            ) : (
+              viewingRoomExhibitions.map( show => (
+                <Link to={`${show.showRoute}`}>
+                  {
+                    !show.isNameHidden && <span>{show.artist}</span>
+                  }
+                  <span><i>{show.showName}</i></span>
+                  <span>{translate(show.showDate)}</span>
+                </Link>
+              ))
+            )
           )
       }
     </ExhibitionsListWrapper>

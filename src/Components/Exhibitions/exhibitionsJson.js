@@ -1,14 +1,5 @@
 export const exhibitions = [
   {
-    artist: 'Emerson da Silva',
-    showName: 'Estádio',
-    showDate: 'estadioDate',
-    showRoute: 'estadio',
-    period: 'upcoming',
-    upcomingTitle: 'estadioUpcomingTitle',
-    upcomingOpening: 'estadioOpening'
-  },
-  {
     artist: 'Chiaki Mihara',
     showName: 'Contato Visual',
     showDate: 'contatoDate',

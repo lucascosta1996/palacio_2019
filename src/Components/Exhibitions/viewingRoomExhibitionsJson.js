@@ -4,6 +4,16 @@ export const viewingRoomExhibitions = [
     showName: 'Selected works',
     showDate: 'selectedWorksDate',
     showRoute: 'viewing-room/main',
-    period: 'current'
+    period: 'current',
+    isNameHidden: true
+  },
+  {
+    artist: 'Emerson da Silva',
+    showName: 'Estádio',
+    showDate: 'estadioDate',
+    showRoute: 'estadio',
+    period: 'upcoming',
+    upcomingTitle: 'estadioUpcomingTitle',
+    upcomingOpening: 'estadioOpening'
   },
 ]
