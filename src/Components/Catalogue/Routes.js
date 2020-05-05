@@ -13,7 +13,7 @@ class Routes extends Component {
         {
           collection.map( item => (
             <Route
-              exact path={`/viewing-room/main/${item.route}`}
+              exact path={`/viewing-room/main/selected-works${item.route}`}
               render={ props => <Item {...this.props} item={item} /> } 
             /> 
           ) )

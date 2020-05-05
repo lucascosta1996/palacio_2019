@@ -23,10 +23,10 @@ const CatalogueWrapper = styled.div`
 
 function Catalogue( props ) {
   
-  if (!firebase.getCurrentUsername()) {
-		props.history.replace('/viewing-room/login')
-		return null
-  }
+  // if (!firebase.getCurrentUsername()) {
+	// 	props.history.replace('/viewing-room/login')
+	// 	return null
+  // }
 
   return (
     <CatalogueWrapper>
