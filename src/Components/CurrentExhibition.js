@@ -146,15 +146,15 @@ function CurrentExhibition( props ) {
             </p>
           </div>
           <div className="imageWrapper">
-            <img alt="Galeria Palácio current exhibition - Contato visual, 2019 - Chiaki Mihara" src={ require( `../assets/index/Emerson-da-Silva-Estádio-2020-Galeria-Palácio-All-rights-reserved.jpg` ) } />
+            <img alt="Galeria Palácio - Estádio - Emerson da Silva" src={ require( `../assets/index/Emerson-da-Silva-Estádio-2020-Galeria-Palácio-All-rights-reserved.jpg` ) } />
           </div>
         </section>
       </Link>
       
-      <Link to="/viewing-room/main">
+      <Link to="/viewing-room">
         <section className="viewing">
           <div className="imageWrapper">
-            <img alt="Galeria Palácio current exhibition - Contato visual, 2019 - Chiaki Mihara" src={ require( `../assets/exhibitions/autoretratos/Autorretratos-2018-Chiaki-Mihara-Installation-View-Photo-Galeria-Palácio-(4).jpg` ) } />
+            <img alt="Galeria Palácio Viewing Room - Selected Works, 2019" src={ require( `../assets/exhibitions/autoretratos/Autorretratos-2018-Chiaki-Mihara-Installation-View-Photo-Galeria-Palácio-(4).jpg` ) } />
           </div>
           <div className="infosCurrentEx">
             <p>
