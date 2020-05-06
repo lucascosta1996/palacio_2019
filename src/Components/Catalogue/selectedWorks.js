@@ -1,4 +1,4 @@
-export const collection = [
+export const selectedWorks = [
   {
     name: 'Autorretrato (2)',
     period: '(2018)',
