@@ -222,7 +222,7 @@ const Navigation = props => {
           { translate('exhibitions') }
         </Link>
         <Link
-          to="/viewing-room/main"
+          to="/viewing-room/"
           className={ `link ${ (isActive( 'viewing-room/main' ) ) ? 'active' : '' } ${ open ? '' : 'hidden' }` }
           onClick={ () => { setActive( 'viewing-room/main' ); setOpen( false ); window.scrollTo(0,0) } }
         >

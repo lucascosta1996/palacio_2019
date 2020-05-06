@@ -28,7 +28,7 @@ function App( props ) {
       <Route exact path="/home" component={ CurrentExhibition } />
       <Route path="/artists" component={ Artists } />
       <Route path="/about" component={ About } />
-      <Route path="/viewing-room/main" component={ Catalogue } />
+      <Route path="/viewing-room" component={ Catalogue } />
       <Route path="/exhibitions" component={ Exhibitions } />
       <Route path="/terms-and-conditions" component={ Terms } />
       <Route path="/privacy-policy" component={ Privacy } />
