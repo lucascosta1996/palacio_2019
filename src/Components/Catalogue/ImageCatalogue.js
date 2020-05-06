@@ -1,14 +1,13 @@
 import React, { useContext } from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-import { collection } from './collection'
 import Image from './Image'
 import { I18nContext } from '../../i18n'
 
 const ImageCatalogueWrapper = styled.div`
+align-items: center;
 display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
+flex-direction: column;
 padding-bottom: 10px;
 
 @media ( max-width: 768px ) {
@@ -25,7 +24,7 @@ padding-bottom: 10px;
   display: flex;
   flex-direction: column;
   margin-bottom: 120px;
-  max-width: 476px;
+  max-width: 600px;
   text-decoration: none;
 
   &:hover {
@@ -108,21 +107,22 @@ const CopyRightPadding = styled.div`
   }
 `
 
-function ImageCatalogue (props) {
+function ImageCatalogue ( props ) {
   const { translate } = useContext(I18nContext)
+  const { works, exhibition } = props.location.state
 
   return (
     <CopyRightPadding>
       <section className="exhibitionTitle">
         <div>
-         <i>Selected Works</i>
-         <p>{translate('selectedWorksDate')}</p>
+         <i>{ exhibition.name }</i>
+         <p>{translate( exhibition.date )}</p>
         </div>
       </section>
       <ImageCatalogueWrapper>
         {
-          collection.map( item => (
-            <Link to={`/viewing-room/main/${item.route}`} className="item">
+          works.map( item => (
+            <Link to={`/viewing-room/selected-works/${item.route}`} className="item">
               <Image coverImage={ require( `../../assets/catalogue/${item.coverImage}`) } />
               <span className="artistName">
                 {item.artist}
