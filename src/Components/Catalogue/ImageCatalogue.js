@@ -135,7 +135,7 @@ function ImageCatalogue ( props ) {
               </span>    
               <p className="workTitle">
                 <i>
-                  {item.name}
+                  {item.name}, 
                 </i> <span> {item.period} </span>
               </p>    
             </Link>

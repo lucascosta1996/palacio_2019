@@ -9,9 +9,9 @@ export const viewingRoomExhibitions = [
     works: [
       {
         name: 'Autorretrato (2)',
-        period: '(2018)',
+        period: '2018',
         artist: 'Chiaki Mihara',
-        route: 'autoretrato',
+        route: 'autoretrato-2',
         coverImage: '4-Autorretrato-(2)-2018-Chiaki-Mihara-Installation-View-Photo-Galeria-Palácio-(4).jpg',
         info1: 'autoretrato1',
         info2: 'autoretrato2',
@@ -27,7 +27,7 @@ export const viewingRoomExhibitions = [
       },
       {
         name: 'Terrestre',
-        period: '(2017)',
+        period: '2017',
         artist: 'Emerson da Silva',
         route: 'luzaguaterrapreta',
         coverImage: '2-Terrestre-2017-Emerson-da-Silva-Screenshot-(3)-All-Rights-Reserved.jpg',
@@ -44,10 +44,10 @@ export const viewingRoomExhibitions = [
         ]
       },
       {
-        name: 'Light Particles',
-        period: '(2017–2018)',
+        name: 'Individual Bodies Self-Organizing',
+        period: '2017–18',
         artist: 'Andrés Stephanou',
-        route: 'light-particles',
+        route: 'individual-bodies-self-organizing',
         coverImage: 'Light-Particles-2017-2018-Andrés-Stephanou-Screenshot-(2)-All-rights-reserved.png',
         info1: 'particulasdeluz1-1',
         info2: 'particulasdeluz1-2',
@@ -61,10 +61,10 @@ export const viewingRoomExhibitions = [
         ]
       },
       {
-        name: 'Terreno',
-        period: '(2019)',
+        name: 'Superfície de Um lugar para estar',
+        period: '2019',
         artist: 'Lucas Alves Costa',
-        route: 'terreno',
+        route: 'superficie-de-um-lugar-para-estar',
         coverImage: 'Terreno-2019-Lucas-Alves-Costa-All-rights-reserved-Galeria-Palácio-(1) (2).jpg',
         info1: 'terreno1',
         info2: 'terreno2',

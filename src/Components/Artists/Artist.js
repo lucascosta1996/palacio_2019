@@ -158,7 +158,7 @@ const Artist = props => {
   useEffect( () => {
     artistText.current.innerHTML = artistText.current.innerHTML
     .replace(/Entre o Céu e o Oceano/g, `<i>Entre o Céu e o Oceano</i>`)
-    .replace(/Microparticles/g, `<i>Microparticles</i>`)
+    .replace(/Particles Within a Space/g, `<i>Particles Within a Space</i>`)
   } )
 
   return (
