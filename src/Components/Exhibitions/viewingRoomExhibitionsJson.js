@@ -3,7 +3,7 @@ export const viewingRoomExhibitions = [
     artist: 'Galeria Palácio',
     showName: 'Selected works',
     showDate: 'selectedWorksDate',
-    showRoute: 'viewing-room/main',
+    showRoute: 'viewing-room/selected-works',
     period: 'current',
     isNameHidden: true
   },
