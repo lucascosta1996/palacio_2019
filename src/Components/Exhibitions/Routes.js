@@ -1,10 +1,10 @@
-import React, { Component, useState } from 'react'
+import React, { Component } from 'react'
 import { Route, Switch } from 'react-router-dom'
 import { viewingRoomExhibitions } from './viewingRoomExhibitionsJson'
 import { exhibitions } from './exhibitionsJson'
 import ExhibitionsList from './ExhibitionsList'
 import Exhibition from './Exhibition'
-import Catalogue from '../Catalogue/Catalogue'
+import ImageCatalogue from '../Catalogue/ImageCatalogue'
 
 class ExhibitionsRoutes extends Component {
   render() {
@@ -23,7 +23,7 @@ class ExhibitionsRoutes extends Component {
           viewingRoomExhibitions.map( show => (
             <Route
               exact path={`${show.showRoute}`}
-              render={ props => <Catalogue /> } 
+              render={ props => <ImageCatalogue {...this.props} show={show} /> } 
             /> 
           ) )
         }

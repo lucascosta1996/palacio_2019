@@ -135,7 +135,7 @@ function CurrentExhibition( props ) {
 
   return(
     <CurrentExhibitionWrapper>
-      <Link to="/exhibitions/estadio">
+      <Link to="/viewing-room">
         <section className="current current-wrapper">
           <div className="marginRight infosCurrentEx">
             <p>
