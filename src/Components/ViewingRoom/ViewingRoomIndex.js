@@ -10,6 +10,7 @@ const ViewingRoomIndexWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   height: 100%;
+  position: relative;
 
   .exhibition {
     align-items: center;
@@ -43,23 +44,23 @@ const ViewingRoomIndexWrapper = styled.div`
   }
 `
 
+const OnlineVRLogo = styled.span`
+  font-size: 13px;
+  font-weight: 500;
+  position: absolute;
+  right: 0;
+  top: 100px;
+`
+
 function ViewingRoomIndex () {
   const { translate } = useContext(I18nContext)
 
   return (
     <ViewingRoomIndexWrapper>
+      <OnlineVRLogo>Online Viewing Room</OnlineVRLogo>
       <Link
         className="exhibition"
-        to={{
-          pathname: "/viewing-room",
-          state: {
-            exhibition: {
-              name: 'Estádio',
-              date: 'estadioDate'
-            },
-            works: estadioWorks
-          }
-        }}
+        to="/viewing-room"
       >
         <div className="imageWrapper">
           <img
@@ -78,19 +79,10 @@ function ViewingRoomIndex () {
       </Link>
       <Link
         className="exhibition"
-        to={{
-          pathname: "/viewing-room/selected-works",
-          state: {
-            exhibition: {
-              name: 'Selected Works',
-              date: 'selectedWorksDate'
-            },
-            works: selectedWorks
-          }
-        }}
+        to="/viewing-room/selected-works"
       >
         <div className="imageWrapper">
-          <img alt="Galeria Palácio current exhibition - Contato visual, 2019 - Chiaki Mihara" src={ require( `../../assets/exhibitions/contatoVisual/Estudo-para-Contato-Visual-2019-Chiaki-Mihara-Installation-View-Galeria-Palácio-(2).jpg` ) } />
+          <img alt="Galeria Palácio current exhibition - Contato visual, 2019 - Chiaki Mihara" src={ require( `../../assets/exhibitions/autoretratos/Autorretratos-2018-Chiaki-Mihara-Installation-View-Photo-Galeria-Palácio-(4).jpg` ) } />
         </div>
         <div className="infosCurrentEx">
           <span className="marginRight">

@@ -83,7 +83,7 @@ const CopyRightPadding = styled.div`
   padding-bottom: 40px;
 
   .exhibitionTitle {
-    align-items: flex-end;
+    align-items: center;
     display: flex;
     justify-content: space-between;
     font-size: 13px;
@@ -107,17 +107,23 @@ const CopyRightPadding = styled.div`
   }
 `
 
+const OnlineVRLogo = styled.span`
+  font-size: 13px;
+  font-weight: 500;
+`
+
 function ImageCatalogue ( props ) {
   const { translate } = useContext(I18nContext)
-  const { works, exhibition } = props.location.state
+  const { showDate, showName, works } = props.show
 
   return (
     <CopyRightPadding>
       <section className="exhibitionTitle">
         <div>
-         <i>{ exhibition.name }</i>
-         <p>{translate( exhibition.date )}</p>
+         <i>{ showName }</i>
+         <p>{translate( showDate )}</p>
         </div>
+        <OnlineVRLogo>Online Viewing Room</OnlineVRLogo>
       </section>
       <ImageCatalogueWrapper>
         {
