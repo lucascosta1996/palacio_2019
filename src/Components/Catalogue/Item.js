@@ -111,6 +111,10 @@ const TextItemWrapper = styled.div`
 `
 
 function Item (props) {
+  useEffect( () => {
+    window.scrollTo( 0, 0 )
+  } )
+
   const { translate } = useContext(I18nContext)
   const textRef = useRef()
 
