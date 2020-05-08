@@ -14,7 +14,7 @@ class ExhibitionsRoutes extends Component {
         {
           exhibitions.map( show => (
             <Route
-              exact path={`/exhibitions/${show.showRoute}`}
+              exact path={`${show.showRoute}`}
               render={ props => <Exhibition {...this.props} show={show} /> } 
             /> 
           ) )
