@@ -158,7 +158,7 @@ function Exhibition (props) {
       .replace(/Mundo Aberto/g, `<i>Mundo Aberto</i>`)
       .replace(/\(1\)/g, `<i>(1)</i>` )
       .replace(/\(2\)/g, `<i>(2)</i>` )
-      .replace(/Microparticles/g, `<i>Microparticles</i>`)
+      .replace(/Particles Within a Space/g, `<i>Particles Within a Space</i>`)
       .replace(/Autorretratos/g, `<i>Autorretratos</i>`)
       .replace(/Individual Bodies Self-Organizing \(Zoom In\)/g, `<i>Individual Bodies Self-Organizing \(Zoom In\)</i>`)
       .replace(/Individual Bodies Self-Organizing \(Zoom Out\)/g, `<i>Individual Bodies Self-Organizing \(Zoom Out\)</i>`)
@@ -177,7 +177,7 @@ function Exhibition (props) {
       .replace(/Individual Bodies Self-Organizing \(Zoom Out\)/g, `<i>Individual Bodies Self-Organizing \(Zoom Out\)</i>`)
       .replace(/Individual Bodies Self-Organizing/g, `<i>Individual Bodies Self-Organizing</i>`)
       .replace(/Collective Motion/g, `<i>Collective Motion</i>`)
-      .replace(/Microparticles/g, `<i>Microparticles</i>`)
+      .replace(/Particles Within a Space/g, `<i>Particles Within a Space</i>`)
       .replace(/Paraíso/g, `<i>Paraíso</i>`)
       .replace(/Terrestre/g, `<i>Terrestre</i>`)
       .replace(/Regime dos Ventos/g, `<i>Regime dos Ventos</i>`)
@@ -199,9 +199,10 @@ function Exhibition (props) {
       .replace(/Paraíso/g, `<i>Paraíso</i>`)
       .replace(/Terreno/g, `<i>Terreno</i>`)
       .replace(/Um lugar para estar/g, `<i>Um lugar para estar</i>`)
+      .replace(/Perspectiva aérea de Mundo Aberto/g, `<i>Perspectiva aérea de Mundo Aberto</i>`)
       .replace(/Mundo Aberto/g, `<i>Mundo Aberto</i>`)
       .replace(/Collective Motion/g, `<i>Collective Motion</i>`)
-      .replace(/Microparticles/g, `<i>Microparticles</i>`)
+      .replace(/Particles Within a Space/g, `<i>Particles Within a Space</i>`)
       .replace(/Espécies de Peixes do Litoral Sul Brasileiro/g, `<i>Espécies de Peixes do Litoral Sul Brasileiro</i>`)
       .replace(/Entre o Céu e o Oceano/g, `<i>Entre o Céu e o Oceano</i>`)
       .replace(/Line of Light/g, `<i>Line of Light</i>`)
@@ -212,10 +213,10 @@ function Exhibition (props) {
       .replace(/Mata Atlântica/g, `<i>Mata Atlântica</i>`)
       .replace(/Terrestre/g, `<i>Terrestre</i>`)
       .replace(/Alface Lisa/g, `<i>Alface Lisa</i>`)
+      .replace(/Dunas, Torre Eólica, Soterramento/g, `<i>Dunas, Torre Eólica, Soterramento</i>`)
     }
     if( fourthParagraph.current ) {
       fourthParagraph.current.innerHTML = fourthParagraph.current.innerHTML
-      .replace(/Dunas, Torre Eólica, Soterramento/g, `<i>Dunas, Torre Eólica, Soterramento</i>`)
       .replace(/Superfície de Mundo Aberto/g, `<i>Superfície de Mundo Aberto</i>`)
       .replace(/Superf\ície de Mundo Aberto/g, `<i>Superfície de Mundo Aberto</i>`)
       .replace(/Individual Bodies Self-Organizing VR/g, `<i>Individual Bodies Self-Organizing VR</i>`)
@@ -228,7 +229,8 @@ function Exhibition (props) {
       .replace(/Mundo Aberto/g, `<i>Mundo Aberto</i>`)
       .replace(/Collective Motion/g, `<i>Collective Motion</i>`)
       .replace(/Line of Light/g, `<i>Line of Light</i>`)
-      .replace(/Microparticles/g, `<i>Microparticles</i>`)
+      .replace(/Particles Within a Space/g, `<i>Particles Within a Space</i>`)
+      .replace(/Superfície de Um lugar para estar/g, `<i>Superfície de Um lugar para estar</i>`)
       .replace(/Um lugar para estar/g, `<i>Um lugar para estar</i>`)
       .replace(/Regime dos Ventos/g, `<i>Regime dos Ventos</i>`)
       .replace(/Paraíso/g, `<i>Paraíso</i>`)
@@ -245,10 +247,10 @@ function Exhibition (props) {
       .replace(/Papa Terra/g, `<i>Papa Terra</i>`)
       .replace(/Terreno/g, `<i>Terreno</i>`)
       .replace(/Alface Lisa/g, `<i>Alface Lisa</i>`)
+      .replace(/Parque Eólico/g, `<i>Parque Eólico</i>`)
     }
     if ( fifthParagraph.current ) {
       fifthParagraph.current.innerHTML = fifthParagraph.current.innerHTML
-      .replace(/Parque Eólico Litorâneo/g, `<i>Parque Eólico Litorâneo</i>`)
       .replace(/Individual Bodies Self-Organizing/g, `<i>Individual Bodies Self-Organizing</i>`)
       .replace(/Line of Light/g, `<i>Line of Light</i>`)
       .replace(/Collective Motion/g, `<i>Collective Motion</i>`)
@@ -264,8 +266,8 @@ function Exhibition (props) {
     }
     if ( sixthParagraph.current ) {
       sixthParagraph.current.innerHTML = sixthParagraph.current.innerHTML
-      .replace(/Um lugar para estar/g, `<i>Um lugar para estar</i>`)
       .replace(/Superfície de Mundo Aberto/g, `<i>Superfície de Mundo Aberto</i>`)
+      .replace(/Um lugar para estar/g, `<i>Um lugar para estar</i>`)
       .replace(/Mundo Aberto/g, `<i>Mundo Aberto</i>`)
       .replace(/Line of Light/g, `<i>Line of Light</i>`)
     }
