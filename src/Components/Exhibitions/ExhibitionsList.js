@@ -69,7 +69,7 @@ const Categories = styled.div`
 
 function ExhibitionsList (props) {
   const { translate } = useContext(I18nContext)
-  const [ exhibitionsType, setExhibitionsType ] = useState( 'gallery' )
+  const [ exhibitionsType, setExhibitionsType ] = useState( 'allExhibitions' )
   const allExhibitions = viewingRoomExhibitions.concat( exhibitions )
 
   return (
@@ -97,7 +97,7 @@ function ExhibitionsList (props) {
       {
         exhibitionsType === 'gallery' ? (
           exhibitions.map( show => (
-            <Link to={`exhibitions/${show.showRoute}`}>
+            <Link to={`${show.showRoute}`}>
               <span>{show.artist}</span>
               <span><i>{show.showName}</i></span>
               <span>{translate(show.showDate)}</span>
