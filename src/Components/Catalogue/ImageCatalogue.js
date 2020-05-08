@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useRef, useEffect } from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import Image from './Image'
@@ -24,7 +24,7 @@ padding-bottom: 10px;
   display: flex;
   flex-direction: column;
   margin-bottom: 120px;
-  max-width: 600px;
+  max-width: 700px;
   text-decoration: none;
 
   &:hover {
@@ -62,11 +62,11 @@ padding-bottom: 10px;
 
   .loading {
     background: #d1d1d1;
-    height: 196px;
+    height: 396px;
     margin-bottom: 20px;
     opacity: 0.4;
     position: relative;
-    width: 350px;
+    width: 700px;
   }
 
   .artistName {
@@ -80,6 +80,8 @@ padding-bottom: 10px;
 `
 
 const CopyRightPadding = styled.div`
+  margin: 0 auto;
+  max-width: 1000px;
   padding-bottom: 40px;
 
   .exhibitionTitle {
@@ -90,16 +92,32 @@ const CopyRightPadding = styled.div`
     padding-bottom: 110px;
     padding-top: 80px;
 
+    &__text {
+      
+    }
+
     p {
       margin-bottom: 0;
+    }
+  }
+
+  .exhibitionBottom {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+
+    &__text {
+      font-size: 12px;
+      padding-bottom: 30px;
     }
 
     a {
       color: #000;
       font-family: 'Roboto', sans-serif;
+      font-size: 12px;
       font-weight: 500;
       text-decoration: none;
-
+  
       &:hover {
         text-decoration: underline;
       }
@@ -115,6 +133,41 @@ const OnlineVRLogo = styled.span`
 function ImageCatalogue ( props ) {
   const { translate } = useContext(I18nContext)
   const { showDate, showName, works } = props.show
+  const paragraph1 = useRef()
+  const paragraph2 = useRef()
+  const paragraph3 = useRef()
+  const paragraph4 = useRef()
+  const paragraph5 = useRef()
+
+  useEffect( () => {
+    if ( paragraph1.current ) {
+      paragraph1.current.innerHTML = paragraph1.current.innerHTML
+      .replace(/Selected Works/g, `<i>Selected Works</i>`)
+      .replace(/Superfície de Um lugar para estar/g, `<i>Superfície de Um lugar para estar</i>`)
+      .replace(/Terrestre/g, `<i>Terrestre</i>`)
+      .replace(/Individual Bodies Self-Organizing/g, `<i>Individual Bodies Self-Organizing</i>`)
+      .replace(/Autorretrato (2)/g, `<i>Autorretrato (2)</i>`)
+    }
+    if ( paragraph2.current ) {
+      paragraph2.current.innerHTML = paragraph2.current.innerHTML
+      .replace(/Superfície de Um lugar para estar/g, `<i>Superfície de Um lugar para estar</i>`)
+      .replace(/Um lugar para estar/g, `<i>Um lugar para estar</i>`)
+    }
+    if ( paragraph3.current ) {
+      paragraph3.current.innerHTML = paragraph3.current.innerHTML
+      .replace(/Terrestre /g, `<i>Terrestre </i>`)
+      .replace(/Luz, Água e Terra Preta/g, `<i>Luz, Água e Terra Preta</i>`)
+    }
+    if ( paragraph4.current ) {
+      paragraph4.current.innerHTML = paragraph4.current.innerHTML
+      .replace(/Individual Bodies Self-Organizing /g, `<i>Individual Bodies Self-Organizing </i>`)
+    }
+    if ( paragraph5.current ) {
+      paragraph5.current.innerHTML = paragraph5.current.innerHTML
+      .replace(/Autorretrato (2) /g, `<i>Autorretrato (2) </i>`)
+      .replace(/Autorretratos/g, `<i>Autorretratos</i>`)
+    }
+  } )
 
   return (
     <CopyRightPadding>
@@ -128,7 +181,7 @@ function ImageCatalogue ( props ) {
       <ImageCatalogueWrapper>
         {
           works.map( item => (
-            <Link to={`/viewing-room/selected-works/${item.route}`} className="item">
+            <Link to={`/viewing-room/${item.route}`} className="item">
               <Image coverImage={ require( `../../assets/catalogue/${item.coverImage}`) } />
               <span className="artistName">
                 {item.artist}
@@ -142,7 +195,14 @@ function ImageCatalogue ( props ) {
           ))
         }
       </ImageCatalogueWrapper>
-      <section className="exhibitionTitle" style={{ paddingTop: '0' }}>
+      <section className="exhibitionBottom" style={{ paddingTop: '0' }}>
+        <div className="exhibitionBottom__text">
+          <p ref={paragraph1}>{props.show.paragraph1 && translate(props.show.paragraph1)}</p>
+          <p ref={paragraph2}>{props.show.paragraph2 && translate(props.show.paragraph2)}</p>
+          <p ref={paragraph3}>{props.show.paragraph3 && translate(props.show.paragraph3)}</p>
+          <p ref={paragraph4}>{props.show.paragraph4 && translate(props.show.paragraph4)}</p>
+          <p ref={paragraph5}>{props.show.paragraph5 && translate(props.show.paragraph5)}</p>
+        </div>
         <a href={ require( `../../assets/downloads/${translate('pdfSelectedWorks')}` ) } target="_blank">Download PDF</a>
       </section>
     </CopyRightPadding>

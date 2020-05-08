@@ -3,7 +3,7 @@ export const selectedWorks = [
     name: 'Autorretrato (2)',
     period: '2018',
     artist: 'Chiaki Mihara',
-    route: 'autoretrato-2',
+    route: 'autorretrato-2',
     coverImage: '4-Autorretrato-(2)-2018-Chiaki-Mihara-Installation-View-Photo-Galeria-Palácio-(4).jpg',
     info1: 'autoretrato1',
     info2: 'autoretrato2',

@@ -49,6 +49,11 @@ const ItemWrapper = styled.div`
       font-weight: 300;
       line-height: 13px;
     }
+
+    p {
+      font-family: 'Roboto', sans-serif;
+      font-size: 11px;
+    }
   }
 
   .gallery {
@@ -88,7 +93,8 @@ const ItemWrapper = styled.div`
 
 const TextItemWrapper = styled.div`
   padding-top: 100px;
-  max-width: 950px;
+  margin: auto;
+  max-width: 1200px;
 
   .text {
     padding: 100px 0 80px;
@@ -126,7 +132,8 @@ function Item (props) {
     .replace(/Autorretratos/g, `<i>Autorretratos</i>`)
     .replace(/Terreno/g, `<i>Terreno</i>`)
     .replace(/Luz, Água e Terra Preta/g, `<i>Luz, Água e Terra Preta</i>`)
-    .replace(/Light Particles/g, `<i>Light Particles</i>`)
+    .replace(/Individual Bodies Self-Organizing/g, `<i>Individual Bodies Self-Organizing</i>`)
+    .replace(/Superfície de Um lugar para estar/g, `<i>Superfície de Um lugar para estar</i>`)
     .replace(/Um lugar para estar/g, `<i>Um lugar para estar</i>`)
   })
 
@@ -134,7 +141,7 @@ function Item (props) {
     <TextItemWrapper>
       <ItemWrapper>
         <div className="center">
-          <Slide slides={props.item.slides} width={isMobile() ? 250 : 700} />
+          <Slide slides={props.item.slides} width={isMobile() ? 250 : 1000} />
           <div className="infos">
             <span className="artist">{ props.item.artist }</span>
             <i>{ props.item.name }</i>
@@ -149,6 +156,7 @@ function Item (props) {
               {
                 props.item.info3 && <span>{translate(props.item.info3)}</span>
               }
+              <p ref={textRef}>{translate(props.item.text)}</p>
               {
                 props.item.info4 && <span>{translate(props.item.info4)}</span>
               }
@@ -163,12 +171,6 @@ function Item (props) {
           </div>
         </div>
       </ItemWrapper>
-      <section className="text">
-          <p ref={textRef}>{translate(props.item.text)}</p>
-          <a className="email" href="mailto:info@palacio.xyz" target="_top">
-            {translate('request')}
-          </a>
-      </section>
       <Back route="/viewing-room/main" />
     </TextItemWrapper>
   )

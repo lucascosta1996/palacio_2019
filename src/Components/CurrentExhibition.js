@@ -130,7 +130,7 @@ const CurrentExhibitionWrapper = styled.section`
   }
 `
 
-function CurrentExhibition( props ) {
+function CurrentExhibition() {
   const { translate } = useContext(I18nContext)
 
   return(
@@ -151,10 +151,13 @@ function CurrentExhibition( props ) {
         </section>
       </Link>
       
-      <Link to="/viewing-room">
+      <Link to="/viewing-room/estadio">
         <section className="viewing">
           <div className="imageWrapper">
-            <img alt="Galeria Palácio Viewing Room - Selected Works, 2019" src={ require( `../assets/exhibitions/autoretratos/Autorretratos-2018-Chiaki-Mihara-Installation-View-Photo-Galeria-Palácio-(4).jpg` ) } />
+            <img
+              alt="Galeria Palácio Viewing Room - Selected Works, 2019"
+              src={ require( `../assets/exhibitions/autoretratos/Autorretratos-2018-Chiaki-Mihara-Installation-View-Photo-Galeria-Palácio-(4).jpg` ) }
+            />
           </div>
           <div className="infosCurrentEx">
             <p>

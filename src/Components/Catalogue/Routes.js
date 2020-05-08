@@ -5,6 +5,7 @@ import ImageCatalogue from './ImageCatalogue'
 import { selectedWorks } from './selectedWorks'
 import ViewingRoomIndex from '../ViewingRoom/ViewingRoomIndex'
 import { viewingRoomExhibitions } from '../Exhibitions/viewingRoomExhibitionsJson'
+import { estadioWorks } from '../ViewingRoom/estadioWorks'
 
 class Routes extends Component {
   render() {
@@ -25,6 +26,14 @@ class Routes extends Component {
             <Route
               exact path={`${show.showRoute}`}
               render={ props => <ImageCatalogue {...this.props} show={show} /> } 
+            /> 
+          ) )
+        }
+        {
+          estadioWorks.map( item => (
+            <Route
+              exact path={`/viewing-room/estadio/${item.route}`}
+              render={ props => <Item {...this.props} item={item} /> } 
             /> 
           ) )
         }
