@@ -1,7 +1,5 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import { estadioWorks } from './estadioWorks';
-import { selectedWorks } from '../Catalogue/selectedWorks';
 import styled from 'styled-components';
 import { I18nContext } from '../../i18n';
 
@@ -21,7 +19,12 @@ const ViewingRoomIndexWrapper = styled.div`
 
     .imageWrapper {
       img {
-        max-width: 500px;
+        max-width: 600px;
+        transition: all .3s ease;
+
+        &:hover {
+          opacity: .7;
+        }
       }
     }
 
@@ -60,7 +63,7 @@ function ViewingRoomIndex () {
       <OnlineVRLogo>Online Viewing Room</OnlineVRLogo>
       <Link
         className="exhibition"
-        to="/viewing-room"
+        to="/viewing-room/estadio"
       >
         <div className="imageWrapper">
           <img
@@ -70,7 +73,7 @@ function ViewingRoomIndex () {
         </div>
         <div className="infosCurrentEx">
           <span className="marginRight">
-            Emerson da Silva: <i>Estádio</i>,
+            Emerson da Silva, <i>Estádio</i>,
           </span>
           <span>
             {translate('estadioDate')}
