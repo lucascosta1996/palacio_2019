@@ -338,19 +338,9 @@ export const exhibitions = [
       },
       {
         alt: 'Light Particles, 2018. Andrés Stephanou - Galeria Palácio',
-        img: 'exhibitions/luz/Light-Particles-Andrés-Stephanou-Installation-View-Galeria-Palácio-(2).jpg',
+        img: 'exhibitions/luz/Individual-Bodies-Self-Organizing-2017-18-Andrés-Stephanou-Screenshot-(4)-All-Rights-Reserved.png',
         index: 3
       },
-      {
-        alt: 'Light Particles, 2018. Andrés Stephanou - Galeria Palácio',
-        img: 'exhibitions/luz/Light-Particles-Andrés-Stephanou-Installation-View-Galeria-Palácio-(3).jpg',
-        index: 4
-      },
-      {
-        alt: 'Light Particles, 2018. Andrés Stephanou - Galeria Palácio',
-        img: 'exhibitions/luz/Light-Particles-(Zoom-Out)-Andrés-Stephanou-Screenshot-(1)-All-Rights-Reserved.png',
-        index: 5
-      }
     ]
   },
   {

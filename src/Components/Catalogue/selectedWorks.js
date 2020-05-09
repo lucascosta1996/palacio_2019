@@ -14,6 +14,10 @@ export const selectedWorks = [
       {
         img: 'catalogue/autoretrato/Autorretrato-(2)-2018-Chiaki-Mihara-Installation-View-Galeria-Palácio-(4).jpg',
         index: 0
+      },
+      {
+        img: 'catalogue/autoretrato/Autorretrato-(2)-2018-Chiaki-Mihara-Installation-View-Photo-Galeria-Palácio.jpg',
+        index: 1
       }
     ]
   },
@@ -32,6 +36,10 @@ export const selectedWorks = [
       {
         img: 'catalogue/2-Terrestre-2017-Emerson-da-Silva-Screenshot-(3)-All-Rights-Reserved.jpg',
         index: 0
+      },
+      {
+        img: 'catalogue/terrestre/Terrestre-2017-Emerson-da-Silva-Screenshot-(2)-All-Rights-Reserved.jpg',
+        index: 1
       }
     ]
   },
@@ -49,6 +57,10 @@ export const selectedWorks = [
       {
         img: 'catalogue/Light-Particles-2017-2018-Andrés-Stephanou-Screenshot-(2)-All-rights-reserved.png',
         index: 0
+      },
+      {
+        img: 'catalogue/light/Individual-Bodies-Self-Organizing-2017–18-Andrés-Stephanou-Screenshot-(1)- All-Rights-Reserved.png',
+        index: 1
       }
     ]
   },
@@ -69,6 +81,10 @@ export const selectedWorks = [
         img: 'catalogue/Terreno-2019-Lucas-Alves-Costa-All-rights-reserved-Galeria-Palácio-(1) (2).jpg',
         index: 0
       },
+      {
+        img: 'catalogue/terreno/Superfície-de-Um-lugar-para-estar-2019-Lucas-Alves-Costa-All-Rights-Reserved-Galeria-Palácio-(2).jpg',
+        index: 1
+      }
     ]
   }
 ]

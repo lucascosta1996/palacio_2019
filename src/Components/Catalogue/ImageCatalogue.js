@@ -3,6 +3,8 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import Image from './Image'
 import { I18nContext } from '../../i18n'
+import Slide from '../Slide/Slide'
+import { isMobile } from '../../helpers/helpers'
 
 const ImageCatalogueWrapper = styled.div`
 align-items: center;
@@ -82,7 +84,7 @@ padding-bottom: 10px;
 const CopyRightPadding = styled.div`
   margin: 0 auto;
   max-width: 1000px;
-  padding-bottom: 40px;
+  padding-bottom: 140px;
 
   .exhibitionTitle {
     align-items: center;
@@ -123,6 +125,10 @@ const CopyRightPadding = styled.div`
       }
     }
   }
+
+  .marginBottom {
+    margin-bottom: 120px
+  }
 `
 
 const OnlineVRLogo = styled.span`
@@ -132,7 +138,7 @@ const OnlineVRLogo = styled.span`
 
 function ImageCatalogue ( props ) {
   const { translate } = useContext(I18nContext)
-  const { showDate, showName, works } = props.show
+  const { showDate, showName, works, slides } = props.show
   const paragraph1 = useRef()
   const paragraph2 = useRef()
   const paragraph3 = useRef()
@@ -146,21 +152,28 @@ function ImageCatalogue ( props ) {
       .replace(/Superfície de Um lugar para estar/g, `<i>Superfície de Um lugar para estar</i>`)
       .replace(/Terrestre/g, `<i>Terrestre</i>`)
       .replace(/Individual Bodies Self-Organizing/g, `<i>Individual Bodies Self-Organizing</i>`)
-      .replace(/Autorretrato (2)/g, `<i>Autorretrato (2)</i>`)
+      .replace(/Estádio \(Fotografias\)/g, `<i>Estádio (Fotografias)</i>`)
+      .replace(/Estádio \(Aerofotografias\)/g, `<i>Estádio (Aerofotografias)</i>`)
+      .replace(/Estádio/g, `<i>Estádio</i>`)
     }
     if ( paragraph2.current ) {
       paragraph2.current.innerHTML = paragraph2.current.innerHTML
       .replace(/Superfície de Um lugar para estar/g, `<i>Superfície de Um lugar para estar</i>`)
       .replace(/Um lugar para estar/g, `<i>Um lugar para estar</i>`)
+      .replace(/Estádio/g, `<i>Estádio</i>`)
     }
     if ( paragraph3.current ) {
       paragraph3.current.innerHTML = paragraph3.current.innerHTML
       .replace(/Terrestre /g, `<i>Terrestre </i>`)
       .replace(/Luz, Água e Terra Preta/g, `<i>Luz, Água e Terra Preta</i>`)
+      .replace(/Estádio \(Aerofotografias\)/g, `<i>Estádio (Aerofotografias)</i>`)
+      .replace(/Estádio/g, `<i>Estádio</i>`)
     }
     if ( paragraph4.current ) {
       paragraph4.current.innerHTML = paragraph4.current.innerHTML
       .replace(/Individual Bodies Self-Organizing /g, `<i>Individual Bodies Self-Organizing </i>`)
+      .replace(/Estádio \(Fotografias\)/g, `<i>Estádio (Fotografias)</i>`)
+      .replace(/Estádio/g, `<i>Estádio</i>`)
     }
     if ( paragraph5.current ) {
       paragraph5.current.innerHTML = paragraph5.current.innerHTML
@@ -193,6 +206,13 @@ function ImageCatalogue ( props ) {
               </p>    
             </Link>
           ))
+        }
+        {
+          slides && (
+            <section className="marginBottom">
+              <Slide slides={ slides } width={isMobile() ? 250 : 700}/>
+            </section>
+          )
         }
       </ImageCatalogueWrapper>
       <section className="exhibitionBottom" style={{ paddingTop: '0' }}>

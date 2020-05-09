@@ -4,16 +4,19 @@ export const estadioWorks = [
     period: '2020',
     artist: 'Emerson da Silva',
     route: 'estadio',
-    coverImage: '4-Autorretrato-(2)-2018-Chiaki-Mihara-Installation-View-Photo-Galeria-Palácio-(4).jpg',
+    coverImage: 'Estádio-2020-Emerson-da-Silva-Screenshot-All-Rights-Reserved-(1).jpg',
     info1: 'estadioVR1',
     info2: 'estadioVR2',
-    info3: 'estadioVR3',
     text: 'estadioVR',
     date: 'estadioVRdate',
     slides: [
       {
-        img: 'catalogue/autoretrato/Autorretrato-(2)-2018-Chiaki-Mihara-Installation-View-Galeria-Palácio-(4).jpg',
+        img: 'catalogue/estadio/Estádio-2020-Emerson-da-Silva-Screenshot-All-Rights-Reserved-(1).jpg',
         index: 0
+      },
+      {
+        img: 'catalogue/estadio/Estádio-2020-Emerson-da-Silva-Screenshot-All-Rights-Reserved-(2).jpg',
+        index: 1
       }
     ]
   },
@@ -23,16 +26,60 @@ export const estadioWorks = [
     artist: 'Emerson da Silva',
     route: 'estadio-aerofotografias',
     coverImage: 'Estádio-(Aerofotografias)-2020-Emerson-da-Silva-All-Rights-Reserved-(1).jpg',
-    info1: 'estadioVR1',
-    info2: 'estadioVR2',
-    info3: 'estadioVR3',
-    text: 'estadioVR',
+    info1: 'estadioAeroVR1',
+    info2: 'estadioAeroVR2',
+    info3: 'estadioAeroVR3',
+    info4: 'estadioAeroVR4',
+    text: 'estadioAerofotografiasVR',
     date: 'estadioVRdate',
     slides: [
       {
-        img: 'catalogue/autoretrato/Autorretrato-(2)-2018-Chiaki-Mihara-Installation-View-Galeria-Palácio-(4).jpg',
+        img: 'catalogue/estadio/Estádio-(Aerofotografias)-2020-Emerson-da-Silva-All-Rights-Reserved-(1).jpg',
         index: 0
-      }
+      },
+      {
+        img: 'catalogue/estadio/Estádio-(Aerofotografias)-2020-Emerson-da-Silva-All-Rights-Reserved-(2).jpg',
+        index: 1
+      },
+      {
+        img: 'catalogue/estadio/Estádio-(Aerofotografias)-2020-Emerson-da-Silva-All-Rights-Reserved-(3).jpg',
+        index: 2
+      },
+      {
+        img: 'catalogue/estadio/Estádio-(Aerofotografias)-2020-Emerson-da-Silva-All-Rights-Reserved-(4).jpg',
+        index: 3
+      },
+    ]
+  },
+  {
+    name: 'Estádio (Fotografias)',
+    period: '2020',
+    artist: 'Emerson da Silva',
+    route: 'estadio-fotografias',
+    coverImage: 'Estádio-(Fotografias)-2020-Emerson-da-Silva-All-Rights-Reserved-(1).jpg',
+    info1: 'estadioFotoVR1',
+    info2: 'estadioFotoVR2',
+    info3: 'estadioFotoVR3',
+    info4: 'estadioFotoVR4',
+    text: 'estadioFotografiasVR',
+    date: 'estadioVRdate',
+    slides: [
+      {
+        img: 'catalogue/estadio/Estádio-(Fotografias)-2020-Emerson-da-Silva-All-Rights-Reserved-(1).jpg',
+        index: 0
+      },
+      {
+        img: 'catalogue/estadio/Estádio-(Fotografias)-2020-Emerson-da-Silva-All-Rights-Reserved-(2).jpg',
+        index: 1
+      },
+      {
+        img: 'catalogue/estadio/Estádio-(Fotografias)-2020-Emerson-da-Silva-All-Rights-Reserved-(3).jpg',
+        index: 2
+      },
+      {
+        img: 'catalogue/estadio/Estádio-(Fotografias)-2020-Emerson-da-Silva-All-Rights-Reserved-(4).jpg',
+        index: 3
+      },
     ]
   }
 ]

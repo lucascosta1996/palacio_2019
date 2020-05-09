@@ -126,7 +126,9 @@ function Item (props) {
 
   useEffect(() => {
     textRef.current.innerHTML = textRef.current.innerHTML
-    .replace(/Terreno/g, `<i>Terreno</i>`)
+    .replace(/Estádio \(Aerofotografias\)/g, `<i>Estádio (Aerofotografias)</i>`)
+    .replace(/Estádio \(Fotografias\)/g, `<i>Estádio (Fotografias)</i>`)
+    .replace(/Estádio/g, `<i>Estádio</i>`)
     .replace(/Terrestre/g, `<i>Terrestre</i>`)
     .replace(/Autorretrato \(2\)/g, `<i>Autorretrato (2)</i>`)
     .replace(/Autorretratos/g, `<i>Autorretratos</i>`)
@@ -141,7 +143,7 @@ function Item (props) {
     <TextItemWrapper>
       <ItemWrapper>
         <div className="center">
-          <Slide slides={props.item.slides} width={isMobile() ? 250 : 1000} />
+          <Slide slides={props.item.slides} width={isMobile() ? 250 : 900} />
           <div className="infos">
             <span className="artist">{ props.item.artist }</span>
             <i>{ props.item.name }</i>

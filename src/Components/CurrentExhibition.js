@@ -135,7 +135,7 @@ function CurrentExhibition() {
 
   return(
     <CurrentExhibitionWrapper>
-      <Link to="/viewing-room">
+      <Link to="/viewing-room/estadio">
         <section className="current current-wrapper">
           <div className="marginRight infosCurrentEx">
             <p>
@@ -151,7 +151,7 @@ function CurrentExhibition() {
         </section>
       </Link>
       
-      <Link to="/viewing-room/estadio">
+      <Link to="/viewing-room/selected-works">
         <section className="viewing">
           <div className="imageWrapper">
             <img
