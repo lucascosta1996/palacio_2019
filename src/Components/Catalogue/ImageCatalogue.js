@@ -223,7 +223,7 @@ function ImageCatalogue ( props ) {
           <p ref={paragraph4}>{props.show.paragraph4 && translate(props.show.paragraph4)}</p>
           <p ref={paragraph5}>{props.show.paragraph5 && translate(props.show.paragraph5)}</p>
         </div>
-        <a href={ require( `../../assets/downloads/${translate('pdfSelectedWorks')}` ) } target="_blank">Download PDF</a>
+        <a href={ require( `../../assets/downloads/${translate(props.show.pdf)}` ) } target="_blank">Download PDF</a>
       </section>
     </CopyRightPadding>
   )

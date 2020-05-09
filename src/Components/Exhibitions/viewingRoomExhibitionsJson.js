@@ -11,6 +11,7 @@ export const viewingRoomExhibitions = [
     paragraph3: 'selectedWorks3',
     paragraph4: 'selectedWorks4',
     paragraph5: 'selectedWorks5',
+    pdf: 'pdfSelectedWorks',
     works: [
       {
         name: 'Autorretrato (2)',
@@ -112,6 +113,7 @@ export const viewingRoomExhibitions = [
     upcomingOpening: 'estadioOpening',
     paragraph1: 'estadio1',
     paragraph2: 'estadio2',
+    pdf: 'pdfEstadio',
     works: [
       {
         name: 'Estádio',
