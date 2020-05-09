@@ -306,6 +306,16 @@ export const exhibitions = [
         alt: 'Mundo Aberto, 2018. Lucas Alves Costa - Galeria Palácio',
         img: 'exhibitions/mundo/Mundo-Aberto-2017-2018-Lucas-Alves-Costa-VR-Experience-(3)-Galeria-Palácio.jpg',
         index: 5
+      },
+      {
+        alt: 'Mundo Aberto, 2018. Lucas Alves Costa - Galeria Palácio',
+        img: 'exhibitions/mundo/Visão-Aérea-de-Mundo-Aberto-2018-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(1).jpg',
+        index: 6
+      },
+      {
+        alt: 'Mundo Aberto, 2018. Lucas Alves Costa - Galeria Palácio',
+        img: 'exhibitions/mundo/Visão-Aérea-de-Mundo-Aberto-2018-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(2).jpg',
+        index: 7
       }
     ]
   },

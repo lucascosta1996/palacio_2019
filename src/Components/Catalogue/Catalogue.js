@@ -22,7 +22,7 @@ const CatalogueWrapper = styled.div`
 function Catalogue() {
   
   // if (!firebase.getCurrentUsername()) {
-	// 	props.history.replace('/viewing-room/login')
+	// 	props.history.replace('/online-viewing-room/login')
 	// 	return null
   // }
 

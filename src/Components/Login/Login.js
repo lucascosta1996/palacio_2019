@@ -132,7 +132,7 @@ const Login = (props) => {
   const [ password, setPassword ] = useState('')
 
   if ( firebase.isLoggedIn() ) {
-    props.history.replace('/viewing-room/main')
+    props.history.replace('/online-viewing-room/main')
   }
   
   async function login() {
@@ -140,7 +140,7 @@ const Login = (props) => {
       await firebase.register(fullName, newEmail, `palacio`)
       await firebase.login(newEmail, 'palacio')
       await firebase.viewingRoom(fullName, newEmail)
-      props.history.replace('/viewing-room/main')
+      props.history.replace('/online-viewing-room/main')
 		} catch(error) {
 			alert(error.message)
 		}

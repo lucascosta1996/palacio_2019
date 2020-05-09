@@ -91,7 +91,7 @@ function ExhibitionsList (props) {
           className={exhibitionsType === 'vr' ? 'active' : null}
           onClick={() => setExhibitionsType( 'vr' )}
         >
-          Viewing Room
+          Online Viewing Room
         </span>
       </Categories>
       {

@@ -12,11 +12,11 @@ class Routes extends Component {
     
     return (
       <Switch>
-        <Route exact path="/viewing-room" component={ ViewingRoomIndex }  />
+        <Route exact path="/online-viewing-room" component={ ViewingRoomIndex }  />
         {
           selectedWorks.map( item => (
             <Route
-              exact path={`/viewing-room/selected-works/${item.route}`}
+              exact path={`/online-viewing-room/selected-works/${item.route}`}
               render={ props => <Item {...this.props} item={item} /> } 
             /> 
           ) )
@@ -32,7 +32,7 @@ class Routes extends Component {
         {
           estadioWorks.map( item => (
             <Route
-              exact path={`/viewing-room/estadio/${item.route}`}
+              exact path={`/online-viewing-room/estadio/${item.route}`}
               render={ props => <Item {...this.props} item={item} /> } 
             /> 
           ) )

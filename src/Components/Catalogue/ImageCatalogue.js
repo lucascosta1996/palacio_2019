@@ -107,9 +107,24 @@ const CopyRightPadding = styled.div`
     align-items: flex-start;
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
+    max-width: 700px;
+
+    .artistImage {
+      padding-top: 60px;
+
+      img {
+        max-width: 100%;
+      }
+
+      &__caption {
+        color: #b3b4b5;
+        font-size: 12px;
+      }
+    }
 
     &__text {
-      font-size: 12px;
+      font-size: 13px;
       padding-bottom: 30px;
     }
 
@@ -155,6 +170,7 @@ function ImageCatalogue ( props ) {
       .replace(/Estádio \(Fotografias\)/g, `<i>Estádio (Fotografias)</i>`)
       .replace(/Estádio \(Aerofotografias\)/g, `<i>Estádio (Aerofotografias)</i>`)
       .replace(/Estádio/g, `<i>Estádio</i>`)
+      .replace(/Autorretrato \(2\)/g, `<i>Autorretrato (2)</i>`)
     }
     if ( paragraph2.current ) {
       paragraph2.current.innerHTML = paragraph2.current.innerHTML
@@ -177,7 +193,7 @@ function ImageCatalogue ( props ) {
     }
     if ( paragraph5.current ) {
       paragraph5.current.innerHTML = paragraph5.current.innerHTML
-      .replace(/Autorretrato (2) /g, `<i>Autorretrato (2) </i>`)
+      .replace(/Autorretrato \(2\) /g, `<i>Autorretrato (2) </i>`)
       .replace(/Autorretratos/g, `<i>Autorretratos</i>`)
     }
   } )
@@ -194,7 +210,7 @@ function ImageCatalogue ( props ) {
       <ImageCatalogueWrapper>
         {
           works.map( item => (
-            <Link to={`/viewing-room/${item.route}`} className="item">
+            <Link to={`/online-viewing-room/${item.route}`} className="item">
               <Image coverImage={ require( `../../assets/catalogue/${item.coverImage}`) } />
               <span className="artistName">
                 {item.artist}
@@ -224,6 +240,14 @@ function ImageCatalogue ( props ) {
           <p ref={paragraph5}>{props.show.paragraph5 && translate(props.show.paragraph5)}</p>
         </div>
         <a href={ require( `../../assets/downloads/${translate(props.show.pdf)}` ) } target="_blank">Download PDF</a>
+        {
+          props.show.extraPicture && (
+            <div className="artistImage">
+              <img alt="Artist" src={ require( `../../assets/catalogue/${props.show.extraPicture}`) } />
+              <span className="artistImage__caption">{props.show.extraPictureCaption}</span>
+            </div>
+          )
+        }
       </section>
     </CopyRightPadding>
   )

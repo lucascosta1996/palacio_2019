@@ -35,7 +35,7 @@ class Firebase {
   }
 
   async viewingRoom(name, email) {
-    await this.db.doc(`viewing-room/${email}`).set({
+    await this.db.doc(`online-viewing-room/${email}`).set({
       name: name,
       email: email
     }).then( (response) => { return response })

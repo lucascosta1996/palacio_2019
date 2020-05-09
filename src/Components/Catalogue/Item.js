@@ -67,7 +67,7 @@ const ItemWrapper = styled.div`
       cursor: pointer;
       font-family: 'Roboto', sans-serif;
       font-weight: 300;
-      padding: 10px 5px;
+      padding: 10px 20px;
       width: auto;
 
       .email {
@@ -77,7 +77,7 @@ const ItemWrapper = styled.div`
       &:hover {
         background: #000;
         border: none;
-        padding: 11px 6px;
+        padding: 11px 21px;
 
         a {
           color: #fff;
@@ -173,7 +173,7 @@ function Item (props) {
           </div>
         </div>
       </ItemWrapper>
-      <Back route="/viewing-room/main" />
+      <Back route="/online-viewing-room/main" />
     </TextItemWrapper>
   )
 }

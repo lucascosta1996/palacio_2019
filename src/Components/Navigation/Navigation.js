@@ -86,7 +86,7 @@ const NavigationWrapper = styled.section`
     }
   }
 
-  .viewing-room {
+  .online-viewing-room {
     position: fixed;
     bottom: 50px;
     left: 25px;
@@ -190,7 +190,7 @@ const Navigation = props => {
 
   async function logout() {
 		await firebase.logout()
-		window.location.replace("/viewing-room/login");
+		window.location.replace("/online-viewing-room/login");
   }
 
   useEffect( () => {
@@ -222,9 +222,9 @@ const Navigation = props => {
           { translate('exhibitions') }
         </Link>
         <Link
-          to="/viewing-room/"
-          className={ `link ${ (isActive( 'viewing-room/main' ) ) ? 'active' : '' } ${ open ? '' : 'hidden' }` }
-          onClick={ () => { setActive( 'viewing-room/main' ); setOpen( false ); window.scrollTo(0,0) } }
+          to="/online-viewing-room/"
+          className={ `link ${ (isActive( 'online-viewing-room/main' ) ) ? 'active' : '' } ${ open ? '' : 'hidden' }` }
+          onClick={ () => { setActive( 'online-viewing-room/main' ); setOpen( false ); window.scrollTo(0,0) } }
         >
           { translate('collection') }
         </Link>

@@ -16,15 +16,15 @@ const ViewingRoomIndexWrapper = styled.div`
     flex-direction: column;
     padding-top: 150px;
     text-decoration: none;
+    transition: all .3s ease;
+
+    &:hover {
+      opacity: .7;
+    }
 
     .imageWrapper {
       img {
         max-width: 600px;
-        transition: all .3s ease;
-
-        &:hover {
-          opacity: .7;
-        }
       }
     }
 
@@ -63,7 +63,7 @@ function ViewingRoomIndex () {
       <OnlineVRLogo>Online Viewing Room</OnlineVRLogo>
       <Link
         className="exhibition"
-        to="/viewing-room/estadio"
+        to="/online-viewing-room/estadio"
       >
         <div className="imageWrapper">
           <img
@@ -82,7 +82,7 @@ function ViewingRoomIndex () {
       </Link>
       <Link
         className="exhibition"
-        to="/viewing-room/selected-works"
+        to="/online-viewing-room/selected-works"
       >
         <div className="imageWrapper">
           <img alt="Galeria Palácio current exhibition - Contato visual, 2019 - Chiaki Mihara" src={ require( `../../assets/exhibitions/autoretratos/Autorretratos-2018-Chiaki-Mihara-Installation-View-Photo-Galeria-Palácio-(4).jpg` ) } />
