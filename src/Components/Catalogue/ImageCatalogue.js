@@ -94,10 +94,6 @@ const CopyRightPadding = styled.div`
     padding-bottom: 110px;
     padding-top: 80px;
 
-    &__text {
-      
-    }
-
     p {
       margin-bottom: 0;
     }
@@ -125,7 +121,7 @@ const CopyRightPadding = styled.div`
 
     &__text {
       font-size: 13px;
-      padding-bottom: 30px;
+      padding-bottom: 20px;
     }
 
     a {

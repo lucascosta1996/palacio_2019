@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import { I18nContext } from '../../i18n/index'
@@ -97,6 +97,10 @@ const TermsWrapper = styled.section`
 function Terms( props ) {
   const { translate } = useContext(I18nContext)
 
+  useEffect( () => {
+    window.scrollTo( 0, 0 )
+  } )
+
   return(
     <TermsWrapper>
       <section>
@@ -107,7 +111,7 @@ function Terms( props ) {
         <p><b>{translate('t3')}</b> <span>{translate('t3t')}</span></p>
         <p><b>{translate('t4')}</b> <span>{translate('t4t')}</span></p>
         <p><b>{translate('t5')}</b> <span>{translate('t5t')}</span></p>
-        <p><b>{translate('t6')}</b> <span>{translate('t6t')}</span></p>
+        <p><b>{translate('t6')}</b> <span>{translate('t6t')} <Link to="/privacy-policy">{translate('privacypolicy')}</Link>.</span></p>
         <p><b>{translate('t7')}</b> <span>{translate('t7t')}</span></p>
         <p><b>{translate('t8')}</b> <span>{translate('t8t')}</span></p>
         <p><b>{translate('t9')}</b> <span>{translate('t9t')}</span></p>

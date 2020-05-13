@@ -1,6 +1,5 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
 import { I18nContext } from '../../i18n/index'
 
 const PrivacyWrapper = styled.section`
@@ -105,12 +104,15 @@ const PrivacyWrapper = styled.section`
 function  Privacy( props ) {
   const { translate } = useContext(I18nContext)
 
+  useEffect( () => {
+    window.scrollTo( 0, 0 )
+  } )
+
   return(
     <PrivacyWrapper>
       <section className="privacy">
         <h2>{translate('privacy')}</h2> 
         <p>{translate('privacyIntroT')}</p>
-        <h3>{translate('generalInfo')}</h3>
         <div className="generalInfo">
           <p>Galeria Palácio</p>
           <p>{translate('address')}</p>
