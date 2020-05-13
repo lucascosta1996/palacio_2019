@@ -111,7 +111,7 @@ const CopyRightPadding = styled.div`
     max-width: 700px;
 
     .artistImage {
-      padding-top: 60px;
+      padding-top: 90px;
 
       img {
         max-width: 100%;
