@@ -97,7 +97,10 @@ function ExhibitionsList (props) {
       {
         exhibitionsType === 'gallery' ? (
           exhibitions.map( show => (
-            <Link to={`${show.showRoute}`}>
+            <Link
+              to={`${show.showRoute}`}
+              key={ show.showRoute }  
+            >
               <span>{show.artist}</span>
               <span><i>{show.showName}</i></span>
               <span>{translate(show.showDate)}</span>
@@ -105,7 +108,10 @@ function ExhibitionsList (props) {
           )) ) : (
             exhibitionsType === 'allExhibitions' ? (
               allExhibitions.map( show => (
-                <Link to={`${show.showRoute}`}>
+                <Link
+                  to={`${show.showRoute}`}
+                  key={ show.showRoute } 
+                >
                   {
                     !show.isNameHidden && <span>{show.artist}</span>
                   }
@@ -115,7 +121,10 @@ function ExhibitionsList (props) {
               ))
             ) : (
               viewingRoomExhibitions.map( show => (
-                <Link to={`${show.showRoute}`}>
+                <Link
+                  to={`${show.showRoute}`}
+                  key={ show.showRoute } 
+                >
                   {
                     !show.isNameHidden && <span>{show.artist}</span>
                   }

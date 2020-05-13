@@ -210,7 +210,11 @@ function ImageCatalogue ( props ) {
       <ImageCatalogueWrapper>
         {
           works.map( item => (
-            <Link to={`/online-viewing-room/${item.route}`} className="item" key={ item.route }>
+            <Link
+              to={`/online-viewing-room/${item.route}`}
+              className="item"
+              key={ item.route }
+            >
               <Image coverImage={ require( `../../assets/catalogue/${item.coverImage}`) } />
               <span className="artistName">
                 {item.artist}
