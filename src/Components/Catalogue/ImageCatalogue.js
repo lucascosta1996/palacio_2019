@@ -142,7 +142,7 @@ const CopyRightPadding = styled.div`
   }
 
   .marginBottom {
-    margin-bottom: 120px
+    margin-bottom: 40px
   }
 `
 
