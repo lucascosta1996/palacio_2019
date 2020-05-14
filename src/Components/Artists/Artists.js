@@ -3,21 +3,21 @@ import styled from 'styled-components'
 import { Link, Route } from 'react-router-dom'
 import Artist from './Artist'
 import detritos from '../../assets/exhibitions/micro/Microparticles-Andrés-Stephanou-Installation-View-Galeria-Palácio-(1).jpg'
-import flock from '../../assets/artists/Flock-of-Particles-2018-2019-Andrés-Stephanou-Screenshot-All-rights-reserved-(1).png'
 import luzvivazoomout from '../../assets/artists/Light-Particles-(Zoom-In)-Andrés-Stephanou-Screenshot-(1)-All-Rights-Reserved.png'
-import olhos from '../../assets/exhibitions/autoretratos/Autorretratos-2018-Chiaki-Mihara-Installation-View-Photo-Galeria-Palácio-(9).jpg'
 import olhoazul from '../../assets/exhibitions/contatoVisual/Contato-Visual-2018-2019-Chiaki-Mihara-Installation-View-Galeria-Palácio-(1).jpg'
 import emerson from '../../assets/artists/Entre-o-Céu-e-o-Oceano-2019-Emerson-da-Silva-Installation-View-Galeria-Palácio-(2).jpg'
-import ventos from '../../assets/exhibitions/ventos/Regime-dos-Ventos-2018-Emerson-da-Silva-Screenshot-(4)-All-Rights-Reserved.jpg'
 import lucasalves from '../../assets/artists/Um-lugar-para-estar-2018-2019-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(1).jpg'
 import mundo from '../../assets/catalogue/7- Mundo-Aberto-2017-2018-Lucas-Alves-Costa-Screenshot-(1)-All-Rights-Reserved.png'
 import olhosvermelhos from '../../assets/exhibitions/contatoVisual/Contato-Visual-(Vermelho)-2018-2019-Chiaki-Mihara-Screenshot-(1)-All-Rights-Reserved.png'
 import paraiso from '../../assets/exhibitions/tropical/Paraíso-2017-Lucas-Alves-Costa-Screenshot-(3)-All-Rights-Reserved.png'
 import alface from '../../assets/artists/3-Luz-Água-e-Terra-Preta-2017.jpg'
-import clouding from '../../assets/artists/Andrés-Stephanou-Clouding-(2018-2019)-Screenshot-3-All-rights-reserved.png'
+import darkSmoke from '../../assets/artists/Dark-Smoke-2018-20-Andrés-Stephanou-Screenshot-(2)-All-Rights-Reserved.png'
 import contatoVisual from '../../assets/exhibitions/contatoVisual/Estudo-para-Contato-Visual-2019-Chiaki-Mihara-Installation-View-Galeria-Palácio-(2).jpg'
-import terreno from '../../assets/catalogue/Terreno-2019-Lucas-Alves-Costa-All-rights-reserved-Galeria-Palácio-(1) (2).jpg'
 import pescaria from '../../assets/artists/1-A-pescaria-enquanto-atividade-humana-2019.jpg'
+import portraitEmerson from '../../assets/portraits/Emerson-da-Silva-Galeria-Palácio-All-Rights-Reserved.jpg'
+import portraitChiaki from '../../assets/portraits/Chiaki-Mihara-Galeria-Palácio-All-Rights-Reserved.jpg'
+import portraitAndres from '../../assets/portraits/Andrés-Stephanou-Galeria-Palácio-All-Rights-Reserved.jpg'
+import portraitLucas from '../../assets/portraits/Lucas-Alves-Costa-Galeria-Palácio-All-Rights-Reserved.jpg'
 
 const ArtistsList = styled.section`
   .wrapper {
@@ -77,12 +77,12 @@ const Artists = props => {
       artistWork: detritos,
       route: 'andres-stephanou',
       text: 'andresA',
-      image: flock,
+      image: portraitAndres,
       work: "andresW",
       siteUrl: "https://andres-stephanou.com",
       site: "andres-stephanou.com",
       bigImage: luzvivazoomout,
-      bigImage2: clouding
+      bigImage2: darkSmoke
     },
     {
       name: 'Chiaki Mihara',
@@ -90,7 +90,7 @@ const Artists = props => {
       artistWork: olhoazul,
       route: 'chiaki-mihara',
       text: 'chiakiA',
-      image: olhos,
+      image: portraitChiaki,
       work: "chiakiW",
       siteUrl: "https://chiakimihara.com",
       site: "chiakimihara.com",
@@ -103,7 +103,7 @@ const Artists = props => {
       artistWork: emerson,
       route: 'emerson-da-silva',
       text: 'emersonA',
-      image: ventos,
+      image: portraitEmerson,
       work: "emersonW",
       siteUrl: "https://emersondasilva.com",
       site: "emersondasilva.com",
@@ -116,7 +116,7 @@ const Artists = props => {
       artistWork: lucasalves,
       route: 'lucas-alves-costa',
       text: 'lucasA',
-      image: terreno,
+      image: portraitLucas,
       work: "lucasW",
       siteUrl: "https://lucasalvescosta.com",
       site: "lucasalvescosta.com",
