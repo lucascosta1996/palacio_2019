@@ -54,7 +54,21 @@ const ArtistWrapper = styled.section`
   }
 
   .secondRow {
+    justify-content: space-around
     padding-bottom: 110px;
+
+    .portrait {
+      text-align: center;
+
+      @media ( max-width: 1024px ) {
+        margin-top: 50px;
+      }
+
+      img {
+        margin: auto;
+        max-width: 300px;
+      }
+    }
     
     div {
       p {
@@ -154,6 +168,7 @@ const ArtistWrapper = styled.section`
 const Artist = props => {
   const { translate } = useContext(I18nContext)
   const artistText = useRef()
+  const { artist } = props
 
   useEffect( () => {
     artistText.current.innerHTML = artistText.current.innerHTML
@@ -162,27 +177,31 @@ const Artist = props => {
   } )
 
   return (
-    <ArtistWrapper>
+    <ArtistWrapper
+      artist={ artist }
+    >
       <section className="firstRow row">
-        <h2>{ props.artist.name }</h2>
-        <img src={ props.artist.artistWork } />
+        <h2>{ artist.name }</h2>
+        <img alt={ `${artist.name}'s work` } src={ artist.artistWork } />
       </section>
       <section className="row secondRow">
-        <img src={ props.artist.image } />
+        <div className="portrait">
+          <img alt={ `${artist.name}'s work` } src={ artist.image } />
+        </div>
         <div>
-          <p ref={ artistText }>{ translate( props.artist.text ) }</p>
-          <p className="p-top">{ translate( props.artist.work ) }</p>
+          <p ref={ artistText }>{ translate( artist.text ) }</p>
+          <p className="p-top">{ translate( artist.work ) }</p>
         </div>
       </section>
       <section className="singleImage">
-        <img src={`${props.artist.bigImage}`} />
+        <img alt={ `${artist.name}'s work` } src={`${artist.bigImage}`} />
       </section>
       <section className="singleImage">
-        <img src={`${props.artist.bigImage2}`} />
+        <img alt={ `${artist.name}'s work` } src={`${artist.bigImage2}`} />
       </section>
       <section className="externalLink">
-        <a href={ props.artist.siteUrl } target="_blank">
-          { props.artist.site }
+        <a href={ artist.siteUrl } target="_blank" rel="noopener noreferrer">
+          { artist.site }
         </a>
       </section>
       <footer>
