@@ -46,6 +46,10 @@ padding-bottom: 10px;
     transition: all .3s ease;
     width: 100%;
 
+    @media ( max-width: 1024px ) {
+      width: 90%;
+    }
+
     &:hover {
       opacity: .7;
     }
@@ -110,6 +114,10 @@ const CopyRightPadding = styled.div`
     flex-direction: column;
     margin: 0 auto;
     max-width: 700px;
+
+    @media ( max-width: 1024px ) {
+      max-width: 90%;
+    }
 
     .artistImage {
       padding-top: 90px;
@@ -231,7 +239,7 @@ function ImageCatalogue ( props ) {
         {
           slides && (
             <section className="marginBottom">
-              <Slide slides={ slides } width={isMobile() ? 250 : 700}/>
+              <Slide slides={ slides } width={isMobile() ? 270 : 700}/>
             </section>
           )
         }

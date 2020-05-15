@@ -34,7 +34,8 @@ const ItemWrapper = styled.div`
     max-width: 400px;
 
     @media ( max-width: 768px ) {
-      margin-left: 0;
+      margin: auto;
+      max-width: 90%;
       padding-top: 30px;
     }
   }
@@ -152,7 +153,7 @@ function Item (props) {
       <ItemWrapper>
         <div className="center">
           <div className="align-self-center">
-            <Slide slides={props.item.slides} width={isMobile() ? 290 : 900} />
+            <Slide slides={props.item.slides} width={isMobile() ? 270 : 900} />
           </div>
           <div className="infos">
             <span className="artist">{ props.item.artist }</span>
