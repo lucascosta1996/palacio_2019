@@ -27,6 +27,7 @@ padding-bottom: 10px;
   flex-direction: column;
   margin-bottom: 120px;
   max-width: 700px;
+  text-align: center;
   text-decoration: none;
 
   &:hover {
@@ -93,6 +94,10 @@ const CopyRightPadding = styled.div`
     font-size: 13px;
     padding-bottom: 110px;
     padding-top: 80px;
+
+    @media ( max-width: 1024px ) {
+      justify-content: space-around;
+    }
 
     p {
       margin-bottom: 0;

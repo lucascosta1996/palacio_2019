@@ -36,11 +36,16 @@ const ViewingRoomIndexWrapper = styled.div`
     }
 
     .imageWrapper {
+      @media ( max-width: 1024px ) {
+        text-align: center;
+      }
+
       img {
         max-width: 600px;
 
         @media ( max-width: 1024px ) {
-          width: 100%;
+          margin: 0 auto;
+          width: 90%;
         }
       }
     }
@@ -52,6 +57,10 @@ const ViewingRoomIndexWrapper = styled.div`
     .infosCurrentEx {
       display: flex;
       align-self: flex-start;
+
+      @media ( max-width: 1024px ) {
+        align-self: center;
+      }
 
       span {
         color: #000;
@@ -70,6 +79,11 @@ const OnlineVRLogo = styled.span`
   position: absolute;
   right: 0;
   top: 100px;
+
+  @media ( max-width: 1024px ) {
+    right: 18px;
+    top: 50px;
+  }
 `
 
 function ViewingRoomIndex () {
