@@ -10,6 +10,11 @@ const ViewingRoomIndexWrapper = styled.div`
   height: 100%;
   position: relative;
 
+  @media ( max-width: 1024px ) {
+    flex-direction: column;
+    padding-bottom: 100px;
+  }
+
   .exhibition {
     align-items: center;
     display: flex;
@@ -18,6 +23,14 @@ const ViewingRoomIndexWrapper = styled.div`
     text-decoration: none;
     transition: all .3s ease;
 
+    @media ( max-width: 1024px ) {
+      padding-top: 150px;
+
+      &:last-child {
+        padding-bottom: 150px;
+      }
+    }
+
     &:hover {
       opacity: .7;
     }
@@ -25,6 +38,10 @@ const ViewingRoomIndexWrapper = styled.div`
     .imageWrapper {
       img {
         max-width: 600px;
+
+        @media ( max-width: 1024px ) {
+          width: 100%;
+        }
       }
     }
 

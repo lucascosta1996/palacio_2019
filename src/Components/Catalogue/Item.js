@@ -96,6 +96,14 @@ const TextItemWrapper = styled.div`
   margin: auto;
   max-width: 1200px;
 
+  @media ( max-width: 1024px ) {
+    padding-bottom: 120px;
+
+    .align-self-center {
+      align-self: center;
+    }
+  }
+
   .text {
     padding: 100px 0 80px;
 
@@ -143,7 +151,9 @@ function Item (props) {
     <TextItemWrapper>
       <ItemWrapper>
         <div className="center">
-          <Slide slides={props.item.slides} width={isMobile() ? 250 : 900} />
+          <div className="align-self-center">
+            <Slide slides={props.item.slides} width={isMobile() ? 290 : 900} />
+          </div>
           <div className="infos">
             <span className="artist">{ props.item.artist }</span>
             <i>{ props.item.name }</i>

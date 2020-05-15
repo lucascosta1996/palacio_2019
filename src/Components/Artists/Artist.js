@@ -67,6 +67,10 @@ const ArtistWrapper = styled.section`
       img {
         margin: auto;
         max-width: 300px;
+
+        @media (max-width: 768px) {
+          width: 100%;
+        }
       }
     }
     
@@ -96,7 +100,7 @@ const ArtistWrapper = styled.section`
     }
 
     @media ( max-width: 520px ) {
-      padding-bottom: 40px;
+      padding-bottom: 100px;
     }
 
     img {

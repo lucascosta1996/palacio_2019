@@ -51,6 +51,12 @@ const Categories = styled.div`
   text-align: left;
   top: 200px;
 
+  @media ( max-width: 1024px ) {
+    right: 25px;
+    text-align: right;
+    top: 80px;
+  }
+
   .active {
     color: #c3c3c3;
   }
