@@ -134,7 +134,7 @@ const CopyRightPadding = styled.div`
 
     &__text {
       font-size: 13px;
-      padding-bottom: 20px;
+      padding-bottom: 40px;
     }
 
     a {

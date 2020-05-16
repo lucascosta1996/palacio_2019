@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react"
+import React from "react"
 import styled from 'styled-components'
 import { Link, Route } from 'react-router-dom'
 import Artist from './Artist'
@@ -7,12 +7,12 @@ import luzvivazoomout from '../../assets/artists/Light-Particles-(Zoom-In)-Andr�
 import olhoazul from '../../assets/exhibitions/contatoVisual/Contato-Visual-2018-2019-Chiaki-Mihara-Installation-View-Galeria-Palácio-(1).jpg'
 import emerson from '../../assets/artists/Entre-o-Céu-e-o-Oceano-2019-Emerson-da-Silva-Installation-View-Galeria-Palácio-(2).jpg'
 import lucasalves from '../../assets/artists/Um-lugar-para-estar-2018-2019-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(1).jpg'
-import mundo from '../../assets/catalogue/7- Mundo-Aberto-2017-2018-Lucas-Alves-Costa-Screenshot-(1)-All-Rights-Reserved.png'
-import olhosvermelhos from '../../assets/exhibitions/contatoVisual/Contato-Visual-(Vermelho)-2018-2019-Chiaki-Mihara-Screenshot-(1)-All-Rights-Reserved.png'
+import terreno from '../../assets/artists/Terreno-2019-Lucas-Alves-Costa-All-rights-reserved-Galeria-Palácio-(1).jpg'
+import olhosvermelhos from '../../assets/artists/Contato-Visual-(2)-2019-Chiaki-Mihara-Screenshot-(1)-All-Rights-Reserved.jpg'
 import paraiso from '../../assets/exhibitions/tropical/Paraíso-2017-Lucas-Alves-Costa-Screenshot-(3)-All-Rights-Reserved.png'
 import alface from '../../assets/artists/3-Luz-Água-e-Terra-Preta-2017.jpg'
-import darkSmoke from '../../assets/artists/Dark-Smoke-2018-20-Andrés-Stephanou-Screenshot-(2)-All-Rights-Reserved.png'
-import contatoVisual from '../../assets/exhibitions/contatoVisual/Estudo-para-Contato-Visual-2019-Chiaki-Mihara-Installation-View-Galeria-Palácio-(2).jpg'
+import collectiveMotion from '../../assets/artists/Collective-Motion-2018-19-Andrés-Stephanou-Screenshot-(8)-All-Rights-Reserved.png'
+import autorretrato from '../../assets/artists/Autorretratos-2018-Chiaki-Mihara-Installation-View-Galeria-Palácio-(7).jpg'
 import pescaria from '../../assets/artists/1-A-pescaria-enquanto-atividade-humana-2019.jpg'
 import portraitEmerson from '../../assets/portraits/Emerson-da-Silva-Galeria-Palácio-All-Rights-Reserved.jpg'
 import portraitChiaki from '../../assets/portraits/Chiaki-Mihara-Galeria-Palácio-All-Rights-Reserved.jpg'
@@ -82,7 +82,7 @@ const Artists = props => {
       siteUrl: "https://andres-stephanou.com",
       site: "andres-stephanou.com",
       bigImage: luzvivazoomout,
-      bigImage2: darkSmoke
+      bigImage2: collectiveMotion
     },
     {
       name: 'Chiaki Mihara',
@@ -94,8 +94,8 @@ const Artists = props => {
       work: "chiakiW",
       siteUrl: "https://chiakimihara.com",
       site: "chiakimihara.com",
-      bigImage: olhosvermelhos,
-      bigImage2: contatoVisual
+      bigImage: autorretrato,
+      bigImage2: olhosvermelhos
     },
     {
       name: 'Emerson da Silva',
@@ -121,7 +121,7 @@ const Artists = props => {
       siteUrl: "https://lucasalvescosta.com",
       site: "lucasalvescosta.com",
       bigImage: paraiso,
-      bigImage2: mundo
+      bigImage2: terreno
     }
   ]
 
