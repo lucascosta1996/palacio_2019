@@ -57,73 +57,68 @@ export const exhibitions = [
     slide: [
       {
         alt: 'Um lugar para estar, 2019. Lucas Alves Costa - Galeria Palácio',
-        img: 'exhibitions/lugar/Um-lugar-para-estar-2018-2019-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(1).jpg',
+        img: 'exhibitions/lugar/Um-lugar-para-estar-2018-2019-Lucas-Alves-Costa-VR-Experience-Galeria-Palácio-(1).jpg',
         index: 0
       },
       {
         alt: 'Um lugar para estar, 2019. Lucas Alves Costa - Galeria Palácio',
-        img: 'exhibitions/lugar/Um-lugar-para-estar-2018-2019-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(2).jpg',
+        img: 'exhibitions/lugar/Um-lugar-para-estar-2018-2019-Lucas-Alves-Costa-VR-Experience-Galeria-Palácio-(3).jpg',
         index: 1
       },
       {
         alt: 'Um lugar para estar, 2019. Lucas Alves Costa - Galeria Palácio',
-        img: 'exhibitions/lugar/Um-lugar-para-estar-2018-2019-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(3).jpg',
+        img: 'exhibitions/lugar/Um-lugar-para-estar-2018-2019-Lucas-Alves-Costa-Screenshot-(1)-All-Rights-Reserved.png',
         index: 2
       },
       {
         alt: 'Um lugar para estar, 2019. Lucas Alves Costa - Galeria Palácio',
-        img: 'exhibitions/lugar/Um-lugar-para-estar-2018-2019-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(4).jpg',
+        img: 'exhibitions/lugar/Um-lugar-para-estar-2018-2019-Lucas-Alves-Costa-Screenshot-(2)-All-Rights-Reserved.png',
         index: 3
       },
       {
         alt: 'Um lugar para estar, 2019. Lucas Alves Costa - Galeria Palácio',
-        img: 'exhibitions/lugar/Um-lugar-para-estar-2018-2019-Lucas-Alves-Costa-Screenshot-(1)-All-Rights-Reserved.png',
+        img: 'exhibitions/lugar/Um-lugar-para-estar-2018-2019-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(1).jpg',
         index: 4
       },
       {
         alt: 'Um lugar para estar, 2019. Lucas Alves Costa - Galeria Palácio',
-        img: 'exhibitions/lugar/Um-lugar-para-estar-2018-2019-Lucas-Alves-Costa-Screenshot-(2)-All-Rights-Reserved.png',
+        img: 'exhibitions/lugar/Um-lugar-para-estar-2018-2019-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(2).jpg',
         index: 5
       },
       {
         alt: 'Um lugar para estar, 2019. Lucas Alves Costa - Galeria Palácio',
-        img: 'exhibitions/lugar/Um-lugar-para-estar-2018-2019-Lucas-Alves-Costa-VR-Experience-Galeria-Palácio-(1).jpg',
+        img: 'exhibitions/lugar/Um-lugar-para-estar-2018-2019-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(3).jpg',
         index: 6
       },
       {
         alt: 'Um lugar para estar, 2019. Lucas Alves Costa - Galeria Palácio',
-        img: 'exhibitions/lugar/Um-lugar-para-estar-2018-2019-Lucas-Alves-Costa-VR-Experience-Galeria-Palácio-(2).jpg',
+        img: 'exhibitions/lugar/Um-lugar-para-estar-2018-2019-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(4).jpg',
         index: 7
       },
       {
         alt: 'Um lugar para estar, 2019. Lucas Alves Costa - Galeria Palácio',
-        img: 'exhibitions/lugar/Um-lugar-para-estar-2018-2019-Lucas-Alves-Costa-VR-Experience-Galeria-Palácio-(3).jpg',
+        img: 'exhibitions/lugar/Terreno-2019-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(1).jpg',
         index: 8
       },
       {
         alt: 'Um lugar para estar, 2019. Lucas Alves Costa - Galeria Palácio',
-        img: 'exhibitions/lugar/Terreno-2019-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(1).jpg',
+        img: 'exhibitions/lugar/Terreno-2019-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(2).jpg',
         index: 9
       },
       {
         alt: 'Um lugar para estar, 2019. Lucas Alves Costa - Galeria Palácio',
-        img: 'exhibitions/lugar/Terreno-2019-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(2).jpg',
+        img: 'exhibitions/lugar/Terreno-2019-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(3).jpg',
         index: 10
       },
       {
         alt: 'Um lugar para estar, 2019. Lucas Alves Costa - Galeria Palácio',
-        img: 'exhibitions/lugar/Terreno-2019-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(3).jpg',
+        img: 'exhibitions/lugar/Incidência-de-luz-em-um-ambiente-virtual-2019-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(1).jpg',
         index: 11
       },
       {
         alt: 'Um lugar para estar, 2019. Lucas Alves Costa - Galeria Palácio',
-        img: 'exhibitions/lugar/Incidência-de-luz-em-um-ambiente-virtual-2019-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(1).jpg',
-        index: 12
-      },
-      {
-        alt: 'Um lugar para estar, 2019. Lucas Alves Costa - Galeria Palácio',
         img: 'exhibitions/lugar/Incidência-de-luz-em-um-ambiente-virtual-2019-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(2).jpg',
-        index: 13
+        index: 12
       }
     ]
   },
