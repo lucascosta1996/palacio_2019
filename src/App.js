@@ -31,7 +31,7 @@ function App( props ) {
       <Route path="/online-viewing-room" component={ Catalogue } />
       <Route path="/exhibitions" component={ Exhibitions } />
       <Route path="/terms-and-conditions" component={ Terms } />
-      <Route path="/privacy-policy" component={ Privacy } />
+      <Route path="/privacy" component={ Privacy } />
     </Router>
   );
 }

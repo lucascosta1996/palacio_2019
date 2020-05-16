@@ -105,13 +105,13 @@ function Terms( props ) {
     <TermsWrapper>
       <section>
         <h2>{translate('termsTitle')}</h2>
-        <p>{translate('terms')} <Link to="/privacy-policy">{translate('clickHere')}</Link> {translate('terms2')}</p>
+        <p>{translate('terms')} <Link to="/privacy">{translate('clickHere')}</Link> {translate('terms2')}</p>
         <p className="title"><b>{translate('t1')}</b> <span>{translate('t1t')}</span></p>
         <p><b>{translate('t2')}</b> <span>{translate('t2t')}</span></p>
         <p><b>{translate('t3')}</b> <span>{translate('t3t')}</span></p>
         <p><b>{translate('t4')}</b> <span>{translate('t4t')}</span></p>
         <p><b>{translate('t5')}</b> <span>{translate('t5t')}</span></p>
-        <p><b>{translate('t6')}</b> <span>{translate('t6t')} <Link to="/privacy-policy">{translate('privacypolicy')}</Link>.</span></p>
+        <p><b>{translate('t6')}</b> <span>{translate('t6t')} <Link to="/privacy">{translate('privacypolicy')}</Link>.</span></p>
         <p><b>{translate('t7')}</b> <span>{translate('t7t')}</span></p>
         <p><b>{translate('t8')}</b> <span>{translate('t8t')}</span></p>
         <p><b>{translate('t9')}</b> <span>{translate('t9t')}</span></p>
