@@ -58,7 +58,7 @@ const Copyright = props => {
       <Link className="terms" to="/terms-and-conditions">
         {translate('termsofuse')}
       </Link>
-      <Link className="terms" to="/privacy-policy">
+      <Link className="terms" to="/privacy">
         {translate('privacypolicy')}
       </Link>
       {

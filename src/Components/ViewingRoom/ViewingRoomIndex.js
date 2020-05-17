@@ -19,7 +19,7 @@ const ViewingRoomIndexWrapper = styled.div`
     align-items: center;
     display: flex;
     flex-direction: column;
-    padding-top: 150px;
+    padding-top: 120px;
     text-decoration: none;
     transition: all .3s ease;
 
@@ -78,7 +78,7 @@ const OnlineVRLogo = styled.span`
   font-weight: 500;
   position: absolute;
   right: 0;
-  top: 100px;
+  top: 80px;
 
   @media ( max-width: 1024px ) {
     right: 18px;

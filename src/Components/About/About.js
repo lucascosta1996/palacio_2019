@@ -46,6 +46,7 @@ const AboutWrapper = styled.section`
     }
 
     .galeria {
+      padding-bottom: 5px;
       padding-top: 0;
       font-weight: 500;
     }

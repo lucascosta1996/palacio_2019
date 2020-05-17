@@ -169,10 +169,10 @@ function Item (props) {
               {
                 props.item.info3 && <span>{translate(props.item.info3)}</span>
               }
-              <p ref={textRef}>{translate(props.item.text)}</p>
               {
                 props.item.info4 && <span>{translate(props.item.info4)}</span>
               }
+              <p ref={textRef}>{translate(props.item.text)}</p>
             </section>
             <section className="gallery">
               <button>
