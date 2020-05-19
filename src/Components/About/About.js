@@ -45,6 +45,11 @@ const AboutWrapper = styled.section`
       min-width: 437px;
     }
 
+    @media (max-width: 520px) {
+      padding-right: 0;
+      padding-top: 30px;
+    }
+
     .galeria {
       padding-bottom: 5px;
       padding-top: 0;
@@ -206,15 +211,11 @@ const AboutWrapper = styled.section`
     }
   }
 
-  .info {
-    margin-bottom: 0;
-    margin-top: 5px;
-  }
-
   .about-text-info {
     max-width: 460px;
 
     @media (max-width: 520px) {
+      max-width: 95%;
       padding-top: 10px;
       padding-bottom: 30px;
     }
