@@ -80,11 +80,11 @@ const ArtistWrapper = styled.section`
         font-size: 13px;
         line-height: 16px;
         margin: 0;
-        max-width: 328px;
+        max-width: 565px;
       }
 
       .p-top {
-        padding-top: 8px;
+        padding-top: 11px;
       }
 
       span {
@@ -193,7 +193,14 @@ const Artist = props => {
           <img alt={ `${artist.name}'s work` } src={ artist.image } />
         </div>
         <div>
-          <p ref={ artistText }>{ translate( artist.text ) }</p>
+          <p ref={ artistText } className="p-top">{ translate( artist.text1 ) }</p>
+          <p className="p-top">{ translate( artist.text2 ) }</p>
+          <p className="p-top">{ translate( artist.text3 ) }</p>
+          {
+            artist.text4 && (
+              <p className="p-top">{ translate( artist.text3 ) }</p>
+            )
+          }
           <p className="p-top">{ translate( artist.work ) }</p>
         </div>
       </section>
