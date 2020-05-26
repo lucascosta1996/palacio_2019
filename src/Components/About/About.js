@@ -285,7 +285,7 @@ const About = props => {
             {translate('hours')}
           </p>
           <p>
-            ({translate('temporaryClosed')})
+            <i>({translate('temporaryClosed')})</i>
           </p>
         </section>
           {
