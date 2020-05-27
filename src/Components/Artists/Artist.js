@@ -66,7 +66,7 @@ const ArtistWrapper = styled.section`
 
       img {
         margin: auto;
-        max-width: 300px;
+        max-width: 270px;
 
         @media (max-width: 768px) {
           width: 100%;
@@ -111,27 +111,15 @@ const ArtistWrapper = styled.section`
   }
 
   .externalLink {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
     margin: auto;
     padding-bottom: 140px;
     width: 1100px;
 
-    a {
-      color: #000;
-      font-family: 'Roboto', sans-serif;
-      font-size: 13px;
-      font-weight: 500;
-      text-decoration: none; 
-
-      &:hover {
-        text-decoration: underline;
-      }
-
-      i {
-        padding-left: 5px;
-      }
-    }
-
     @media (max-width: 1024px) {
+      align-items: flex-start;
       flex-direction: column;
       width: 1000px;
     }
@@ -139,6 +127,41 @@ const ArtistWrapper = styled.section`
     @media (max-width: 768px) {
       width: 90%;
     }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      font-size: 13px;
+
+      span {
+        margin: 5px 0;
+      }
+
+      &__name {
+        font-weight: 500;
+      }
+    }
+
+    a {
+      color: #b3b4b5;
+      font-family: 'Roboto', sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      text-decoration: none;
+
+      @media (max-width: 768px) {
+        padding-top: 10px;
+      }
+
+      &:hover {
+        color: #000;
+      }
+
+      i {
+        padding-left: 5px;
+      }
+    }
+
   }
 
   footer {
@@ -211,6 +234,15 @@ const Artist = props => {
         <img alt={ `${artist.name}'s work` } src={`${artist.bigImage2}`} />
       </section>
       <section className="externalLink">
+        <div className="externalLink__info">
+          <span className="externalLink__info__name">{artist.name}</span>
+          <span className="externalLink__info__birth-info">
+            { translate('bornIn') } {artist.birthDate} { translate('in') } { translate('portoAlegre') }
+          </span>
+          <span className="externalLink__info__birth-info">
+            { translate('livesAndWorks') } { translate(artist.city) }
+          </span>
+        </div>
         <a href={ artist.siteUrl } target="_blank" rel="noopener noreferrer">
           { artist.site }
         </a>
