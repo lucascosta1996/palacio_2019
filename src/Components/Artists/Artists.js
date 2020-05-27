@@ -84,7 +84,8 @@ const Artists = props => {
       siteUrl: "https://andres-stephanou.com",
       site: "andres-stephanou.com",
       bigImage: luzvivazoomout,
-      bigImage2: collectiveMotion
+      bigImage2: collectiveMotion,
+      city: 'portoAlegre'
     },
     {
       name: 'Chiaki Mihara',
@@ -99,7 +100,8 @@ const Artists = props => {
       siteUrl: "https://chiakimihara.com",
       site: "chiakimihara.com",
       bigImage: autorretrato,
-      bigImage2: olhosvermelhos
+      bigImage2: olhosvermelhos,
+      city: 'portoAlegre'
     },
     {
       name: 'Emerson da Silva',
@@ -114,7 +116,8 @@ const Artists = props => {
       siteUrl: "https://emersondasilva.com",
       site: "emersondasilva.com",
       bigImage: alface,
-      bigImage2: pescaria
+      bigImage2: pescaria,
+      city: 'cidreira'
     },
     {
       name: 'Lucas Alves Costa',
@@ -130,7 +133,8 @@ const Artists = props => {
       siteUrl: "https://lucasalvescosta.com",
       site: "lucasalvescosta.com",
       bigImage: paraiso,
-      bigImage2: terreno
+      bigImage2: terreno,
+      city: 'portoAlegre'
     }
   ]
 
