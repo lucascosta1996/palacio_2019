@@ -218,9 +218,8 @@ const Artist = props => {
         <div>
           <p ref={ artistText } className="p-top">{ translate( artist.text1 ) }</p>
           <p className="p-top">{ translate( artist.text2 ) }</p>
-          <p className="p-top">{ translate( artist.text3 ) }</p>
           {
-            artist.text4 && (
+            artist.text3 && (
               <p className="p-top">{ translate( artist.text3 ) }</p>
             )
           }

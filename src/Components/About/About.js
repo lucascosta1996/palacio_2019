@@ -86,6 +86,12 @@ const AboutWrapper = styled.section`
         margin-top: 2px;
         line-height: 20px;
       }
+
+      .covid {
+        line-height: 15px;
+        margin-top: 10px;
+        max-width: 320px;
+      }
     }
 
     .address,
@@ -284,7 +290,7 @@ const About = props => {
           <p>
             {translate('hours')}
           </p>
-          <p>
+          <p className="covid">
             <i>({translate('temporaryClosed')})</i>
           </p>
         </section>
@@ -313,9 +319,6 @@ const About = props => {
       <div className="about-text-info">
         <p className="info">
           {translate('aboutInfo')}
-        </p>
-        <p className="info">
-          {translate('aboutInfo2')}
         </p>
       </div>
       <Copyright
