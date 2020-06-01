@@ -54,6 +54,7 @@ const ArtistWrapper = styled.section`
   }
 
   .secondRow {
+    align-items: center;
     justify-content: space-around
     padding-bottom: 110px;
 
@@ -66,7 +67,7 @@ const ArtistWrapper = styled.section`
 
       img {
         margin: auto;
-        max-width: 270px;
+        max-width: 210px;
 
         @media (max-width: 768px) {
           width: 100%;
@@ -134,7 +135,7 @@ const ArtistWrapper = styled.section`
       font-size: 13px;
 
       span {
-        margin: 5px 0;
+        margin: 2px 0;
       }
 
       &__name {
@@ -223,7 +224,6 @@ const Artist = props => {
               <p className="p-top">{ translate( artist.text3 ) }</p>
             )
           }
-          <p className="p-top">{ translate( artist.work ) }</p>
         </div>
       </section>
       <section className="singleImage">
@@ -237,9 +237,6 @@ const Artist = props => {
           <span className="externalLink__info__name">{artist.name}</span>
           <span className="externalLink__info__birth-info">
             { translate('bornIn') } {artist.birthDate} { translate('in') } { translate('portoAlegre') }
-          </span>
-          <span className="externalLink__info__birth-info">
-            { translate('livesAndWorks') } { translate(artist.city) }
           </span>
         </div>
         <a href={ artist.siteUrl } target="_blank" rel="noopener noreferrer">

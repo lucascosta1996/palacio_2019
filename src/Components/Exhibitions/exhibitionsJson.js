@@ -448,7 +448,6 @@ export const exhibitions = [
     paragraph1: 'microp1',
     paragraph2: 'microp2',
     paragraph3: 'microp3',
-    paragraph4: 'microp4',
     pdf: 'pdfMicro',
     period: 'past',
     slide: [
