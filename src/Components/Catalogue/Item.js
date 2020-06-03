@@ -153,7 +153,7 @@ function Item (props) {
       <ItemWrapper>
         <div className="center">
           <div className="align-self-center">
-            <Slide slides={props.item.slides} width={isMobile() ? 270 : 900} />
+            <Slide slides={props.item.slides} width={isMobile() ? 270 : 700} />
           </div>
           <div className="infos">
             <span className="artist">{ props.item.artist }</span>
