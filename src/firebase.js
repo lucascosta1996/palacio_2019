@@ -66,19 +66,12 @@ class Firebase {
     } )
   }
 
-  async getEnglishText( en ) {
-    let json = {}
-    await this.db.collection( 'en' ).get()
-    .then(snapshot => {
-      snapshot.forEach(doc => {
-        json = Object.assign( doc.data(), en )
-      })
-    })
-    .catch( error => {
-      console.log( 'error', error )
-    } )
-    
-    return json
+  async getTextCollection( language ) {
+    let data;
+    await this.db.collection( language).get()
+      .then(snapshot => snapshot.forEach(doc => {data = doc.data()}))
+      .catch( error => console.log( 'error', error ))
+    return data;
   }
   
   isInitialized() {
