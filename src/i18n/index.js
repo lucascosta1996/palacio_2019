@@ -28,14 +28,18 @@ export const I18nContextProvider = ({ children }) => {
 
   const [state, dispatch] = useReducer(reducer, initialState);
   const [translations, setTranslations] = useState({ en: EN, pt: PT });
+  const [didFetch, setDidFetch] = useState(false)
 
   useEffect(() => {
     async function fetchData() {
       const englishText = await firebase.getTextCollection( 'en' ).then((result) => result);
       const portugueseText = await firebase.getTextCollection( 'pt' ).then((result) => result);
-      setTranslations({...translations, en: englishText, pt: portugueseText})
+      setTranslations({...translations, en: englishText, pt: portugueseText});
+      setDidFetch(true);
     };
-    fetchData();
+    if (!didFetch) {
+      fetchData();
+    }
   })
 
   return (
