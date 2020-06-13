@@ -27,7 +27,7 @@ export const I18nContextProvider = ({ children }) => {
   };
 
   const [state, dispatch] = useReducer(reducer, initialState);
-  const [translations, setTranslations] = useState({ en: EN, pt: PT });
+  const [translations, setTranslations] = useState({ en: {}, pt: {} });
   const [didFetch, setDidFetch] = useState(false)
 
   useEffect(() => {
