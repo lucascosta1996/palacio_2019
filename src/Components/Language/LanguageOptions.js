@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState, useMemo } from "react";
 import styled from "styled-components";
 import { I18nContext } from "../../i18n";
 
@@ -32,20 +32,31 @@ const OptionsWrapper = styled.div`
 
 const LanguageOptions = (props) => {
   const { langCode, dispatch } = useContext(I18nContext);
+  const [label, setLabel] = useState("pt");
+  const [lang, setLang] = useState("");
 
   const onLanguageSelect = (event) => {
-    const language = event.target ? event.target.innerHTML : event; 
-    return dispatch({ type: "setLanguage", payload: language});
+    const language = event.target ? event.target.innerHTML : event;
+    dispatch({ type: "setLanguage", payload: language });
   };
 
-  const renderOption = (code) => (
-    <span onClick={(code) => onLanguageSelect(code)}>{code}</span>
-  );
+  const renderOption = (event) => {
+    const { innerHTML } = event.target;
+    const newLabel = innerHTML === "en" ? "pt" : "en";
+    onLanguageSelect(innerHTML);
+    setLabel(newLabel);
+    setLang(innerHTML);
+  };
+
+  useEffect(() => {
+    if (lang === "") {
+      renderOption({ target: { innerHTML: "en" } });
+    }
+  });
 
   return (
     <OptionsWrapper>
-      {langCode === "en" && renderOption("pt")}
-      {langCode === "pt" && renderOption("en")}
+      <span onClick={(event) => renderOption(event)}>{label}</span>
     </OptionsWrapper>
   );
 };
