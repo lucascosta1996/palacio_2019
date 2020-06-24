@@ -79,6 +79,7 @@ const Artists = props => {
       text1: 'andresA1',
       text2: 'andresA2',
       text3: 'andresA3',
+      text4: 'andresA4',
       image: portraitAndres,
       work: "andresW",
       siteUrl: "https://andres-stephanou.com",
