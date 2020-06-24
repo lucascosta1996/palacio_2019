@@ -224,6 +224,11 @@ const Artist = props => {
               <p className="p-top">{ translate( artist.text3 ) }</p>
             )
           }
+          {
+            artist.text4 && (
+              <p className="p-top">{ translate( artist.text4 ) }</p>
+            )
+          }
         </div>
       </section>
       <section className="singleImage">
