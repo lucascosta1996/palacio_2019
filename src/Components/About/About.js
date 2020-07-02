@@ -282,8 +282,8 @@ const About = props => {
           <p className="phone">
             {translate('phone')}
           </p>
-          <a className="email" href="mailto:info@palacio.xyz" target="_top">
-            info@palacio.xyz
+          <a className="email" href="mailto:info@galeriapalacio.com" target="_top">
+            info@galeriapalacio.com
           </a>
         </section>
         <section className="thirdSection">

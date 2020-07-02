@@ -118,7 +118,7 @@ function  Privacy( props ) {
           <p>{translate('address')}</p>
           <p>{translate('country')}</p>
           <p>{translate('phone')}</p>
-          <p>info@palacio.xyz, contact@palacio.xyz</p>
+          <p>info@galeriapalacio.com, contact@galeriapalacio.com</p>
         </div>
         <b>{translate('p1')}</b>
         <p>{translate('p1t1')}</p>

@@ -176,7 +176,7 @@ function Item (props) {
             </section>
             <section className="gallery">
               <button>
-                <a className="email" href="mailto:info@palacio.xyz" target="_top">
+                <a className="email" href="mailto:info@galeriapalacio.com" target="_top">
                   {translate('galleryContact')}
                 </a>
               </button>

@@ -331,7 +331,7 @@ function Exhibition (props) {
               </p>
               <section>
                 <p className="text__paragraph">{translate(props.show.upcomingOpening)}</p>
-                <p className="text__paragraph">RSVP: <a className="text__paragraph rsvp" href="mailto:rsvp@palacio.xyz" target="_top">rsvp@palacio.xyz</a></p>
+                <p className="text__paragraph">RSVP: <a className="text__paragraph rsvp" href="mailto:rsvp@galeriapalacio.com" target="_top">rsvp@galeriapalacio.com</a></p>
               </section>
             </section>
         </ExhibitionWrapper>
