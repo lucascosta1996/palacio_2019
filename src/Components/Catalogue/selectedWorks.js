@@ -44,7 +44,7 @@ export const selectedWorks = [
     ]
   },
   {
-    name: 'Individual Bodies Self-Organizing',
+    name: 'Growth and Decay',
     period: '2017–18',
     artist: 'Andrés Stephanou',
     route: 'individual-bodies-self-organizing',

@@ -2,7 +2,7 @@ import React from "react"
 import styled from 'styled-components'
 import { Link, Route } from 'react-router-dom'
 import Artist from './Artist'
-import detritos from '../../assets/exhibitions/micro/Microparticles-Andrés-Stephanou-Installation-View-Galeria-Palácio-(1).jpg'
+import detritos from '../../assets/exhibitions/micro/Chaos-2016-17-Andrés-Stephanou-Installation-View-Galeria-Palácio-(1).jpg'
 import luzvivazoomout from '../../assets/artists/Light-Particles-(Zoom-In)-Andrés-Stephanou-Screenshot-(1)-All-Rights-Reserved.png'
 import olhoazul from '../../assets/exhibitions/contatoVisual/Contato-Visual-2018-2019-Chiaki-Mihara-Installation-View-Galeria-Palácio-(1).jpg'
 import emerson from '../../assets/artists/Entre-o-Céu-e-o-Oceano-2019-Emerson-da-Silva-Installation-View-Galeria-Palácio-(2).jpg'
@@ -79,7 +79,6 @@ const Artists = props => {
       text1: 'andresA1',
       text2: 'andresA2',
       text3: 'andresA3',
-      text4: 'andresA4',
       image: portraitAndres,
       work: "andresW",
       siteUrl: "https://andres-stephanou.com",

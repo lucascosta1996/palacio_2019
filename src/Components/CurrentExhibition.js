@@ -42,6 +42,10 @@ const CurrentExhibitionWrapper = styled.section`
     flex-direction: column-reverse;
   }
 
+  .padding {
+    padding-top: 120px;
+  }
+
   .marginLeft {
     @media (min-width: 1279px) {
       margin-left: 50px;
@@ -135,8 +139,23 @@ function CurrentExhibition() {
 
   return(
     <CurrentExhibitionWrapper>
-      <Link to="/online-viewing-room/estadio">
+      <Link to="/exhibitions/smoke">
         <section className="current current-wrapper">
+          <div className="marginRight infosCurrentEx">
+            <p>
+            Andrés Stephanou, <i>Smoke</i>,
+            </p>
+            <p>
+              {translate('smokeDate')}
+            </p>
+          </div>
+          <div className="imageWrapper">
+            <img alt="Galeria Palácio - Smoke - Andrés Stephanou" src={ require( `../assets/exhibitions/smoke/Smoke-2018-20-Andrés-Stephanou-Screenshot-(4)-All-Rights-Reserved.png` ) } />
+          </div>
+        </section>
+      </Link>
+      <Link to="/online-viewing-room/estadio">
+        <section className="current current-wrapper padding">
           <div className="marginRight infosCurrentEx">
             <p>
             Emerson da Silva, <i>Estádio</i>,

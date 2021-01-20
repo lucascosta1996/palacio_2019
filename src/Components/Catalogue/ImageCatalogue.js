@@ -153,6 +153,10 @@ const CopyRightPadding = styled.div`
   .marginBottom {
     margin-bottom: 40px
   }
+
+  .artistName {
+    padding-bottom: 13px;
+  }
 `
 
 const OnlineVRLogo = styled.span`
@@ -162,7 +166,7 @@ const OnlineVRLogo = styled.span`
 
 function ImageCatalogue ( props ) {
   const { translate } = useContext(I18nContext)
-  const { showDate, showName, works, slides } = props.show
+  const { showDate, showName, works, slides, artist } = props.show
   const paragraph1 = useRef()
   const paragraph2 = useRef()
   const paragraph3 = useRef()
@@ -175,7 +179,7 @@ function ImageCatalogue ( props ) {
       .replace(/Selected Works/g, `<i>Selected Works</i>`)
       .replace(/Superfície de Um lugar para estar/g, `<i>Superfície de Um lugar para estar</i>`)
       .replace(/Terrestre/g, `<i>Terrestre</i>`)
-      .replace(/Individual Bodies Self-Organizing/g, `<i>Individual Bodies Self-Organizing</i>`)
+      .replace(/Growth and Decay/g, `<i>Growth and Decay</i>`)
       .replace(/Estádio \(Fotografias\)/g, `<i>Estádio (Fotografias)</i>`)
       .replace(/Estádio \(Aerofotografias\)/g, `<i>Estádio (Aerofotografias)</i>`)
       .replace(/Estádio/g, `<i>Estádio</i>`)
@@ -196,7 +200,7 @@ function ImageCatalogue ( props ) {
     }
     if ( paragraph4.current ) {
       paragraph4.current.innerHTML = paragraph4.current.innerHTML
-      .replace(/Individual Bodies Self-Organizing /g, `<i>Individual Bodies Self-Organizing </i>`)
+      .replace(/Growth and Decay /g, `<i>Growth and Decay </i>`)
       .replace(/Estádio \(Fotografias\)/g, `<i>Estádio (Fotografias)</i>`)
       .replace(/Estádio/g, `<i>Estádio</i>`)
     }
@@ -211,8 +215,9 @@ function ImageCatalogue ( props ) {
     <CopyRightPadding>
       <section className="exhibitionTitle">
         <div>
-         <i>{ showName }</i>
-         <p>{translate( showDate )}</p>
+          <p className="artistName">{artist}</p>
+          <i>{ showName }</i>
+          <p>{translate( showDate )}</p>
         </div>
         <OnlineVRLogo>Online Viewing Room</OnlineVRLogo>
       </section>

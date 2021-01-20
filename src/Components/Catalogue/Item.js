@@ -143,7 +143,7 @@ function Item (props) {
     .replace(/Autorretratos/g, `<i>Autorretratos</i>`)
     .replace(/Terreno/g, `<i>Terreno</i>`)
     .replace(/Luz, Água e Terra Preta/g, `<i>Luz, Água e Terra Preta</i>`)
-    .replace(/Individual Bodies Self-Organizing/g, `<i>Individual Bodies Self-Organizing</i>`)
+    .replace(/Growth and Decay/g, `<i>Growth and Decay</i>`)
     .replace(/Superfície de Um lugar para estar/g, `<i>Superfície de Um lugar para estar</i>`)
     .replace(/Um lugar para estar/g, `<i>Um lugar para estar</i>`)
   })

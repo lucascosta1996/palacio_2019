@@ -1,5 +1,49 @@
 export const exhibitions = [
   {
+    artist: 'Andrés Stephanou',
+    showName: 'Smoke',
+    showDate: 'smokeDate',
+    showRoute: '/exhibitions/smoke',
+    paragraph1: 'smokep1',
+    paragraph2: 'smokep2',
+    paragraph3: 'smokep3',
+    paragraph4: 'smokep4',
+    pdf: 'pdfContato',
+    period: 'current',
+    slide: [
+      {
+        alt: 'Smoke, 2021. Andrés Stephanou - Galeria Palácio',
+        img: 'exhibitions/smoke/Smoke-2018-20-Andrés-Stephanou-Installation-View-Galeria-Palácio-(1).jpg',
+        index: 0
+      },
+      {
+        alt: 'Smoke, 2021. Andrés Stephanou - Galeria Palácio',
+        img: 'exhibitions/smoke/Smoke-2018-20-Andrés-Stephanou-Installation-View-Galeria-Palácio-(2).jpg',
+        index: 1
+      },
+      {
+        alt: 'Smoke, 2021. Andrés Stephanou - Galeria Palácio',
+        img: 'exhibitions/smoke/Smoke-2018-20-Andrés-Stephanou-Screenshot-(1)-All-Rights-Reserved.png',
+        index: 2
+      },
+      {
+        alt: 'Smoke, 2021. Andrés Stephanou - Galeria Palácio',
+        img: 'exhibitions/smoke/Smoke-2018-20-Andrés-Stephanou-Screenshot-(2)-All-Rights-Reserved.png',
+        index: 3
+      },
+      {
+        alt: 'Smoke, 2021. Andrés Stephanou - Galeria Palácio',
+        img: 'exhibitions/smoke/Smoke-2018-20-Andrés-Stephanou-Screenshot-(3)-All-Rights-Reserved.png',
+        index: 4
+      },
+      {
+        alt: 'Smoke, 2021. Andrés Stephanou - Galeria Palácio',
+        img: 'exhibitions/smoke/Smoke-2018-20-Andrés-Stephanou-Screenshot-(4)-All-Rights-Reserved.png',
+        index: 5
+      }
+    ]
+  },
+  {
     artist: 'Chiaki Mihara',
     showName: 'Contato Visual',
     showDate: 'contatoDate',
@@ -136,12 +180,12 @@ export const exhibitions = [
     slide: [
       {
         alt: 'Flock of Particles Swarming, 2019. Andrés Stephanou - Galeria Palácio',
-        img: 'exhibitions/sistemas/Flock-of-Particles-Swarming-Andrés-Stephanou-Installation-View-Galeria-Palácio-(1).jpg',
+        img: 'exhibitions/sistemas/Collective-Motion-2018-19-Andrés-Stephanou-Installation-View-Galeria-Palácio-(1).jpg',
         index: 0
       },
       {
         alt: 'Flock of Particles Swarming, 2019. Andrés Stephanou - Galeria Palácio',
-        img: 'exhibitions/sistemas/Flock-of-Particles-Swarming-Andrés-Stephanou-Installation-View-Galeria-Palácio-(2).jpg',
+        img: 'exhibitions/sistemas/Collective-Motion-2018-19-Andrés-Stephanou-Installation-View-Galeria-Palácio-(2).jpg',
         index: 1
       },
       {
@@ -316,9 +360,9 @@ export const exhibitions = [
   },
   {
     artist: 'Andrés Stephanou',
-    showName: 'Individual Bodies Self-Organizing',
+    showName: 'Growth and Decay',
     showDate: 'particulasLuzDate',
-    showRoute: '/exhibitions/individual-bodies-self-organizing',
+    showRoute: '/exhibitions/growth-and-decay',
     paragraph1: 'particulasp1',
     paragraph2: 'particulasp2',
     paragraph3: 'particulasp3',
@@ -328,12 +372,12 @@ export const exhibitions = [
     slide: [
       {
         alt: 'Light Particles, 2018. Andrés Stephanou - Galeria Palácio',
-        img: 'exhibitions/luz/Light-Particles-Andrés-Stephanou-Installation-View-Galeria-Palácio-(1).jpg',
+        img: 'exhibitions/luz/Growth-and-Decay-2017-18-Andrés-Stephanou-Installation-View-Galeria-Palácio-(1).jpg',
         index: 0
       },
       {
         alt: 'Light Particles, 2018. Andrés Stephanou - Galeria Palácio',
-        img: 'exhibitions/luz/Light-Particles-Andrés-Stephanou-Installation-View-Galeria-Palácio-(4).jpg',
+        img: 'exhibitions/luz/Growth-and-Decay-2017-18-Andrés-Stephanou-Installation-View-Galeria-Palácio-(2).jpg',
         index: 1
       },
       {
@@ -442,23 +486,24 @@ export const exhibitions = [
   },
   {
     artist: 'Andrés Stephanou',
-    showName: 'Particles Within a Space',
+    showName: 'Chaos',
     showDate: 'microparticulasDate',
-    showRoute: '/exhibitions/particles-within-a-space',
+    showRoute: '/exhibitions/chaos',
     paragraph1: 'microp1',
     paragraph2: 'microp2',
     paragraph3: 'microp3',
+    paragraph4: 'microp4',
     pdf: 'pdfMicro',
     period: 'past',
     slide: [
       {
         alt: 'Microparticles, 2017. Andrés Stephanou - Galeria Palácio',
-        img: 'exhibitions/micro/Microparticles-Andrés-Stephanou-Installation-View-Galeria-Palácio-(1).jpg',
+        img: 'exhibitions/micro/Chaos-2016-17-Andrés-Stephanou-Installation-View-Galeria-Palácio-(1).jpg',
         index: 0
       },
       {
         alt: 'Microparticles, 2017. Andrés Stephanou - Galeria Palácio',
-        img: 'exhibitions/micro/Microparticles-Andrés-Stephanou-Installation-View-Galeria-Palácio-(2).jpg',
+        img: 'exhibitions/micro/Chaos-2016-17-Andrés-Stephanou-Installation-View-Galeria-Palácio-(2).jpg',
         index: 1
       },
       {
@@ -482,7 +527,6 @@ export const exhibitions = [
     paragraph2: 'terrap2',
     paragraph3: 'terrap3',
     paragraph4: 'terrap4',
-    paragraph5: 'terrap5',
     pdf: 'pdfLuzAgua',
     period: 'past',
     slide: [

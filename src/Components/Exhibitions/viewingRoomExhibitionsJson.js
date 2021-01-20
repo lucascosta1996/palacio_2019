@@ -123,7 +123,7 @@ export const viewingRoomExhibitions = [
     ]
   },
   {
-    artist: 'Galeria Palácio',
+    artist: '',
     showName: 'Selected Works',
     showDate: 'selectedWorksDate',
     showRoute: '/online-viewing-room/selected-works',
@@ -181,7 +181,7 @@ export const viewingRoomExhibitions = [
         ]
       },
       {
-        name: 'Individual Bodies Self-Organizing',
+        name: 'Growth and Decay',
         period: '2017–18',
         artist: 'Andrés Stephanou',
         route: 'selected-works/individual-bodies-self-organizing',
