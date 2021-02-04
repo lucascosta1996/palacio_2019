@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
+import { allExhibitions } from './allExhibitionsJson'
 import { exhibitions } from './exhibitionsJson'
 import { viewingRoomExhibitions } from './viewingRoomExhibitionsJson'
 import { I18nContext } from '../../i18n'
@@ -76,7 +77,6 @@ const Categories = styled.div`
 function ExhibitionsList (props) {
   const { translate } = useContext(I18nContext)
   const [ exhibitionsType, setExhibitionsType ] = useState( 'allExhibitions' )
-  const allExhibitions = viewingRoomExhibitions.concat( exhibitions )
 
   return (
     <ExhibitionsListWrapper>

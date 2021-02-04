@@ -245,7 +245,7 @@ function Exhibition (props) {
       .replace(/Contato Visual \(Vermelho\)/g, `<i>Contato Visual (Vermelho)</i>`)
       .replace(/Contato Visual/g, `<i>Contato Visual</i>`)
       .replace(/Luz, Água e Terra Preta/g, `<i>Luz, Água e Terra Preta</i>`)
-      .replace(/Papa Terra e Arraia/g, `<i>Papa Terra e Arraia</i>`)
+      .replace(/Papa-Terra/g, `<i>Papa-Terra</i>`)
       .replace(/Entre o Céu e o Oceano/g, `<i>Entre o Céu e o Oceano</i>`)
       .replace(/Terreno/g, `<i>Terreno</i>`)
       .replace(/Alface Lisa/g, `<i>Alface Lisa</i>`)

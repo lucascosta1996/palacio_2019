@@ -47,7 +47,7 @@ export const selectedWorks = [
     name: 'Growth and Decay',
     period: '2017–18',
     artist: 'Andrés Stephanou',
-    route: 'individual-bodies-self-organizing',
+    route: 'growth-and-decay',
     coverImage: 'Light-Particles-2017-2018-Andrés-Stephanou-Screenshot-(2)-All-rights-reserved.png',
     info1: 'particulasdeluz1-1',
     info2: 'particulasdeluz1-2',

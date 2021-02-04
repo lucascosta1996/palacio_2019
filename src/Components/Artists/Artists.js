@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Link, Route } from 'react-router-dom'
 import Artist from './Artist'
 import detritos from '../../assets/exhibitions/micro/Chaos-2016-17-Andrés-Stephanou-Installation-View-Galeria-Palácio-(1).jpg'
-import luzvivazoomout from '../../assets/artists/Light-Particles-(Zoom-In)-Andrés-Stephanou-Screenshot-(1)-All-Rights-Reserved.png'
+import darkSmoke from '../../assets/artists/Dark-Smoke-2018-20-Andrés-Stephanou-Screenshot-(1)-All-Rights-Reserved.png'
 import olhoazul from '../../assets/exhibitions/contatoVisual/Contato-Visual-2018-2019-Chiaki-Mihara-Installation-View-Galeria-Palácio-(1).jpg'
 import emerson from '../../assets/artists/Entre-o-Céu-e-o-Oceano-2019-Emerson-da-Silva-Installation-View-Galeria-Palácio-(2).jpg'
 import lucasalves from '../../assets/artists/Um-lugar-para-estar-2018-2019-Lucas-Alves-Costa-Installation-View-Galeria-Palácio-(1).jpg'
@@ -83,7 +83,7 @@ const Artists = props => {
       work: "andresW",
       siteUrl: "https://andres-stephanou.com",
       site: "andres-stephanou.com",
-      bigImage: luzvivazoomout,
+      bigImage: darkSmoke,
       bigImage2: collectiveMotion,
       city: 'portoAlegre'
     },
